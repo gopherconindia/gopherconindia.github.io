@@ -20,7 +20,7 @@ h6 {
     margin: 0 0 5px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;	
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: -2px;
 }
 
@@ -38,9 +38,9 @@ p {
 
 @media(min-width:767px) {
     p.home-paragraph {
-        margin: 0 0 20px;
+        margin: 0 0 15px;
         font-size: 20px;
-        line-height: 1.6;
+        line-height: 1.4;
     }
 }
 
@@ -133,7 +133,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
+    background: url(../images/intro-bg.jpg) no-repeat bottom center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -261,7 +261,7 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../img/downloads-bg.jpg) no-repeat center center scroll;
+    background: url(../images/downloads-bg.jpg) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -275,7 +275,7 @@ a:focus {
     margin-top: 100px;
 }
 .content-section {
-    padding: 100px 0px;
+    padding: 80px 0px;
 }
 
 .brand-section {
@@ -482,6 +482,7 @@ body {
     margin-top: 20px;
 }
 .inner-page {
+     font-size: 16px;
     padding-top: 100px;
     padding-bottom: 50px;
     background-color: #e2e2e2;
@@ -499,7 +500,7 @@ p.praposal {
     line-height: 1.4;
 }
 .homepage h2 {
-    font-size: 60px;
+    font-size: 50px;
 }
 .inner-page h2 {
   font-size: 26px;
@@ -523,4 +524,7 @@ p.copyright {
 }
 .navbar-brand  {
     padding-top: 5px;
+}
+ul.font-size {
+    font-size: 16px;
 }
