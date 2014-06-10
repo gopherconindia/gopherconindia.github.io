@@ -360,7 +360,6 @@ a:focus {
 
 ::selection {
     text-shadow: none;
-    background: #fcfcfc;
     background: rgba(255,255,255,.2);
 }
 

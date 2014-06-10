@@ -2,6 +2,10 @@
   font-weight: bold;
 }
 
+a.gci-link {
+  color: rgb(189, 102, 102);
+}
+
 .gci-heading {
   font-family: arial;
   margin-bottom:10px;
