@@ -19,7 +19,7 @@ h5,
 h6 {
     margin: 0 0 5px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;	
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 300;
     letter-spacing: -2px;
 }
@@ -151,10 +151,10 @@ a:focus {
     padding-top: 12%;
 }
 
-.white { 
+.white {
     font-size: 58px !important;
     line-height: 48px;
-    padding-bottom: 20px;	
+    padding-bottom: 20px;
 }
 
 .intro-text {
@@ -171,10 +171,10 @@ a:focus {
         font-size: 144px;
         line-height: 144px;
     }
-    .white { 
+    .white {
         font-size: 80px !important;
         line-height: 58px;
-        padding-bottom: 30px;	
+        padding-bottom: 30px;
     }
 
     .intro-text {
@@ -222,7 +222,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0 {
     -webkit-transform: scale(1);
     transform: scale(1);
@@ -239,7 +239,7 @@ a:focus {
 }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0 {
     -moz-transform: scale(1);
     transform: scale(1);
@@ -280,13 +280,13 @@ a:focus {
 
 .brand-section {
     padding: 0px 10px;
-}	
+}
 
 .brand-section h6 {
     font-size: 24px;
     text-align:center;
     padding-bottom: 10px;
-}	
+}
 
 @media(min-width:767px) {
     #map {
@@ -399,7 +399,7 @@ body {
 /*! sponsor section */
 
 .sponsor-section {
-    background-color: #e2e2e2;	
+    background-color: #e2e2e2;
     padding-top: 100px;
     padding-bottom: 50px;
 }
@@ -417,7 +417,7 @@ body {
 /*! brand section */
 
 .brand-section {
-    background-color: #e2e2e2;		
+    background-color: #e2e2e2;
     padding-bottom: 100px;
 }
 
@@ -452,14 +452,14 @@ body {
 /*! support section */
 
 .support-section {
-    background-color: #f2f2f2;		
+    background-color: #f2f2f2;
 }
 
 .support-section h2 {
     color: #848484;
     padding-bottom:20px;
     font-size: 30px;
-    text-align:center;	
+    text-align:center;
 }
 .support-section p {
     color: #444444;
@@ -482,10 +482,10 @@ body {
     margin-top: 20px;
 }
 .inner-page {
-     font-size: 16px;
+    font-size: 16px;
     padding-top: 100px;
     padding-bottom: 50px;
-    background-color: #e2e2e2;
+    /*background-color: #e2e2e2;*/
     color: #444444;
     min-height: 550px;
 }
@@ -517,7 +517,7 @@ p.copyright {
     padding-top: 10px;
 }
 .clear-fix {
-   clear: both;   
+   clear: both;
 }
 .first-conf {
   font-size: 12px;margin-top: 5px;text-transform:none;
