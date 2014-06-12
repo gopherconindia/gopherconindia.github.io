@@ -1,9 +1,15 @@
 body {
     width: 100%;
     height: 100%;
-    font-family: 'Lato',sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
     color: #fff;
-    background-color: #000;
+    background-color: #292c33;
+
+}
+
+b, strong{
+    font-weight: 500;
 }
 
 html {
@@ -19,8 +25,8 @@ h5,
 h6 {
     margin: 0 0 5px;
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 300;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
     letter-spacing: -2px;
 }
 
@@ -32,14 +38,14 @@ h1,h4 {
 
 p {
     margin: 0 0 25px;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.5;
 }
 
 @media(min-width:767px) {
     p.home-paragraph {
         margin: 0 0 15px;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.4;
     }
 }
@@ -64,9 +70,12 @@ a:focus {
 .navbar {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
-    text-transform: uppercase;
     font-family: 'Lato',sans-serif;
     background-color: #e7e7e7;
+}
+
+.navbar .navbar-nav > li > a{
+    text-transform: uppercase;
 }
 
 .navbar-brand {
@@ -105,6 +114,31 @@ a:focus {
     outline: 0;
 }
 
+.navbar-nav > li > .dropdown-menu{
+    background-color: #292c33;
+    border-radius: 0;
+    border: 1px solid #515763;
+}
+
+.dropdown-menu > li > a {
+    color: #fff
+}
+
+.navbar-inverse .navbar-nav > li > a{border: 1px solid transparent; border-bottom: none}
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+    background-color: #292c33;
+    border: 1px solid #515763;
+    border-bottom: none;
+}
+
+.navbar-right .dropdown-menu {
+    left: 0;
+    right: auto;
+}
+
+
+
 @media(min-width:767px) {
     .navbar {
         padding: 20px 0;
@@ -118,7 +152,8 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: #000;
+        background-color: #292c33;
+        border-bottom: 1px solid #515763;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -133,8 +168,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../images/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: #000;
+    background: url(../images/intro-bg.png) no-repeat bottom center scroll #292c33;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -179,6 +213,7 @@ a:focus {
 
     .intro-text {
         font-size: 25px;
+        margin-bottom: 0;
     }
 }
 
@@ -224,36 +259,36 @@ a:focus {
 
 @-webkit-keyframes pulse {
     0 {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-}
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 
-50% {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-}
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
 
-100% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-}
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
 }
 
 @-moz-keyframes pulse {
     0 {
-    -moz-transform: scale(1);
-    transform: scale(1);
-}
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
 
-50% {
-    -moz-transform: scale(1.2);
-    transform: scale(1.2);
-}
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
 
-100% {
-    -moz-transform: scale(1);
-    transform: scale(1);
-}
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
 }
 
 
@@ -261,12 +296,6 @@ a:focus {
     width: 100%;
     padding: 50px 0;
     color: #fff;
-    background: url(../images/downloads-bg.jpg) no-repeat center center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
 }
 
 #map {
@@ -309,6 +338,7 @@ a:focus {
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+    border-radius: 0;
 }
 
 .btn-default {
@@ -380,8 +410,55 @@ body {
 .brand-heading .dark { color: #a8957b;}
 .brand-heading .white { color: #fff;}
 
-.venue-bg {
+.venue.venue-bg {
     background-color: #5e5e5e;
+}
+
+.venue .map-wrap {
+    position: relative;
+}
+
+.venue #map-canvas {
+    height: 500px;
+    width: 100%
+}
+
+.venue #map-content {
+    text-align: center
+}
+
+.venue #map-content a {
+    color: #d22341;
+    font-size: 18px;
+    display: block;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.venue #map-content p {
+    margin: 0;
+    color: #333;
+.venue }
+
+.venue #map-inner-shadow {
+    box-shadow: inset 0 -15px 20px rgba(51, 51, 51, 0.1);
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: 0
+}
+
+.venue .address {
+    bottom: 0;
+    left: 10%;
+    width: 730px;
+    padding: 30px;
+    position: absolute;
+    background-color: rgba(41, 44, 51, 0.8);
+
 }
 
 .give-talk-img {
@@ -390,9 +467,10 @@ body {
 }
 .head-first-ever {
     font-size: 24px;
-    margin-bottom: 20px;
-    font-weight: bold;
+    margin-bottom: 80px;
+    font-weight: 500;
     margin-top: 15px;
+    color: #898989;
 }
 
 /*! sponsor section */
@@ -463,13 +541,16 @@ body {
 .support-section p {
     color: #444444;
     text-align:justify;
-    font-size:15px;
+    font-size:16px;
 }
 .support-bg {
     background-color: #ffffff;
-    min-height: 190px;
-    padding: 24px;
+    padding: 40px 24px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.support-bg p{
+    margin-bottom: 0;
 }
 
 .source-logo, .source-logo a {
@@ -487,10 +568,16 @@ body {
     /*background-color: #e2e2e2;*/
     color: #444444;
     min-height: 550px;
+    background: url(../images/intro-bg.png) no-repeat bottom center fixed #292c33;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 .container-section {
-    background-color: #ffffff;
+    background-color: #fff;
     padding: 20px 30px;
+    border: 10px solid #292c33;
 }
 p.praposal {
     color: #444444;
