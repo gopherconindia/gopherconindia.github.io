@@ -21,6 +21,9 @@
 
   <!-- Custom Theme CSS -->
   <link href="css/grayscale.css" rel="stylesheet">
+  <link href="css/style-guide.css" rel="stylesheet">
+  <link href="css/override-bootstrap-responsive.css" rel="stylesheet">
+</head>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -39,7 +42,13 @@
           <li class="hidden"> <a href="#page-top">Home</a> </li>
           <!-- About dropdown section -->
           <li class="dropdown">
-            <a href="index.html#about">About</a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About  <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class="page-scroll"><a href="index.html#about">What is GopherCon India</a></li>
+              <li><a href="code-of-conduct.html">Code of Conduct</a></li>
+              <li><a href="staff-information.html">Staff Information</a></li>
+              <li><a href="go-language-community-in-india.html">Go Language Community in India</a></li>
+            </ul>
           </li>
           <!-- Speaking dropdown section -->
           <li class="dropdown">
@@ -67,10 +76,12 @@
 
   <div class="inner-page">
     <div class="container container-section">
-      <h2> So You Want To Present at GopherConIndia?</h2>
-      <p class="praposal"> We are grateful for your interest in presenting at GopherConIndia 2015. This is a guide to help you submit the best possible proposal, and tips to make your proposal more likely to be accepted. Please keep in mind that many more proposals are submitted for talks than can be accepted; following the recommendations provided here will increase your chance of acceptance.</p>
-      <h3>Good Ideas </h3>
-      <ul>
+
+      <div class='gci-heading gci-heading-1'>So You Want To Present at GopherConIndia?</div>
+
+      <p> We are grateful for your interest in presenting at GopherConIndia 2015. This is a guide to help you submit the best possible proposal, and tips to make your proposal more likely to be accepted. Please keep in mind that many more proposals are submitted for talks than can be accepted; following the recommendations provided here will increase your chance of acceptance.</p>
+      <div class='gci-heading gci-heading-2'>Good Ideas</div>
+      <ul class="gci-unordered-list">
         <li> 	<b>Submit your proposal early </b>. The program committee will provide feedback to talks in our system, and we will work with you to improve your proposal if we have issues with it, but we can only do this if your talk is in before the deadline.</li>
         <li> 	In your abstract, be sure to include answers to some basic questions:
           <ul>
@@ -89,8 +100,10 @@
         <li> 	If you've given a talk, tutorial, or other presentation before, especially at an earlier GopherCon or another conference, include that information as well as a link to slides or a video if they're available.</li>
         <li> 	Fill out your outline and biography completely, but concisely. The outline and background information often are used to eliminate proposals during the first cut, so incomplete details may be a cause for early rejection of a potentially great talk or tutorial. Don't let this happen to you!</li>
       </ul>
-      <h3>Bad Ideas </h3>
-      <ul>
+
+      <div class='gci-heading gci-heading-2'>Bad Ideas</div>
+
+      <ul class="gci-unordered-list">
         <li> Avoid infomercials.
           <ul>
             <li> That doesn't mean you can't talk about your work or company at GopherConIndia. For instance, we welcome talks on how you or your company solved a problem, or notable open source projects that may benefit attendees.</li>
@@ -101,8 +114,11 @@
         <li> Avoid "state of our project" talks, unless you can make a compelling argument that the talk will be well-attended and that attendees will gain value from it.</li>
         <li> Do not assume that everyone on the Program Committee will know who you are simply because you have presented at GopherCon in the past. Everyone should submit a full proposal. </li>
       </ul>
-      <h3>More Information </h3>
-      <p class="praposal"> For more resources to help prepare your proposal, see <a href="proposal-resource.html">Proposal Resources.  </a></p>
+
+      <div class='gci-heading gci-heading-2'>More Information</div>
+
+      <p> For more resources to help prepare your proposal, see <a href="proposal-resource.html">Proposal Resources.  </a></p>
+
     </div>
   </div>
 
