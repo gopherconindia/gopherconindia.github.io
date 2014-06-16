@@ -16,12 +16,17 @@
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Dosis:300,400' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<!--<link href='http://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700' rel='stylesheet' type='text/css'>-->
+		<link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700' rel='stylesheet' type='text/css'>
 
   <!-- Custom Theme CSS -->
   <link href="css/grayscale.css" rel="stylesheet">
   <link href="css/override-bootstrap-responsive.css" rel="stylesheet">
+
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript" src="js/gMap.js"></script>
+
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -98,34 +103,49 @@
   </section>
 
   <!--About Section-->
-  <section id="about" class="container content-section text-center homepage">
+  <section id="about" class="container content-section homepage">
     <div class="row">
-      <div class="col-lg-8 col-lg-offset-2"> <a href="#" class="btn"> <img src="images/gopher-150.png" alt="gophercon" width="150"  class="img-responsive animated"/></a>
-        <h2>What is GopherCon India</h2>
-        <div class="head-first-ever"> The First-Ever Go Conference in India</div>
-        <p class="home-paragraph">Go is an open source project developed by a team at <a href="https://www.google.co.in" target="_blank">  Google </a> and many <a href="http://golang.org/CONTRIBUTORS" target="_blank">contributors</a> from the open source community.</p>
-        <p class="home-paragraph">Go makes it easy to build simple, reliable, and efficient software.</p>
-        <p> This conference is brought to you by the Go Language Community in India together with the Innovation And Technology Trust (ITT). The ITT is a non-profit organization, established to organize and conduct technology conferences in India. It's current portfolio includes RubyConf India, GopherCon India and DevOpsDays India.</p>
-        <p> We've created a single-track event that you won't want to miss. Opening and closing talks from Go luminaries will highlight the event, with enriching detailed presentations in between. Friday and Saturday will offer full days of conference sessions.</p>
-        <p>We love going to conferences that don't make you choose between two great presentations. So we created GopherCon as a single track event, where everyone gets the opportunity to see the same talks. We think you'll enjoy the speakers we're lining up so much you won't want to miss one of them. </p>
+      <div class="col-lg-10 col-lg-offset-1">
+		      <div class="clear-fix">
+				      <img src="images/gopher-150.png" alt="gophercon" width="150" class="pull-left"/>
+				      <div class="c" style="overflow: hidden; padding: 100px 0 0 30px">
+						      <h2>What is GopherCon India</h2>
+						      <div class="head-first-ever"> The First-Ever Go Conference in India</div>
+						      <p class="home-paragraph">Go is an open source project developed by a team at <a href="https://www.google.co.in" target="_blank">  Google </a> and many <a href="http://golang.org/CONTRIBUTORS" target="_blank">contributors</a> from the open source community.</p>
+						      <p class="home-paragraph">Go makes it easy to build simple, reliable, and efficient software.</p>
+						      <p> This conference is brought to you by the Go Language Community in India together with the Innovation And Technology Trust (ITT). The ITT is a non-profit organization, established to organize and conduct technology conferences in India. It's current portfolio includes RubyConf India, GopherCon India and DevOpsDays India.</p>
+						      <p> We've created a single-track event that you won't want to miss. Opening and closing talks from Go luminaries will highlight the event, with enriching detailed presentations in between. Friday and Saturday will offer full days of conference sessions.</p>
+						      <p>We love going to conferences that don't make you choose between two great presentations. So we created GopherCon as a single track event, where everyone gets the opportunity to see the same talks. We think you'll enjoy the speakers we're lining up so much you won't want to miss one of them. </p>
+						      <p class="strong">Note: The conference is entirely in English.</p>
+				      </div>
 
-        <p class="strong">Note: The conference is entirely in English.</p>
+		      </div>
+
+
       </div>
     </div>
   </section>
 
   <!--Venue Section-->
-  <section id="venue" class="venue-bg homepage">
-    <div class=" container content-section text-center">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <h2>Venue</h2>
-          <p class="home-paragraph">Bangalore is the most sought out cosmopolitan city in India and best known for making people all over the world feel at home.</p>
-          <p class="home-paragraph"> Bangalore, the Silicon Valley of India is the ideal location for our first Indian conference. With being host to all global software companies for many many years, Bangalore boasts some of the most world-class restaurants and great nightlife to round out your conference downtime.</p>
-          <p class="home-paragraph">No wonder, its termed as Software and Party Hub of India. What a way to experience this along with Bangalore hosting a Go Conference for the first time in India.</p>
-        </div>
-      </div>
-    </div>
+  <section id="venue" class="venue venue-bg homepage">
+
+
+		  <div class="map-wrap">
+				  <div id="map-canvas"></div>
+				  <div class="address">
+								<div class="row">
+								  <div class="col-lg-10 col-lg-offset-1">
+										  <h2>Venue</h2>
+										  <p class="home-paragraph">Bangalore is the most sought out cosmopolitan city in India and best known for making people all over the world feel at home.</p>
+										  <p class="home-paragraph"> Bangalore, the Silicon Valley of India is the ideal location for our first Indian conference. With being host to all global software companies for many many years, Bangalore boasts some of the most world-class restaurants and great nightlife to round out your conference downtime.</p>
+										  <p class="home-paragraph">No wonder, its termed as Software and Party Hub of India. What a way to experience this along with Bangalore hosting a Go Conference for the first time in India.</p>
+								  </div>
+								</div>
+				  </div>
+				  <div id="map-inner-shadow"></div>
+		  </div>
+
+
   </section>
 
   <!--Speaker Section-->
@@ -161,7 +181,7 @@
     <div class="container content-section">
       <h2>Supporters</h2>
       <div class="row">
-        <div class="support-bg">
+        <div class="support-bg clearfix">
           <div class="col-md-4">
             <p class="source-logo"><a href="http://sourcegraph.com/" target="_blank">✱ Sourcegraph&nbsp; </a></p>
           </div>

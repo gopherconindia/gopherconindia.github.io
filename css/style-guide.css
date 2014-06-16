@@ -9,17 +9,19 @@ a.gci-link {
 .gci-heading {
   font-family: arial;
   margin-bottom:10px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .gci-heading-1 {
   font-size: 28px;
   margin-bottom:22px;
+  color: #898989;
 }
 
 .gci-heading-2 {
   font-size: 22px;
   margin-bottom:15px;
+  color: #898989;
 }
 
 .gci-heading-3 {
@@ -44,5 +46,5 @@ a.gci-link {
 }
 
 .gci-unordered-list li {
-  font-size: 18px;
+  font-size: 16px;
 }
