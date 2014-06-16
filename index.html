@@ -16,11 +16,15 @@
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
   <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Dosis:300,400' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700' rel='stylesheet' type='text/css'>
 
   <!-- Custom Theme CSS -->
   <link href="css/grayscale.css" rel="stylesheet">
+  <link href="css/override-bootstrap-responsive.css" rel="stylesheet">
+
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript" src="js/gMap.js"></script>
+
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -37,7 +41,17 @@
         <ul class="nav navbar-nav">
           <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
           <li class="hidden"> <a href="#page-top">About</a> </li>
-          <li class="page-scroll"> <a href="#about">About</a> </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About  <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li class="page-scroll"><a href="#about">What is GopherCon India</a></li>
+              <li><a href="code-of-conduct.html">Code of Conduct</a></li>
+              <li><a href="staff-information.html">Staff Information</a></li>
+              <li><a href="go-language-community-in-india.html">Go Language Community in India</a></li>
+            </ul>
+          </li>
+
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Speaking  <b class="caret"></b></a>
             <ul class="dropdown-menu">
@@ -87,47 +101,79 @@
   </section>
 
   <!--About Section-->
-  <section id="about" class="container content-section text-center homepage">
+  <section id="about" class="container content-section homepage">
     <div class="row">
-      <div class="col-lg-8 col-lg-offset-2"> <a href="#" class="btn"> <img src="images/gopher-150.png" alt="gophercon" width="150"  class="img-responsive animated"/></a>
-        <h2>What is GopherCon India</h2>
-        <div class="head-first-ever"> The First-Ever Go Conference in India</div>
-        <p class="home-paragraph">Go is an open source project developed by a team at <a href="https://www.google.co.in" target="_blank">  Google </a> and many <a href="http://golang.org/CONTRIBUTORS" target="_blank">contributors</a> from the open source community.</p>
-        <p class="home-paragraph">Go makes it easy to build simple, reliable, and efficient software.</p>
-        <p> This conference is brought to you by the Go Language Community in India together with the Innovation And Technology Trust (ITT). The ITT is a non-profit organization, established to organize and conduct technology conferences in India. It's current portfolio includes RubyConf India, GopherCon India and DevOpsDays India.</p>
-        <p> We've created a single-track event that you won't want to miss. Opening and closing talks from Go luminaries will highlight the event, with enriching detailed presentations in between. Friday and Saturday will offer full days of conference sessions.</p>
-        <p>We love going to conferences that don't make you choose between two great presentations. So we created GopherCon as a single track event, where everyone gets the opportunity to see the same talks. We think you'll enjoy the speakers we're lining up so much you won't want to miss one of them. </p>
+      <div class="col-lg-10 col-lg-offset-1">
+		      <div class="clear-fix">
+				      <img src="images/gopher-150.png" alt="gophercon" class="pull-left" style="padding: 0 60px 0 20px"/>
+				      <div style="overflow: hidden; padding-top:30px">
+						      <h2>What is GopherCon India</h2>
+						      <div class="head-first-ever"> The First-Ever Go Conference in India</div>
+						      <p class="home-paragraph">Go is an open source project developed by a team at <a href="https://www.google.co.in" target="_blank">  Google </a> and many <a href="http://golang.org/CONTRIBUTORS" target="_blank">contributors</a> from the open source community.</p>
+						      <p class="home-paragraph">Go makes it easy to build simple, reliable, and efficient software.</p>
+						      <p> This conference is brought to you by the Go Language Community in India together with the Innovation And Technology Trust (ITT). The ITT is a non-profit organization, established to organize and conduct technology conferences in India. It's current portfolio includes RubyConf India, GopherCon India and DevOpsDays India.</p>
+						      <p> We've created a single-track event that you won't want to miss. Opening and closing talks from Go luminaries will highlight the event, with enriching detailed presentations in between. Friday and Saturday will offer full days of conference sessions.</p>
+						      <p>We love going to conferences that don't make you choose between two great presentations. So we created GopherCon as a single track event, where everyone gets the opportunity to see the same talks. We think you'll enjoy the speakers we're lining up so much you won't want to miss one of them. </p>
+						      <p class="strong">Note: The conference is entirely in English.</p>
+				      </div>
 
-        <p class="strong">Note: The conference is entirely in English.</p>
+		      </div>
+
+
       </div>
     </div>
   </section>
 
   <!--Venue Section-->
-  <section id="venue" class="venue-bg homepage">
-    <div class=" container content-section text-center">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2">
-          <h2>Venue</h2>
-          <p class="home-paragraph">Bangalore is the most sought out cosmopolitan city in India and best known for making people all over the world feel at home.</p>
-          <p class="home-paragraph"> Bangalore, the Silicon Valley of India is the ideal location for our first Indian conference. With being host to all global software companies for many many years, Bangalore boasts some of the most world-class restaurants and great nightlife to round out your conference downtime.</p>
-          <p class="home-paragraph">No wonder, its termed as Software and Party Hub of India. What a way to experience this along with Bangalore hosting a Go Conference for the first time in India.</p>
-        </div>
-      </div>
-    </div>
+  <section id="venue" class="venue venue-bg homepage">
+
+		  <div class="map-wrap">
+				  <div id="map-canvas"></div>
+				  <div class="address">
+								<div class="row">
+								  <div class="col-lg-10 col-lg-offset-1">
+										  <h2>Venue</h2>
+										  <p class="home-paragraph">Bangalore is the most sought out cosmopolitan city in India and best known for making people all over the world feel at home.</p>
+										  <p class="home-paragraph"> Bangalore, the Silicon Valley of India is the ideal location for our first Indian conference. With being host to all global software companies for many many years, Bangalore boasts some of the most world-class restaurants and great nightlife to round out your conference downtime.</p>
+										  <p class="home-paragraph">No wonder, its termed as Software and Party Hub of India. What a way to experience this along with Bangalore hosting a Go Conference for the first time in India.</p>
+								  </div>
+								</div>
+				  </div>
+				  <div id="map-inner-shadow"></div>
+		  </div>
+
   </section>
 
   <!--Speaker Section-->
   <section id="speaker" class="content-section text-center download-section homepage">
     <div class="container">
-      <div class="col-lg-8 col-lg-offset-2">
-        <h2>Speakers</h2>
-        <p class="home-paragraph">We're looking for speakers who wish to give a talk at GopherCon India 2015. If you're interested kindly reach us at <a href="mailto:team@gophercon.in">team@gophercon.in </a>.</p>
-        <p class="home-paragraph">The <b>Call For Proposals </b> will open on 1st July 2014.</p>
-        <p> <b>You. Your friends. Your friends' friends. </b> Anyone with any level of Go knowledge is a candidate for a great topic at this conference. We expect to get attendees of all kinds; we need speakers of all kinds. In all ways and manners, we will try to assemble the most diverse conference we can, and we will do that with your help.</p>
-        <p> Whether you got started with Go last month or you've been around for many years, we think you've got something to share. The Go community is stronger than ever and we're still reaching new areas, new industries, and new users. Be a part of growing Go helping us change the future.</p>
-        <p> You don't need to be a well traveled professional speaker to get on stage at GopherConIndia. What matters is the topics, the materials, and the drive to present great things to this community.</p>
+      <div class="row">
+		      <div class="col-lg-8 col-lg-offset-2">
+		        <h2>Speakers</h2>
+		        <p class="home-paragraph">We're looking for speakers who wish to give a talk at GopherCon India 2015. If you're interested kindly reach us at <a href="mailto:team@gophercon.in">team@gophercon.in </a>.</p>
+		        <p class="home-paragraph">We are accepting all types of talk proposals <b>upto September 30th, 2014.</b></p>
+		        <p> <b>You. Your friends. Your friends' friends. </b> Anyone with any level of Go knowledge is a candidate for a great topic at this conference. We expect to get attendees of all kinds; we need speakers of all kinds. In all ways and manners, we will try to assemble the most diverse conference we can, and we will do that with your help.</p>
+		        <p> Whether you got started with Go last month or you've been around for many years, we think you've got something to share. The Go community is stronger than ever and we're still reaching new areas, new industries, and new users. Be a part of growing Go helping us change the future.</p>
+		        <p> You don't need to be a well traveled professional speaker to get on stage at GopherConIndia. What matters is the topics, the materials, and the drive to present great things to this community.</p>
+		      </div>
       </div>
+		    <div class="speakers-wrapper text-left">
+				    <h2>Invited Speaker</h2>
+				    <div class="row speaker">
+				      <div class="col-sm-2 image center" style="width: 180px">
+						      <div class="image-box">
+						  		    <img alt="" src="images/speakers-1.jpg">
+						      </div><!-- /.image-box -->
+				      </div><!-- /.image -->
+
+				      <div class="col-sm-7">
+						      <p class="name">Dave Cheney</p>
+						      <p class="company"><a href="https://twitter.com/davecheney">@davecheney</a></p>
+						      <p class="about-speaker" style="margin-top: 20px">Dave is an Australian speaker, blogger, and open source author. He co-organises the Sydney Go Users group and has been an active contributor to the Go project since February 2012. </p>
+				      </div><!-- /.span7 -->
+
+		      </div>
+		    </div>
     </div>
   </section>
 
@@ -150,7 +196,7 @@
     <div class="container content-section">
       <h2>Supporters</h2>
       <div class="row">
-        <div class="support-bg">
+        <div class="support-bg clearfix">
           <div class="col-md-4">
             <p class="source-logo"><a href="http://sourcegraph.com/" target="_blank">✱ Sourcegraph&nbsp; </a></p>
           </div>
