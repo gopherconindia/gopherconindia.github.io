@@ -1,12 +1,11 @@
 function initialize() {
     var indiaAddress = '<div id="map-content">' +
         '<a target="_blank" href="https://www.google.co.in/maps/place/Qwinix+Technologies+Inc/@12.34856,76.629974,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xeec6084d16e6c367">LET US MEET HERE</a>' +
-        '<p><strong>Qwinix Technologies Pvt. Ltd.</strong></p>' +
-        '<p>#223, Shree Complex KRS Main Road,</p>' +
-        '<p>Metagalli, Mysore – 570016' +
+        '<p><strong>GOPHERCON INDIA 2015</strong></p>' +
+        '<p>Bangalore</p>' +
         '</div>';
 
-    var LocationData = [ [12.34856, 76.629974, indiaAddress ] ];
+    var LocationData = [ [12.9667, 77.5667, indiaAddress ] ];
 
     var mapOptions = { zoom: 14, mapTypeId: google.maps.MapTypeId.ROADMAP, scrollwheel: false, navigationControl: false, mapTypeControl: false, scaleControl: false, draggable: true, styles: [
         {"featureType": "landscape", "stylers": [
