@@ -41,15 +41,11 @@
   color: #fff;
 }
 
-#page-top .navbar-inverse div.first-conf{
-  color: #c1c1c1;
-}
-
 .navbar-inverse .navbar-nav>li>a {
   color: #c1c1c1;
 }
 
 .container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
