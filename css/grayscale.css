@@ -130,6 +130,7 @@ a:focus {
     color: #fff
 }
 
+.nav > li > a {padding: }
 .navbar-inverse .navbar-nav > li > a {
     border: 1px solid transparent;
     border-bottom: none
@@ -475,7 +476,7 @@ body {
     padding: 30px;
     position: absolute;
     background-color: rgba(41, 44, 51, 0.8);
-
+    color: #fff;
 }
 
 .give-talk-img {
