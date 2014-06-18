@@ -14,16 +14,10 @@
 
   <!-- Fonts -->
   <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Dosis:300,400' rel='stylesheet' type='text/css'>
-		<link href='http://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500,600,700' rel='stylesheet' type='text/css'>
 
   <!-- Custom Theme CSS -->
   <link href="css/grayscale.css" rel="stylesheet">
   <link href="css/override-bootstrap-responsive.css" rel="stylesheet">
-
-		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-		<script type="text/javascript" src="js/gMap.js"></script>
 
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-custom">
@@ -31,37 +25,70 @@
     <div class="container">
       <div class="navbar-header page-scroll">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse"> <i class="fa fa-bars"></i> </button>
-        <a class="navbar-brand" href="#page-top"> <span>GOPHERCON INDIA 2015</span> </a>
-        <div class="clear-fix"> </div>
-        <div class="first-conf">The First-Ever Go Conference in India @Bangalore </div>
+        <a class="navbar-brand" href="#page-top"> <span>GOPHERCON INDIA 2015</span> <br/>
+		        <span class="first-conf">The First-Ever Go Conference in India @Bangalore </span>
+        </a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
         <ul class="nav navbar-nav">
-          <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-          <li class="hidden"> <a href="#page-top">About</a> </li>
 
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">About  <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li class="page-scroll"><a href="#about">What is GopherCon India</a></li>
-              <li><a href="code-of-conduct.html">Code of Conduct</a></li>
-              <li><a href="staff-information.html">Staff Information</a></li>
-              <li><a href="go-language-community-in-india.html">Go Language Community in India</a></li>
+		            <li><a href="badges.html">Badges</a></li>
+		            <li><a href="code-of-conduct.html">Code of Conduct</a></li>
+		            <li><a href="faq.html">FAQ</a></li>
+		            <li><a href="staff-information.html">Staff Information</a></li>
+		            <li><a href="blog.html">Blog</a></li>
+		            <li><a href="onsite-conference-details.html">Onsite Conference Details</a></li>
+		            <li><a href="go-language-community-in-india.html">Go Language Community in India</a></li>
+		            <li class="page-scroll"><a href="#contact">Contact</a></li>
             </ul>
           </li>
-
+		        <li class="page-scroll">
+				        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Events <b class="caret"></b></a>
+				        <ul class="dropdown-menu">
+						        <li><a href="pre-conf-meetup.html">Pre-Conf. Meetup</a></li>
+						        <li><a href="#speaker">Speakers</a></li>
+						        <li><a href="talk-schedule.html">Talk Schedule</a></li>
+						      </ul>
+		        </li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Speaking  <b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Speaking <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li><a href="proposal-advice.html">Proposal Advice</a></li>
               <li><a href="proposal-resource.html">Proposal Resources</a></li>
               <li><a href="call-for-proposal.html">Call For Proposals</a></li>
             </ul>
           </li>
-          <li class="page-scroll"> <a href="#sponsor">Sponsors</a> </li>
-          <li class="page-scroll"> <a href="#contact">Contact</a> </li>
+          <li class="page-scroll">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sponsors <b class="caret"></b></a>
+		          <ul class="dropdown-menu">
+				          <li><a href="#sponsor">GopherConIndia Sponsors</a></li>
+				          <li><a href="#sponsor">Sponsorship Prospectus</a></li>
+				          <li><a href="#support">GopherConIndia Supporters</a></li>
+		          </ul>
+          </li>
+		        <li>
+				        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Venue <b class="caret"></b></a>
+				        <ul class="dropdown-menu">
+						        <li><a href="venue.html">Venue</a></li>
+						        <li><a href="hotels.html">Hotels</a></li>
+						        <li><a href="tourist-visa.html">Tourist Visa</a></li>
+						        <li><a href="travelling-to-bangalore.html">Travelling to Bangalore</a></li>
+						        <li><a href="restaurants-and-pubs.html">Restaurants and Pubs</a></li>
+				        </ul>
+		        </li>
+		        <li>
+				        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Register <b class="caret"></b></a>
+				        <ul class="dropdown-menu">
+						        <li><a href="registration-information.html">Registration Info</a></li>
+						        <li><a href="scholarship.html">Scholarship</a></li>
+				        </ul>
+		        </li>
         </ul>
       </div>
       <!-- /.navbar-collapse -->
@@ -124,57 +151,51 @@
     </div>
   </section>
 
-  <!--Venue Section-->
-  <section id="venue" class="venue venue-bg homepage">
-
-		  <div class="map-wrap">
-				  <div id="map-canvas"></div>
-				  <div class="address">
-								<div class="row">
-								  <div class="col-lg-10 col-lg-offset-1">
-										  <h2>Venue</h2>
-										  <p class="home-paragraph">Bangalore is the most sought out cosmopolitan city in India and best known for making people all over the world feel at home.</p>
-										  <p class="home-paragraph"> Bangalore, the Silicon Valley of India is the ideal location for our first Indian conference. With being host to all global software companies for many many years, Bangalore boasts some of the most world-class restaurants and great nightlife to round out your conference downtime.</p>
-										  <p class="home-paragraph">No wonder, its termed as Software and Party Hub of India. What a way to experience this along with Bangalore hosting a Go Conference for the first time in India.</p>
-								  </div>
-								</div>
-				  </div>
-				  <div id="map-inner-shadow"></div>
-		  </div>
-
-  </section>
-
   <!--Speaker Section-->
-  <section id="speaker" class="content-section text-center download-section homepage">
+  <section id="speaker" class="content-section text-center download-section homepage sponsor-section">
     <div class="container">
       <div class="row">
 		      <div class="col-lg-8 col-lg-offset-2">
 		        <h2>Speakers</h2>
-		        <p class="home-paragraph">We're looking for speakers who wish to give a talk at GopherCon India 2015. If you're interested kindly reach us at <a href="mailto:team@gophercon.in">team@gophercon.in </a>.</p>
-		        <p class="home-paragraph">We are accepting all types of talk proposals <b>upto September 30th, 2014.</b></p>
+		        <p class="home-paragraph">We're looking for speakers who wish to give a talk at GopherCon India 2015. If you're interested kindly reach us at <a href="mailto:team@gophercon.in">team@gophercon.in</a></p>
+		        <p class="home-paragraph">We are accepting all types of talk proposals <b>October 31st, 2014.</b></p>
 		        <p> <b>You. Your friends. Your friends' friends. </b> Anyone with any level of Go knowledge is a candidate for a great topic at this conference. We expect to get attendees of all kinds; we need speakers of all kinds. In all ways and manners, we will try to assemble the most diverse conference we can, and we will do that with your help.</p>
 		        <p> Whether you got started with Go last month or you've been around for many years, we think you've got something to share. The Go community is stronger than ever and we're still reaching new areas, new industries, and new users. Be a part of growing Go helping us change the future.</p>
 		        <p> You don't need to be a well traveled professional speaker to get on stage at GopherConIndia. What matters is the topics, the materials, and the drive to present great things to this community.</p>
 		      </div>
       </div>
-		    <div class="speakers-wrapper text-left">
-				    <h2>Invited Speaker</h2>
-				    <div class="row speaker">
-				      <div class="col-sm-2 image center" style="width: 180px">
-						      <div class="image-box">
-						  		    <img alt="" src="images/speakers-1.jpg">
-						      </div><!-- /.image-box -->
-				      </div><!-- /.image -->
-
-				      <div class="col-sm-7">
-						      <p class="name">Dave Cheney</p>
-						      <p class="company"><a href="https://twitter.com/davecheney">@davecheney</a></p>
-						      <p class="about-speaker" style="margin-top: 20px">Dave is an Australian speaker, blogger, and open source author. He co-organises the Sydney Go Users group and has been an active contributor to the Go project since February 2012. </p>
-				      </div><!-- /.span7 -->
-
-		      </div>
-		    </div>
     </div>
+  </section>
+  <section class="content-section text-center download-section homepage">
+		  <div class="container">
+				  <div class="speakers-wrapper text-left">
+						  <h2>Invited Speakers</h2>
+						  <div class="row speaker">
+								  <div class="col-sm-2 image center">
+										  <div class="image-box">
+												  <img alt="" src="images/speakers-1.jpg">
+										  </div><!-- /.image-box -->
+								  </div><!-- /.image -->
+								  <div class="col-sm-8">
+										  <p class="name">Dave Cheney</p>
+										  <p class="company"><a href="https://twitter.com/davecheney">@davecheney</a></p>
+										  <p class="about-speaker">Dave is an Australian speaker, blogger, and open source author. He co-organises the Sydney Go Users group and has been an active contributor to the Go project since February 2011. </p>
+								  </div><!-- /.span7 -->
+						  </div>
+						  <div class="row speaker">
+								  <div class="col-sm-2 image center">
+										  <div class="image-box">
+												  <img alt="" src="images/speakers-2.jpg">
+										  </div><!-- /.image-box -->
+								  </div><!-- /.image -->
+								  <div class="col-sm-8">
+										  <p class="name">William Kennedy</p>
+										  <p class="company"><a href="https://twitter.com/goinggodotnet">@goinggodotnet</a></p>
+										  <p class="about-speaker">William Kennedy is a managing partner at Ardan Studios in Miami, FL, a mobile and web app development company. He is also a co-author of the book Go In Action, the author of the blog GoingGo.Net and the organizer for the Go and MongoDB meetups in Miami. Bill is focused on Go education and through his new venture GoingoGo Training, Bill continues the cause by working with individuals and groups who want to take their Go knowledge and coding skills to the next level.</p>
+								  </div><!-- /.span7 -->
+						  </div>
+				  </div>
+		  </div>
   </section>
 
   <!--Sponsor Section-->
@@ -183,6 +204,7 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2">
           <h2>Sponsors</h2>
+		        <p class="text-cetner"><a href="pdf/gophercon-india-sponsorship-prospectus.pdf" class="btn btn-lg btn-warning">Sponsorship Prospectus</a></p>
           <p class="home-paragraph">We can't put on a great show without some great sponsors. Here is your chance to reach the decision makers and developers from hundreds of top companies. GopherCon India has a capacity of up to 300 attendees and there are sponsorship opportunities to fit any budget. Be part of the first-ever Go conference in India and help us make history.</p>
           <p class="home-paragraph">Interested in sponsoring GopherCon India 2015? Email us for a prospectus.</p>
           <p class="home-paragraph"><a href="mailto:sponsors@gophercon.in">sponsors@gophercon.in </a> </p>
