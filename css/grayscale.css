@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900,400italic);
+@import url(http://fonts.googleapis.com/css?family=Dosis:300,400);
+
 html {
     width: 100%;
     height: 100%;
@@ -57,7 +60,7 @@ p {
 }
 
 a {
-    color: #cbb396;
+    color: #CD853F;
     -webkit-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
@@ -77,19 +80,11 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255, 255, 255, .3);
     font-family: 'Lato', sans-serif;
-    background-color: #e7e7e7;
+    background-color: #292C33;
 }
 
 .navbar .navbar-nav > li > a {
     text-transform: uppercase;
-}
-
-.navbar-brand {
-    font-weight: 500;
-}
-
-.navbar-brand:focus {
-    outline: 0;
 }
 
 .navbar-custom a {
@@ -129,6 +124,8 @@ a:focus {
 .dropdown-menu > li > a {
     color: #fff
 }
+
+.nav > li > a {padding: 10px}
 
 .navbar-inverse .navbar-nav > li > a {
     border: 1px solid transparent;
@@ -176,7 +173,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../images/intro-bg.png) no-repeat bottom center scroll #292c33;
+    background: url(../images/intro-bg.jpg) no-repeat bottom center scroll #292c33;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -475,7 +472,7 @@ body {
     padding: 30px;
     position: absolute;
     background-color: rgba(41, 44, 51, 0.8);
-
+    color: #fff;
 }
 
 .give-talk-img {
@@ -564,9 +561,7 @@ body {
 }
 
 .support-bg {
-    background-color: #ffffff;
     padding: 40px 24px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .support-bg p {
@@ -637,12 +632,20 @@ p.copyright {
 
 .first-conf {
     font-size: 12px;
-    margin-top: 5px;
     text-transform: none;
+    color: #c1c1c1;
 }
 
 .navbar-brand {
-    padding-top: 5px;
+    height: auto;
+    padding: 4px 0 0;
+    font-weight: 500;
+    line-height: 16px;
+
+}
+
+.navbar-brand:focus {
+    outline: 0;
 }
 
 ul.font-size {
@@ -759,4 +762,22 @@ ul.font-size {
 .speakers-wrapper .speaker .about p {
     color: #898989;
     text-align: left
+}
+
+.speakers-wrapper .speaker .about-speaker {
+    margin-top: 20px
+}
+
+.speakers-wrapper .speaker img {
+    height: 118px;
+}
+
+.speakers-wrapper .speaker > div:first-child {
+    width: 150px;
+}
+.staff-image-style {
+    border-radius: 50%;width: 50px;border: 5px solid #d0d0d0;margin: 5px 0px;
+}
+.staff-name-padding {
+    padding-top: 17px;
 }
