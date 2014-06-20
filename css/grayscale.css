@@ -659,7 +659,7 @@ ul.font-size {
 }
 
 .speakers-wrapper h2 {
-    color: rgba(255, 255, 255, 0.4);
+    color: #fff;
     border-bottom: 2px solid rgba(255, 255, 255, 0.4);
     padding: 20px 0 5px;
     margin-bottom: 20px;
