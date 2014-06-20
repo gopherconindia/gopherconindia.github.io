@@ -265,36 +265,36 @@ a:focus {
 
 @-webkit-keyframes pulse {
     0 {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
 
-    50% {
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
+50% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
 
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
+100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
 }
 
 @-moz-keyframes pulse {
     0 {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
 
-    50% {
-        -moz-transform: scale(1.2);
-        transform: scale(1.2);
-    }
+50% {
+    -moz-transform: scale(1.2);
+    transform: scale(1.2);
+}
 
-    100% {
-        -moz-transform: scale(1);
-        transform: scale(1);
-    }
+100% {
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
 }
 
 .download-section {
@@ -454,7 +454,7 @@ body {
 .venue #map-content p {
     margin: 0;
     color: #333;
-. venue
+    . venue
 }
 
 .venue #map-inner-shadow {
@@ -657,7 +657,9 @@ ul.font-size {
 .speakers-wrapper * {
     line-height: 20px
 }
-
+.speaker {
+    min-height: 190px;   
+}
 .speakers-wrapper h2 {
     color: #fff;
     border-bottom: 2px solid rgba(255, 255, 255, 0.4);
@@ -780,4 +782,16 @@ ul.font-size {
 }
 .staff-name-padding {
     padding-top: 17px;
+}
+h2.sponsor-head {
+    font-size: 36px;margin-top: 45px;
+}
+.sponsors-bg {
+    padding: 20px 24px;
+}
+p.sponsor-paragraph {
+    color: #444444;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: justify;
 }
