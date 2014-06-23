@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Welcome to GopherConIndia Blog!"
+date:   2014-06-23 10:24:40
+---
+
+Welcome to the brand new blog of GopherConIndia 2015!

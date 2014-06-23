@@ -3,3 +3,7 @@ title: GopherCon India 2015
 
 google_analytics_tracking_id: UA-50835154-1
 google_analytics_tracking_domain: gophercon.in
+
+exclude: ["Gemfile", "Gemfile.lock", "bin"]
+
+permalink: /blog/:year/:month/:day/:title/
