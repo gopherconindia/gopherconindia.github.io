@@ -7,3 +7,5 @@ google_analytics_tracking_domain: gophercon.in
 exclude: ["Gemfile", "Gemfile.lock", "bin"]
 
 permalink: /blog/:year/:month/:day/:title/
+
+markdown: kramdown
