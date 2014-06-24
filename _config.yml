@@ -9,3 +9,5 @@ exclude: ["Gemfile", "Gemfile.lock", "bin"]
 permalink: /blog/:year/:month/:day/:title/
 
 markdown: kramdown
+
+disqus_shortname: gopherconindia
