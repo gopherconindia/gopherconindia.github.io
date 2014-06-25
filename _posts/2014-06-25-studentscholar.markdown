@@ -19,13 +19,13 @@ As part of GopherConIndia's commitment to encourage students in India to excel i
 Only **you** can make this happen.
 
 **(For individuals and start-up businesses)**
-**Student Sponsor – INR 18,000 or US$ 300 (unlimited slots)**
+**Student Sponsor - INR 18,000 or US$ 300 (unlimited slots)**
 
 Sign up to become a sponsor by paying to -
 "INNOVATION AND TECHNOLOGY TRUST"
-Name of the Bank: – Standard Chartered Bank
-Branch: – M.G.Road, Bangalore
-Bank Account Number: – 45605107867
+Name of the Bank: Standard Chartered Bank
+Branch: M.G.Road, Bangalore
+Bank Account Number: 45605107867
 IFSC Number: SCBL0036074
  
 Email: sponsors@gophercon.in
