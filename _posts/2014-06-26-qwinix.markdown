@@ -6,7 +6,7 @@ tags: [Qwinix Technologies, GopherConIndia, golang]
 
 ![Qwinix Technologies]({{ site.url }}/assets/qwinix-logo-350x200.png) 
 
-Qwinix Technologies – First Gold Sponsor of GopherCon India 2015
+Qwinix Technologies - First Gold Sponsor of GopherCon India 2015
 ================================================================
 
 GopherConIndia welcomes the open-source development team at Qwinix Technologies as the first Gold sponsor of GopherConIndia 2015. As the first Go conference to be held in India, event sponsorship is a great way for leading companies to demonstrate their support for the growing, global Gopher herd.
