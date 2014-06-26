@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Our Supporter: Qwinix Technologies"
+title:  "Our Gold Sponsor: Qwinix Technologies"
 tags: [Qwinix Technologies, GopherConIndia, golang]
 ---
 
