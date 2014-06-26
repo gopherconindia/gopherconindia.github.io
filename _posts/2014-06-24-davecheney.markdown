@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Invited Speaker: Dave Cheney"
+title:  "Speaker: Dave Cheney"
 tags: [Dave Cheney, GopherConIndia, golang]
 ---
 
