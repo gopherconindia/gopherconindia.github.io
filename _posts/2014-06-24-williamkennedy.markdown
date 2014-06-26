@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Invited Speaker: William Kennedy"
+title:  "Speaker: William Kennedy"
 tags: [William Kennedy, GopherConIndia, golang]
 ---
 
