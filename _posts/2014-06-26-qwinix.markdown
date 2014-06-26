@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "Our Supporter: Qwinix Technologies"
+tags: [Qwinix Technologies, GopherConIndia, golang]
+---
+
+![Qwinix Technologies]({{ site.url }}/assets/qwinix-logo-350x200.png) 
+
+Qwinix Technologies - First Gold Sponsor of GopherCon India 2015
+================================================================
+
+GopherConIndia welcomes the open-source development team at Qwinix Technologies as the first Gold sponsor of GopherConIndia 2015. As the first Go conference to be held in India, event sponsorship is a great way for leading companies to demonstrate their support for the growing, global Gopher herd.
+
+Qwinix Technologies has been an advocate of the Go programming language and its potential. Qwinix appreciates its continued adoption by great organizations like Bit.ly, Mozilla and Canonical, as well as the expanding Gopher community with which his team mingles.
+
+"Go is a powerful language that streamlines sophisticated applications," said Puttannaiah. "Our multidisciplinary team has closely followed the Go movement and is looking forward to the knowledge-sharing and networking that make these conferences so valuable to the open-source community."
+
+More from the Qwinix website:
+
+> Qwinix Technologies is a Denver-based application development and IT services provider with offices in Costa Rica, Dubai and India. Collaboration, transparency and agile practices, combined with quality-conscious code and a global delivery model, enable Qwinix to more quickly develop highly-functional applications that deliver reliable business results. From startups to Fortune 500 companies, Qwinix clients appreciate the integration of Agile, Lean and Continuous Delivery that bring their ideas to market faster.
+
+We are excited to have Qwinix Technologies as the first-ever Gold sponsor of the first-ever GopherConIndia 2015! Their software engineers and IT operations professionals regularly use open-source technology like Go to develop hard-working web and mobile applications for companies of all sizes. Sponsoring open-source events like GopherConIndia is a great example of how companies like Qwinix are enhancing the adoption rates and vibrant communities of programming tools like Go.
+
+
