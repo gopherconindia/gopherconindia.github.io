@@ -37,9 +37,9 @@ _Become a sponsor and support the students and community!_
 Student Scholarship Conditions
 ------------------------------
 
-* The student must be studying in a School / College / University in India at the time of the conference (Feb. 2015) and must be less than 28 years of age. He/She must submit a proof that he/she is a student, before the conference begins.
-* Women students will be given a preference to encourage them to excel in computing and technology.
-* He/She will learn the Go programming language and solve an assignment within a given time period. The assignment will go live anytime between 1st Oct. 2014 and 31st Dec. 2014.
+* The student must be studying in a School / College / University in India at the time of the conference (Feb. 2015) and must be less than 28 years of age. They must submit  proof of being student, before the conference begins.
+* Female students will be given a preference to encourage them to excel in computing and technology.
+* They will learn the Go programming language and solve an assignment within a given time period. The assignment will go live anytime between 1st Oct. 2014 and 31st Dec. 2014.
 * A committee will evaluate the student's code and short-list the candidates eligible for this scholarship. 
 * Attend the core day(s) of the main conference i.e. 20, 21 Feb. 2015.
 * The selected scholars will give a brief presentation of about 5 minutes during the lightning talks at the conference.
