@@ -784,8 +784,19 @@ ul.font-size {
     padding-top: 17px;
 }
 h2.sponsor-head {
-    font-size: 36px;margin-top: 45px;
+    font-size: 36px;
+    margin-top: 45px;
+    padding-left: 190px;
+    text-align: left;
 }
+
+h2.supporters-head {
+    margin-left: 16.6667%;
+    width: 66.6667%;
+    text-align: left;
+    padding: 0px 0px 0px 203px;
+}
+
 .sponsors-bg {
     padding: 20px 24px;
 }
