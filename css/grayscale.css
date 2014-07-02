@@ -654,6 +654,10 @@ ul.font-size {
 
 /* Speaker */
 
+.speakers-section {
+    background-color: #666666;
+}
+
 .speakers-wrapper * {
     line-height: 20px
 }
