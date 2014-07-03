@@ -432,7 +432,7 @@ body {
 }
 
 .venue #map-canvas {
-    height: 500px;
+    height: 665px;
     width: 100%
 }
 
@@ -466,7 +466,7 @@ body {
 }
 
 .venue .address {
-    bottom: 0;
+    bottom: 100px;
     left: 10%;
     width: 730px;
     padding: 30px;
@@ -658,7 +658,7 @@ ul.font-size {
     line-height: 20px
 }
 .speaker {
-    min-height: 190px;   
+    min-height: 190px;
 }
 .speakers-wrapper h2 {
     color: #fff;
