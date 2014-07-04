@@ -1,13 +1,13 @@
 function initialize() {
     var indiaAddress = '<div id="map-content">' +
-        '<a target="_blank" href="https://www.google.co.in/maps/place/Qwinix+Technologies+Inc/@12.34856,76.629974,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0xeec6084d16e6c367">LET US MEET HERE</a>' +
         '<p><strong>GOPHERCON INDIA 2015</strong></p>' +
-        '<p>Bangalore</p>' +
+        '<a target="_blank" href="https://www.google.co.in/maps/place/Hotel+Royal+Orchid/@12.957203,77.643958,17z/data=!3m1!4b1!4m2!3m1!1s0x3bae13e8514f3b61:0x3f03ae46d85ca1a6">Hotel Royal Orchid</a>' +
+        'Bangalore' +
         '</div>';
 
-    var LocationData = [ [12.9667, 77.5667, indiaAddress ] ];
+    var LocationData = [ [12.957203, 77.643958, indiaAddress ] ];
 
-    var mapOptions = { zoom: 14, mapTypeId: google.maps.MapTypeId.ROADMAP, scrollwheel: false, navigationControl: false, mapTypeControl: false, scaleControl: false, draggable: true, styles: [
+    var mapOptions = { zoom: 8, mapTypeId: google.maps.MapTypeId.ROADMAP, scrollwheel: false, navigationControl: false, mapTypeControl: false, scaleControl: false, draggable: true, styles: [
         {"featureType": "landscape", "stylers": [
             {"saturation": -100},
             {"lightness": 65},
