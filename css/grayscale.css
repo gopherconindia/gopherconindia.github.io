@@ -653,7 +653,10 @@ ul.font-size {
 }
 
 /* Speaker */
-
+#speaker {
+	background-color: #F0F0F0;
+	color: #000;
+}
 .speakers-wrapper * {
     line-height: 20px
 }
@@ -661,8 +664,8 @@ ul.font-size {
     min-height: 190px;
 }
 .speakers-wrapper h2 {
-    color: #fff;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.4);
+    color: #898989;
+    border-bottom: 2px solid #898989;
     padding: 20px 0 5px;
     margin-bottom: 20px;
     line-height: normal;
@@ -714,7 +717,7 @@ ul.font-size {
 }
 
 .speakers-wrapper .speaker .name {
-    color: #fff;
+    color: #898989;
     font-size: 24px;
     font-weight: normal;
     padding-top: 25px;
