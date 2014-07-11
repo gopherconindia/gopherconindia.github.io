@@ -657,6 +657,15 @@ ul.font-size {
 	background-color: #F0F0F0;
 	color: #000;
 }
+h2.speaker-title{
+	color: #898989;
+}
+
+p.last{
+	border-bottom: 1px dashed #898989;
+	padding-bottom: 20px;
+}
+
 .speakers-wrapper * {
     line-height: 20px
 }
@@ -788,8 +797,9 @@ ul.font-size {
 }
 h2.sponsor-head {
     font-size: 36px;
-    margin-top: 45px;
-    text-align: center;
+    margin-top: 65px;
+	text-align:left;
+	text-indent:12px;
 }
 
 h2.supporters-head {
