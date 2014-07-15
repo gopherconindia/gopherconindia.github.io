@@ -674,6 +674,7 @@ p.last{
 }
 .speaker {
     min-height: 190px;
+	margin-bottom:20px;
 }
 .speakers-wrapper h2 {
     color: #898989;
@@ -724,20 +725,18 @@ p.last{
     border: 0px solid #fff
 }
 
-.speakers-wrapper .speaker p {
-    margin-bottom: 0
-}
-
 .speakers-wrapper .speaker .name {
     color: #898989;
     font-size: 24px;
     font-weight: normal;
-    padding-top: 25px;
-    padding-bottom: 5px
+    padding-top: 6px;
+    padding-bottom: 5px;
+	margin:0px;
 }
 
 .speakers-wrapper .speaker .company {
     color: #898989;
+	margin:0px;
 }
 
 .speakers-wrapper .speaker .talk-title {
