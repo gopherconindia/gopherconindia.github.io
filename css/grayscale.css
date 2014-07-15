@@ -374,6 +374,9 @@ a:focus {
     ul.banner-social-buttons {
         margin-top: 15px;
     }
+    .container > .row > .col-md-8 {
+        padding-top: 10px;
+    }
 }
 
 @media (max-width: 767px) {
