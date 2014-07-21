@@ -818,3 +818,12 @@ p.sponsor-paragraph {
     line-height: 22px;
     text-align: justify;
 }
+
+h4.normal-transform
+{
+	text-transform:none!important;
+	color: #898989;
+font-size: 23px;
+padding-bottom: 24px;
+text-align: center;
+}
