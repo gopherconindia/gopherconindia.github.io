@@ -818,3 +818,8 @@ p.sponsor-paragraph {
     line-height: 22px;
     text-align: justify;
 }
+
+h4.normal-transform
+{
+	text-transform:none!important;
+}
