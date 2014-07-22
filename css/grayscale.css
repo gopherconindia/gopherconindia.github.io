@@ -310,7 +310,7 @@ a:focus {
 }
 
 .content-section {
-    padding: 80px 0px;
+    padding: 80px 0px 40px 0px;
 }
 
 .brand-section {
@@ -823,3 +823,12 @@ h4.normal-transform
 {
 	text-transform:none!important;
 }
+
+.ft-logo{
+	font-size:12px;
+	margin-top:30px;
+	text-align:center;
+}
+
+.ft-logo a{ display:block; width:104px; height:28px; background-image: url('../images/qwinix-footer-logo-grey.png'); background-repeat:no-repeat; margin:0px auto; }
+.ft-logo a:hover{ background-image: url('../images/qwinix-footer-logo-white.png');}
