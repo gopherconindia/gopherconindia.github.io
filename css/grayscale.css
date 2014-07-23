@@ -829,10 +829,9 @@ text-align: center;
 }
 
 .ft-logo{
-	font-size:12px;
-	margin-top:30px;
-	text-align:center;
+	text-align:right;
 }
 
-.ft-logo a{ margin:3px auto; }
+.ft-logo span{ position:relative; top:5px; color:#999; font-size:12px;}
+
 
