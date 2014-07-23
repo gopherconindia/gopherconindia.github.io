@@ -825,11 +825,9 @@ h4.normal-transform
 }
 
 .ft-logo{
-	font-size:12px;
-	margin-top:30px;
-	text-align:center;
+	text-align:right;
 }
 
-.ft-logo span{ margin:3px auto; text-align:center; padding-bottom:4px; display:block; }
-.ft-logo a{ margin:3px auto; }
+.ft-logo span{ position:relative; top:5px; color:#999; font-size:12px;}
+
 
