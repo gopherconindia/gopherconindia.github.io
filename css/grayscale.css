@@ -830,5 +830,6 @@ h4.normal-transform
 	text-align:center;
 }
 
+.ft-logo span{ margin:3px auto; text-align:center; padding-bottom:4px; display:block; }
 .ft-logo a{ margin:3px auto; }
 
