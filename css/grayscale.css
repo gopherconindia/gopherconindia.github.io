@@ -835,4 +835,4 @@ text-align: center;
 }
 
 .ft-logo a{ display:block; width:104px; height:28px; background-image: url('../images/qwinix-footer-logo-grey.png'); background-repeat:no-repeat; margin:0px auto; }
-.ft-logo a:hover{ background-image: url('../images/qwinix-footer-logo-white.png');}
+.ft-logo a:hover{ opacity: .8; }
