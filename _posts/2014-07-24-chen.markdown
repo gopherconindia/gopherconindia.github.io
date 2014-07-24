@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Speaker: Jiahua Chen"
+tags: [Jiahua Chen, GopherConIndia, golang]
+---
+
+![Jiahua Chen]({{ site.url }}/assets/chen.png) 
+
+[Jiahua Chen](https://twitter.com/joe2010xtmf) is a Gopher, web application developer and open source author, who is also the creator of [Go Walker](https://gowalker.org/), [Gopm](https://github.com/gpmgo/gopm), [Gogs](http://gogs.io/) and [Macaron](https://github.com/Unknwon/macaron). He is very active on the GitHub and named himself "coding addict". Besides, he is a video course maker and publisher as a verified teacher at [NetEase Cloud Class](http://study.163.com/u/Obahua) and [UCAI](http://www.ucai.cn/4347.html). His mission is to inspire more people to learn Go in China.
+
+
