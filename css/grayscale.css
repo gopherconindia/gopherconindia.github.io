@@ -310,7 +310,7 @@ a:focus {
 }
 
 .content-section {
-    padding: 80px 0px;
+    padding: 80px 0px 40px 0px;
 }
 
 .brand-section {
@@ -827,3 +827,11 @@ font-size: 23px;
 padding-bottom: 24px;
 text-align: center;
 }
+
+.ft-logo{
+	text-align:right;
+}
+
+.ft-logo span{ position:relative; top:5px; color:#999; font-size:12px;}
+
+
