@@ -564,20 +564,22 @@ body {
 }
 
 .support-bg {
-    padding: 40px 24px;
+    padding: 20px 24px;
 }
 
 .support-bg p {
     margin-bottom: 0;
+	font-size: 14px;
 }
 
-.source-logo, .source-logo a {
-    color: #000 !important;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-weight: 500;
-    line-height: 1.1;
-    font-size: 36px !important;
-    margin: 20px;
+.source-logo{
+   text-align: center;
+height: 80px;
+width: 165px;
+margin: 0px auto;
+}
+.source-logo img,.source-logo a img{
+	max-width:100%;
 }
 
 .inner-page {
