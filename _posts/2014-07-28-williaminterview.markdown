@@ -8,9 +8,9 @@ tags: [William Kennedy, GopherConIndia, golang]
 
 [William Kennedy](https://twitter.com/goinggodotnet) is a managing partner at Ardan Studios in Miami, FL, a mobile and web app development company. He is also a co-author of the book [Go In Action](http://www.goinactionbook.com/), the author of the blog [GoingGo.Net](http://goinggo.net/) and the organizer for the Go and MongoDB meetups in Miami. Bill is focused on Go education and through his new venture [GoingoGo Training](http://www.goinggotraining.net/), Bill continues the cause by working with individuals and groups who want to take their Go knowledge and coding skills to the next level. Here, in this brief interview, the GopherConIndia team talks to William Kennedy.
 
-**Qs**. Why and when did you decide to start working with Go?
+__Qs__. Why and when did you decide to start working with Go?
 
-**William**: I needed to move from Windows to Linux and start building services and backend processes.
+__William__: I needed to move from Windows to Linux and start building services and backend processes.
 
 **Qs**. What are you currently working on?
 
