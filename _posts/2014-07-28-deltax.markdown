@@ -1,0 +1,12 @@
+---
+layout: post
+title:  "Our Supporter: DeltaX"
+tags: [DeltaX, GopherConIndia, golang]
+---
+
+![DeltaX]({{ site.url }}/assets/deltax-big.png) 
+
+[DeltaX](http://www.deltax.com/) is the pioneering cross-channel digital advertising platform. The company helps ad agencies and performance marketers buy, track, attribute, optimize and report media across Search, Social, Display, Mobile and Video ads more efficiently by taking a unified data and automation driven approach. The cloud-based platform leverages big data, user behavior and machine learning algorithms to improve performance across the business funnel of advertisers. Millions of dollars in ad investments are powered each month for brands across verticals such as E-commerce, Travel, Banking, Technology, Education and Gaming.
+
+We're excited to support GopherConIndia because some of our critical low-latency systems are built on Go. The Go community is small, yet growing and as a startup we want to do our bit to encourage and foster this community in India. See you at - GopherConIndia!
+
