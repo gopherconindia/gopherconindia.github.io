@@ -12,7 +12,7 @@ Qs. Why and when did you decide to start working with Go?
 
 _Dave:_ I was first exposed to Go when I saw the [presentation by Rob Pike in 2009](http://youtu.be/rKnDgT73v8s). I was impressed by the language's goals of simplicity and pragmatism which were clear in that first presentation.
 
-I rediscovered Go in 2010 with [this presentation](http://youtu.be/5kj5ApnhPAE) and soon after had an opportunity to use it for a project I was working on at the time. From that point I was hooked, spending as much free time as I could using the language, on the irc channel, contributing to the mailing list and writing about Go on [my blog](http://dave.cheney.net/category/golang).
+I rediscovered Go in 2010 with [this presentation](http://youtu.be/5kj5ApnhPAE) and soon after had an opportunity to use it for a project I was working on at the time. From that point I was hooked, spending as much free time as I could using the language, on the IRC channel, contributing to the mailing list and writing about Go on [my blog](http://dave.cheney.net/category/golang).
 
 I became a contributor in February 2011 and a committer in April 2012. 
 
