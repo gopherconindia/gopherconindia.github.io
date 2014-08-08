@@ -171,7 +171,7 @@ a:focus {
     width: 100%;
     height: auto;
     padding: 100px 0;
-    text-align: center;
+    /*text-align: center;*/
     color: #fff;
     background: url(../images/intro-bg.jpg) no-repeat bottom center scroll #292c33;
     -webkit-background-size: cover;
@@ -348,17 +348,16 @@ a:focus {
 }
 
 .btn-default {
-    border: 1px solid #cbb396;
-    color: #cbb396;
-    background-color: transparent;
+    border: 1px solid #AA947C;
+    color: #FEFEFF;
+    background-color: #AA947C;
+    outline: 0;
 }
 
 .btn-default:hover,
 .btn-default:focus {
-    border: 1px solid #cbb396;
-    outline: 0;
     color: #fff;
-    background-color: #cbb396;
+	background-color: #cbb396;
 }
 
 .btn-huge {
@@ -369,6 +368,14 @@ a:focus {
 .banner-social-buttons {
     margin-top: 0;
 }
+.banner-social-buttons li{
+	padding:0px;
+	margin:0px;
+}
+
+.sticker{
+	text-align:right;
+}
 
 @media (max-width: 1199px) {
     ul.banner-social-buttons {
@@ -377,13 +384,27 @@ a:focus {
     .container > .row > .col-md-8 {
         padding-top: 10px;
     }
+	
+	 ul.banner-social-buttons li{
+		float:left;
+		margin-right:4px;
+	 }
+	
+	.sticker{
+	text-align:center;
+}
 }
 
 @media (max-width: 767px) {
+
+	.sticker{
+	text-align:center;
+}
+
     ul.banner-social-buttons > li {
         display: block;
         margin-bottom: 20px;
-        padding: 0;
+        padding: 0;		
     }
 
     ul.banner-social-buttons > li:last-child {
@@ -416,6 +437,7 @@ body {
 
 .brand-heading {
     color: #cbb396;
+	text-indent:10px;
 }
 
 .brand-heading .dark {
