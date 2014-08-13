@@ -4,9 +4,9 @@ title:  "Our Supporter: O'Reilly Media"
 tags: [O'Reilly Media, GopherConIndia, golang]
 ---
 
-![O'Reilly Media]({{ site.url }}/assets/oreilly.jpg) 
+![O'Reilly Media]({{ site.github_project_name }}/assets/oreilly.jpg)
 
 [O'Reilly Media](http://oreil.ly/GopherConIndia) spreads the knowledge of innovators through its books, online services, magazines, research, and conferences. Since 1978, O'Reilly has been a chronicler and catalyst of leading-edge development, homing in on the technology trends that really matter and galvanizing their adoption by amplifying "faint signals" from the alpha geeks who are creating the future. An active participant in the technology community, the company has a long history of advocacy, meme-making, and evangelism.
 
-We are happy to extend our full support for this exciting event and proud to be honored as supporters for GopherConIndia 2015. Looking forward to this great event and hope it turns out to be a huge success. 
+We are happy to extend our full support for this exciting event and proud to be honored as supporters for GopherConIndia 2015. Looking forward to this great event and hope it turns out to be a huge success.
 

@@ -4,7 +4,7 @@ title:  "Interview: GopherConIndia Speaker William Kennedy"
 tags: [William Kennedy, GopherConIndia, golang]
 ---
 
-![William Kennedy]({{ site.url }}/assets/william.kennedy.jpg) 
+![William Kennedy]({{ site.github_project_name }}/assets/william.kennedy.jpg)
 
 [William Kennedy](https://twitter.com/goinggodotnet) is a managing partner at Ardan Studios in Miami, FL, a mobile and web app development company. He is also a co-author of the book [Go In Action](http://www.goinactionbook.com/), the author of the blog [GoingGo.Net](http://goinggo.net/) and the organizer for the Go and MongoDB meetups in Miami. Bill is focused on Go education and through his new venture [GoingoGo Training](http://www.goinggotraining.net/), Bill continues the cause by working with individuals and groups who want to take their Go knowledge and coding skills to the next level. Here, in this brief interview, the GopherConIndia team talks to William Kennedy.
 
@@ -22,11 +22,11 @@ _William:_ I think the next evolution for Go will be support for building deskto
 
 **Qs**. How should one go about acquiring knowledge and skills in Go? What's the best approach?
 
-_William:_ Find a project to work on and make it happen. Then continually refactor the application as you learn more. Leverage the mailing list and the [Gopher Academy Slack group](https://gophers.slack.com/) to meet other Gophers and get help. [Dave Cheney's blog](http://dave.cheney.net/) and the [GoingGo blog](http://www.goinggo.net/) are also great places to start. 
+_William:_ Find a project to work on and make it happen. Then continually refactor the application as you learn more. Leverage the mailing list and the [Gopher Academy Slack group](https://gophers.slack.com/) to meet other Gophers and get help. [Dave Cheney's blog](http://dave.cheney.net/) and the [GoingGo blog](http://www.goinggo.net/) are also great places to start.
 
 **Qs**. Which areas in Go should a would-be Go programmer concentrate on, in your opinion?
 
-_William:_ This depends on the projects they are working on. 
+_William:_ This depends on the projects they are working on.
 
 **Qs**. How excited are you about GopherConIndia 2015?
 

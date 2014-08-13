@@ -4,7 +4,7 @@ title:  "Interview: GopherConIndia Speaker Dave Cheney"
 tags: [Dave Cheney, GopherConIndia, golang]
 ---
 
-![Dave Cheney]({{ site.url }}/assets/dave.cheney.jpg) 
+![Dave Cheney]({{ site.github_project_name }}/assets/dave.cheney.jpg)
 
 [Dave](https://twitter.com/davecheney) is an Australian speaker, blogger, and open source author. He co-organises the Sydney Go Users group and has been an [active contributor to the Go project](https://www.ohloh.net/p/go/contributors/2037377866637292) since February 2011. Here, in this brief interview, the GopherConIndia team talks to Dave Cheney.
 
@@ -14,17 +14,17 @@ _Dave:_ I was first exposed to Go when I saw the [presentation by Rob Pike in 20
 
 I rediscovered Go in 2010 with [this presentation](http://youtu.be/5kj5ApnhPAE) and soon after had an opportunity to use it for a project I was working on at the time. From that point I was hooked, spending as much free time as I could using the language, on the IRC channel, contributing to the mailing list and writing about Go on [my blog](http://dave.cheney.net/category/golang).
 
-I became a contributor in February 2011 and a committer in April 2012. 
+I became a contributor in February 2011 and a committer in April 2012.
 
 **Qs**. What are you currently working on?
 
-_Dave:_ By day I work on [Juju](https://juju.ubuntu.com/), Canonical's first public Go project. 
+_Dave:_ By day I work on [Juju](https://juju.ubuntu.com/), Canonical's first public Go project.
 
 Work at Canonical tends to align to our six monthly release cycle, and my major contribution for the last cycle, aside from my day to day roles as a Juju programmer, was to get Juju up and running on the [IBM PowerPC platform using gccgo](http://go-talks.appspot.com/github.com/davecheney/gosyd/gccgo.slide#1).
 
-Last year I collaborated with Aram Hăvărneanu to port Go to Solaris, which shipped in April with the 1.3 release. 
+Last year I collaborated with Aram Hăvărneanu to port Go to Solaris, which shipped in April with the 1.3 release.
 
-Outside my day job, my main focus is the port of Go to ARM. In addition, I try to help out by reviewing commits and triaging the bug queue. I also maintain quite a few of the dashboard builders which power Go's [home brew continuous integration system](http://build.golang.org/). 
+Outside my day job, my main focus is the port of Go to ARM. In addition, I try to help out by reviewing commits and triaging the bug queue. I also maintain quite a few of the dashboard builders which power Go's [home brew continuous integration system](http://build.golang.org/).
 
 With Andrew Gerrand, I run the [Sydney Go users meetup group](http://www.meetup.com/golang-syd/), which doesn't meet as frequently as it should due to our travel schedules.
 
@@ -50,9 +50,9 @@ _Dave:_ I am told that people learn in a variety of ways, so I can only relate m
 
 I'm an experiential learner, and tend to show little interest for learning without a specific goal in mind. That said, when I do have a goal, I tend to engross myself in it, and that often leads to many diversions into related fields.
 
-Although I've programmed in many languages throughout my life, I don't consider myself a polyglot, preferring instead to focus on one language at a time. 
+Although I've programmed in many languages throughout my life, I don't consider myself a polyglot, preferring instead to focus on one language at a time.
 
-I think this is the best way to truly understand Go and learn to work within its strengths, and weaknesses, rather than being distracted by the continuous choice of an array of languages. 
+I think this is the best way to truly understand Go and learn to work within its strengths, and weaknesses, rather than being distracted by the continuous choice of an array of languages.
 
 In summary, my advice would be:
 
@@ -68,7 +68,7 @@ This may sound strange as these are one of the headline features of the language
 
 If you were unfortunate enough to use the go.crypto/ssh library before Han-Wen Nienhuys and Jonathan Pittman cleaned up my egregious overuse of channels, you'll know what I mean.
 
-Some concrete advice might be: 
+Some concrete advice might be:
 
 * Understand the power of interfaces, they are one of Go's great gifts, potentially more important than channels or goroutines.
 * If you are coming from another language, be it a dynamic language like Python or Ruby, or a compiled language like Java or C#, leave your OO baggage at the door. Go is an object oriented language, but it is not a class based language and does not support inheritance.
@@ -78,7 +78,7 @@ Some concrete advice might be:
 
 **Qs**. How excited are you about GopherConIndia 2015?
 
-_Dave:_ Over the last few years I've had the opportunity to visit and speak to Gophers in several countries. I've decided to make it my goal to visit each of the Go communities in the Asia Pacific region. 
+_Dave:_ Over the last few years I've had the opportunity to visit and speak to Gophers in several countries. I've decided to make it my goal to visit each of the Go communities in the Asia Pacific region.
 
 I am delighted to be invited to speak at GopherConIndia in 2015.
 
@@ -92,7 +92,7 @@ One way is if you are interested in Go, dabbling with it on the side, or using i
 
 If you have the opportunity to travel, and have the ability to, make the effort to visit the Go community at your destination.
 
-Visiting user groups is a way to demonstrate to people who are considering the language that there exists a wider community of users, supporters, and employers, than are visible inside that room. 
+Visiting user groups is a way to demonstrate to people who are considering the language that there exists a wider community of users, supporters, and employers, than are visible inside that room.
 
 This really is a case where the whole of the Go community is greater than the sum of its constituent parts.
 

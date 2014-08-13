@@ -4,11 +4,11 @@ title:  "Our Supporter: Packt Publishing"
 tags: [Packt Publishing, Packt, GopherConIndia, golang]
 ---
 
-![Packt Publishing]({{ site.url }}/assets/packt_logo.png) 
+![Packt Publishing]({{ site.github_project_name }}/assets/packt_logo.png)
 
 [Packt]( http://bit.ly/PacktGCIn) is one of the most prolific and leading tech book and video publishers in the world and is in the industry since a decade now. The books offered are entirely focused on practicality and offer the readers with practical solutions to ultimately get the job done. They also offer a subscription service of an online digital book library - "PacktLib", with over 2000 published titles.
 
-Packt is constantly trying change and improve the way in which information is being used, shared and experienced. As a part of the Open Source community, Packt aims to help sustain the projects which it publishes books on. Packt has recently published and planned a few titles, especially for Go developers. 
+Packt is constantly trying change and improve the way in which information is being used, shared and experienced. As a part of the Open Source community, Packt aims to help sustain the projects which it publishes books on. Packt has recently published and planned a few titles, especially for Go developers.
 
-We are happy to extend our full support for this exciting event and proud to be honored as supporters for GopherConIndia 2015. Looking forward to this great event and hope it turns out to be a huge success. 
+We are happy to extend our full support for this exciting event and proud to be honored as supporters for GopherConIndia 2015. Looking forward to this great event and hope it turns out to be a huge success.
 
