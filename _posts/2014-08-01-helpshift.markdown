@@ -4,7 +4,7 @@ title:  "Our Media Sponsor: Helpshift"
 tags: [Helpshift, GopherConIndia, golang]
 ---
 
-![Helpshift]({{ site.url }}/assets/logo-600.png) 
+![Helpshift]({{ site.github_project_name }}/assets/logo-600.png)
 
 Helpshift - Media Sponsor of GopherCon India 2015
 -------------------------------------------------

@@ -4,7 +4,7 @@ title:  "Interview: Gold Sponsor Qwinix Technologies"
 tags: [Qwinix Technologies, GopherConIndia, golang]
 ---
 
-![Qwinix Technologies]({{ site.url }}/assets/qwinix-logo-350x200.png) 
+![Qwinix Technologies]({{ site.github_project_name }}/assets/qwinix-logo-350x200.png)
 
 GopherConIndia spoke to Darshan Puttannaiah, Founder and CEO at Qwinix Technologies (GopherConIndia's First Gold Sponsor).
 
@@ -14,7 +14,7 @@ _Darshan:_ We are software services provider, helping our clients bring their id
 
 **Qs**. What are your company's future plans?
 
-_Darshan:_ We have plans of expansion in the US and from a technology side we are looking to drive Go along with open source technology adoption by supporting local community events and talks. 
+_Darshan:_ We have plans of expansion in the US and from a technology side we are looking to drive Go along with open source technology adoption by supporting local community events and talks.
 
 **Qs**. Is Qwinix using Go or planning on using it in the near future?
 
