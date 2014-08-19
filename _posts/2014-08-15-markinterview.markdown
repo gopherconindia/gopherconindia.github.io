@@ -22,7 +22,7 @@ _Mark:_ I can see Go doing what Ruby did about 6 or 7 years ago. Really revoluti
 
 **Qs**. How should one go about acquiring knowledge and skills in Go? What's the best approach?
 
-_Mark:_ I would be lying if I didn't say that I thought MetaCasts.tv is great place for people to start learning Go.
+_Mark:_ I would be lying if I didn't say that I thought MetaCasts.tv is a great place for people to start learning Go.
 
 **Qs**. Which areas in Go should a would-be Go programmer concentrate on, in your opinion?
 
