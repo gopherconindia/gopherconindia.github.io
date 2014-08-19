@@ -12,7 +12,7 @@ You can often find Blake evangelizing about the things he loves around the world
 
 Qs. Why and when did you decide to start working with Go?
 
-_Blake:_ Early on at Heroku, I wished for a language, that would allow me to solve the problems we faced, better than languages like Ruby and Java. My wish came try in 2009 when Go was released. I never looked back.
+_Blake:_ Early on at Heroku, I wished for a language, that would allow me to solve the problems we faced, better than languages like Ruby and Java. My wish came true in 2009 when Go was released. I never looked back.
 
 **Qs**. What are you currently working on?
 
