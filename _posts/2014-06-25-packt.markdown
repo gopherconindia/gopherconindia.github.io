@@ -4,7 +4,7 @@ title:  "Our Supporter: Packt Publishing"
 tags: [Packt Publishing, Packt, GopherConIndia, golang]
 ---
 
-![Packt Publishing]({{ site.github_project_name }}/assets/packt_logo.png)
+![Packt Publishing]({{ site.github_project_name }}/images/supporter/packt-publishing.png)
 
 [Packt]( http://bit.ly/PacktGCIn) is one of the most prolific and leading tech book and video publishers in the world and is in the industry since a decade now. The books offered are entirely focused on practicality and offer the readers with practical solutions to ultimately get the job done. They also offer a subscription service of an online digital book library - "PacktLib", with over 2000 published titles.
 

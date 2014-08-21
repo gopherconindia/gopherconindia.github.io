@@ -4,7 +4,7 @@ title:  "Speakers: Gobot.io Team"
 tags: [Adrian Zankich, Ron Evans, GopherConIndia, golang]
 ---
 
-![Ron Evans]({{ site.github_project_name }}/assets/ron-evans.jpg)
+![Ron Evans]({{ site.github_project_name }}/images/speakers/ron-evans.jpg)
 
 [Ron Evans](https://twitter.com/deadprogram) is a software developer who has been active in the free and open source community for over 20 years. As "Ringleader" of The Hybrid Group, he helps clients solve some of their most difficult technical and business problems. Ron has been a keynote speaker or presenter at conferences such as Maker Faire, GopherCon, GoGaRuCo, RubyConf, FutureRuby, Ignite, L.A. Ruby Conference, Scottish Ruby Conf, and MagmaConf. Ron is an active contributor to many open source projects and created the award-winning KidsRuby, free software to help teach Ruby programming to kids.
 

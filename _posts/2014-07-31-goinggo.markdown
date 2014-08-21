@@ -4,7 +4,7 @@ title:  "Our Supporter: GoingGo Training"
 tags: [GoingGo Training, GopherConIndia, golang]
 ---
 
-![GoingGo Training]({{ site.github_project_name }}/assets/going-go-training.png)
+![GoingGo Training]({{ site.github_project_name }}/images/supporter/going-go-training.png)
 
 GopherCon India is a conference for the growing international community of Go programmers. The challenge to properly educate and train developers is one that [GoingGo Training](http://www.goinggotraining.net/) is taking head on. Even though many developers can quickly start using Go to build applications, there is a learning curve on how to leverage the standard library and language idioms effectively. Applying Go's idioms lead to more robust and natural applications while helping to trim down development timeframes. The focus of GoingGo Training is to teach these idioms in a practical way so developers can be more productive and write better code.
 
