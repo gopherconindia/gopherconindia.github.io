@@ -4,7 +4,7 @@ title:  "Our Supporter: The New Stack"
 tags: [The New Stack, GopherConIndia, golang]
 ---
 
-![The New Stack]({{ site.github_project_name }}/assets/thenewstack.jpg)
+![The New Stack]({{ site.github_project_name }}/images/supporter/thenewstack.png)
 
 [The New Stack](http://thenewstack.io/) is about the services and infrastructures that developers build and the cultural impact that has on the way we work and live. We analyze how the new stack affects enterprise and enterprise startups, the various networks of developer communities, the DevOps movement and the business models that encompass this new world.
 

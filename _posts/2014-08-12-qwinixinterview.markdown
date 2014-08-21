@@ -4,7 +4,7 @@ title:  "Interview: Gold Sponsor Qwinix Technologies"
 tags: [Qwinix Technologies, GopherConIndia, golang]
 ---
 
-![Qwinix Technologies]({{ site.github_project_name }}/assets/qwinix-logo-350x200.png)
+![Qwinix Technologies]({{ site.github_project_name }}/images/sponsors/qwinix-logo-350x200.png)
 
 GopherConIndia spoke to Darshan Puttannaiah, Founder and CEO at Qwinix Technologies (GopherConIndia's First Gold Sponsor).
 

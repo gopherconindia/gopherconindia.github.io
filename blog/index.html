@@ -7,7 +7,7 @@ title: Blog
 
 <ul class="posts">
   {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a> (<a href="{{ site.github_project_name }}{{ post.url }}#disqus_thread">comments</a>)</li>
+    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ site.github_project_name }}{{ post.url }}">{{ post.title }}</a> (<a href="{{ site.github_project_name }}{{ post.url }}#disqus_thread">comments</a>)</li>
   {% endfor %}
 </ul>
 
