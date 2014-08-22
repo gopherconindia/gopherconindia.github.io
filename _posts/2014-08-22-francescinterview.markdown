@@ -6,7 +6,7 @@ tags: [Francesc Campoy Flores, GopherConIndia, golang]
 
 ![Francesc Campoy Flores]({{ site.github_project_name }}/images/speakers/francesc-campoy-flores.png)
 
-[Francesc Campoy Flores](https://twitter.com/francesc) joined the Go team in 2012 as Developer Advocate after several years as a Python and C++ developer. His mission is to make Go useful and fun.
+[Francesc Campoy Flores](https://twitter.com/francesc) joined the Go team in 2012 as a Developer Advocate after several years as a Python and C++ developer. His mission is to make Go useful and fun.
 
 Qs. Why and when did you decide to start working with Go?
 
@@ -18,7 +18,7 @@ _Francesc:_ I'm working on a new version of the Go tour, new talks, and better l
 
 **Qs**. Where do you see Go in the foreseeable future?
 
-_Francesc:_ I see it as a day to day language both in the industry but also, and specially, in schools.
+_Francesc:_ I see it as a day to day language, both in the industry but also, and specially, in schools.
 
 **Qs**. How should one go about acquiring knowledge and skills in Go? What's the best approach?
 
