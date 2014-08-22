@@ -28,6 +28,7 @@ Sign up to become a sponsor by paying to -
 	Name of the Bank: Standard Chartered Bank
 	Branch: M.G.Road, Bangalore
 	Bank Account Number: 45605107867
+	Account Type: Current
 	IFSC Number: SCBL0036074
 
 Email: sponsors@gophercon.in
