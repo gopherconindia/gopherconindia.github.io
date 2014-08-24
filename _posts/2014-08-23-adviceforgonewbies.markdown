@@ -13,7 +13,7 @@ If you are just starting with Go programming, their answers to some of our quest
 
 Qs. *How should one go about learning the Go language? What material (books, eBooks, online tutorials etc.) would you recommend? What best practices are most important for a new Go programmer to learn and understand?*
 
-_Ans_. One should:
+One should:
 
 * read through [the Go standard library](http://golang.org/pkg/) and [Effective Go](http://golang.org/doc/effective_go.html), to learn *idiomatic Go*. *Effective Go* is highly recommended especially if you have a background in another language.
 * do the [Go tour](http://tour.golang.org/#1).
@@ -29,8 +29,6 @@ _Ans_. One should:
 
 Qs. *Anything else you would like to share with Go newbies?*
 
-_Ans_.
-
 * Learning a new programming language can be a frustrating experience for anyone. The Go community is incredibility active and you are not alone. Take advantage of all the documentation, blogs, local Meetups and groups like Slack that exist today. Don't be afraid to ask your questions and get involved.
 * If you are interested in Go, dabbling with it on the side, or using it professionally, consider visiting your local Go meetup if there is one, and consider speaking if that is something you are comfortable with.
 * If you have the opportunity to travel, and have the ability to, make the effort to visit the Go community at your destination.
@@ -42,8 +40,6 @@ _Ans_.
 * Porting libraries from other languages to Go is incredibly educational. It allows you to break apart someone else's code and glue it back together in a way that fits with the Go language.
 
 Qs. *How do you see the market for Go Programmers in the work place? What is the future for Go?*
-
-_Ans_. 
 
 * The market seems desperate for more Go programmers. There's huge demand and the demand will be increasing in the near future.
 * The next evolution for Go will be support for building desktop and mobile applications. Currently [Pietro Gagliardi](https://twitter.com/pgandlabs) is working on a platform native GUI library that will support [desktop application development](https://github.com/andlabs/ui). [Guastavo Niemeyer](https://twitter.com/gniemeyer) is working on a [QML library](https://github.com/go-qml/qml) which can support both desktop and mobile application development. Some other areas are distributed systems, web applications, APIs, almost everywhere.
