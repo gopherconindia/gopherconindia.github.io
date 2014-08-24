@@ -4,9 +4,6 @@ title:  "Advise from Go developers to Go programming newbies"
 tags: [GopherConIndia, golang, Gopher Interviews]
 ---
 
-Advise from Go developers to Go programming newbies
-===================================================
-
 As part of GopherConIndia's commitment to promote Go programming in India, we [interviewed 40 Gophers](http://list.ly/list/Pak-gopher-interviews) (a Gopher stands for the Go project and Go programmers everywhere), to get their views on Go. We would be publishing two interviews per week from August to December 2014.
 
 If you are just starting with Go programming, their answers to some of our questions would be very useful to you. Check these out.
