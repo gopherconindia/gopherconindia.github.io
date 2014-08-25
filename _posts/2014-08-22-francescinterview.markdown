@@ -10,7 +10,7 @@ tags: [Francesc Campoy Flores, GopherConIndia, golang]
 
 Qs. Why and when did you decide to start working with Go?
 
-_Francesc:_ I joined the Go team in August 2013 after many years of C++ and Python development. I saw the opportunity to work with a group of brilliant people in a very interesting project, and I couldn't let it pass.
+_Francesc:_ I joined the Go team in August 2012 after many years of C++ and Python development. I saw the opportunity to work with a group of brilliant people in a very interesting project, and I couldn't let it pass.
 
 **Qs**. What are you currently working on?
 
