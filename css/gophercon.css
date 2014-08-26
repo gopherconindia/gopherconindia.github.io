@@ -858,4 +858,26 @@ text-align: center;
 
 .ft-logo span{ position:relative; top:5px; color:#999; font-size:12px;}
 
+/*** Volunteers ***/
+.volun{
+	text-align:center;
+}
+
+.volun img{
+	border-radius:50%;
+	cursor:pointer;
+}
+
+.volun img:hover{ opacity:0.9;}
+
+.volun .title{
+	font-size:16px;
+	font-weight:bold;
+}
+
+.volun .links a{
+	font-size:32px;
+}
+
+
 
