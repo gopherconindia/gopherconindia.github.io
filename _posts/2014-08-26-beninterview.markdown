@@ -4,7 +4,7 @@ title:  "Interview: Gopher Ben Johnson"
 tags: [Ben Johnson, GopherConIndia, golang]
 ---
 
-![Ben Johnson]({{ site.github_project_name }}/images/speakers/benjohnson.jpg)
+![Ben Johnson]({{ site.github_project_name }}/images/speakers/benbjohnson.jpg)
 
 **Qs**. Welcome and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about your self?
 
