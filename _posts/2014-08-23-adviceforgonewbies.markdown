@@ -24,6 +24,7 @@ One should:
 * find more experienced Gophers that can help review code snippets and give feedback. The Go community is really supportive and helpful.
 * work on a project you have in mind that you want to use Go for or find a project to work on and make it happen. Then continually re-factor the application as you learn more. Leverage the [mailing list](https://groups.google.com/forum/#!forum/golang-nuts) and the [Gopher Academy Slack group](https://gophers.slack.com/) to meet other Gophers and get help. [Dave Cheney's blog](http://dave.cheney.net/) and the [GoingGo blog](http://www.goinggo.net/) are also great places to start.
 * not wait for generic types and functions to be added to the language; stop holding your breath and learn to love the language we have today.
+* follow these [Ten Useful Techniques in Go](http://arslan.io/ten-useful-techniques-in-go).
 
 Qs. *Anything else you would like to share with Go newbies?*
 
@@ -51,7 +52,7 @@ Qs. *How do you see the market for Go Programmers in the work place? What is the
 * Many people at conferences or meetups who are new to the language are exploring it as an option for their company or are trying to convince their company to start using it. Generally those results are positive.
 * It will probably take a while to reach critical mass, but Go is, in many ways, really going places.
 
-The Gophers, so far, who have spent time answering our questions are - [William Kennedy](http://www.gophercon.in/blog/2014/07/28/williaminterview/), [Dave Cheney](http://www.gophercon.in/blog/2014/08/03/daveinterview/), [Jiahua Chen](http://www.gophercon.in/blog/2014/08/10/jiahuainterview/), [Mark Bates](http://www.gophercon.in/blog/2014/08/15/markinterview/), [Blake Mizerany](http://www.gophercon.in/blog/2014/08/19/blakeinterview/), [Francesc Campoy Flores](http://www.gophercon.in/blog/2014/08/22/francescinterview/), [Ben Johnson](http://www.gophercon.in/blog/2014/08/26/beninterview/) and Matthew Holt.
+The Gophers, so far, who have spent time answering our questions are - [William Kennedy](http://www.gophercon.in/blog/2014/07/28/williaminterview/), [Dave Cheney](http://www.gophercon.in/blog/2014/08/03/daveinterview/), [Jiahua Chen](http://www.gophercon.in/blog/2014/08/10/jiahuainterview/), [Mark Bates](http://www.gophercon.in/blog/2014/08/15/markinterview/), [Blake Mizerany](http://www.gophercon.in/blog/2014/08/19/blakeinterview/), [Francesc Campoy Flores](http://www.gophercon.in/blog/2014/08/22/francescinterview/), [Ben Johnson](http://www.gophercon.in/blog/2014/08/26/beninterview/), [Matthew Holt](http://www.gophercon.in/blog/2014/08/29/holtinterview/) and [Fatih Arslan](http://www.gophercon.in/blog/2014/09/02/fatihinterview/).
 
 Thanks and much appreciated!
 
