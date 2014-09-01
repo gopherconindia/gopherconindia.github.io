@@ -16,23 +16,23 @@ Our unique solution is trusted by more than 150 million users and leading mobile
 
 **Qs**. What are your company's future plans?
 
-_BG:_ Mobile is a huge opportunity. We are focusing on fixing Customer Support on Mobile first and then we'll see where we go next. Nevertheless, at our core we are a technology driven company and we'll always be weilding technology to solve hard business problems.
+_BG:_ Mobile is a huge opportunity. We are focusing on fixing Customer Support on Mobile first and then we'll see where we go next. Nevertheless, at our core we are a technology driven company and we'll always be wielding technology to solve hard business problems.
 
 **Qs**. Are you using Go or planning on it?
 
-_BG:_ Helpshift is a polyglot platform. We use different programming languages depending on our needs, skillsets, etc.
+_BG:_ Helpshift is a polyglot platform. We use different programming languages depending on our needs, skill sets, etc.
 
-We have been using Go in production since 2011 or so. We have a couple of microservices written in Go and as we speak we are expanding our usage of Go with a new distributed-systems project that's being written completely in Go.
+We have been using Go in production since 2011 or so. We have a couple of microservices written in Go and as we speak, we are expanding our usage of Go with a new distributed-systems project that's being written completely in Go.
 
 **Qs**. Where do you see Go in the foreseeable future?
 
-_BG:_ The world is distributed, parallel & concurrent. Unfortunately we've gotten used to  programming languages and techniques that assume a single thread of execution. Today the challenges of building robust software are directly related to our ability to build distributed systems.
+_BG:_ The world is distributed, parallel & concurrent. Unfortunately, we've gotten used to  programming languages and techniques that assume a single thread of execution. Today the challenges of building robust software are directly related to our ability to build distributed systems.
 
 These days, programming languages are either fast to develop or fast to execute, and very few actually handle concurrency/parallelism well.
 
 Go sits in a nice niche where we have a clean & powerful language that allows me to build services which perform really well.
 
-Go's development toolchain & documentation is spectacular as well.
+Go's development tool chain & documentation are spectacular as well.
 
 We believe Go has a great future as a systems programming language, we see it sitting right between languages like Ruby & C++ and hence being very broadly applicable.
 
