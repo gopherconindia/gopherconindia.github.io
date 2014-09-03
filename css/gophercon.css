@@ -384,12 +384,12 @@ a:focus {
     .container > .row > .col-md-8 {
         padding-top: 10px;
     }
-	
+
 	 ul.banner-social-buttons li{
 		float:left;
 		margin-right:4px;
 	 }
-	
+
 	.sticker{
 	text-align:center;
 }
@@ -404,7 +404,7 @@ a:focus {
     ul.banner-social-buttons > li {
         display: block;
         margin-bottom: 20px;
-        padding: 0;		
+        padding: 0;
     }
 
     ul.banner-social-buttons > li:last-child {
@@ -877,6 +877,32 @@ text-align: center;
 
 .volun .links a{
 	font-size:32px;
+}
+
+/*** Staff ***/
+.staff{
+    text-align:center;
+}
+
+.staff img{
+    border-radius:50%;
+    cursor:pointer;
+    width: 80px;
+}
+
+.staff img:hover{ opacity:0.9;}
+
+.staff .title{
+    font-size:16px;
+    font-weight:bold;
+}
+
+.staff .links a{
+    font-size:32px;
+}
+
+.staff .twitter a, .staff .phone{
+    font-size:16px;
 }
 
 /********** Talk Schedule  *****************/
