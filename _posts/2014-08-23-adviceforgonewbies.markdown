@@ -12,11 +12,13 @@ Qs. *How should one go about learning the Go language? What material (books, eBo
 
 One should:
 
+* either attend a Go workshop, Go meetup, or find somebody that is willing to pair with you that is already experienced with Go. These are some of the best ways to get a real jump on the language.
 * read through [the Go standard library](http://golang.org/pkg/) and [Effective Go](http://golang.org/doc/effective_go.html), to learn *idiomatic Go*. *Effective Go* is highly recommended especially if you have a background in another language.
 * do the [Go tour](http://tour.golang.org/#1).
 * go through [the language reference](https://golang.org/ref/spec).
 * go through [Go by Example](https://gobyexample.com/) as long as you don't just copy-paste!
 * just stick with writing Go code and you'll be productive in the language in a matter of weeks.
+* concentrate on interfaces and composition. That is the real magic sauce in Go.
 * understand the power of **interfaces**, they are one of Go's great gifts, potentially more important than channels or goroutines. This [article on interfaces](http://mwholt.blogspot.in/2014/08/maximizing-use-of-interfaces-in-go.html) and Andrew Gerrand's [description of interfaces](http://talks.golang.org/2014/go4gophers.slide#5) from his closing keynote at GopherCon 2014 would be helpful.
 * leave your OO baggage at the door, if you are coming from another language, be it a dynamic language like Python or Ruby, or a compiled language like Java or C#. Go is an object oriented language, but it is *not a class based language and does not support inheritance*.
 * realize that by removing inheritance from the Go language, the opportunity to practice the mantra of composition over inheritance is made manifest, and fighting it will only lead to frustration.
@@ -37,6 +39,9 @@ Qs. *Anything else you would like to share with Go newbies?*
 * Fight most urges to introduce dependencies.
 * Simplicity is the most important aspect of Go. Avoid over-engineering and rather than having huge monolithic code bases make simple pieces that play well together.
 * Porting libraries from other languages to Go is incredibly educational. It allows you to break apart someone else's code and glue it back together in a way that fits with the Go language.
+* Learn to use the amazing tools that come with Go, like `go fmt` and `go vet`. They'll help to catch errors before they become problems. And in the case of `go fmt`, having well formatted Go code will help others who are looking at your projects.
+* Find new Go projects using this [Github filter](https://github.com/search?l=go&q=stars%3A%3E1&s=updated&type=Repositories). Look at new projects that interest you and reach out to the authors asking them to suggest small bugs or features that you can work on.
+* Get involved with the community. If there isn't a meetup in your area for Go, CREATE IT! Nobody is looking for you to be a Go expert, just someone who has a passion for it like they do.
 
 Qs. *How do you see the market for Go Programmers in the work place? What is the future for Go?*
 
@@ -51,8 +56,9 @@ Qs. *How do you see the market for Go Programmers in the work place? What is the
 * Go will be a day to day language, both in the industry but also, and specially, in schools.
 * Many people at conferences or meetups who are new to the language are exploring it as an option for their company or are trying to convince their company to start using it. Generally those results are positive.
 * It will probably take a while to reach critical mass, but Go is, in many ways, really going places.
+* The demand for Go developers will continue to rise quickly over the next few years as more and more companies realize that Go is built for developer productivity.
 
-The Gophers, so far, who have spent time answering our questions are - [William Kennedy](http://www.gophercon.in/blog/2014/07/28/williaminterview/), [Dave Cheney](http://www.gophercon.in/blog/2014/08/03/daveinterview/), [Jiahua Chen](http://www.gophercon.in/blog/2014/08/10/jiahuainterview/), [Mark Bates](http://www.gophercon.in/blog/2014/08/15/markinterview/), [Blake Mizerany](http://www.gophercon.in/blog/2014/08/19/blakeinterview/), [Francesc Campoy Flores](http://www.gophercon.in/blog/2014/08/22/francescinterview/), [Ben Johnson](http://www.gophercon.in/blog/2014/08/26/beninterview/), [Matthew Holt](http://www.gophercon.in/blog/2014/08/29/holtinterview/) and [Fatih Arslan](http://www.gophercon.in/blog/2014/09/02/fatihinterview/).
+The Gophers, so far, who have spent time answering our questions are - [William Kennedy](http://www.gophercon.in/blog/2014/07/28/williaminterview/), [Dave Cheney](http://www.gophercon.in/blog/2014/08/03/daveinterview/), [Jiahua Chen](http://www.gophercon.in/blog/2014/08/10/jiahuainterview/), [Mark Bates](http://www.gophercon.in/blog/2014/08/15/markinterview/), [Blake Mizerany](http://www.gophercon.in/blog/2014/08/19/blakeinterview/), [Francesc Campoy Flores](http://www.gophercon.in/blog/2014/08/22/francescinterview/), [Ben Johnson](http://www.gophercon.in/blog/2014/08/26/beninterview/), [Matthew Holt](http://www.gophercon.in/blog/2014/08/29/holtinterview/), [Fatih Arslan](http://www.gophercon.in/blog/2014/09/02/fatihinterview/), [Cory LaNou](http://www.gophercon.in/blog/2014/09/06/coryinterview/) and [Brian Ketelsen](http://www.gophercon.in/blog/2014/09/09/ketelsen/).
 
 Thanks and much appreciated!
 
