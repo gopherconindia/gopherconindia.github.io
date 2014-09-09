@@ -8,7 +8,7 @@ tags: [Adrian Zankich, Ron Evans, GopherConIndia, golang]
 
 [Ron Evans](https://twitter.com/deadprogram) is a software developer who has been active in the free and open source community for over 20 years. As "Ringleader" of The Hybrid Group, he helps clients solve some of their most difficult technical and business problems. Ron has been a keynote speaker or presenter at conferences such as Maker Faire, GopherCon, GoGaRuCo, RubyConf, FutureRuby, Ignite, L.A. Ruby Conference, Scottish Ruby Conf, and MagmaConf. Ron is an active contributor to many open source projects and created the award-winning KidsRuby, free software to help teach Ruby programming to kids.
 
-![Adrian Zankich]({{ site.github_project_name }}/assets/adrian-zankich.jpeg)
+![Adrian Zankich]({{ site.github_project_name }}/images/speakers/adrian-zankich.jpg)
 
 [Adrian Zankich](https://twitter.com/adzankich) is the "Serious Programming Guy" at The Hybrid Group, and the project leader for Gobot. He is well-known to the open source community from speaking at RubyConf, RubyKaigi, MagmaConf, LARubyConf, and other tech conferences. A Los Angeles native, Adrian has worked on Telematics-based web applications and has explored a wide range of technologies. From Go to Ruby to JavaScript, cloud computing, and firmware development, he has integrated many different systems in his client work, as well as his many open source contributions to Gobot, Cylon.js, KidsRuby, and other projects.
 

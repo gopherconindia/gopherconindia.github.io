@@ -1,0 +1,21 @@
+---
+layout: post
+title:  "Speaker: Niket Patel"
+tags: [Niket Patel, GopherConIndia, golang]
+---
+
+![Niket Patel]({{ site.github_project_name }}/images/speakers/niket-patel.jpg)
+
+[Niket Patel](https://twitter.com/nexneo) currently works with a California based education startup. They develop products for schools and he's responsible for product development and key decision of technology stack. He has been responsible for setting up the local office and the development team in India from scratch. Still, a big part of his day is about programming, and programming is his passion, so he's living his dream! He has been developing web based applications for last 9 years and is proud of every single line of code and when he's not, he will refactor it sooner or later.
+
+Technology stack wise they have been using mainly Ruby but since the last couple of years they have starting using Go heavily, in the day to day work and extremely pleased with that choice.
+
+Niket is a speaker at GopherConIndia 2015 and his talk is on the "Joy of single purpose services in Go."
+
+This talk is based on his experience of integrating Go in his company's tech stack. They were primarily a Ruby shop; they have a large application written in Ruby which had some problems in scaling (only in some areas).
+
+Then they started to break the monolithic Ruby app into small single purpose Go services and this worked beautifully for operations, support and customers.
+
+He will discuss where and when Go worked best, how Go was helpful as a spiritual companion to Ruby.
+
+_Please feel free to post here your thoughts/suggestions about his proposed talk._
