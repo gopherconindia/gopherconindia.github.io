@@ -6,21 +6,21 @@ tags: [Fatih Arslan, GopherConIndia, golang]
 
 ![Fatih Arslan]({{ site.github_project_name }}/images/speakers/fatih_arslan_photo.jpg)
 
-Q. Welcome and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about your self?
+Q. Welcome and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about yourself?
 
 _Fatih:_ I'm a software developer working at [Koding](https://koding.com/Home) living in Ankara, Turkey and San Francisco, USA. I love developing software on Unix/Linux, contributing back to open source projects, using Vim and brewing Coffee! I'm the author of [vim-go](https://github.com/fatih/vim-go), currently a vim plugin for Go. I've also created several popular Go packages like structs, set, pool, color and many other which can be seen under my [Github profile](https://github.com/fatih). I like writing and sharing my experiences under my [blog](http://arslan.io/).
 
 Q. Why and when did you decide to start working with Go?
 
-_Fatih:_ It was late 2012. Previously I was dealing with a large legacy embedded C codebase that made me feel sad every day. After switching my job I saw that in the new company coding was heavily in Go. I had previously heard a lot about Go and here I had this opportunity to work immediately with Go. Usually I would have chosen Python but somehow I liked the Go language very much. Go has the best of Python and C and I believe that I have found my dream language. Thanks to Koding I was living and breathing Go code.
+_Fatih:_ It was late 2012. Previously I was dealing with a large legacy embedded C CodeBase that made me feel sad every day. After switching my job I saw that in the new company coding was heavily in Go. I had previously heard a lot about Go and here I had this opportunity to work immediately with Go. Usually I would have chosen Python, but somehow I liked the Go language very much. Go has the best of Python and C and I believe that I have found my dream language. Thanks to Koding I was living and breathing Go code.
 
 Q. What are you currently working on?
 
-_Fatih:_ By day, I work at Koding on various backend systems. We provide a virtual machine to every user and an advanced terminal with it (a real one with root access). All this is done at the backend with Go. The various systems are connected with our internal RPC library, which is user friendly and a very refreshing one. We already have open sourced some of our work and can be found under: [https://github.com/koding](https://github.com/koding). In my free time I'm mostly on #go-nuts and Github. I have several open source projects, which I maintain and discuss with the community about the changes, improvements and new features. The most popular one is vim-go, the defacto vim plugin for Go. My latest addition is the package [structs](https://github.com/fatih/structs) a tool to deal easily with struct types. However I also spend time on various other open source projects.
+_Fatih:_ By day, I work at Koding on various backend systems. We provide a virtual machine to every user and an advanced terminal with it (a real one with root access). All this is done at the backend with Go. The various systems are connected with our internal RPC library, which is user friendly and a very refreshing one. We already have open sourced some of our work and can be found under: [https://github.com/koding](https://github.com/koding). In my free time I'm mostly on #go-nuts and Github. I have several open source projects, which I maintain and discuss with the community about the changes, improvements and new features. The most popular one is vim-go, the defacto vim plugin for Go. My latest addition is the package [structs](https://github.com/fatih/structs) a tool to deal easily with struct types. However, I also spend time on various other open source projects.
 
 Q. How should one go about learning the Go language? What material (books, eBooks, online tutorials etc.) would you recommend?
 
-_Fatih:_ I believe one can learn fast by reading/writing a lot of code. And without writing a single line of code it's not even possible to learn something even if you spend months on reading stuff. Therefore one must read a lot of, and write a lot of Go. For me these three links are sufficient to learn Go:
+_Fatih:_ I believe one can learn fast by reading/writing a lot of code. And without writing a single line of code, it's not even possible to learn something even if you spend months on reading stuff. Therefore, one must read a lot of, and write a lot of Go. For me these three links are sufficient to learn Go:
 
 * [http://tour.golang.org/#1](http://tour.golang.org/#1)
 * [https://gobyexample.com/](https://gobyexample.com/)
@@ -42,7 +42,7 @@ _Fatih:_ It was interfaces at the beginning which was a new thing for me. It's n
 
 Q. What types of applications are currently being developed in Go and what changes do you foresee over the next year or two?
 
-_Fatih:_ Mostly servers, rpc systems, cli apps, db abstractions and many other similar things. It plays nice with deployment processes and is a plus for distributed systems, in my opinion. We can see this with companies like CoreOS or HashiCorp. They are developing completely new (or advanced) solutions to current problems.
+_Fatih:_ Mostly servers, RPC systems, CLI apps, DB abstractions and many other similar things. It plays nice with deployment processes and is a plus for distributed systems, in my opinion. We can see this with companies like CoreOS or HashiCorp. They are developing completely new (or advanced) solutions to current problems.
 
 It's going to replace a lot of backend services with time. I've seen that first hand in Koding where we re-wrote most of the parts from Node.js to Go. This is not going to end, there are still hundreds of thousands of apps lying out there, waiting to be replaced with Go.
 
