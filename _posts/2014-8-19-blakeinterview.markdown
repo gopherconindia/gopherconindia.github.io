@@ -8,15 +8,11 @@ tags: [Blake Mizerany, GopherConIndia, golang]
 
 [Blake Mizerany](https://twitter.com/bmizerany) after starting his career as a developer at a handful of Fortune 500 companies, Blake became one of Heroku's first hires, focusing on research, development, and distributed systems engineering for the next five years. He is the creator of the Ruby framework [Sinatra](http://www.sinatrarb.com/) and co-creator of the distributed data store [Doozer](https://github.com/ha/doozer). Blake is an active member of the Go community, and passionate about ruthlessly simplifying developer experiences.
 
-You can often find Blake evangelizing about the things he loves around the world, riding his bike all over San Francisco, or scaling rock walls. He recently joined the team at [CoreOS](https://twitter.com/coreoslinux).
+You can often find Blake evangelizing about the things he loves around the world, riding his bike all over San Francisco, or scaling rock walls.
 
 Qs. Why and when did you decide to start working with Go?
 
 _Blake:_ Early on at Heroku, I wished for a language, that would allow me to solve the problems we faced, better than languages like Ruby and Java. My wish came true in 2009 when Go was released. I never looked back.
-
-**Qs**. What are you currently working on?
-
-_Blake:_ I'm currently working on [etcd](https://github.com/coreos/etcd) at CoreOS. 
 
 **Qs**. Where do you see Go in the foreseeable future?
 
