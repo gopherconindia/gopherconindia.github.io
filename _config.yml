@@ -14,3 +14,5 @@ markdown: kramdown
 disqus_shortname: gopherconindia
 
 twitter_username: GopherConIndia
+
+encoding: UTF-8
