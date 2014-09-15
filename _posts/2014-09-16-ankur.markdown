@@ -1,0 +1,57 @@
+---
+layout: post
+title:  "Interview: Gopher Ankur Gupta"
+tags: [Ankur Gupta, GopherConIndia, golang]
+---
+
+![Ankur Gupta]({{ site.github_project_name }}/images/speakers/ankur-gupta.jpg)
+
+Qs. Welcome and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about your self?
+
+_Ankur:_ I live in Bengaluru, India with my wife and son. Got hooked to computer programming with dbase III plus in school. Creating Software Products and Tools professionally for last 7-8 years. One of the product named [Think](http://ankurgupta.name/work.html) is written in Go. Currently freelancing and working on a side project.
+
+**Qs**. Why and when did you decide to start working with Go?
+
+_Ankur:_ At my previous employer - [ThinkLABS.in](http://www.thinklabs.in/) we had to create the next version of our flagship product named Think. A visual programming language for young children to program an educational robotic kit named iPitara. This was 2012. 
+
+We choose Go over other programming languages due to:
+
+* Majority of school computer labs in India run a version of Windows OS - XP/2000/Vista/7/8. Go in our test ran of all Windows OS above XP irrespective of the service pack in the OS.
+* Deployment is easy as it's just one executable wrapped into NSIS installer. The excellent `net/http` library offered us a production grade http server and both come as part of standard library. No need for configuration of a separate web server, application server etc post installation.
+* Computers found in school labs are notoriously under powered with low RAM and CPU i.e. 256-512 MB Ram and Pentium III processors. Go programs offered us good run-time performance along with low memory consumption/footprint.
+
+**Qs**. How should one go about learning the Go language? What material (books, eBooks, online tutorials etc.) would you recommend?
+
+_Ankur:_ [Programming in Go: Creating Applications for the 21st Century](http://goo.gl/WFrNn6) by Mark Summerfield is a good well written book for learning Go. Although not recommended to those who have never done computer programming.
+
+**Qs**. What best practices are most important for a new Go programmer to learn and understand?
+
+_Ankur:_ Read [Effective Go](http://golang.org/doc/effective_go.html). Use `gofmt` and `godoc` - analysis (1.3 onwards). Reading code written by good programmers is a quick way to learn, something I have started to practice very recently. 
+
+**Qs**. What are the pros and cons of Go that are being discussed in the development community and what is your opinion on that?
+
+_Ankur:_ Package management, lack of generics, how to structure one's go project. People have a lot of opinion on these issues and more. Go community is rapidly growing and I believe over time the best ideas will get mass adoption and bubble up as the community way of doing things.
+
+**Qs**. Most beginners in Go, would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
+
+_Ankur:_ Github is a good place to search and find OSS written in Go. Look at the code and open issues try fixing them.
+
+**Qs**. What has been your biggest challenge while working with Go?
+
+_Ankur:_ Currently working on a Go codebase that makes heavy use of Go concurrency primitives at scale. Effective debugging of concurrent programs at scale which is not a straight forward pipeline, is certainly a challenge.
+
+**Qs**. What types of applications are currently being developed in Go and what changes do you foresee over the next year or two?
+
+_Ankur:_ Networking, Devops, Telecom, Core technology domain software programmers have good reasons to adopt Go. Those writing multi-threaded/process programs or implementing networking stack/protocol in C++ would realize it's much easier to implement in Go. 
+
+**Qs**. How do you see the market for Go Programmers in the work place? What is the future for Go?
+
+_Ankur:_ Dockers, Juju etc. validate Go as a good choice for system programming. One can already witness inquires for experienced Go Programmers and Trainers in Bengaluru by companies wanting to integrate dockers. Go will find its place for sure with increasing adoption rate. I don't think it would reach the usage levels of Python/Ruby. 
+
+**Qs**. Do you have any other suggestions for our readers?
+
+_Ankur:_ Come to GopherConIndia 2015. :) . The Organizers are working hard to put an excellent show. I am @originalankur on twitter, let us meet. You can reach me at ankur@outlook.com. 
+
+If you are a student in India we are doing Gopher Month in January 2015 wherein we shall visit colleges and hold free workshops teaching Go. If you are a Go Programmer please volunteer and help teach Go. More details up on the [website](http://www.gophercon.in/gopher-month/).
+
+_Thanks Ankur for sharing your views with us. I am confident that your insights would help all the would-be Go programmers. In case you have any queries and/or questions, kindly post your questions here (as comments to this blog post) and Ankur would be glad to answer._
