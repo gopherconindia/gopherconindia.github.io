@@ -4,7 +4,7 @@ title:  "Interview: Gopher Ankur Gupta"
 tags: [Ankur Gupta, GopherConIndia, golang]
 ---
 
-![Ankur Gupta]({{ site.github_project_name }}/images/speakers/ankur.jpg)
+![Ankur Gupta]({{ site.github_project_name }}/images/speakers/ankur-gupta.jpg)
 
 Qs. Welcome and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about your self?
 
