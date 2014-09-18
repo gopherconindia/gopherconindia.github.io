@@ -32,7 +32,7 @@ _Matthew:_ Go is touted for its performance, simplicity, and stability---all rig
 
 I feel most tech controversies are passing fads, so I try to stay aloof. You'll see the typical gripes about generics, dependency management, and frameworks. My response is usually "Go has another way."
 
-**Qs**. Most beginners in Go, would like to contribute their time, skills and expertise to a project, but invariably are unaware of where and how to do so. Could you suggest some?
+**Qs**. Most beginners in Go would like to contribute their time, skills and expertise to a project, but invariably are unaware of where and how to do so. Could you suggest some?
 
 _Matthew:_ Start with small packages. Even if a package seems finished, it probably needs more tests. New packages are frequently announced on [/r/golang](http://www.reddit.com/r/golang/) and [golang-nuts](https://groups.google.com/forum/#!forum/golang-nuts). Watch #golang on Google+ and Twitter. Scour GitHub and [SourceGraph](https://sourcegraph.com/) for code that you feel you could learn from or contribute to. Just make sure to open an issue before spending lots of time on the big changes that may not be in harmony with the author's vision.
 

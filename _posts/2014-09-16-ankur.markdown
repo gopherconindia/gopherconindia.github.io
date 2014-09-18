@@ -32,7 +32,7 @@ _Ankur:_ Read [Effective Go](http://golang.org/doc/effective_go.html). Use `gofm
 
 _Ankur:_ Package management, lack of generics, how to structure one's go project. People have a lot of opinion on these issues and more. Go community is rapidly growing and I believe over time the best ideas will get mass adoption and bubble up as the community way of doing things.
 
-**Qs**. Most beginners in Go, would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
+**Qs**. Most beginners in Go would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
 
 _Ankur:_ Github is a good place to search and find OSS written in Go. Look at the code and open issues try fixing them.
 

@@ -36,7 +36,7 @@ Q. What types of applications are currently being developed in Go and what chang
 
 _Cory:_ I see people trying just about everything. There tends to be a sweet spot for cloud and dev-ops focused projects. I'm hoping to see mobile become a platform that Go can develop for in the future (not just android, but ios as well).
 
-Q. Most beginners in Go, would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
+Q. Most beginners in Go would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
 
 _Cory:_ Give your feedback and contribute to the tour and documentation! As a beginner, you are uniquely qualified to point out where you were confused, or where you felt the documentation simply didn't do a good job of explaining. Shall we talk about date formatting? I spent hours before I figured out that "Mon Jan 2 15:04:05 -0700 MST 2006" was a "magical" date. The documentation has since been updated (but could still be made clearer imo).
 

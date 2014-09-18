@@ -24,9 +24,9 @@ _Richard:_ When any programmer learns a new design pattern or language feature, 
 
 **Qs**. What are the pros and cons of Go that are being discussed in the development community and what is your opinion on that?
 
-_Richard:_ There are the perennial debates of static versus dynamic types and machine code versus bytecode. I think Go's making a lot of people reconsider their religious views on those. I've always liked the safety of a static type system and the confidence it gives me. Programs written in languages that compile to machine code are wonderfully easy to package and deploy so for that I love Go and especially how static and dependency-free the resulting binaries are. Then there are the ever-present feature debates about generics, exceptions, and so on. I things the way they are though I wouldn't ignore a generics-like feature that enabled type assertion-free containers.
+_Richard:_ There are the perennial debates of static versus dynamic types and machine code versus bytecode. I think Go's making a lot of people reconsider their religious views on those. I've always liked the safety of a static type system and the confidence it gives me. Programs written in languages that compile to machine code are wonderfully easy to package and deploy so for that I love Go and especially how static and dependency-free the resulting binaries are. Then there are the ever-present feature debates about generics, exceptions, and so on. I like things the way they are, though I wouldn't ignore a generics-like feature that enabled type assertion-free containers.
 
-**Qs**. Most beginners in Go, would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
+**Qs**. Most beginners in Go would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
 
 _Richard:_ I would encourage beginners to find a way to use Go for real work. That will guide them towards the projects and tools they need and continue Go's rise towards being one of the dominant languages. Contributing to projects that are in active production use makes life better for everyone.
 

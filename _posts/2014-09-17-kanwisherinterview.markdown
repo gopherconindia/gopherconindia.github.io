@@ -28,7 +28,7 @@ _Matthew:_ Pros: Easy to learn. Clean language and good base standard library fo
 
 Cons: Community still small, however this can be good if you want to make a name for your self. Garbage collector still needs work.
 
-**Qs**. Most beginners in Go, would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
+**Qs**. Most beginners in Go would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
 
 _Matthew:_ Yeah I think the best way to start out is to make Go bindings or clients for existing servers. Like making simple wrappers for useful c libraries on unix is a quick way to get people interested in your project. Once you get a bit more experienced, try writing a protocol wrapper for something like memcache or redis, or hopefully a protocol that hasn't been covered by Go yet.
 
