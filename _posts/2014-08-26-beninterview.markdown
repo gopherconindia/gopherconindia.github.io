@@ -26,7 +26,7 @@ _Ben:_ Don't write Go in the style of another language. I originally tried to wr
 
 _Ben:_ I don't find the pro/con discussions very useful. Everyone's pro/con list is going to be different depending on their goals. Some people want to be expressive or minimize lines of code or have complex type systems. Go isn't for those people. I value simplicity, stability, and ease of debugging so Go fits perfectly for me. It's all a matter of taste.
 
-**Qs**. Most beginners in Go, would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
+**Qs**. Most beginners in Go would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
 
 _Ben:_ I like keeping project scope to a bare minimum so I don't suggest developers seek out existing projects to contribute to. I find that porting libraries from other languages to Go is incredibly educational. It allows you to break apart someone else's code and glue it back together in a way that fits with the Go language. For example, I ported LMDB to what became Bolt and learned about database internals in the process.
 

@@ -34,7 +34,7 @@ Learn about stack versus heap, and recognize that Go treats the stack differentl
 
 _Baron:_ One of the areas where I found a lot of debate was in package versioning. The language and tools themselves don't enforce versions of imported packages. The two ways to deal with that are vendoring dependencies into your source code, and some kind of manifest file for managing non-vendored dependencies. I recognized early on from my open source experience that the debate over which is best would not be resolved, so VividCortex built and released [github.com/VividCortex/johnny-deps](https://github.com/VividCortex/johnny-deps). My opinion on things like that is that it's best to participate in debates and discussions when you have something truly important and unique to contribute; otherwise just focus on getting things done.
 
-**Qs**. Most beginners in Go, would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
+**Qs**. Most beginners in Go would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
 
 _Baron:_ VividCortex and a few others have worked hard on a tutorial website for Go's database/sql interface. It's at [go-database-sql.org](http://go-database-sql.org/) and we always appreciate contributions!
 
