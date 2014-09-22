@@ -35,7 +35,7 @@ _Not everything is an object_ - In Ruby, everything has to be an object so I fou
 
 **Qs**. Most beginners in Go would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
 
-_Gehard:_ A great place to get your start is the [Exercism.io CLI tool](https://github.com/exercism/cli). The codebase is small so you can easily wrap your head around the whole thing.
+_Gehard:_ A great place to get your started is the [Exercism.io CLI tool](https://github.com/exercism/cli). The codebase is small so you can easily wrap your head around the whole thing.
 
 I am always partial to the [Cloud Foundry codebase](https://github.com/cloudfoundry). The team is solving some hard systems engineering problems and the code allows you to see Go in its element. The downside is that the system as a whole is huge so getting your head around the whole thing can be hard.
 
