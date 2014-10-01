@@ -24,7 +24,7 @@ I, after making the rookie mistake of judging a language after 10 mins, picked u
 
 **Qs**. How should one go about learning the Go language? What material (books, eBooks, online tutorials etc.) would you recommend?
 
-_Kelsey:_ My first attempt to learn Go was reading everything on golang.org, but I was not every successful. I really wanted something a little more gentle and focused on the basics. Coming from a Python and Ruby background I had limited experience programing in a statically typed language. So I picked up "[An Introduction to Programming in Go](http://www.golang-book.com/)" by Caleb Doxsey, and in a few short days I was ready to absorb the content found on golang.org.
+_Kelsey:_ My first attempt to learn Go was reading everything on golang.org, but I was not very successful. I really wanted something a little more gentle and focused on the basics. Coming from a Python and Ruby background I had limited experience programing in a statically typed language. So I picked up "[An Introduction to Programming in Go](http://www.golang-book.com/)" by Caleb Doxsey, and in a few short days I was ready to absorb the content found on golang.org.
 
 While I consider the official Go documentation an excellent resource for learning the language things did not really click for me until I started writing Go to solve real problems.
 
