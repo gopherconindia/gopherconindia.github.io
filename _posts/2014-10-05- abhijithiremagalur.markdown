@@ -4,7 +4,7 @@ title:  "Interview: Gopher Abhijit Hiremagalur"
 tags: [Abhijit Hiremagalur, GopherConIndia, golang]
 ---
 
-![Abhijit Hiremagalur]({{ site.github_project_name }}/images/speakers/abhijit-hiremagalur.jpg)
+![Abhijit Hiremagalur]({{ site.github_project_name }}/images/speakers/abhijit_hiremagalur.jpg)
 
 Qs. Welcome and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about your self?
 
