@@ -1,0 +1,61 @@
+---
+layout: post
+title:  "Interview: Gopher Damian Gryski"
+tags: [Damian Gryski, GopherConIndia, golang]
+---
+
+![Damian Gryski]({{ site.github_project_name }}/images/speakers/damian-gryski.jpg)
+
+Qs. Welcome and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about your-self?
+
+_Damian:_ I am a senior developer at Booking.com, working on infrastructure and scalability. We're almost entirely a Perl shop, but have started to experiment with Go in a few small places.
+
+My claim to fame in the Go community is probably keeping the [Go subreddit](http://reddit.com/r/golang) filled with content. I also wrote and maintain [http://gophervids.appspot.com/](http://gophervids.appspot.com/), a collection of categorized Go videos.
+
+I have a fairly active [github account](https://github.com/dgryski) with a number of Go repositories.
+
+**Qs**. Why and when did you decide to start working with Go?
+
+_Damian:_ I had looked at it when it was first announced, but lost track of it. Some co-workers came back from OSCON '11 with lots of swag, including a vinyl gopher. I grabbed one of the extra gophers and decided to take a more serious look. For my personal projects, I had been flipping back and forth between Python and C, neither of which exactly matched with what I wanted. Go fit nearly perfectly.
+
+**Qs**. How should one go about learning the Go language? What material (books, eBooks, online tutorials etc.) would you recommend?
+
+_Damian:_ I usually send people to [http://dave.cheney.net/resources-for-new-go-programmers](http://dave.cheney.net/resources-for-new-go-programmers), since it links to lots of good introductory material. For individual resources, the Go Tour and Effective Go should be everybody's first stops. After that, watching some of Andrew Gerrand's presentations will give a good grounding in how to "think" in Go.
+
+I guess I can plug [http://gophervids.appspot.com/](http://gophervids.appspot.com/) again here too.
+
+**Qs**. What best practices are most important for a new Go programmer to learn and understand?
+
+_Damian:_ `gofmt` your code. Don't get carried away with concurrency. Make your code go-gettable and play within the existing Go ecosystem (which means don't use relative package names, etc.) Interfaces can simplify your code, both by reducing duplication and making testing easier.
+
+Every new Go developer should read [http://talks.golang.org/2012/splash.article](http://talks.golang.org/2012/splash.article). It's important to understand where the language is coming from, so you can work within that philosophy, rather than fight it.
+
+**Qs**. What are the pros and cons of Go that are being discussed in the development community and what is your opinion on that?
+
+_Damian:_ The main complaints I see are about generics and the garbage collector.
+
+I agree to some extent with the desire for generics. However, I also agree with the decision to not include them in the first pass of the language. I've written a lot of code, and there were only a few places where I wish I had something like generics.
+
+As for the garbage collector, again only a few times I've needed to actually reduce allocations because the GC was being a bottleneck. Most of the complaints I've seen are from people doing games or more recently high frequency trading. The vast majority of programmers should ignore the garbage collector until profiling shows otherwise.
+
+**Qs**. Most beginners in Go would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
+
+_Damian:_ Look at  the libraries you use in the languages you're familiar with and help out with the equivalents (if appropriate) for Go. Some may not exist, in which case you get to start from scratch. If they do exist, submit some patches.
+
+**Qs**. What has been your biggest challenge while working with Go?
+
+_Damian:_ Lack of libraries. It's getting better, but there's still a long way to go before we catch up with Perl's CPAN or Python's PyPI.
+
+**Qs**. What types of applications are currently being developed in Go and what changes do you foresee over the next year or two?
+
+_Damian:_ I think [Derek Collison's prediction](https://twitter.com/derekcollison/status/245522124666716160) was fairly accurate -- Go really is taking off in the infrastructure space. I can also see it growing more for 'regular' MVC-style apps, judging by the traffic I see on IRC, Twitter, StackOverflow, and the mailing list.
+
+**Qs**. How do you see the market for Go Programmers in the work place? What is the future for Go?
+
+_Damian:_ As an infrastructure developer, I see the market growing as more and more companies find themselves needing to write internal systems where Python/Perl/Ruby are too slow and C/C++/Java are too obnoxious. Basically, what Go was designed to do. However, knowing when to break with corporate tradition and make the leap to a new technology can be tricky, especially in large companies when other technologies have a proven track record and lots of existing support.
+
+**Qs**. Do you have any other suggestions for our readers?
+
+_Damian:_ Remember that Go is not a one-size-fits-all language. There are other languages out there with different strengths. If you're advocating Go at your current workplace, make sure you're doing so for the right reasons, and you've considered the cost of introducing a new technology into your stack.
+
+_Thanks Damian for sharing your views with us. I am confident that your insights would help all the would-be Go programmers. In case you have any queries and/or questions, kindly post your questions here (as comments to this blog post) and Damian would be glad to answer._
