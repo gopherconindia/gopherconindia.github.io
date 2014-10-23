@@ -1,0 +1,65 @@
+---
+layout: post
+title:  "Interview: Gopher Eleanor McHugh"
+tags: [Eleanor McHugh, GopherConIndia, golang]
+---
+
+![Eleanor McHugh]({{ site.github_project_name }}/images/speakers/eleanor-mcHugh.jpg)
+
+Qs. Welcome and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about your-self?
+
+_Eleanor:_ I'm in my mid-40s and live in London, England. I started coding in my pre-teens and have been hacking Go for fun since it was open-sourced in 2009. I've done serious commercial work in avionics, satellite comms, control networks, DNS and am currently a security consultant. In my spare time I'm writing "A Go Developer's Notebook", an eBook based on my adventures in Go.
+
+**Qs**. Why and when did you decide to start working with Go?
+
+_Eleanor:_ I got into Go through pure chance. Back in 2009 I did a series of conference talks on Unix system programming in Ruby which left me looking for another language to work in as light relief, and Go just happened to be released the week I started my search. I've a long-standing interest in Virtual Machine design so at the time I had this plan to write a micro-threaded VM for Ruby and Go looked like the ideal choice despite its use. As time's gone on I've found myself having so much fun playing with Go that the VM project's languished though I plan to get back to it someday.
+
+**Qs**. How should one go about learning the Go language? What material (books, eBooks, online tutorials etc.) would you recommend?
+
+_Eleanor:_ When learning new languages I usually grab a few large open-source codebases and play around with them but this wasn't an option when I started looking at Go because the only published code at the time was the runtime source and a couple of slide decks, so instead I set out to write some generic implementations of data structures for the VM I'd decided to write. In hindsight I think this was a really good way to get into the language. I later spent perhaps a year just messing around with the reflection system and I'm glad I had that luxury as it gave me a much better feel for how the type system works, but it's not something I could have contemplated if I'd been cramming for a commercial project. These days thankfully there's a lot of good quality code out there to study and I'd recommend GitHub as the first port of call after the Golang website.
+
+For breaking news there are active Go communities on Google+ and Twitter where you can always find someone willing to help with coding problems or linking to new blog posts and projects, and there's also the mailing-list. And for tutorials there's [http://tour.golang.org/](http://tour.golang.org/#1), [http://golangtutorials.blogspot.co.uk](http://golangtutorials.blogspot.co.uk/), [http://www.golang-book.com](http://www.golang-book.com/) and [http://www.golangbootcamp.com/book/](http://www.golangbootcamp.com/book/) which between them are a very reasonable intro to Go programming. I'm also giving away a free tutorial at [http://leanpub.com/GoNotebook](https://leanpub.com/GoNotebook) which covers the basics of secure network and systems programming in Go.
+
+**Qs**. What best practices are most important for a new Go programmer to learn and understand?
+
+_Eleanor:_ Firstly new Gophers shouldn't get too hung up on static typing. Go is a strongly-typed language so it's possible to build convoluted APIs based on pedantic type distinctions, but the end results will be fragile and ugly - just like in Java or C++. That's not really what Go's about. Because Go gives us interfaces and closures we can write much more elegant, generic APIs with a flavour similar to Ruby or Lisp and this is the direction the language naturally wants us to take. Personally I like to use the empty interface for plumbing and only pin things down to specific interfaces or concrete types where I need to for performance or correctness.
+
+Learning to use closures effectively is also a huge win as they can be used to write very elegant code. I believe this is the main reason Rubyists seem to take so readily to Go as they're already predisposed to think in terms of blocks, and for those without any background in Lisp/Scheme I'd suggest taking a look at a good Ruby book (such as "The Well-Grounded Rubyist" by David Black) or one of the less theoretical introductions to Functional Programming as an easy way to pick up this style of coding, then experiment with applying it in Go.
+
+Another area which newly fledged Gophers should study are the various blog entries on using concurrency. Go puts the emphasis on communication between tasks where many popular languages are concerned with the threads of execution within tasks. Deprogramming the hideous anti-patterns threading encourages can take some effort but it's definitely worth it to be freed from the conceptual tyranny of locks and mutexes.
+
+In terms of best practices though I'd say the number one win is to make testing central to your development cycle. Go has an excellent tool for unit testing and benchmarking and regardless of how you choose to use this you'll find your code greatly improved by doing so. I'm old school and like to sketch out code in some detail before writing tests but I know other Gophers who follow TDD practices and the testing tool works equally well for both approaches. Because the test harness is itself a Go program it's very easy to roll your own test helpers or even a full-fledged testing framework with all the power of closures, direct call-stack access and so forth.
+
+Also take the time to write good benchmarks. These follow a very simple idiom and provide an additional window into code design which is lacking in many testing tools. I love the benchmarking tool so much that I wrote a series of micro-benchmarks ([http://github.com/feyeleanor/GoSpeed](https://github.com/feyeleanor/GoSpeed)) which give some fascinating insights into how different platforms perform and is occasionally helpful when I'm deciding how best to optimise code.
+
+**Qs**. What are the pros and cons of Go that are being discussed in the development community and what is your opinion on that?
+
+_Eleanor:_ To be honest I don't follow these conversations anymore as they're depressing troll-fests. They mostly seemed to comprise an open-minded poster looking for an alternative to whatever language they're currently using which offers intuitive concurrency and/or garbage collection without too much ceremony, followed by an interminable stream of warnings not to touch Go by people who believe their chosen language is clearly superior to this little language upstart. Normally superior means "has more features" backed by some particular esoteric feature (such as parametric polymorphism) which the respondent believes is essential to writing good code.
+
+Go really isn't a language for people who fetishise complexity in this way because its minimal feature count packs a lot of power into an intelligible, concise specification. Closures alone leverage much of the power we associate with Lisp, whilst goroutines and channels make concurrency very easy for even novice programmers to get to grips with. It's also very easy to wrap existing DLLs in other languages using CGO which opens low-level access on both Windows and Unix with very little effort. Then there's the speed with which the standard tools work, in many cases providing productivity equivalent to dynamic languages.
+
+My favourite design choice though - and one which makes most claims about the inadequacy of Go's type system irrelevant - is the combination of the reflect package and the unsafe pseudo-package/compiler mode. Mind you, unsafe should be used very sparingly as it's well-named!
+
+**Qs**. Most beginners in Go would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
+
+_Eleanor:_ Rather than suggest particular projects I recommend checking what's trending on GitHub and other popular collaborative repo sites for projects that look interesting, as well as checking out the announcements on the mailing-list and on Twitter/Google+ etc. There's lots of stuff out there, all of which could use additional contributors. In general Gophers are a friendly bunch and the community's young and politely evangelical so being new is considered a good thing.
+
+**Qs**. What has been your biggest challenge while working with Go?
+
+_Eleanor:_ Learning not to think of it as a "better" C. I mean, at one level that's exactly what it is, but thinking of it that way is very restricting. On a more trivial level I have a couple of idioms I like which the rest of the community is very set against, the most obvious being the use of "import ." rather than fully qualifying every reference to an imported function with the package it's imported from.
+
+**Qs**. What types of applications are currently being developed in Go and what changes do you foresee over the next year or two?
+
+_Eleanor:_ To date most of the large Go applications which have received publicity seem to be focused on PaaS and deployment infrastructure. I think this has a lot to do with the primitive state of graphics support and the ease with which network services can be developed in Go. I've spoken with a few people who've converted some or all of their Rails-based web applications to Go and I think this will be an ongoing trend - especially moving high-demand components to Go as REST interfaces are language agnostic and Go has a very light resource footprint compared to Rails.
+
+I'm also hopeful that with the addition of Objective-C support to CGO that we'll see some decent Cocoa wrappers, which will make full-fledged OSX applications feasible.
+
+**Qs**. How do you see the market for Go Programmers in the work place? What is the future for Go?
+
+_Eleanor:_ The number of Go roles in the UK has increased but it's still very marginal. Mostly where companies are adopting it this seems to either because they've a developer whose already learned the language in their free time, or they decide to train a team in house. As the number of deployed systems increases so will demand but it's not really going to take off until we've a killer framework which intersects with mainstream needs. This is what happened to Ruby back in 2005/6 with Rails so it's really a question of whether Go develops a similarly disruptive framework for developing viable commercial applications. The two obvious contenders are a high-performance web framework or else an Android application framework - assuming Go becomes a first-class language on the Android platform.
+
+**Qs**. Do you have any other suggestions for our readers?
+
+_Eleanor:_ Don't judge Go by what anyone else says. Go is a small, open-source language so you can pick it up and have a play with it for yourself. The language spec takes maybe an afternoon to read, the tools are easy to install, and there are plenty of resources online to help get you started.
+
+_Thanks Eleanor for sharing your views with us. I am confident that your insights would help all the would-be Go programmers. In case you have any queries and/or questions, kindly post your questions here (as comments to this blog post) and Eleanor would be glad to answer._
