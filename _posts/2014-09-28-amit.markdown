@@ -6,7 +6,7 @@ tags: [Amit Upadhyay, GopherConIndia, golang]
 
 ![Amit Upadhyay]({{ site.github_project_name }}/images/speakers/amit-upadhyay.jpg)
 
-[Amit Upadhyay](https://twitter.com/amitu), "amitu", is the VP-Engineering of BrowserStack. Previously Amit has worked with startups in India, US and Chile. An open source enthusiast and evangelist, he is the creator of [importd](http://amitu.com/importd/#1), and a [few other open source projects](https://github.com/amitu).
+[Amit Upadhyay](https://twitter.com/amitu), "amitu", is the VP-Engineering of BrowserStack. Previously Amit has worked with startups in India, US and Chile. An open source enthusiast and evangelist, he is the creator of [importd](https://github.com/amitu/importd), and a [few other open source projects](https://github.com/amitu).
 
 Amit will be talking at GopherConIndia 2015 on "An alternate approach to data."
 
