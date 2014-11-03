@@ -28,10 +28,6 @@ _Mark:_ I would be lying if I didn't say that I thought MetaCasts.tv is a great 
 
 _Mark:_ Depends on their level of experience. Junior developers should always concentrate on learning good solid fundamentals that are independent of the language itself. For everyone else, my biggest advice is to embrace the Go way of writing code. Don't try to force the patterns and techniques from your previous language on it. You'll struggle and fail.
 
-**Qs**. How excited are you about GopherConIndia 2015?
-
-_Mark:_ Very. GophorCon in Denver was just amazing, and I have high hopes that this one will be no less exciting. Plus, I've never been to India before, so there will be a lot to discover and learn.
-
 **Qs**. Do you have any parting words for our readers? Anything you would like to share with them?
 
 _Mark:_ I would just re-iterate my previous point about embracing Go's patterns and the "Go" way of doing things. Your code will thank you for it, and you'll have a lot more fun if you do.
