@@ -22,12 +22,13 @@ Did small Proof of Concept in Go and it worked extremely well. This time I was p
 
 _Niket:_ I'm still learning but I can tell what worked for me so far. I followed "[Learning Go](http://golang.org/doc/)" specifically went through "Effective Go" multiple times, wrote twitter client with command line and web interface. Then watched all screencasts and presentation I could find. If you can't watch them all, I will highly recommend "Go concurrency patterns by Rob Pike", "Concurrency is not parallelism by Rob Pike", "Go: code that grows with grace by Andrew Gerrand", "Advanced Go Concurrency Patterns by Sameer Ajmani"
 
-Most of the Go books are still under progress. Few books I know/own, 
-[http://www.golang-book.com](http://www.golang-book.com/)
-[http://www.golangbootcamp.com](http://www.golangbootcamp.com/)
-[Go in Action](http://www.manning.com/ketelsen/) 
-[Go, The Standard Library](http://thestandardlibrary.com/go.html)
-[The Way to Go](http://www.amazon.com/dp/1469769166)
+Most of the Go books are still under progress. Few books I know/own:
+
+* [http://www.golang-book.com](http://www.golang-book.com/)
+* [http://www.golangbootcamp.com](http://www.golangbootcamp.com/)
+* [Go in Action](http://www.manning.com/ketelsen/) 
+* [Go, The Standard Library](http://thestandardlibrary.com/go.html)
+* [The Way to Go](http://www.amazon.com/dp/1469769166)
 
 **Qs**. What best practices are most important for a new Go programmer to learn and understand?
 
