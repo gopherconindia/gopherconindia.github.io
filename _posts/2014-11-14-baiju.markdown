@@ -1,0 +1,53 @@
+---
+layout: post
+title:  "Interview: Gopher Baiju Muthukadan"
+tags: [Baiju Muthukadan, GopherConIndia, golang]
+---
+
+![Baiju Muthukadan]({{ site.github_project_name }}/images/speakers/baiju.jpg)
+
+**Qs**. Welcome and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about your-self?
+
+_Baiju:_ I work as a technical architect at ZeOmega, Bangalore. I have contributed to many FOSS projects like Zope, Koha, SaltStack etc. I founded the Swathanthra Malayalam Computing project in 2001 while studying at REC, Calicut. I have conducted many Python related talks and workshops in various parts of India. During PyCon India 2013, I received the first Kenneth Gonsalves Award for my contributions to the Python community in India.
+
+These two links has few more info about me:
+
+* [http://muthukadan.net/about.html](http://muthukadan.net/about.html)
+* [http://in.pycon.org/blog/baijum-first-kenneth-gonsalves-award-recipient](http://in.pycon.org/blog/baijum-first-kenneth-gonsalves-award-recipient)
+
+**Qs**. Why and when did you decide to start working with Go?
+_Baiju:_ I am a Python enthusiast and using it professionally for more than 10 years. I got introduced to Go by my colleague, Chris during a conversation with him while he was visiting our Bangalore office in 2013. The simplicity of language surprised me even though it is compiled and statically typed.
+
+**Qs**. How should one go about learning the Go language? What material (books, eBooks, online tutorials etc.) would you recommend?
+
+_Baiju:_ I would suggest the official tour to start with Go: [http://tour.golang.org/](http://tour.golang.org/). [Learning Go](http://miek.nl/downloads/Go/Learning-Go-latest.pdf) by Miek Gieben is a good book.
+
+**Qs**. What are the pros and cons of Go that are being discussed in the development community and what is your opinion on that?
+
+_Baiju:_ Generics is a hot topic always discussed in the Go community. Even though I am coming from a Python background, I did not feel the need for generics in Go.
+
+**Qs**. Most beginners in Go would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
+
+_Baiju:_ There are many trending projects in Github: [https://github.com/trending?l=go&since=monthly](https://github.com/trending?l=go&since=monthly)
+
+Before selecting a project, check the activity of the community. Do the core developers comment on pull requests? Is there any active discussion forum/mailing lists exists? How friendly is the core team? etc.
+
+BTW, I welcome contributions to my pet project: [https://github.com/baijum/pitracker](https://github.com/baijum/pitracker)
+
+**Qs**. What has been your biggest challenge while working with Go?
+
+_Baiju:_ Lack of an interactive prompt was a challenge for me. But this lead me to use `log` package and running my web application using [fresh](https://github.com/pilu/fresh) and now looking forward to write more automated tests.
+
+**Qs**. What types of applications are currently being developed in Go and what changes do you foresee over the next year or two?
+
+_Baiju:_ I can see a lot of projects to support the idea of infrastructure as a code and there are many web applications projects. I think Go is a good replacement for Python, Java, Ruby, PHP etc. But Go is not going to replace C as a system language.
+
+**Qs**. How do you see the market for Go Programmers in the work place? What is the future for Go?
+
+_Baiju:_ As of 2014, Go is not yet been adopted like other mainstream languages. But I am very sure that in a few years there will be more adopters for Go.
+
+**Qs**. Do you have any other suggestions for our readers?
+
+_Baiju:_ If you haven't tried Go yet, spend some time with the official Go tour from your browser. If you are learning Go, organize and participate in Go meetups in your city.
+
+_Thanks Baiju for sharing your views with us. I am confident that your insights would help all the would-be Go programmers. In case you have any queries and/or questions, kindly post your questions here (as comments to this blog post) and Baiju would be glad to answer._
