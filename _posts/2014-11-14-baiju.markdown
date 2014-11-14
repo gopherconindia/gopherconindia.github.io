@@ -16,6 +16,7 @@ These two links has few more info about me:
 * [http://in.pycon.org/blog/baijum-first-kenneth-gonsalves-award-recipient](http://in.pycon.org/blog/baijum-first-kenneth-gonsalves-award-recipient)
 
 **Qs**. Why and when did you decide to start working with Go?
+
 _Baiju:_ I am a Python enthusiast and using it professionally for more than 10 years. I got introduced to Go by my colleague, Chris during a conversation with him while he was visiting our Bangalore office in 2013. The simplicity of language surprised me even though it is compiled and statically typed.
 
 **Qs**. How should one go about learning the Go language? What material (books, eBooks, online tutorials etc.) would you recommend?
