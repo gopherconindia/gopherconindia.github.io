@@ -46,6 +46,6 @@ _Matt:_ I prefer to stay away from predictions, but what I did notice that most 
 
 **Qs**. Do you have any other suggestions for our readers?
 
-_Matt:_ Once you've learned Go and/or made you mind about the language, don't stop learning, don't stop looking at other programming languages. A couple of other languages to keep an eye on: Rust (philosophically very different from Go) and Elixir (Erlang based). Finally, don't forget that programming languages are just tools, the end goal is to build amazing things not to to spend your time admiring or arguing about the tools. Don't ever focus the end goal.
+_Matt:_ Once you've learned Go and/or made you mind about the language, don't stop learning, don't stop looking at other programming languages. A couple of other languages to keep an eye on: Rust (philosophically very different from Go) and Elixir (Erlang based). Finally, don't forget that programming languages are just tools, the end goal is to build amazing things not to to spend your time admiring or arguing about the tools.
 
 _Thanks Matt for sharing your views with us. I am confident that your insights would help all the would-be Go programmers. In case you have any queries and/or questions, kindly post your questions here (as comments to this blog post) and Matt would be glad to answer._
