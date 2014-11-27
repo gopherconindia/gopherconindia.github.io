@@ -8,7 +8,7 @@ tags: [Matt Aimonetti, GopherConIndia, golang]
 
 **Qs**. Welcome and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about your-self?
 
-_Matt:_ Hi, my name is Matt Aimonetti and I'm the C- Founder and CTO of Splice, a startup focusing on helping musicians create, collaborate and distribute their music better. Before Splice, I worked for startups and Fortune 500 such as LivingSocial and Sony PlayStation while being deeply involved in the Ruby Open Source community (Merb, Rails, MacRuby...). I finally started my own venture in 2013 and chose Go as our main backend language.
+_Matt:_ Hi, my name is Matt Aimonetti and I'm the Co-Founder and CTO of [Splice](https://splice.com/), a startup focusing on helping musicians create, collaborate and distribute their music better. Before Splice, I worked for startups and Fortune 500 such as LivingSocial and Sony PlayStation while being deeply involved in the Ruby Open Source community (Merb, Rails, MacRuby...). I finally started my own venture in 2013 and chose Go as our main backend language.
 
 **Qs**. Why and when did you decide to start working with Go?
 
