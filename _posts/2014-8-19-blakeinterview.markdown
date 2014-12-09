@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Interview: GopherConIndia Speaker Blake Mizerany"
+title:  "Interview: Gopher Blake Mizerany"
 tags: [Blake Mizerany, GopherConIndia, golang]
 ---
 
@@ -25,10 +25,6 @@ _Blake:_ [golang.org](http://golang.org/) and the Go stdlib (the standard librar
 **Qs**. Which areas in Go should a would-be Go programmer concentrate on, in your opinion?
 
 _Blake:_ Interfaces, then concurrency.
-
-**Qs**. How excited are you about GopherConIndia 2015?
-
-_Blake:_ Very!
 
 **Qs**. Do you have any parting words for our readers? Anything you would like to share with them?
 
