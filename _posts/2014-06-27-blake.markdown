@@ -10,3 +10,5 @@ tags: [Blake Mizerany, GopherConIndia, golang]
 
 You can often find Blake evangelizing about the things he loves around the world, riding his bike all over San Francisco, or scaling rock walls.
 
+**Note**: Blake will not be able to come to the conference due to some personal commitments.
+
