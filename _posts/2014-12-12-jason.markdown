@@ -1,0 +1,67 @@
+---
+layout: post
+title:  "Interview: Gopher Jason Moiron"
+tags: [Nate Finch, GopherConIndia, golang]
+---
+
+![Jason Moiron]({{ site.github_project_name }}/images/speakers/jason-moiron.jpg)
+
+**Qs**. Welcome and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about your-self?
+
+_Jason:_ I'm a programmer working at [Datadog][1] in New York City. I started using Go around r60 in 2011. I'm an active member of the GolangNY meetup, and I write a lot about Go on [jmoiron.net][2], mostly about performance and SQL, and have written a couple of libraries such as [sqlx][3], [modl][4] and [gorilla/feeds][5].
+
+[1]: http://datadoghq.com
+[2]: http://jmoiron.net
+[3]: http://github.com/jmoiron/sqlx
+[4]: http://github.com/jmoiron/modl
+[5]: http://github.com/gorilla/feeds
+
+**Qs**. How should one go about learning the Go language? What material (books, eBooks, online tutorials etc.) would you recommend?
+
+_Jason:_ As something of a True Believer, I think that to get the best out of Go you have to have some degree of buy-in to the underlying philosophy. These are really exemplified by the official documentation resources, which are brief, comprehensive, and well written.
+
+If you're already a programmer, do the [tour][6], read [how to write go code][7], read [effective go][8], write some go code (perhaps guided by the [codewalks][9] or the [blog][10]), and then read the [spec][11], in that order. Having a such a concise, clearly written spec is a huge luxury.
+
+Go is becoming established enough where people are picking it up as a first language. For them, Caleb's [Introduction to Programming in Go][12] covers a lot of the standard beginning programmer material.
+
+[6]: http://tour.golang.org/#1
+[7]: http://golang.org/doc/code.html
+[8]: http://golang.org/doc/effective_go.html
+[9]: http://golang.org/doc/codewalk/
+[10]: http://blog.golang.org/
+[11]: http://golang.org/ref/spec
+[12]: http://www.golang-book.com/
+
+**Qs**. What best practices are most important for a new Go programmer to learn and understand?
+
+_Jason:_ Leave your own style at the door and attempt to conform to the standards and examples set by the standard library and toolchain. This means using `go fmt` without options, `go build`, `go get`, using the standard testing tools, the standard database and http packages, etc. This may seem like joyless advice, but as with poetry, successfully eschewing the established structures requires experience and skill.
+
+**Qs**. What are the pros and cons of Go that are being discussed in the development community and what is your opinion on that?
+
+_Jason:_ In the wider developer community, I think there's still some suspicion about Go's featureset and its garbage collector. I think these are generally unfounded, except perhaps concerns in the realtime space with the GC.
+
+Within the community, things have started to find some equilibrium. There are lots of Go programmers now with 2 years of experience, something that wasn't true when Go1 was frozen and released. If you want to see how Go code is organized for "real" projects, there are a lot to choose from. There are still some people struggling with versioning, which is more of a community thing (how should we share our code?) than a language issue.
+
+As for actual Go programming, there is an increased awareness of the different ways you can leverage interfaces and how to use Go's excellent built in streaming I/O abstractions.
+
+**Qs**. Most beginners in Go would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
+
+_Jason:_ If you have specialized skill or knowledge in a niche problem domain, for example crypto, then I'd recommend just jumping into any project in that problem space and helping out.
+
+Otherwise, I suggest just writing something on your own. In the process you'll find libraries that you want to use and also contribute to.
+
+**Qs**. What has been your biggest challenge while working with Go?
+
+_Jason:_ The cheeky answer is "having to use other languages."
+
+I struggled early on with how to properly leverage interfaces and composition rather than identity and inheritance as the building blocks of my programs.
+
+**Qs**. What types of applications are currently being developed in Go and what changes do you foresee over the next year or two?
+
+_Jason:_ Distributed systems and a lot of backend stuff. I imagine that it will stay there for a while. Outside of the highly specialized work done at the Facebooks and Google's of the world, things like Docker, Flynn, NSQ, etcd, and most of the Hashicorp stuff are laying groundwork for what the future looks like for the new definition of a "large" distributed system, and quite a lot of it is being done in Go.
+
+**Qs**. How do you see the market for Go Programmers in the work place? What is the future for Go?
+
+_Jason:_ There's been big adoption at companies which have to deal with a lot of data, especially smaller companies who had initially standardized on scripting languages. I can only speak for my market (NYC), but it feels like there are more jobs out there for Go programmers than there are people to fill them.
+
+_Thanks Jason for sharing your views with us. I am confident that your insights would help all the would-be Go programmers. In case you have any queries and/or questions, kindly post your questions here (as comments to this blog post) and Jason would be glad to answer._
