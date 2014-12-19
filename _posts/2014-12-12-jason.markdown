@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Interview: Gopher Jason Moiron"
-tags: [Nate Finch, GopherConIndia, golang]
+tags: [Jason Moiron, GopherConIndia, golang]
 ---
 
 ![Jason Moiron]({{ site.github_project_name }}/images/speakers/jason-moiron.jpg)
