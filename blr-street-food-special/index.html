@@ -1,0 +1,69 @@
+---
+layout: page
+title: Maheima Kapoor's Street Food Guides
+---
+
+
+
+<div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+        <li data-target="#carousel-example-captions" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-captions" data-slide-to="1"></li>
+        <li data-target="#carousel-example-captions" data-slide-to="2"></li>
+     </ol>
+	<div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img src="{{ site.github_project_name }}/images/food/slider1.jpg" alt="BLR street food spl.">
+          <div class="carousel-caption">
+            <h3>BLR Street Food Special</h3>
+          </div>
+        </div>
+		<div class="item">
+          <img src="{{ site.github_project_name }}/images/food/slider1.jpg" alt="BLR street food spl.">
+          <div class="carousel-caption">
+            <h3>BLR Street Food Special</h3>
+          </div>
+        </div>
+        <div class="item">
+          <img src="{{ site.github_project_name }}/images/food/slider1.jpg" alt="BLR street food spl.">
+          <div class="carousel-caption">
+            <h3>BLR Street Food Special</h3>
+          </div>
+        </div>
+	</div>
+</div>
+
+<br clear="all" />
+<div class="row">
+<div class="col-lg-4"><a href="#" class="btn btn-tab btn-tab-active btn-lg btn-block btn-falt" onclick="javascript:return fnShow(this,'indranagar')">Indranagar</a></div>
+<div class="col-lg-4"><a href="#" class="btn btn-tab btn-lg btn-block btn-falt" onclick="javascript:return fnShow(this,'vvpuram')">VV Puram</a></div>
+<div class="col-lg-4"><a href="#" class="btn btn-tab btn-lg btn-block btn-falt" onclick="javascript:return fnShow(this,'koramangala')">Koramangala</a></div>
+</div>
+<br clear="all" />
+<div class="food-body">
+<div id="indranagar">{% include blr-street-food/_indranagar.html %}</div>
+<div id="vvpuram" class="hidden">{% include blr-street-food/_vvpuram.html %}</div>
+<div id="koramangala" class="hidden">{% include blr-street-food/_koramangala.html %}</div>
+</div>
+<style>
+.carousel-caption{ background-color:rgba(0, 0, 0, .4); top:20px; bottom:auto!important; left:0px; right: 0px; padding:0px;}
+.carousel-caption h3{ text-transform:none; letter-spacing:1px; }
+.food-body, .food-body p{ font-size:14px;  }
+ol { padding-left:20px;}
+ol.bullet1 { padding-left:20px; list-style:none; list-style-image:url('{{ site.github_project_name }}/images/food/bullet1.png')}
+ol.bullet2 { padding-left:20px; list-style:none; list-style-image:url('{{ site.github_project_name }}/images/food/bullet2.png')}
+ol.bullet3 { padding-left:20px; list-style:none; list-style-image:url('{{ site.github_project_name }}/images/food/bullet3.png')}
+ol li{ padding-bottom:10px; }
+p.footer{ font-size:12px; }
+.btn-tab{background-color:#e6e6e6;border-bottom:10px solid #292c33;color:#757575;}
+.btn-tab-active, .btn-tab:hover{background-color:#dcdcdc;color:#292c33;border-bottom:10px solid #cd853f;}
+</style>
+<script>
+function fnShow(_obj, _div){
+	$("#indranagar, #vvpuram, #koramangala").addClass("hidden");
+	$("#"+_div).removeClass("hidden");
+	$(_obj).parent().parent().find("a").removeClass("btn-tab-active");
+	$(_obj).addClass("btn-tab-active");
+	return false;
+}
+</script>
