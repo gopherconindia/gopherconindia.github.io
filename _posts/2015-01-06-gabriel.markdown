@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "Interview: Gopher Gabriel Aszalos"
+tags: [Gabriel Aszalos, GopherConIndia, golang]
+---
+
+![Gabriel Aszalos]({{ site.github_project_name }}/images/speakers/gabriel-aszalos.jpg)
+
+**Qs**. Welcome and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about your-self?
+
+_Gabriel:_ Thank you for having me! I've started my passion for programming with languages such as (Q)BASIC and Pascal over a decade and a half ago, being a huge fan of C and the *BSD operating systems. Since then I've transitioned and have been spending a lot of time working with JavaScript frameworks and platforms, and lately, a large amount of Go! Go is amazing and I hope to be using it more and more in the future!
+
+**Qs**. How should one go about learning the Go language? What material (books, eBooks, online tutorials etc.) would you recommend?
+
+_Gabriel:_ I would recommend starting with the [Go tour](http://tour.golang.org/). Francesc and his team have done a great job with it and have spent a lot of effort making it an optimal learning experience. It shouldn't be taken lightly, it has 100 levels (last time I've done it) and will take you some time. You should be up to speed with most aspects of the language by the time you finish it. Another must read is [Effective Go](https://golang.org/doc/effective_go.html) and the blog articles on golang.org. You will also be presented with some additional resources prior to finishing the tour. The natural next step is familiarising yourself with the standard library.
+
+Additionally, I'd recommend starting to read other key people's code, such as the standard library, getting involved in discussion groups such as [Google Groups](https://groups.google.com/forum/#!forum/golang-nuts) or [IRC](http://irc.lc/freenode/go-nuts) and not generally being afraid to ask questions.
+
+**Qs**. What best practices are most important for a new Go programmer to learn and understand?
+
+_Gabriel:_ I think what is most crucial to newcomers and is one of the steps most people omit or overlook, is learning what is considered to be idiomatic in this new community that you are joining. Before jumping in and starting your new projects, read other people's code and try to understand the concepts and conventions that are used in Go, and how the language has been thought out. It is very easy to attempt and reproduce ideologies coming from other languages in Go, but it will eventually lead to frustration and failure. If you want to become a good Go programmer, this is the most crucial step. Every language is different and should be considered with a fresh perspective. The point here is to try and share the same view as the language's creators and its core community.
+
+Another essential thing to becoming a good Go programmer, in my opinion, is striving to avoid the use of third party libraries and/or frameworks, at least while you are learning. Go's standard library has so much to offer and while a framework or library may seem to make things easier in the beginning, it will only complicate them in the long run!
+
+**Qs**. What are the pros and cons of Go that are being discussed in the development community and what is your opinion on that?
+
+_Gabriel:_ Oddly enough I haven't really heard nor noticed any cons about Go! Obviously if I were to build something like a blog, something like Ruby would be more suitable, but I definitely wouldn't consider that a con! (Disclaimer: my first project in Go was a [blog](http://github.com/gbbr/gopherblog)). Some people complain about 'generics' but that only reinforces my point from your last question: when you start learning a new language use a new perspective and don’t attempt to reinforce concepts from other languages because Go is neither of those!
+
+**Qs**. Most beginners in Go would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
+
+_Gabriel:_ I didn't have anyone to collaborate with on Go initially, but I loved the language so much that I just started writing anything with it. GitHub is the best place to do this. Follow the community, join the discussion groups, look out for open-source projects, use the ones you like and never hesitate to contribute or shout-out if you notice improvements you would like to see. In other words, be active and get involved. You are bound to find like-minded people doing so! This shouldn't be hard for anyone!
+
+**Qs**. What has been your biggest challenge while working with Go?
+
+_Gabriel:_ Initially testing, because when I’ve started out there wasn’t much documentation nor lessons on how to do that. It was a topic I was and still am very interested in. I think testing is what makes software architecturally correct, scalable and maintainable.
+
+**Qs**. What types of applications are currently being developed in Go and what changes do you foresee over the next year or two?
+
+_Gabriel:_ I hear a lot of Go is being used for DevOps and cloud computing. I assume this is where Go strives the most and is where it seems to get a lot of attention. Go is also very suitable for any type of messaging or highly concurrent system and I see it growing a lot (and fast) in that area. There is a large variety of types of applications that are developed in Go and I'm amazed every time I find out about another. I've seen desktop applications with GUIs, (soon) mobile apps for Android and iOS, web servers, messaging systems, deployment and configuration platforms, POSIX terminal managers, robotics frameworks, the list is endless...
+
+**Qs**. How do you see the market for Go Programmers in the work place? What is the future for Go?
+
+_Gabriel:_ I think the future of Go is very bright and I for one will gladly put all my chips in the Go corner. I think it will be adopted more and more by companies in the future and to me it seems to be growing at a fast pace. A lot of people have asked me how they can convince their company to use Go. Hearing from others on how they've done it was: don't ask for approval, just use it and show it to them, they're bound to be convinced!
+
+**Qs**. Do you have any other suggestions for our readers?
+
+_Gabriel:_ If you like Go, join the community on Twitter, IRC, Google Groups and ask questions, contribute and give feedback! That’s what helps both you, the language and the ecosystem!
+
+_Thanks Gabriel for sharing your views with us. I am confident that your insights would help all the would-be Go programmers. In case you have any queries and/or questions, kindly post your questions here (as comments to this blog post) and Gabriel would be glad to answer._
