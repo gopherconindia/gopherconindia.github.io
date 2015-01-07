@@ -19,3 +19,14 @@ $(function() {
 	
 	$("a[rel='tooltip']").tooltip();
 });
+
+$(".closeQR").click(function(){
+	if( $(this).find('i').hasClass("fa-angle-right") ){
+		$(this).find('i').removeClass("fa-angle-right").addClass("fa-angle-left");
+		$(".QR").animate({ 'right': '-230px'},'slow');
+	}else if($(this).find('i').hasClass("fa-angle-left")){
+		$(this).find('i').removeClass("fa-angle-left").addClass("fa-angle-right");
+		$(".QR").animate({ 'right': '0px'},'slow');
+	}
+	return false;
+});
