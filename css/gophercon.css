@@ -906,4 +906,6 @@ text-align: center;
     font-size:16px;
 }
 
-/********** Talk Schedule  *****************/
+/********** QR Code  *****************/
+.QR{ position:fixed; top:30%; right:0px; z-index: 50; }
+.closeQR{ background-color:rgba(255,255,255, 0.8); padding:4px; font-size:16px;float:left; }
