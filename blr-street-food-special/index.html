@@ -9,9 +9,15 @@ title: Maheima Kapoor's Street Food Guides
         <li data-target="#carousel-example-captions" data-slide-to="1"></li>
         <li data-target="#carousel-example-captions" data-slide-to="2"></li>
 		<li data-target="#carousel-example-captions" data-slide-to="3"></li>
+		<li data-target="#carousel-example-captions" data-slide-to="4"></li>
      </ol>
 	<div class="carousel-inner" role="listbox">
-        <div class="item active">
+		 <div class="item active">
+			<div id="map_wrapper">
+				<div id="map_canvas" class="mapping"></div>
+			</div>
+        </div>
+        <div class="item">
           <img src="{{ site.github_project_name }}/images/food/slider1.jpg" alt="BLR street food spl.">
           <div class="carousel-caption">
             <h3>BLR Street Food Special</h3>
@@ -125,7 +131,11 @@ p.footer{ font-size:12px; }
   }
 }
 
+#map_wrapper {height: 400px; width:100%; }
+#map_canvas { width: 100%; height: 100%; }
+
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
 function fnShow(_obj, _div){
 	$("#indranagar, #vvpuram, #koramangala").addClass("hidden");
@@ -134,4 +144,81 @@ function fnShow(_obj, _div){
 	$(_obj).addClass("btn-tab-active");
 	return false;
 }
+
+
+    
+        jQuery(function ($) {
+            // Asynchronously Load the map API 
+            var script = document.createElement('script');
+            script.src = "http://maps.googleapis.com/maps/api/js?sensor=false&callback=initialize";
+            document.body.appendChild(script);
+        });
+
+        function initialize() {
+            var map;
+            var bounds = new google.maps.LatLngBounds();
+            var mapOptions = {
+                mapTypeId: 'roadmap'
+            };
+
+            // Display a map on the page
+            map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+            map.setTilt(45);
+
+            // Multiple Markers
+            var markers = [
+                ['Anand Sweets, Bangaluru', 12.959774, 77.645156],
+                ['Chai Point, Bangaluru', 12.960052507793, 77.64496743679],
+                ['Srinidhi Sagar', 12.960460273396, 77.645702362061]
+            ];
+
+            // Info Window Content
+            var infoWindowContent = [
+                ['<div class="info_content">' +
+                            '<h3>Anand Sweets</h3>' +
+                            '<p>Delhi-style Chaat. Wide variety of sweets -each one worth trying if you can afford the calories.</p>' + '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Chai Point</h3>' +
+                            '<p>A small multi-outlet tea joint that serves refreshing teas (hot and cold, with milk / without milk) and Indian snacks – vada pao, samosa and patties.</p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Srinidhi Sagar</h3>' +
+                            '<p>Simply superb South-Indian Tiffin. Good Chaat. Full meals – North-Indian / South-Indian / Chinese. Filter coffee. Lemon tea. Regular Chai.</p>' +
+                            '</div>']
+            ];
+
+            // Display multiple markers on a map
+            var infoWindow = new google.maps.InfoWindow(), marker, i;
+
+            // Loop through our array of markers & place each one on the map  
+            for (i = 0; i < markers.length; i++) {
+                var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+                bounds.extend(position);
+                marker = new google.maps.Marker({
+                    position: position,
+                    map: map,
+                    title: markers[i][0]
+                });
+
+                // Allow each marker to have an info window    
+                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                    return function () {
+                        infoWindow.setContent(infoWindowContent[i][0]);
+                        infoWindow.open(map, marker);
+                    }
+                })(marker, i));
+
+                // Automatically center the map fitting all markers on the screen
+                map.fitBounds(bounds);
+            }
+
+            // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
+            var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function (event) {
+                this.setZoom(18);
+                google.maps.event.removeListener(boundsListener);
+            });
+
+        }
+    
+
 </script>
