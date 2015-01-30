@@ -3,15 +3,21 @@ layout: page
 title: Maheima Kapoor's Street Food Guides
 ---
 
-<div id="carousel-example-captions" class="carousel slide" data-ride="carousel">
+<div id="carousel-example-captions" class="carousel slide" data-ride="carousel" data-pause="hover">
 	<ol class="carousel-indicators">
         <li data-target="#carousel-example-captions" data-slide-to="0" class="active"></li>
         <li data-target="#carousel-example-captions" data-slide-to="1"></li>
         <li data-target="#carousel-example-captions" data-slide-to="2"></li>
 		<li data-target="#carousel-example-captions" data-slide-to="3"></li>
+		<li data-target="#carousel-example-captions" data-slide-to="4"></li>
      </ol>
 	<div class="carousel-inner" role="listbox">
-        <div class="item active">
+		 <div class="item active">
+			<div id="map_wrapper">
+				<div id="map_canvas" class="mapping"></div>
+			</div>
+        </div>
+        <div class="item">
           <img src="{{ site.github_project_name }}/images/food/slider1.jpg" alt="BLR street food spl.">
           <div class="carousel-caption">
             <h3>BLR Street Food Special</h3>
@@ -125,7 +131,11 @@ p.footer{ font-size:12px; }
   }
 }
 
+#map_wrapper {height: 399px; width:100%; }
+#map_canvas { width: 100%; height: 100%; }
+
 </style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
 function fnShow(_obj, _div){
 	$("#indranagar, #vvpuram, #koramangala").addClass("hidden");
@@ -134,4 +144,186 @@ function fnShow(_obj, _div){
 	$(_obj).addClass("btn-tab-active");
 	return false;
 }
+
+
+    
+        jQuery(function ($) {
+            // Asynchronously Load the map API 
+            var script = document.createElement('script');
+            script.src = "http://maps.googleapis.com/maps/api/js?sensor=false&callback=initialize";
+            document.body.appendChild(script);
+        });
+
+        function initialize() {
+            var map;
+            var bounds = new google.maps.LatLngBounds();
+            var mapOptions = {
+                mapTypeId: 'roadmap'
+            };
+
+            // Display a map on the page
+            map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions);
+            map.setTilt(45);
+
+            // Multiple Markers
+            var markers = [
+                ['Anand Sweets, Bangaluru', 12.959774, 77.645156],
+                ['Chai Point, Bangaluru', 12.960052507793, 77.64496743679],
+                ['Srinidhi Sagar', 12.960460273396, 77.645702362061],
+                ['Kolkata Rolls', 12.960062963329, 77.644371986389],
+                ['Sethji – North Indian Home Food', 12.964506526644, 77.64387845993],
+                ['Kitchen of Joy', 12.968725224516, 77.635939121246],
+                ['Tea Brew', 12.97030133678, 77.63584792614],
+                ['Khan Saheb', 12.971370369098, 77.606719136238],
+                ['Om Sai Skanda Dosa Camp', 12.970032117647, 77.631288170815],
+                ['Lassi Point', 12.96993279401, 77.631459832191],
+                ['99 varieties dosa', 12.977706055571, 77.640976309776],
+                ['Spicy Corner', 12.967988133762, 77.652761936188],
+                ['Thunder Fried Chicken', 12.968359293209, 77.65000462532],
+                ['Sharon Tea Stall', 12.973163405657, 77.647000551224],
+                ['Juice Center', 12.968772272788, 77.648845911026],
+                ['Laddoos', 12.968594534825, 77.64984369278],
+                ['Bite Me Cupcakes', 12.970560100525, 77.641496658325],
+                ['Hatti Kaapi', 12.933978301873, 77.616973221302],
+                ['Khawa Karpo', 12.934069143836, 77.616369724274],
+                ['Juice Junction', 12.934110970341, 77.616777420044],
+                ['Soori Chaat', 12.934029931482, 77.616554796696],
+                ['99 Varieties Dosa', 12.93704926472, 77.627441883087],
+                ['Momo Counter', 12.936955156184, 77.627441883087],
+                ['Bombay Pao Bhaji', 12.936432330336, 77.627934068441]
+                
+            ];
+
+            // Info Window Content
+            var infoWindowContent = [
+                ['<div class="info_content">' +
+                            '<h3>Anand Sweets</h3>' +
+                            '<p>Delhi-style Chaat. Wide variety of sweets -each one worth trying if you can afford the calories.</p>' + '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Chai Point</h3>' +
+                            '<p>A small multi-outlet tea joint that serves refreshing teas (hot and cold, with milk / without milk) and Indian snacks – vada pao, samosa and patties.</p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Srinidhi Sagar</h3>' +
+                            '<p>Simply superb South-Indian Tiffin. Good Chaat. Full meals – North-Indian / South-Indian / Chinese. Filter coffee. Lemon tea. Regular Chai.</p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Kolkata Rolls</h3>' +
+                            '<p>A small 3 ft by 3 ft stall serving hot, great-tasting Kolkata style kati rolls. Get them custom-made with the special instructions below, sourced from a regular.</p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Sethji – North Indian Home Food</h3>' +
+                            '<p>Great For: North-Indian Thali – Home-style food – Daal, Sabji, Chapatis and Rice. Paranthas, North-Indian veggies/curries.</p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Kitchen of Joy</h3>' +
+                            '<p>Bengali street food served in a café. Decent Rolls. Good Chai (especially their Lemon Tea). Sweets – the Rasogullas are almost as good as Kolkata. Cozy Café, good for a chat / adda.</p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Tea Brew</h3>' +
+                            '<p>Great Momos. Good Tea. Decent Pakoras. Café with space to sit.</p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Khan Saheb</h3>' +
+                            '<p>Very good rolls. Good Kebabs. Tikkas – their Paneer tikka is among the best in Bengaluru.</p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Om Sai Skanda Dosa Camp</h3>' +
+                            '<p>Superlative Tamil-style South-Indian tiffin.</p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Lassi Point</h3>' +
+                            '<p>Refreshing Lassi / Smoothies. Delicious Milkshakes. Good Juices. Average Sundaes.</p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>99 varieties dosa</h3>' +
+                            '<p>Dosas with a twist. Made with a special helping of a tomato chutney on the dosa base, and topped with your choice of toppings (choose from capsicum, baby corn, spinach, mushroom, peas, cauliflower, cheese, paneer, noodles).</p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Spicy Corner</h3>' +
+                            '<p>Indian-style Chinese. Gobi Munchurian (Cauliflower prepared in Indian-Chinese style). Noodles. Fried Rice. Hot favourite among students for its yummy food, fast service and VFM prices. Vegetarian only.</p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Thunder Fried Chicken</h3>' +
+                            '<p>Supposedly one of the best places for Kerela style non-veg – especially Chicken Shawarma and Chicken Kababs – around this part of town. Thunder Fried Chicken has its own loyal following despite an Empire restaurant just 150 m around the road.</p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Sharon Tea Stall</h3>' +
+                            '<p>Small roadside Tea Stall serving exotic varieties of tea and coffee – including Hibiscus, Lemon-Mint-Ginger, Apple-Mango.</p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Juice Center</h3>' +
+                            '<p>This is a typical Shri Ganesh Juice shop – the ones that are so popular all over Bangalore. But this one has taken the initiative to put together some very interesting juices and milkshakes, learning from the more upmarket beverages menus to include an Oreo shake, Beetroot-Carrot-Apple juice etc. Favourite haunt of school and college students.</p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Laddoos</h3>' +
+                            '<p>Good for North-Indian street-side fare such as Chaat and Chole Bhature, it also serves paranthas and sweets.</p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Bite Me Cupcakes</h3>' +
+                            '<p>Cupcakes (what else!). Try the Red Velvet, Goey Chocolate, Ultimate Chocolate and Blueberry.</p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Hatti Kaapi</h3>' +
+                            '<p>Superlative filter coffee. Best of South-Indian tiffin snacks – Maddur Vada, Masala Bun, Vada Pao, Idly, Vada. Hazelnut Cold Coffee. </p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Khawa Karpo</h3>' +
+                            '<p>Hole-in-the-wall Tibetan joint frequented by students. Thukpa, Honey Potato Wedges, Ting-Mo and Chicken Shap-tak.</p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Juice Junction</h3>' +
+                            '<p>One of those ubiquitous juice shops that are so popular all around Bangalore, except that this one is right next to a college and hence has evolved to serve interesting juices, sandwiches and fruit chaats.</p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Soori Chats</h3>' +
+                            '<p>All college areas have their favourite street food vendors and all street food vendors have their favourite college spots. It’s a symbiotic relationship that feeds both sides – ever-hungry college students and happy-to-serve vendors. Soori Chats is one of those vendors who has found a favour with the JNC students.</p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>99 Varieties Dosa</h3>' +
+                            '<p>Once unique, the 99 variety dosa stall has become something of a standard street food offering in Bangalore over the past couple of years. A different take on dosas. Quite a distance from the traditional masala dosas and ghee roasts, this one adds a tomato-based gravy, lots of butter and different fillings to make the regular dosa an exotic treat.</p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Momo Counter</h3>' +
+                            '<p>Immigrants from the north-east of India make the most authentic momos and serve them steaming hot off a steamer, right on the street. The more enterprising ones even have a small burner and stove to deep-fry and serve fried momos along with the more popular (and healthy!) steamed versions.</p>' +
+                            '</div>'],
+                ['<div class="info_content">' +
+                            '<h3>Bombay Pao Bhaji</h3>' +
+                            '<p>This stall was started by Ranga Gowda who came from Mumbai on his van – a three-wheeler innovatively converted into a mini food truck. He parks his van at the same spot every evening at 5PM and drives away at 11 PM after serving Pao Bhaji that some die-hard pao bhaji fans have described as ‘as-good-as-mumbai-chowpati’.</p>' +
+                            '</div>']
+            ];
+
+            // Display multiple markers on a map
+            var infoWindow = new google.maps.InfoWindow(), marker, i;
+
+            // Loop through our array of markers & place each one on the map  
+            for (i = 0; i < markers.length; i++) {
+                var position = new google.maps.LatLng(markers[i][1], markers[i][2]);
+                bounds.extend(position);
+                marker = new google.maps.Marker({
+                    position: position,
+                    map: map,
+                    title: markers[i][0]
+                });
+
+                // Allow each marker to have an info window    
+                google.maps.event.addListener(marker, 'click', (function (marker, i) {
+                    return function () {
+                        infoWindow.setContent(infoWindowContent[i][0]);
+                        infoWindow.open(map, marker);
+                    }
+                })(marker, i));
+
+                // Automatically center the map fitting all markers on the screen
+                map.fitBounds(bounds);
+            }
+
+            // Override our map zoom level once our fitBounds function runs (Make sure it only runs once)
+            var boundsListener = google.maps.event.addListener((map), 'bounds_changed', function (event) {
+                this.setZoom(13);
+                google.maps.event.removeListener(boundsListener);
+            });
+
+        }
+
 </script>
