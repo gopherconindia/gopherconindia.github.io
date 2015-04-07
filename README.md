@@ -17,5 +17,5 @@
 10. git push origin gh-pages
 ##(latest changes will be auto deployed to gh-pages. check the changes in below link)
 
-##http://qwinix.github.io/gopherconindia.github.io/
+##http://github.com/gopherconindia/gopherconindia.github.io
 
