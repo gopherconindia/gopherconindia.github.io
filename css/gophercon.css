@@ -594,6 +594,18 @@ body {
 	font-size: 14px;
 }
 
+.aerospike-img-position {
+   padding-top: 50px;
+}
+
+.sourcegraph-img-position {
+   padding-top: 15px;
+}
+
+.ardanlabs-img-width {
+    width: 100px;
+}
+
 .source-logo{
    text-align: center;
 height: 80px;
