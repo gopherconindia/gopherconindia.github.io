@@ -15,6 +15,8 @@ Exotel is India's fastest growing cloud telephony startup based out of Bangalore
 
 We talked to [Siddharth Ramesh](https://www.linkedin.com/pub/siddharth-ramesh/3/751/a46) CTO at Exotel.
 
+![Siddharth Ramesh]({{ site.github_project_name }}/images/speakers/siddharth.jpg)
+
 **Qs**. Can you tell us about your company and what you'll do? What are your company's future plans?
 
 **Ans**. Exotel is a cloud telephony platform and product. Over 700 companies have built and automated their entire sales and support operations on us. Cloud telephony is in a very nascent stage globally; and in India it is further challenged by a flaky telecom infrastructure. So we build an extremely reliable platform on top of this unreliable infrastructure. If cloud telephony is to be as prevelant as cloud computing, reliability is must to build trust with businesses; and thats where our focus is as well.
