@@ -918,6 +918,46 @@ text-align: center;
     font-size:16px;
 }
 
+.blue-color{
+    color: #71c0e8!important;
+}
+
+.text-color {
+    color: #71c0e8!important;
+}
+
+.blue-color:hover{
+    background-color: rgba(41, 44, 51, 0.7)!important;
+}
+.big {
+    font-size: 5rem !important;
+}
+.text-color p {
+    font-family: 'Haymaker';
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.box-hight {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border:4px solid #2c3688;
+    margin:1em 2em;
+}
+#spons_logo1 {
+    display:block;
+}
+#spons_logo2 {
+    display:block;
+}
+
+.border-left-image {
+    border-left: 2px solid #2c3688;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-left: 15px;
+}
+
 /********** QR Code  *****************/
 .QR{ position:fixed; top:30%; right:0px; z-index: 50; }
 .closeQR{ background-color:rgba(255,255,255, 0.8); padding:4px; font-size:16px;float:left; }
