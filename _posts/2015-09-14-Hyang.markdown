@@ -4,4 +4,4 @@ title:  "Interview with Hyang-ah Kim core developer Go Mobile project"
 tags: [Hyang-ah Kim, Hana Kim, GopherConIndia, golang]
 ---
 
-We [interviewed Hyang-ah Kim on Medium](https://medium.com/@IndianGuru/interview-with-hyang-ah-kim-core-developer-go-mobile-project-30c2ee009981) for GopeConIndia 2016.
+We [interviewed Hyang-ah Kim on Medium](https://medium.com/@IndianGuru/interview-with-hyang-ah-kim-core-developer-go-mobile-project-30c2ee009981) for GopherConIndia 2016.
