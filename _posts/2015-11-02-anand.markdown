@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Interview with Minio’s founder Anand Babu"
+tags: [Minio, Anand Babu, GopherConIndia, golang]
+---
+
+We [interviewed Anand Babu on Medium](https://medium.com/@IndianGuru/interview-with-minio-s-founder-anand-babu-2b550c90ea0d#.xr624sj60) for GopherConIndia 2016.
