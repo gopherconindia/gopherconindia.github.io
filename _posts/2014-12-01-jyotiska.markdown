@@ -8,7 +8,7 @@ tags: [Jyotiska NK, GopherConIndia, golang]
 
 **Qs**. Welcome and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about your-self?
 
-_Jyotiska:_ I am a developer based in Bangalore working at [DataWeave](http://www.dataweave.in/). I like to hack in Python and Go and frequently contribute to open source. All of my codes can be found on [Github](https://github.com/jyotiska).
+_Jyotiska:_ I am a developer based in Bangalore working at [DataWeave](http://dataweave.com/). I like to hack in Python and Go and frequently contribute to open source. All of my codes can be found on [Github](https://github.com/jyotiska).
 
 **Qs**. Why and when did you decide to start working with Go?
 
