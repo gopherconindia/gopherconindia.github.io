@@ -1,0 +1,7 @@
+---
+layout: post
+title:  "Interview with Khosrow Afroozeh"
+tags: [Aerospike, Khosrow Afroozeh, GopherConIndia, golang]
+---
+
+We [interviewed Khosrow Afroozeh on Medium](https://medium.com/@IndianGuru/interview-with-khosrow-afroozeh-software-engineer-at-aerospike-8aa27ccc9c29#.1ogr2oenj) for GopherConIndia 2016.

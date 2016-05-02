@@ -1,0 +1,102 @@
+---
+layout: post
+title:  "Interview: Gopher Abhishek Kumar"
+tags: [Abhishek Kumar, GopherConIndia, golang]
+---
+
+![Abhishek Kumar]({{ site.github_project_name }}/images/speakers/abk.jpg)
+
+Qs. Welcome and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about your self?
+
+_Abhishek:_ A technologist at heart. I am a DevOps consultant during office hours and work for ThoughtWorks. During off-hours I'm an opensource contributor, blogger and mostly trying to learn/build something. My interest in technology is for a variety of aspects and mediums available to depict logic like an art and vice versa. I love all tech. but my key area of interests are Security, System Tools and Network Services. The hub of my online persona is at [http://abhishekkr.github.io/](http://abhishekkr.github.io/).
+
+**Qs**. Why and when did you decide to start working with Go?
+
+_Abhishek:_ I love trying out new technologies, be it OS, services, frameworks or Programming Languages. Around early 2010 I heard Google has been working on bringing a new language for systems tool development and they covered it in [Google I/O 2010](https://www.youtube.com/watch?v=jgVhBThJdXc). Then they again covered it in [Google I/O 2011](http://www.youtube.com/watch?v=-i0hat7pdpk) and I thought to give it a try and publish a series of blogs ([part-1](http://justfewtuts.blogspot.in/2012/06/get-set-go-lang-part1.html)). But lost focus.
+
+Last Year (in 2013) I decided to materialize my idea of a new-style monitoring solution for which I needed a fast and lean FOSS TimeSeries DataStore. The existing one required Zookeeper or some other light-or-heavyweight service to provide it. I didn't want the user to worry about more components in their infrastructure just to get the monitoring solution active. First I thought of using a mod over Datomic, but then found out it's not purely FOSS. So, I did some research on what technologies will be best suited and that boiled down to combination of Golang, Leveldb and ZeroMQ.
+
+I picked it mainly because of it's out-of-the-box acceptance of several helpful features and practices and it was a nifty more manageable replacement of C language for performant system layer tools.
+
+**Qs**. How should one go about learning the Go language? What material (books, eBooks, online tutorials etc.) would you recommend?
+
+_Abhishek:_ I have experienced Golang as one of the easiest systems programming language to pick, though I took long enough to pick up peculiarities of its philosophy. So you can start using the language quickly but it might take some time to understand the different perspective behind it which makes it strong.
+
+One has to "unlearn" a lot of things first. This particular message has been repeated multiple times in context of Golang but doesn't lose its importance for that. From my own experience, I started to apply the language in my understanding of C and Python as Golang has been repeatedly called a mix of both. But that's just the lex design and part of philosophy. It requires developers to bring an open mind to learn how to do things than expecting it provide ways of their favorite language and benefits that they don't.
+
+To start your journey in Golang world, resources which will help you along the way are:
+
+* An interactive tour to main features of Golang - [http://tour.golang.org/#1](http://tour.golang.org/#1)
+* If you are more of a manual reader kind of guy start with the [Golang Documentation's](http://golang.org/doc/) section called [Effective Go](http://golang.org/doc/effective_go.html) and then follow up with other links.
+* There are several attempts at e-books for Golang as well, the only one I've tried yet is the [Golang-Book](http://www.golang-book.com/) which has been under continuous improvement. There is also [Go Bootcamp](http://www.golangbootcamp.com/) which seems popular.
+* I was recently asked to review PACKT Publishing's Video courses on [Building Your First Application with Go](http://goo.gl/Hwk1GZ), which gets you on a journey from being a newbie to a beginner level in Golang easily.
+* Then simply searching for "Golang" with "Andrew Gerrand" or "Rob Pike" on Youtube.com brings up multiple talks which will clear up the philosophy behind it. I especially recommend [Concurrency Is Not Parallelism](https://www.youtube.com/watch?v=cN_DpYBzKso) (not purely around Golang though) talk by Rob Pike available on Youtube.
+
+The way I started with Golang was, most of my intial Golang try-outs happened over the [Golang Playground](http://play.golang.org) itself. When I seriously thought of learning the language I started trying nifty small examples from talks and books, most of which are available at my repo [GitHub-TutorialsAsCode-Golang](http://goo.gl/F5NPYe). Once I got to understand the power and beauty of it, I started a FOSS project [GoShare](https://github.com/abhishekkr/goshare) in it.
+
+This style of learning a technology suits me, it might or might not suit others.
+
+**Qs**. What best practices are most important for a new Go programmer to learn and understand?
+
+_Abhishek:_ The quintessential set of best practices a Golang beginner need to adapt are:
+
+* The Golang project package structure. It helps it become Go-get-able, which make dependency management a breeze. It'll also help use the default support for adding test for code and binary artifact creation.
+* Beauty of its minimalistic design is the paired up language philosophy which helps the good code designs and project practices fit in themselves.
+* Varied use-cases of Goroutines with Channels will let them understand the power to which concurrent logics can be designed.
+* Not every concurrent process scenario suits untamed Goroutines. Understanding of how and when Golang's `sync` package can be used for safe transactions and so on.
+* If you have never dealt with languages like C which had "struct" construct as major pillar for module designs, you need to get a hang of how language deals with it. To use it in effective places.
+* Interfaces is the most interesting construct in Golang. It gives the maximum power and control in the developers hand to develop a (near) perfect library.
+* [Laws of Reflection](http://blog.golang.org/laws-of-reflection) lets you have a MetaProgramming level of experience with the language, if you are interested and more than that confident with it.
+
+**Qs**. What are the pros and cons of Go that are being discussed in the development community and what is your opinion on that?
+
+_Abhishek:_ Golang has been one of the most discussed (actually fought over) language in the last few years. Some loving it for the new experience they got and some hating it for the misplaced requirements. I'll discuss the top-3 benefits and flaws that I've experienced or came across.
+
+#### Benefits of Golang and my thoughts:
+
+* CSP (Communicating Sequential Processes) is one of the very old proposed concept but lately popular model for concurrent process design. The main power comes from its seamless integration in the language constructs. Creating communicating concurrent process in Golang is as easy as taking user input and printing it.
+* Inferential static typing is a feature that is not so popular among other fantastic language features. But I really appreciate it. It brings in near desired degree of type safety (not pure, let's discuss that later) alongwith some intelligent language support to infer it where code design is careful enough to handle it and provide features around it.
+* Built-in development best pratices. The awesome support of testing and release-level packaging. Wide ranged stable "in-built" library support for several common (mostly not in-built) features like http client/server support, xml/csv/json/glob encoding support and many more. Good support for profiling code.
+
+#### Flaws that I've heard of Golang and my thoughts:
+
+* Imperative versus Functional programming language comparisons have been used a lot by some specific language community folks (mostly Scala, then some Erlang). I love Functional Programming concept. I have practiced some CLisp in college and Clojure in portions recently. I truly admire the logic design process you undergo during Functional Programming. Now you can almost solve any logical problem following any style of programming, the important part is problem. All the languages provide a different percent mixture of support for Imperative and Functional Programming styles. You need to choose the one that best suits the logic for a solution to your 
+problem. If you think you need a pure functional implementation for your network service which need flawless and tested high-concurrency support. It can be done amazingly in Golang, but Erlang will suit you better. But if imperative design suits for your highly distribute high-concurrency web service, Golang is your best choice. If you need to create a manageable codebase and smooth release big system application, Golang is one of the best options.
+* No Generics. Now this is a delayed feature. These are not there because of language authors effort to keep run-time simpler. There are ways to achieve it. Then also a promise that if they get the level of complexity near given value, it will be made a part. Now if requirement of generics outweigh your programming style, Golang will slow you down. That's a fact. It's not the final language promising to have it all. If you can use it with its philosophy, its go-lden otherwise it's just another wrong choice.
+* Type Safety is a concern among several folks as well. Golang has static type checking but can't be called a type-safe language because of some "interface" powered use cases and may be more. But decisions need to be taken of what feature language shall be provided out of the box considering all complexities. It shall bring more value than overhead when considered for the scale of logic, the language is supposed to handle. Some people call it enough type-safe, whereas some just don't agree. Anyway, in my consideration it's enough type-safe for me to not worry for all the constructs. So, I can pick to be cautious when marching the powerful feature land and that goes with any technology.
+
+**Qs**. Most beginners in Go would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
+
+_Abhishek:_ If a person doesn't have a project idea of their own, it's ideal to contribute to someone else's FOSS project. Currently Golang is one of the most growing community in terms of new projects added, lots of them can be browsed through at [GitHub's link](http://goo.gl/bZObTf).
+
+Though I'll pick 5 good Golang projects from them, for folks who don't wanna search GitHub:
+
+* [Docker](https://github.com/docker/docker): It automates the deployment of applications inside software containers, providing that way an additional layer of abstraction and automation of OS-level virtualization on Linux.
+* [Etcd](https://github.com/coreos/etcd): A highly-available key value store for shared configuration and service discovery. It plays an important role in service discovery for CoreOS.
+* [Consul](https://github.com/hashicorp/consul): It's a tool by HashiCorp for service discovery, monitoring and configuration for a highly distributed multi-datacenter level ease.
+* [Gorilla](https://github.com/gorilla): Golang's HTTP server capability are fine enough, Gorill WebToolkit tries to just fill in the gaps you desire and not try to give you a perfect boxed framework.
+* [Goshare](https://github.com/abhishekkr/goshare): It's a persistent timeseries-datastore (also Key-Vals, Namespaced Key-Vals) communicable via ZeroMQ; *shameless self-project plug*
+
+**Qs**. What has been your biggest challenge while working with Go?
+
+_Abhishek:_ Unlearning the design instincts from past languages and use what suits it.
+
+**Qs**. What types of applications are currently being developed in Go and what changes do you foresee over the next year or two?
+
+_Abhishek:_ In the recent years the most growth I've seen for Golang projects has been system tools mainly designed to fit DevOps toolbox. Projects belonging to problems like orchestration, service discovery, monitoring, alerting, containerization and more. There are some teams I see using Golang to build web apps as well over frameworks like Beego.
+
+In next few years I see Golang to be popular language for all kinds of distributed networking services. More importantly popular among people trying to quickly build their idea on decentralized secure communication services. At least I plan on doing so after my current Golang project is production grade.
+
+**Qs**. How do you see the market for Go Programmers in the work place? What is the future for Go?
+
+_Abhishek:_ Acceptance is increasing, more and more startups are accepting it now. Though enterprise world will be entwined with Java for a long long time to come. The kind of baggage they have, more than that the kind of box they have technically explored. Not being able to appreciate disruptive technologies is understood. Now it's not JVM-based and can't use old existing Java libraries directly. Though nobody stops you to convert that to an API and mask it out.
+
+The future for Golang seems bright enough to become one of the top choice languages to develop client solutions in. It will thrive for new system tools. Even if Rust grows up to be a much rich language, Golang has enough momentum and improvement in action.
+
+**Qs**. Do you have any other suggestions for our readers?
+
+_Abhishek:_ Use the right tool for the given task. If you think your problem could be best solved using an almost pure Functional Language then pick Haskell, Clojure or Erlang. If you wanna build a fancy web application in not much time without worrying for the application structure then blindly pick Rails, Django or something else.
+
+But if you can get over prejudices and wanna create a clean, maintainable still fast systems or distribute networks application... you can trust Golang to fit the bill.
+
+_Thanks Abhishek for sharing your views with us. I am confident that your insights would help all the would-be Go programmers. In case you have any queries and/or questions, kindly post your questions here (as comments to this blog post) and Abhishek would be glad to answer._

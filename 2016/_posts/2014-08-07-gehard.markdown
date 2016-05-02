@@ -1,0 +1,10 @@
+---
+layout: post
+title:  "Speaker: Mike Gehard"
+tags: [Mike Gehard, GopherConIndia, golang]
+---
+
+![Mike Gehard]({{ site.github_project_name }}/images/speakers/mike-gehard.jpg)
+
+[Mike Gehard](https://twitter.com/mikegehard) is a software engineer at Pivotal Lab. He was a part of the team that wrote the logging platform for Cloud Foundry and helped move the Cloud Foundry CLI tool from Ruby to Go. His latest adventure was as an instructor at gSchool, a 24 week developer training program that teaches complete programming beginners how to effectively translate requirements into code. When he's not sitting at the computer, he's out exploring the great outdoors around Boulder, CO.
+
