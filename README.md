@@ -1,21 +1,26 @@
-##Steps to deploy in gh-pages
+#GopherConIndia
 
-1. git clone https://github.com/Qwinix/gopherconindia.github.io.git
-2. git pull origin master
-3. git checkout gh-pages
-4. git status
-5. git fetch
-6. git merge master
+##Dependencies
 
-##add below line in _config.yml
-#github_project_name: /gopherconindia.github.io
-##(add this line only if this is not present in _config.yml in gh-pages)
+1. Ruby
 
-7. git add .
-8. git commit -m “adding line in config.yml”
-9. git status
-10. git push origin gh-pages
-##(latest changes will be auto deployed to gh-pages. check the changes in below link)
+##Setup
 
-##http://www.gophercon.in/
+```
+gem install jekyll
+```
+
+##Run Locally
+
+```
+jekyll serve
+```
+
+## Contributing
+
+1. Fork it ( https://github.com/gopherconindia/gopherconindia.github.io/fork )
+2. Create your feature branch (git checkout -b my-new-feature)
+3. Commit your changes (git commit -am 'Add some feature')
+4. Push to the branch (git push origin my-new-feature)
+5. Create a new Pull Request
 
