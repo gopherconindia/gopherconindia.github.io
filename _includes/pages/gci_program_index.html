@@ -4,6 +4,20 @@
     <h2 class="speaker-title">Program</h2>
     <div class="speakers-wrapper text-left">
 
+      <div class="row speaker" id="aditya-sanghi">
+        <div class="col-sm-2 image center">
+          <div class="image-box">
+            <img alt="speaker image" src="{{ site.github_project_name }}/images/speakers/adityas.jpg">
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <p class="name">Abhishek Gahlot</p>
+          <p class="about-speaker">Abhishek worked for HackerRank for 2 years where Code Completion Infrastructure was built. He is currently working at Automattic in Data team on scaling Infrastructure of Automattic and WordPress.</p>
+          <p><strong>Talk: Load Testing for Modern Applications</strong></p>
+          <p class="about-speaker">Carrot is Go based Distributed Load/Stress testing frameworks for Modern Web Application which was created to test HackerRank Code Completion Infra I wrote to test more than 200 million requests a month. Test your Web App with support of WebSockets/XHR, Multiple payload/protocols, Fancy Graphs.</p>
+        </div>
+      </div>
+     
       <div class="row speaker" id="aditya-mukerjee">
         <div class="col-sm-2 image center">
           <div class="image-box">
@@ -13,22 +27,8 @@
         <div class="col-sm-10">
           <p class="name">Aditya Mukerjee</p>
           <p class="about-speaker">Aditya is an engineer at Stripe on the Risk team, based in New York City. He studied statistics at Columbia and computer science at Cornell, and has been writing Go professionally for the past four years. When not defending users against online fraudsters, he spends his free time playing German-style board games and listening to embarrassing music.</p>
-          <p><strong>Talk: Cloning Git in Go</strong></p>
-          <p class="about-speaker">Gitgo began as an experiment: how would programming today be different if Git had been written in Go instead of C? The result: an implementation of Git that is compatible with existing Git repositories, but simpler, more portable, and fast enough to be used as a general-purpose data store. With Gitgo, Git is no longer just for managing source control. Go makes Git a practical choice for content distribution, distributed build systems, establishing consensus, and more. This talk will provide technical insight into low-level programming in Go, while still being accessible to those with less experience. It will be engaging to those who have a background in C, but does not require audience members to have any background in C. Audience members do not need to be familiar with Git at all, in fact. It turns out that rewriting Git is more like implementing a database or a filesystem than it is like implementing a version control system.</p>
-        </div>
-      </div>
-
-      <div class="row speaker" id="aditya-sanghi">
-        <div class="col-sm-2 image center">
-          <div class="image-box">
-            <img alt="speaker image" src="{{ site.github_project_name }}/images/speakers/adityas.jpg">
-          </div>
-        </div>
-        <div class="col-sm-10">
-          <p class="name">Aditya Sanghi</p>
-          <p class="about-speaker">Aditya has been working on building (from inception to release) scalable production systems facing high loads for the past two years in both Golang and JRuby as well as worked on the infra and automation/CI for these systems. He has been living in Bangalore for the past two years but has mostly been a nomad (changed 9 schools) thanks to his army background. He is also a big sports enthusiast and has been swimming at competitive state level.</p>
-          <p><strong>Talk: Migrating from a 2000 session per second Monolithic Architecture to Micro Services using Golang</strong></p>
-          <p class="about-speaker">Serving a mobile application through a monolithic architecture we realised the need for a new microservice based backend as we crossed 10 million+ customers. Force updating the mobile application was obviously not an option, hence we had to keep the same endpoints in the customer app and serve those endpoints by multiple backends to ensure a smooth migration. To facilitate the above we had to come up with a proxy that didn’t just route requests based on url but also took the request body params into account when deciding the backend. In other words, we needed a highly scalable, domain aware proxy server. This would help us to phase out the migration based on parameters like customer uuids/time/region etc. Golang was chosen as we required a supremely performant and robust system to handle a load that peaked 2000 sessions per second.</p>
+          <p><strong>Talk: Translating Go to Other (Human) Languages, and Back Again</strong></p>
+          <p class="about-speaker">Like most programming languages, Go uses English keywords. But Go’s unique approach to byte and string handling makes it the ideal candidate for a universal programming language that can be localized to allow English-speaking and non-English speaking developers to collaborate on the same projects.</p>
         </div>
       </div>
 
