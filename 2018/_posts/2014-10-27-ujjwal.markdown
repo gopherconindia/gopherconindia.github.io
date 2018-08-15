@@ -1,0 +1,54 @@
+---
+layout: post
+title:  "Interview: Gopher Ujjwal Thaakar"
+tags: [Ujjwal Thaakar, GopherConIndia, golang]
+---
+
+![Ujjwal Thaakar]({{ site.github_project_name }}/images/speakers/ujjwal-thaakar.jpg)
+
+Qs. Welcome and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about your-self?
+
+_Ujjwal:_ I'm a 22 year old entrepreneur living in New Delhi. I recently finished my bachelor's degree in computer science and started a venture called [Espress](http://www.espress.in/). I work full time at Espress where we're trying to build a better way for people to write books and publish. Besides that I enjoy football and watching movies. I have also worked on Ruby on Rails twice for Google Summer of Code and recently gave a talk at RubyConfIndia and an active Ruby developer.
+
+**Qs**. Why and when did you decide to start working with Go?
+
+_Ujjwal:_ I started playing with Go the day it was launched. I happened to read about it on a blog post and being a 16 year old I just wanted to try out everything new and I still kinda do. What excited me the most was the immediate power and ease of use I had in my hands compared to C++ which is what I was working with at that point of time. I was totally into OOP right then and I remember how I loved the concept of interfaces and the usage of composition over inheritance. It just made so much sense to me. I guess most people can relate to why I fell in love with Go given that I was working with C++.
+
+**Qs**. How should one go about learning the Go language? What material (books, eBooks, online tutorials etc.) would you recommend?
+
+_Ujjwal:_ The best part about Go and the community revolving around it is that the focus is on building tools that make you productive instead of trying to go fancy. Go has one of the best documentations. I suggest people should start by reading the basic Go documents like Effective Go etc. and try to implement their existing programs with Go but in a "Go" way and see how the process makes them feel. Go makes programming fun and productive while giving you what you need to write correct, beautiful, expressive and fast code. Somebody coming from another language should focus on understanding these aspects of the language instead of it's syntax and features. Give concurrent programming a miss until you've mastered the go way of writing non concurrent programs.
+
+**Qs**. What best practices are most important for a new Go programmer to learn and understand?
+
+_Ujjwal:_ Go as a language makes you think about your program in an organized way. You should embrace that instead of fighting it by having your own way. Use the go tools that come along and follow the conventions instead of trying to fight them. Making your program concurrent gets easier by a huge factor but that doesn't mean you abuse it by making a non concurrent program concurrent. I've just seen too many people using channels and go routines for stuff they don't need to as well as trying to create a class hierarchy by using generics. DON'T. Use what Go gives you and learn to think the "go" way instead of trying to write Ruby or Java code as a Go translation. It has to affect your thinking.
+
+> A language that doesn't affect the way you think about programming, is not worth knowing. 
+> - Alan Perlis
+
+Don't try to write a Java program in Go. And lastly always format your program with the `go fmt` utility .
+
+**Qs**. What are the pros and cons of Go that are being discussed in the development community and what is your opinion on that?
+
+_Ujjwal:_ I'm probably not the best person to ask this since lately I've lost touch, due to my start up. Having said that I keep hearing people bickering about generics. They want to convert Go into the language they're coming from and thus I reiterate my point earlier - DON'T. Embrace the "Go" way. It'll make you better and shape your thinking. I think the community should focus on making Go faster and more and more general purpose without trying to change it's inherent structure like it's type system.
+
+**Qs**. Most beginners in Go would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
+
+_Ujjwal:_ I'm really excited about Gogs. I think most of the top notch Go projects coming out today are huge distributed systems and mostly system tools. We don't have enough non mission critical "Go" projects. I think people should contribute to something like "Martini". I'm really keen on a good project for people to be able to start serious web development in Go.
+
+**Qs**. What has been your biggest challenge while working with Go?
+
+_Ujjwal:_ I haven't really worked on very serious or big projects to be able to have seen any major challenge and I regret that. But in my little experience, my biggest challenge has been to avoid the temptation of writing concurrent implementations of non concurrent paradigms.
+
+**Qs**. What types of applications are currently being developed in Go and what changes do you foresee over the next year or two?
+
+_Ujjwal:_ I think people are starting to focus on web development in Go. I think over the next few years Go might be a serious challenger to existing web development frameworks. Historically web development has been done on dynamically typed languages because web development as an endeavor is a highly volatile exercise where you need a lot of flexibility. Things change everyday. Go gives you that flexibility and productivity while giving a huge number of benefits on the performance end of things. I think serious web development in Go has already started and will increase exponentially.
+
+**Qs**. How do you see the market for Go Programmers in the work place? What is the future for Go?
+
+_Ujjwal:_ I think this is the best time to be a Go programmer. Every college fresher I meet, I advice them to invest into Go. There's a dearth of  Go programmers in the market and more and more companies are either adopting Go or will for the simple reason that it gets more things done quickly and saves you infrastructure costs due to the performance it renders. We, for a fact, at Espress are waiting for the day where our start up is stable enough for us to start transitioning to Go. We're looking to hire Go programmers because they're just better programmers overall - people who have opinions and want to be different while also being good. Personally I am quite interested in two projects - one writing a ruby interpreter in Go and another to write an operating system in Go. I hope someone interested comes along to push us into actually starting it.
+
+**Qs**. Do you have any other suggestions for our readers?
+
+_Ujjwal:_ Gone are the days when a single language would overtake businesses and jobs. Go might not kill everything you see around but I think most good companies will realize the benefits these modern day system programming languages bring and will find a working place in the environment. I would suggest people to explore Go and try to be better Go programmers even if this language survives the next decade or not, it'll improve your thought process and work etiquette than most languages out there today.
+
+_Thanks Ujjwal for sharing your views with us. I am confident that your insights would help all the would-be Go programmers. In case you have any queries and/or questions, kindly post your questions here (as comments to this blog post) and Ujjwal would be glad to answer._

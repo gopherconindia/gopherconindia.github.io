@@ -1,0 +1,61 @@
+---
+layout: post
+title:  "Interview: Gopher Baishampayan Ghose"
+tags: [Baishampayan Ghose, GopherConIndia, golang]
+---
+
+![Baishampayan Ghose]({{ site.github_project_name }}/images/speakers/baishampayan.jpg)
+
+**Qs**. Welcome and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about your-self?
+
+_BG:_ Hello, I am Baishampayan Ghose (mostly known as "BG"). I am CTO/Co-founder at Helpshift, Inc. We build customer retention tools for mobile app devlopers.
+
+I am a polyglot programmer and thinker.
+
+I work on building medium/large-scale distributed systems and I prefer Functional Programming to others.
+
+**Qs**. Why and when did you decide to start working with Go?
+
+_BG:_ Being a polyglot, I keep learning different programming languages. In the systems programming domain there was always a lack of a nice, clean language with a managed runtime. Go filled that gap and brought much more. When it was released I was quite impressed by its expressivity and features. Eventually I learnt it and built a small caching server at work which has been serving production traffic for years now.
+
+**Qs**. How should one go about learning the Go language? What material (books, eBooks, online tutorials etc.) would you recommend?
+
+_BG:_ I think the official Go documentation is excellent. It's one of most common things that new programming languages get wrong and precisely something that Go did right. Documentation for most of Go is excellent and is usually enough for an exprienced programmer. I found "Effective Go" to be incredibly useful in understanding the language semantics intimately.
+
+**Qs**. What best practices are most important for a new Go programmer to learn and understand?
+
+_BG:_ Semantics. When learning a new language we don't spend enough time in undersatnding the semantics of the language, we often dive straight in. That's a sure-shot recipe for some nasty surprises down the line. I think the least that a new Go programmer can do is to read "Effective Go" carefully before writing any serious programs in Go.
+
+Go comes with a nice collection of tools that help as well, like `gofmt` (a must), `godoc`, `goimports` etc. Some investment in a good editor setup is very useful as well.
+
+**Qs**. What are the pros and cons of Go that are being discussed in the development community and what is your opinion on that?
+
+_BG:_ People have opinions about everything. Go can't be "your language". It's an excellent language in its own right. Yes, there are a few things that Go misses (generics) and may be does differently (runtime), but it is extremely effective when applied to its intended domain of distributed systems, network servers, web applications, command line tools, etc. That is, it's a great language for building systems, like the Internet itself. To that end, the language designers have made some trade-offs and we just have to live with them.
+
+What really matters is in knowing the tradeoffs of a language and using it to its strength.
+
+We should look at Go as a replacement for C, C++ and not PHP or Java. Having said that, I would definitely recommend Go to PHP and Java programmers :-)
+
+**Qs**. Most beginners in Go would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
+
+_BG:_ I can't suggest any specific project here because it really depends on interests and skills of the individual. They should look around for interesting projects, read their source and then think about contributing. I mean, reading of programs is essential to learning a language. I can't emphasise it enough. It's arguably as important as writing programs itself. There are many interesting Go projects around, I think the [Github trending page](https://github.com/trending?l=go) could be a good starting point. 
+
+**Qs**. What has been your biggest challenge while working with Go?
+
+_BG:_ The biggest challenge in working with any new language is in understanding its semantics and the tradeoffs thereof. I initially did have to spend some time in wrapping my head around the channel abstraction and its implications. There are some portability, GC, binary size related issues with Go but those have never been a deal-breaker for me.
+
+**Qs**. What types of applications are currently being developed in Go and what changes do you foresee over the next year or two?
+
+_BG:_ I can see Go doing really well in the niche of networked/distributed systems, command line tools, operating systems etc.
+
+It would be really great if one could build mobile applications in Go. I am sure it'd be possible sooner than later.
+
+**Qs**. How do you see the market for Go Programmers in the work place? What is the future for Go?
+
+_BG:_ I think Go has a very bright future. Considering the fact that some well-known projects are already using Go to solve complex problems and that the community is growing strong I think it can only get better from here.
+
+**Qs**. Do you have any other suggestions for our readers?
+
+_BG:_ Go forth, and have fun!
+
+_Thanks BG for sharing your views with us. I am confident that your insights would help all the would-be Go programmers. In case you have any queries and/or questions, kindly post your questions here (as comments to this blog post) and BG would be glad to answer._

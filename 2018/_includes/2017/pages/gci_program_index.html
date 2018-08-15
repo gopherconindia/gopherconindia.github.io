@@ -1,0 +1,261 @@
+<!-- gci_program_index.html -->
+<section id="speaker" class="content-section text-center download-section homepage">
+  <div class="container">
+    <h2 class="speaker-title">Program</h2>
+    <div class="speakers-wrapper text-left">
+
+      <div class="row speaker" id="aditya-mukerjee">
+        <div class="col-sm-2 image center">
+          <div class="image-box">
+            <img alt="speaker image" src="{{ site.github_project_name }}/images/speakers/aditya.jpg">
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <p class="name">Aditya Mukerjee</p>
+          <p class="about-speaker">Aditya is an engineer at Stripe on the Risk team, based in New York City. He studied statistics at Columbia and computer science at Cornell, and has been writing Go professionally for the past four years. When not defending users against online fraudsters, he spends his free time playing German-style board games and listening to embarrassing music.</p>
+          <p><strong>Talk: Cloning Git in Go</strong></p>
+          <p class="about-speaker">Gitgo began as an experiment: how would programming today be different if Git had been written in Go instead of C? The result: an implementation of Git that is compatible with existing Git repositories, but simpler, more portable, and fast enough to be used as a general-purpose data store. With Gitgo, Git is no longer just for managing source control. Go makes Git a practical choice for content distribution, distributed build systems, establishing consensus, and more. This talk will provide technical insight into low-level programming in Go, while still being accessible to those with less experience. It will be engaging to those who have a background in C, but does not require audience members to have any background in C. Audience members do not need to be familiar with Git at all, in fact. It turns out that rewriting Git is more like implementing a database or a filesystem than it is like implementing a version control system.</p>
+        </div>
+      </div>
+
+      <div class="row speaker" id="aditya-sanghi">
+        <div class="col-sm-2 image center">
+          <div class="image-box">
+            <img alt="speaker image" src="{{ site.github_project_name }}/images/speakers/adityas.jpg">
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <p class="name">Aditya Sanghi</p>
+          <p class="about-speaker">Aditya has been working on building (from inception to release) scalable production systems facing high loads for the past two years in both Golang and JRuby as well as worked on the infra and automation/CI for these systems. He has been living in Bangalore for the past two years but has mostly been a nomad (changed 9 schools) thanks to his army background. He is also a big sports enthusiast and has been swimming at competitive state level.</p>
+          <p><strong>Talk: Migrating from a 2000 session per second Monolithic Architecture to Micro Services using Golang</strong></p>
+          <p class="about-speaker">Serving a mobile application through a monolithic architecture we realised the need for a new microservice based backend as we crossed 10 million+ customers. Force updating the mobile application was obviously not an option, hence we had to keep the same endpoints in the customer app and serve those endpoints by multiple backends to ensure a smooth migration. To facilitate the above we had to come up with a proxy that didn’t just route requests based on url but also took the request body params into account when deciding the backend. In other words, we needed a highly scalable, domain aware proxy server. This would help us to phase out the migration based on parameters like customer uuids/time/region etc. Golang was chosen as we required a supremely performant and robust system to handle a load that peaked 2000 sessions per second.</p>
+        </div>
+      </div>
+
+      <div class="row speaker" id="daniel-whitenack">
+        <div class="col-sm-2 image center">
+          <div class="image-box">
+            <img alt="speaker image" src="{{ site.github_project_name }}/images/speakers/daniel.jpg">
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <p class="name">Daniel Whitenack</p>
+          <p class="about-speaker">Daniel is a Ph.D. trained data scientist who is interested in helping Go become a "go to" language for data science/engineering. As a data scientist with Pachyderm (@pachydermIO), Daniel develops innovative, distributed data pipelines. These pipelines include predictive models, data visualizations, statistical analyses, and more. He enjoys contributing to the open source community, with projects like gophernotes, and teaching Ultimate Data Science classes with Ardan Labs (@ardanlabs).</p>
+          <p><strong>Talk: Go Stdlib and Data Science</strong></p>
+          <p class="about-speaker">A common misconception among data scientists is that the Go ecosystem lacks the proper tooling to enable data science in Go. In this talk, we will shatter that misconception by showing how the stdlib itself can power robust and productive data science development. The Go data science ecosystem is exploding with great tooling for data science and data engineering, and there are many gophers utilizing Go to develop robust, efficient, and valuable data-driven applications. However, many in the data science community maintain that Go lacks proper tooling to be productive as a data scientist. In this session, we will shatter that misconception by showing that Go itself (i.e., the stdlib) can enable productive data science development. We will tackle an example data science project, highlighting how the stdlib can be used to accomplish common data science tasks.</p>
+        </div>
+      </div>
+
+      <div class="row speaker" id="filippo-valsorda">
+        <div class="col-sm-2 image center">
+          <div class="image-box">
+            <img alt="speaker image" src="{{ site.github_project_name }}/images/speakers/Filippo.jpg">
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <p class="name">Filippo Valsorda</p>
+          <p class="about-speaker"><a href="https://blog.filippo.io/hi/" target="_blank">Filippo Valsorda</a> works on cryptography and systems engineering at Cloudflare. He’s been the main developer of the pure-Go Cloudflare DNS server, and wrote its DNSSEC implementation. He's now working on TLS 1.3 for the Cloudflare edge and <a href="https://go-review.googlesource.com/c/33164/" target="_blank">upstream</a>. He often writes about Go on the <a href="https://blog.cloudflare.com/author/filippo/" target="_blank">company</a> and <a href="https://blog.filippo.io/" target="_blank">personal blog</a>, talks about security and programming, and builds Go tools like <a href="https://github.com/FiloSottile/gvt" target="_blank">gvt</a>, the <a href="https://filippo.io/Heartbleed" target="_blank">Heartbleed test</a> and the <a href="https://github.com/FiloSottile/whosthere" target="_blank">whoami SSH server</a>.</p>
+          <p><strong>Talk: Fighting latency - the CPU profiler is not your ally</strong></p>
+          <p class="about-speaker">CPU profiling sure is nice for crypto attacks and batch processing, but many times our systems are not CPU-bound, and the king of our era is latency, not processing bandwidth. Cloudflare machines are never at 100% CPU, but it doesn’t mean we can’t make our systems faster. So the goal of this talk is dual: “raising awareness” on how our go-to CPU profiling is not necessarily the right way to approach latency issues, and showcasing a great tool built right into the Go runtime that’s way too little known. The Cloudflare DNS server surely benefited, hopefully attendees will, too!</p>
+        </div>
+      </div>
+
+      <div class="row speaker" id="francesc-flores">
+        <div class="col-sm-2 image center">
+          <div class="image-box">
+            <img alt="speaker image" src="{{ site.github_project_name }}/images/speakers/francesc-campoy-flores.png">
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <p class="name">Francesc Campoy Flores</p>
+          <p class="about-speaker">Francesc Campoy Flores joined the Go team in 2012 as Developer Advocate after several years as a Python and C++ developer. His mission is to make Go useful and fun.</p>
+          <p><strong>Talk: Opening Keynote - Some context on context</strong></p>
+          <p class="about-speaker">With Go 1.7 the context package was added to Go's standard library, but many still are figuring out what this is actually for and what are the best practices when it comes to adding it to their APIs. This talk will cover the topic in detail, not only explaining how it is to be used. It will also get into the internal details and show some of the most beautiful pieces of code in the context package.</p>
+        </div>
+      </div>
+
+      <div class="row speaker" id="ian-lewis">
+        <div class="col-sm-2 image center">
+          <div class="image-box">
+            <img alt="speaker image" src="{{ site.github_project_name }}/images/speakers/ian-lewis.jpg">
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <p class="name">Ian Lewis</p>
+          <p class="about-speaker">Ian is a Developer Advocate for Google Cloud Platform based Tokyo, Japan. Ian is a Python and Go developer who is passionate about developer communities. He previously co-founded PyCon JP, the largest Python event in Japan. Ian loves learning about how systems work end-to end and spends his time writing and deploying distributed web apps to his favorite container orchestrator (Kubernetes).</p>
+          <p><strong>Talk: Getting Plugged in with Go Plugins</strong></p>
+          <p class="about-speaker">Go 1.8 will include a plugin package that allows you to define plugins that can be loaded at runtime. This talk will cover plugins in detail, discuss some use cases, and best practices for using the package.</p>
+        </div>
+      </div>
+
+      <div class="row speaker" id="kai-waehner">
+        <div class="col-sm-2 image center">
+          <div class="image-box">
+            <img alt="speaker image" src="{{ site.github_project_name }}/images/speakers/Kai_Waehner.jpg">
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <p class="name">Kai Waehner</p>
+          <p class="about-speaker">Kai Waehner works as Technology Evangelist at TIBCO. Kai's main area of expertise lies within the fields of Big Data, Advanced Analytics, Machine Learning, Integration, SOA, Microservices, BPM, Cloud, Java EE and Enterprise Architecture Management. He is regular speaker at international IT conferences such as JavaOne or ApacheCon, writes articles for professional journals, and shares his experiences with new technologies on his <a href="http://www.kai-waehner.de/blog/" target="_blank">blog</a>.</p>
+          <p><strong>Talk: Open Source Project Flogo for Lightweight Microservices and as Integration Gateway for the Internet of Things</strong></p>
+          <p class="about-speaker">The Internet of Things (IoT) brings up 50 billion devices until 2020, which have to be connected somehow. Challenges include low bandwidth, high latency, non-reliable connectivity and the need for low network costs. Therefore, a gateway is needed remotely on site of the devices to filter, aggregate and send just relevant data into the cloud or data center. This session introduces project Flogo: A 100% open source framework, which allows developing ultra lightweight IoT integration applications with a zero-coding web user interface or design chat bot. Coders can also rely just on code, of course. It is written in Google’s Go programming language and 20-50x more lightweight than similar Java or JavaScript frameworks. Therefore building very lightweight microservices independent of IoT is another good use case for this framework, e.g. for serverless architectures using open source frameworks such as OpenWhisk. The session focuses on live demos and shows how to build microservices and integrate IoT devices using standards such as MQTT, WebSockets, CoaP or REST. The last part of the session compares Project Flogo to other open source IoT projects like Node-RED and SaaS offerings such as AWS IoT.</p>
+        </div>
+      </div>
+
+      <div class="row speaker" id="kamesh-balasubramanian">
+        <div class="col-sm-2 image center">
+          <div class="image-box">
+            <img alt="speaker image" src="{{ site.github_project_name }}/images/speakers/kamesh.jpg">
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <p class="name">Kamesh Balasubramanian</p>
+          <p class="about-speaker">Kamesh Balasubramanian is the Founder and CEO of Wirecog, LLC. He is the inventor of Wireframe Cognition (Wirecog), an award-winning, patented technology that allows machines to understand wireframe designs and produce source code from them. He is an award-winning, professional member of the Association for Computing Machinery and an InfyMaker Award winner. He was recognized as a "Maker of Change" at the 2016 World Maker Faire in New York and, upon request, has demonstrated Wirecog at MIT.</p>
+          <p><strong>Talk: Isomorphic Go Code</strong></p>
+          <p class="about-speaker">Isomorphic Go Code is Go code that is used on both the front-end and the back-end. I would like to talk about the open source GopherJS library which achieves this, and provide an objective analysis (with both the good items of the library and items that are in need of improvement).</p>
+        </div>
+      </div>
+
+      <div class="row speaker" id="karthic-rao">
+        <div class="col-sm-2 image center">
+          <div class="image-box">
+            <img alt="speaker image" src="{{ site.github_project_name }}/images/speakers/karthic.jpg">
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <p class="name">Karthic Rao</p>
+          <p class="about-speaker">Karthic currently is working with Minio (an open source object storage server) as a developer. One of the early contributors for the <a href="https://caddyserver.com/" target="_blank">Caddy project</a>. Passionate about Music and contributing to open source projects. A Volunteer for Free Software Movement Karnataka, Pianist, Vocalist, Blogger and a crossfitter. Building performant large scale systems, Distributed systems, Machine Learning and Artificial Intelligence are his technology interests.</p>
+          <p><strong>Talk: Debugging Go routine leaks</strong></p>
+          <p class="about-speaker">There are numerous scenarios where a mishandled go routines accumulates in the system and consumes resources. Go routine leaks are not easy to identify and debug. While writing large scale server programs thousands of these leaked go routines could accumulate rapidly and consume the resources very fast. The talk involves variety of ways and quick tests to detect, avoid and debug go routine leaks.</p>
+        </div>
+      </div>
+
+      <div class="row speaker" id="manish-jain">
+        <div class="col-sm-2 image center">
+          <div class="image-box">
+            <img alt="speaker image" src="{{ site.github_project_name }}/images/speakers/manish.jpg">
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <p class="name">Manish Rai Jain</p>
+          <p class="about-speaker">Manish is the founder and primary author of Dgraph. He got thrust into distributed systems right out of college, working on real-time web indexing system at Google, where he worked for 6.5 years. He led various projects to consolidate and serve all structured data including knowledge graph right behind web search. Implementing GTD and Zero Waste practices, Manish is into efficient and minimalist living. He loves cycling, swimming, and ultra-light traveling.</p>
+          <p><strong>Talk: Dgraph - A native and distributed graph database written in Go</strong></p>
+          <p class="about-speaker">Dgraph is a native and distributed graph database written entirely in Go. Efficient distributed joins is a hard problem and Dgraph tackles it head on. Since v0.1 release in Dec'15, Dgraph has seen a lot of activity, reaching close to 2000 Github stars and to front page of Hacker News multiple times.</p>
+        </div>
+      </div>
+
+      <div class="row speaker" id="matthew-campbell">
+        <div class="col-sm-2 image center">
+          <div class="image-box">
+            <img alt="speaker image" src="{{ site.github_project_name }}/images/speakers/matthew.campbell.jpg">
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <p class="name">Matthew Campbell</p>
+          <p class="about-speaker">Matthew Campbell is a Microservices scalability expert at DigitalOcean where he builds the future of cloud services. He is writting a book called "Microservices in Go". He recently presented at GoLang UK, PromConf Berling, Surge India and blogs at <a href="http://kanwisher.com/" target="_blank">kanwisher.com</a>. Matthew was a founder of Errplane and <a href="http://www.langfight.com/" target="_blank">Langfight</a>. In the past he worked at Thomson Reuters, Bloomberg, Gucci, and Cartoon network.</p>
+          <p><strong>Talk: Building Distributed Timeseries database</strong></p>
+          <p class="about-speaker">We are going to explore how we built a Distributed Timeseries database from scratch using Microservices in GO. We will show the audience how events flow through pipelines in Kafka. The data is collected in stored in Cassandra and how to scale to tracking millions of devices. The talk is a more technical deep dive for people that want to know how to actually build large scale Microservice systems, deploy them onto Kubernetes and using Event buses and NoSql databases for scale.</p>
+        </div>
+      </div>
+
+      <div class="row speaker" id="romin-irani">
+        <div class="col-sm-2 image center">
+          <div class="image-box">
+            <img alt="speaker image" src="{{ site.github_project_name }}/images/speakers/romin.jpg">
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <p class="name">Romin Irani</p>
+          <p class="about-speaker">Romin Irani is a Principal Architect at Xoriant Solutions and has been programming as long as he can remember. His passion is to make developers succeed. He loves to read and write about technology, never missing an opportunity to write a hands-on tutorial. He blogs extensively at <a href="https://rominirani.com/" target="_blank">www.rominirani.com</a>.</p>
+          <p><strong>Talk: The Journey to Conversational Interfaces</strong></p>
+          <p class="about-speaker">What happens when you combine the power of Bots with a popular messaging and collaboration platform. You have a new range of Apps that are always available and ready to complete complex tasks, as if you were interacting with a human. This talk takes a look at how you can write Bots on Slack, one of the most popular messaging platform in recent times. A key part of the Slack ecosystem is the availability of multiple APIs that makes it easier to extend the platform. Golang is an ideal way to write Slack Bots due to great support for web protocols and the availability of high quality libraries. We shall take a look at how you can write Bots that listen to everyone that you type, accept commands and execute something in return or notify your teams of external events.</p>
+        </div>
+      </div>
+
+      <div class="row speaker" id="shamsuddin-madhani">
+        <div class="col-sm-2 image center">
+          <div class="image-box">
+            <img alt="speaker image" src="{{ site.github_project_name }}/images/speakers/sam.jpg">
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <p class="name">Shamsuddin Madhani</p>
+          <p class="about-speaker">Being a former scientific computing and applied mathematics researcher, Shamsuddin enjoys solving performance challenges with better programming approaches over using more metal. He works at BlippAR solving problems of scalability and availability using distributed architectures. When not coding, he can be found on an island in South or Southeast Asia, diving and learning about oceanic creatures.</p>
+          <p><strong>Talk: Go for High Throughput Computing</strong></p>
+          <p class="about-speaker">Go is a suitable language for developing distributed systems for delivering high throughput at low resource consumption. This talk will present low level code optimizations for better performance in time and space, along with industry relevant examples and benchmarks. We, at BlippAR, use Go extensively for writing web services. While several microservices are written in Go, I would like to demonstrate our experiences in writing high throughput web services and some of the best practices and optimizations we have learned and adapted to during this course. However, this talk will, by no means, be a web programming tutorial or a lesson in distributed computing theory.</p>
+        </div>
+      </div>
+
+      <div class="row speaker" id="shiju-varghese">
+        <div class="col-sm-2 image center">
+          <div class="image-box">
+            <img alt="speaker image" src="{{ site.github_project_name }}/images/speakers/shiju-varghese.jpg">
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <p class="name">Shiju Varghese</p>
+          <p class="about-speaker">Shiju Varghese is a Solutions Architect focused on building highly scalable cloud-native applications with a special interest in APIs, Microservices, containerized architecture, and distributed systems. He currently specializes in Go, Google Cloud and container technologies. He is an early adopter of Go programming language, and provides consulting and training for building scalable back-end systems and Microservices using Go ecosystem. He has been a mentor to various start-ups and enterprises for the technology transformation to Go. He worked extensively in C# and Node.js before adopting Go as the primary technology stack. He has authored the books "Web Development with Go" and "Go Recipes".</p>
+          <p><strong>Talk: Building High Performance APIs In Go Using gRPC And Protocol Buffers</strong></p>
+          <p class="about-speaker">This session will demonstrate how to build high-performance, massively-scalable APIs in Go using Google’s gRPC and Protocol Buffers. The session will introduce how to use gRPC as a communication protocol for Microservices architecture. By using gRPC with Protocol Buffers, you can build high performance APIs, which can provide high performance and scalability power than JSON based RESTful APIs. gRPC is a high performance, open-source remote procedure call (RPC) framework from Google, which can run anywhere. It enables client and server applications to communicate transparently, and makes it easier to build connected systems. By default, gRPC uses Protocol Buffers as the Interface Definition Language (IDL) and as its underlying message interchange format. Protocol Buffers, also referred as protobuf, is Google’s language-neutral, platform-neutral, extensible mechanism for serializing structured data. Protocol Buffers are smaller, faster, and simpler that provides high performance than other standards such as XML and JSON. systems by implementing various messaging patterns. gRPC is built with mobile clients in mind that will give you lot of performance advantages and easiness for consuming APIs.</p>
+        </div>
+      </div>
+
+      <div class="row speaker" id="takuya-ueda">
+        <div class="col-sm-2 image center">
+          <div class="image-box">
+            <img alt="speaker image" src="{{ site.github_project_name }}/images/speakers/takuya.jpg">
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <p class="name">Takuya Ueda</p>
+          <p class="about-speaker">Takuya Ueda is a Go engineer for Souzoh, Inc. He is one of the organizers of the Go Conference in Japan. He works for the growth of the Go community in Japan. He also loves Gopher and drawing Gopher illustrations.</p>
+          <p><strong>Talk: Mobile Apps by Pure Go with Reverse Binding</strong></p>
+          <p class="about-speaker">Go Mobile (golang.org/x/mobile) is a project which shows new possibilities for mobile apps development. Go Mobile can creates Android and iOS apps by pure Go. But it is restricted to calling few platform APIs until now. The reverse binding which is a new feature of Go Mobile, makes developing mobile apps by pure Go. This session would like to show pratical possibilities of reverse binding which generates bindings for platform APIs automatically. And I will explain how to generate these bindings from Go codes. In this session, I will mainly talk developing Android apps by Go Mobile.</p>
+        </div>
+      </div>
+
+      <div class="row speaker" id="tiffany-jernigan">
+        <div class="col-sm-2 image center">
+          <div class="image-box">
+            <img alt="speaker image" src="{{ site.github_project_name }}/images/speakers/tiffany.jpg">
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <p class="name">Tiffany Jernigan</p>
+          <p class="about-speaker">Tiffany is a developer advocate at Amazon coding in Go on and evangelizing for EC2 Container Service (ECS). She previously consulted for Docker, was at Intel Corporation as a cloud software engineer in the Software Defined Infrastructure (SDI) group, and is a graduate from the Georgia Institute of Technology. After pursuing a career in electrical engineering, she decided to transition to software engineering. When Tiffany is not writing software or evangelizing, she is learning French, reading mystery novels, or spending time with family and friends. You can find her on twitter as @tiffanyfayj.</p>
+          <p><strong>Talk: How to Raise a Gopher in Record Time</strong></p>
+          <p class="about-speaker">As an electrical engineer, both in college and at work, my exposure to software development was limited. I have been interested in software development, began learning on my own and then I got an opportunity to shift at work. The team I joined was writing code in Go and I had a lot to learn quite quickly. For those who are new to Go and learning the language, having the right resources, especially early on, can make all the difference. Without knowing where to find them, a lot of time can be spent searching. I want to share what helped me accelerate my learning, which is not over, by the way, and never will be.</p>
+        </div>
+      </div>
+
+      <div class="row speaker" id="vidyasagar-nallapati">
+        <div class="col-sm-2 image center">
+          <div class="image-box">
+            <img alt="speaker image" src="{{ site.github_project_name }}/images/speakers/vidyasagar.jpg">
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <p class="name">Vidyasagar Nallapati</p>
+          <p class="about-speaker">Vidyasagar N is a software developer from Bangalore. He loves all the things mathematics, statistics, machine learning, developer tools, automation and anything that will make systems better and easier, so he has found that in architecting, building and running large scale distributed services. He has a great practical experience in building rock-solid data pipelines prior to EMC, he has done his B.Tech from IIT BHU and has studied analytics at IIM Bangalore. When Vidyasagar is not writing code, he can be found travelling, playing music and indulging in coffee.</p>
+          <p><strong>Talk: Fast and Scalable Machine Learning with GoLang</strong></p>
+          <p class="about-speaker">Go is now used in various domains, across various platforms as a general purpose programming language. With Go Lang’s fast compiler, built-in concurrency features high-performance, large-scale scientific and technical computing is the next step. In this talk various machine learning techniques using Go Lang are talked about and several practical case studies are discussed. Go is gaining traction as a language to be used like R, Matlab and Python for solving solving complex machine learning problems. This talk is based particularly on various implementations of machine learning algorithms in Go and developing fast applications using various libraries for linear algebra, probability distribution functions, decision trees, bayesian classifiers, neural networks and recommender systems. Comparison of Go with other languages for developing data science applications, architecture and implementations of several practical solutions will be discussed in the talk.</p>
+        </div>
+      </div>
+
+      <div class="row speaker" id="william-kennedy">
+        <div class="col-sm-2 image center">
+          <div class="image-box">
+            <img alt="speaker image" src="{{ site.github_project_name }}/images/speakers/william.kennedy.jpg">
+          </div>
+        </div>
+        <div class="col-sm-10">
+          <p class="name">William Kennedy</p>
+          <p class="about-speaker">William Kennedy is a managing partner at Ardan Studio in Miami, Florida, a mobile, web, and systems development company. He is also a co-author of the book Go in Action, the author of the blog <a href="http://goinggo.net/" target="_blank">GoingGo.Net</a>, and a founding member of GoBridge which is working to increase Go adoption through diversity.</p>
+          <p><strong>Talk: Package Oriented Design</strong></p>
+          <p class="about-speaker">You have learned the language and now you are ready to start building your product. Sounds easy but where do you begin? Go is not like other languages in the sense that you can’t organize your source code using folders. If you do, you are going to have problems. This is because each folder in your source tree represents a package. A self contained unit of compiled code. The better job you do in identifying the unique packages you need to solve the problem, the easier your projects will be to manage, support and grow over time. Developer productivity on the project will directly relate to how well you design your packages and their API. This has been my experience and this is what I will share with you in this talk. My best practices and guidelines to package oriented design.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
