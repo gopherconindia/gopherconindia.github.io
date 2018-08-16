@@ -1,0 +1,61 @@
+---
+layout: post
+title:  "Interview: Gopher Verónica López"
+tags: [Verónica López, GopherConIndia, golang]
+---
+
+![Verónica López]({{ site.github_project_name }}/images/speakers/veronica-lopez.jpg)
+
+**Qs**. Welcome and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about your-self?
+
+_Verónica:_ I'm a former physicist, currently pursuing a degree in computer science, but I have been a programmer for almost 6 years, working mainly with Linux, Python and Java for back end and mobile platforms. I've been very lucky, because so far, I've had the opportunity to work with teams with very different backgrounds, from fashion industry, up to the Mexican government, which has been quite interesting and made me learn a lot, but also made me have lots of fun.
+
+On the personal side, I love travelling, sleeping, tea and cats.
+
+**Qs**. Why and when did you decide to start working with Go?
+
+_Verónica:_ Two years ago, I began reading about Go, but didn't use it for anything relevant, until I began leading the back end team of a digital agency a year ago, where I had the power to choose the tools I wanted the team to use. At first, since we couldn't afford having the whole team learning a new language instead of focusing on the A-list things, we decided to do the small projects in Go,and the rest in Python, which was our main language, but little by little, we ended up not only saving a lot of actual coding time in small projects, but also taking advantage of Go's concurrent nature for the more ambitious ones, which couldn't have been possible without the support of my former boss and team. On the other hand, since I had to do a little sysadmin work there too, I started exploring Go from that perspecitve too, inspired by Kelsey Hightower's talk at Gophercon earlier this year.
+
+**Qs**. How should one go about learning the Go language? What material (books, eBooks, online tutorials etc.) would you recommend?
+
+_Verónica:_ As a (partially) self-taught programmer, what has worked for me is practising A LOT! Since I knew other languages before I learnt Go, in the beginning, I used to write the same algorithms in different languages and compare their behaviour, which is only useful in the beginning. I also read a lot of online and literature resources. My favorite books so far have been Programming in Go: Creating Applications for the 21st Century, and Go in Action (still in progress) and I enjoy the official blog posts [http://blog.golang.org/](http://blog.golang.org/). If you don't feel confident enough to join an open source project yet, [http://exercism.io/](http://exercism.io/) is an awesome platform where you can practice Go by completing code exercises that you can later submit to receive positive feedback from other coders. I also recommend attending local Golang meetups to meet new people with interesting projects.
+
+**Qs**. What best practices are most important for a new Go programmer to learn and understand?
+
+_Verónica:_ A simple way to get started is getting to know the roles of the main data structures that Go has to offer, not only because that can save a lot of testing time, improve performance or you're supposed to write clean code, but because having a strong knowledge of data structures will be fundamental when you decide to take full advantage of Go's concurrency.
+
+**Qs**. What are the pros and cons of Go that are being discussed in the development community and what is your opinion on that?
+
+_Verónica:_ I try to avoid these discussions, mainly because most of them are just perspectives from developers who are almost emotionally attached to their other languages and all they do is try to show how they kick Go's ass in every single way, even when they don't.
+
+In my experience, I've recently concluded that most of the people that talk trash about non-relational databases, don't understand or haven't really worked with non-relational databases. I concluded the same for Go ;)
+
+**Qs**. Most beginners in Go would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
+
+_Verónica:_ Since my current work involves research, I don't have any open projects to suggest, but my recommendation would be to look in Github for a project written in Go that has to do with other technologies that you already like or work with (e.g. Raspberry Pi, Linux, Mobile...)
+
+**Qs**. What has been your biggest challenge while working with Go?
+
+_Verónica:_ Coming from another language, we usually try to compare it with Go all the time, which is lame. On the other hand, the biggest challenge for me, in Mexico City, has been trying to convince teams, bosses and fellow developers to use it, mainly for two reasons: non-technical bosses are always afraid of using new technologies that have not been well adopted yet because that usually means not being able find new Go developers easily or having to spend time and money to train them before they can be productive. The other reason is on the developer side: having tons of Java, .Net and C developers in Mexico, they are commonly reluctant to adopt new technologies in a "if my tools still work, why change them" philosophy, so the community is still very small, but we're working on it.
+
+**Qs**. What types of applications are currently being developed in Go and what changes do you foresee over the next year or two?
+
+_Verónica:_ I don't think I could put a label on the types of applications currently developed in Go, because I've almost seen it all. Of course, the web and distributed applications are the most popular, but I've also seen a lot of work on the server and makers' side (Raspberry Pi, Drones, etc), and even incipient efforts for mobile.
+
+I think that the next two years will be very prolific for Go. Gophers around the world are working very hard to bring new programmers on board, and also a lot of work is being done to have lots of learning and reference resources, both free and paid, which is great. Personally, as an Android developer, I really hope that in the years to come, Go has a strong influence in mobile development.
+
+**Qs**. How do you see the market for Go Programmers in the work place? What is the future for Go?
+
+_Verónica:_ Even if it has not grown immensely (yet), you can now find a good number of Go open positions around the world, though they're usually for big companies or places where an in house developer already knows the language, but IMHO, this is not bad, considering that most of Go developers usually know another language already, so nowadays, having Go in your toolbelt along with other technologies is very helpful and shows that you enjoy learning new things.
+
+This is also a great time to adopt Go as a new programmer, because we are living the raw evolution of the language in real time, as opposed to adopting a language that has been around for decades.
+
+**Qs**. How excited are you about GopherConIndia 2015?
+
+_Verónica:_ Being my first conference as a speaker, I'm both thrilled and a bit nervous, but very very excited!
+
+**Qs**. Do you have any other suggestions for our readers?
+
+_Verónica:_ A lot is said about Go, specially by people who haven't used Go, so my advice is: if you are considering Go as an option for your projects, take a look at the official documentation, but also do some coding exercises before you get officially started so you can feel more comfortable. Just as you have to forget about classical mechanics when you learn quantum mechanics, please try to avoid comparing Go with your other tools for good.
+
+_Thanks Verónica for sharing your views with us. I am confident that your insights would help all the would-be Go programmers. In case you have any queries and/or questions, kindly post your questions here (as comments to this blog post) and Verónica would be glad to answer._

@@ -1,0 +1,41 @@
+---
+layout: post
+title:  "Our Gold Sponsor: Exotel"
+tags: [Exotel, GopherConIndia, golang]
+---
+
+![Exotel]({{ site.github_project_name }}/images/sponsors/exotel.png)
+
+Exotel - Gold Sponsor of GopherConIndia 2016
+----------------------------------------------------------------
+
+GopherConIndia welcomes [Exotel](http://exotel.in/) as a Gold sponsor of GopherConIndia 2016. As the second Go conference to be held in India, event sponsorship is a great way for leading companies to demonstrate their support for the growing, global Gopher herd.
+
+Exotel is India's fastest growing cloud telephony startup based out of Bangalore. Powering more than a million phone calls per day, Exotel helps companies, from small startups to enterprises connect to their customers. Exotel aims to change the way business communication happen by building a suite of innovative voice products on top of a robust and scalable telephony infrastructure. The infrastructure is currently being built using Go.
+
+We talked to [Siddharth Ramesh](https://www.linkedin.com/pub/siddharth-ramesh/3/751/a46) CTO at Exotel.
+
+![Siddharth Ramesh]({{ site.github_project_name }}/images/speakers/siddharth.jpg)
+
+**Qs**. Can you tell us about your company and what you'll do? What are your company's future plans?
+
+**Ans**. Exotel is a cloud telephony platform and product. Over 700 companies have built and automated their entire sales and support operations on us. Cloud telephony is in a very nascent stage globally; and in India it is further challenged by a flaky telecom infrastructure. So we build an extremely reliable platform on top of this unreliable infrastructure. If cloud telephony is to be as prevelant as cloud computing, reliability is must to build trust with businesses; and thats where our focus is as well.
+
+**Qs**. Is Exotel using Go or planning on using it in the near future?
+
+**Ans**. Yes, we have started using Go for most of our platform and product components. This is our default and primary language of development and a large segement of our services are (being) written in Go. We need extremely performant, very high concurrency services. And since concurrency features are first-class citizens within the language, choice of Go was easy to make.
+
+**Qs**. Where do you see Go in the foreseeable future?
+
+**Ans**. Go has a very interesting future ahead - especially for services where high concurrency is paramount. Also, as the language stabilizes, patterns evolve and performance becomes even better, we foresee enterprises which require immense performance and scale making the switch.
+
+**Qs**. What is your impression about the Go programming scene in India?
+
+**Ans**. Go is a very young language. Personally, in India, I've seen only a handful of people and businesses using Go actively. On the positive, the community is quite active, the number of meetups and discussions around Go are steadily increasing. This trend will continue as more developers and companies come forward and share their stories around leveraging Go.
+
+**Qs**. Why did you decide to sponsor GopherConIndia?
+
+**Ans**. Internationally, some of the talks given at previous GopherCons have formed the basis of our move to this language. Since moving to Go is helping us scale our services manifold, we would like to give back to the community and share our first steps into this "Concurrent World". Also, I think it's going to be a great venue to get feedback on what we can improve upon as a product and as a team.
+
+_Thank you Siddharth for sharing your views with us. I am confident that your insights would help all the would-be Go programmers. In case you have any queries and/or questions, kindly post your questions here (as comments to this blog post) and Siddharth would be glad to answer._
+

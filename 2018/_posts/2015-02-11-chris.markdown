@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "Interview: Gopher Chris Saunders"
+tags: [Chris Saunders, GopherConIndia, golang]
+---
+
+![Chris Saunders]({{ site.github_project_name }}/images/speakers/chris.jpg)
+
+**Qs**. Welcome and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about your-self?
+
+_Chris:_ I'm a Canadian software developer working at Shopify. I've mainly been interested in our API and how we can make it better for it's consumers (especially our mobile clients). I like beer, both the consumption and production.
+
+**Qs**. Why and when did you decide to start working with Go?
+
+_Chris:_ I started working with Go about a year or so ago. I've mainly used it experimentally and don't have any "real projects" out in the wild yet.
+
+**Qs**. How should one go about learning the Go language? What material (books, eBooks, online tutorials etc.) would you recommend?
+
+_Chris:_ Go through the Effective Go online guide. It'll set you up with the basics, then just build stuff.
+
+**Qs**. What best practices are most important for a new Go programmer to learn and understand?
+
+_Chris:_ Learn how to structure your projects, especially if you are building binaries that you'll be distributing. Also avoid package namespace bloat, it just makes things more confusing.
+
+**Qs**. What are the pros and cons of Go that are being discussed in the development community and what is your opinion on that?
+
+_Chris:_ The biggest thing that stood out to me was the lack of a decent abstraction layer for things like Async Processing. This [article](https://gist.github.com/kachayev/21e7fe149bc5ae0bd878) talked about it in decent detail.
+
+**Qs**. Most beginners in Go would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
+
+_Chris:_ I haven't contributed to any go projects so I wouldn't know where to start.
+
+**Qs**. What has been your biggest challenge while working with Go?
+
+_Chris:_ Trying to build out something generic enough that you can use in other places has been pretty difficult. I still just get frustrated and cop out with a static declaration.
+
+**Qs**. What types of applications are currently being developed in Go and what changes do you foresee over the next year or two?
+
+_Chris:_ Go is pretty general purpose so it's been used for tons of things. Shopify uses it to build out a scale testing system, it's used for etcd and docker, and of course there's the various web frameworks too.
+
+**Qs**. How do you see the market for Go Programmers in the work place? What is the future for Go?
+
+_Chris:_ Go is one of "the big three" as I am seeing it right now. If you choose between Go, Rust or Clojure you can't go wrong. These are tools that are being used to solve problems that are really hard in the more "traditional" areas that languages like Ruby would've been used.
+
+**Qs**. Do you have any other suggestions for our readers?
+
+_Chris:_ Share what you know. There's lot of people out there who don't know what they are doing and are looking for good learning resources. This is a great chance to work on your writing skills as well as help people.
+
+_Thanks Chris for sharing your views with us. I am confident that your insights would help all the would-be Go programmers. In case you have any queries and/or questions, kindly post your questions here (as comments to this blog post) and Chris would be glad to answer._
