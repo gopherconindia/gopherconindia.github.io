@@ -10,7 +10,7 @@ tags: [Mark Bates, GopherConIndia, golang]
 
 Qs. Why and when did you decide to start working with Go?
 
-_Mark:_ I had started playing with Go in mid-2013 while trying to find a solution to some concurrency and speed problems I was having in Ruby. It wasn't until a weekend in Istanbul with [Andrew Gerrand](https://twitter.com/enneff) and [Blake Mizerany](http://www.gophercon.in/blog/2014/06/27/blake/) that I really fell in love with it.
+_Mark:_ I had started playing with Go in mid-2013 while trying to find a solution to some concurrency and speed problems I was having in Ruby. It wasn't until a weekend in Istanbul with [Andrew Gerrand](https://twitter.com/enneff) and [Blake Mizerany](https://gopherconindia.com/blog/2014/06/27/blake/) that I really fell in love with it.
 
 **Qs**. What are you currently working on?
 

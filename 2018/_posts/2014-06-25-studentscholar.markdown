@@ -7,7 +7,7 @@ tags: [GopherConIndia, golang]
 Student Sponsorship Prospectus
 ==============================
 
-The Indian Go programming community is growing at a dramatic pace and has conceived [this conference](http://www.gophercon.in/). The number of companies utilizing Go, as part of their technology stack, continues to grow steadily. GopherConIndia is a two day, single track event, where everyone gets the opportunity to see all the talks. The conference is brought to you by the Go Language Community in India together with the Innovation & Technology Trust.
+The Indian Go programming community is growing at a dramatic pace and has conceived [this conference](https://gopherconindia.com/). The number of companies utilizing Go, as part of their technology stack, continues to grow steadily. GopherConIndia is a two day, single track event, where everyone gets the opportunity to see all the talks. The conference is brought to you by the Go Language Community in India together with the Innovation & Technology Trust.
 
 Be a Supporter
 --------------
