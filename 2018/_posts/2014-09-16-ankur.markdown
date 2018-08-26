@@ -52,6 +52,6 @@ _Ankur:_ Dockers, Juju etc. validate Go as a good choice for system programming.
 
 _Ankur:_ Come to GopherConIndia 2015. :) . The Organizers are working hard to put an excellent show. I am @originalankur on twitter, let us meet. You can reach me at ankur@outlook.com. 
 
-If you are a student in India we are doing Gopher Month in January 2015 wherein we shall visit colleges and hold free workshops teaching Go. If you are a Go Programmer please volunteer and help teach Go. More details up on the [website](http://www.gophercon.in/gopher-month/).
+If you are a student in India we are doing Gopher Month in January 2015 wherein we shall visit colleges and hold free workshops teaching Go. If you are a Go Programmer please volunteer and help teach Go. More details up on the [website](https://gopherconindia.com/gopher-month/).
 
 _Thanks Ankur for sharing your views with us. I am confident that your insights would help all the would-be Go programmers. In case you have any queries and/or questions, kindly post your questions here (as comments to this blog post) and Ankur would be glad to answer._
