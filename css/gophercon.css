@@ -83,6 +83,10 @@ a:focus {
     background-color: #292C33;
 }
 
+.navbar ul.navbar-nav {
+    font-weight: bold;
+}
+
 .navbar .navbar-nav > li > a {
     text-transform: uppercase;
 }
