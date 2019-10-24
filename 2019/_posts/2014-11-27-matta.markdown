@@ -1,0 +1,51 @@
+---
+layout: post
+title:  "Interview: Gopher Matt Aimonetti"
+tags: [Matt Aimonetti, GopherConIndia, golang]
+---
+
+![Matt Aimonetti]({{ site.github_project_name }}/images/speakers/matt.jpg)
+
+**Qs**. Welcome and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about your-self?
+
+_Matt:_ Hi, my name is Matt Aimonetti and I'm the Co-Founder and CTO of [Splice](https://splice.com/), a startup focusing on helping musicians create, collaborate and distribute their music better. Before Splice, I worked for startups and Fortune 500 such as LivingSocial and Sony PlayStation while being deeply involved in the Ruby Open Source community (Merb, Rails, MacRuby...). I finally started my own venture in 2013 and chose Go as our main backend language.
+
+**Qs**. Why and when did you decide to start working with Go?
+
+_Matt:_ I played with Go in 2009 when the language was announced. At that time, my friend Carl Lerche was super excited about the new language and his passion was contagious. But the language and toolsets were changing too rapidly for me so I followed the project from afar. In 2011, I spent a good chunk of my summer writing some small and fun Go apps, mainly influenced and helped by early adopter: Blake Mizerany. Things weren't stable yet but `go fix` made code maintenance and update easier. I finally worked on a real Go project for the first time while doing R&D at LivingSocial. Unfortunately, the ARM support wasn't that great back then and the project never passed the prototype stage. I kept playing with Go until I started Splice where I knew I needed a fast, concurrent language. As proved while at Sony, Ruby can scale but it's not trivial, so I had to choose another language for the backend. I had a hard time choosing between Scala and Go. I like both languages even though they are on the opposite end of the spectrum. At the end of the day I chose Go for mainly 3 reasons: memory consumption/no JVM, code maintenance, Go's philosophy makes growing a team easier (bonus reason: plus compilation time).
+
+**Qs**. How should one go about learning the Go language? What material (books, eBooks, online tutorials etc.) would you recommend?
+
+_Matt:_ I would obviously suggest to read my [free and Open Source eBook on Go](http://www.golangbootcamp.com/): it's based on the amazing Go Tour. The content is freely available online and in downloadable format. The entire book content is available on a public [GitHub repo](https://github.com/gobootcamp/book) so you can submit content edits/new content and fixes as you learn.
+
+Then read and reread [Effective Go](http://golang.org/doc/effective_go.html) over and over until you know it by heart. Besides that, the Go blog has a lot of insightful articles about the language and its usage. I also learned a lot by looking at Go Packages' source code. Check how the team does testing, how the code is organized, what solution did they choose to address common issues. If it worked for them, it probably should work for you too.
+
+**Qs**. What best practices are most important for a new Go programmer to learn and understand?
+
+_Matt:_ Don't try to force your previous language's approach into Go. Each language has different values, a different world view and you can't just mix and match based on what you are used to. Error handling might seem weird at first, the lack of high level collection abstractions and generics can be frustrating. But instead of trying to force your way in, try to understand why these compromises were made, try to follow the philosophy and see where it takes you. I see so many Rubyists wanting to implement a generic map method on collections. You can make it work, but there is a reason why the Go team chose not to implement that. And, no, it's not that they are lazy.
+
+**Qs**. What are the pros and cons of Go that are being discussed in the development community and what is your opinion on that?
+
+_Matt:_ To be honest, I have been more focused on what we are building with Go than paying attention about what the deveopment community thinks of the language. Overall, the one thing I value the most in Go is the rational design approach made by the team to keep thing as simple as possible and avoid surprises in the long term. I tried to summarize my thinking in this blog post: "[pay upfront or get a credit line](https://blog.splice.com/golang-improved-simplicity-reduced-maintenance/)".
+
+**Qs**. Most beginners in Go would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
+
+_Matt:_ [Go Bootcamp](http://www.golangbootcamp.com/) is a great place for beginners to help others while learning at the same time. Another one is [Exercism](http://exercism.io/) a great project by one of our brilliant team members: Katrina Owen. Both of these projects are very centered on education which I find to be a great place to contribute. A more controversial idea might be to provide more examples to the Go's standard library which is done by adding example tests.
+
+**Qs**. What has been your biggest challenge while working with Go?
+
+_Matt:_ I would say it might have been debugging go routines.
+
+**Qs**. What types of applications are currently being developed in Go and what changes do you foresee over the next year or two?
+
+_Matt:_ We have a very wide stack at Splice with 7 languages used across many projects (Go, Ruby, JS, Objective-C, .Net, C and C++) but our backend is mainly in Go. We have a set of Go APIs used by all our clients (including a Rails app) and we have parsers, workers and tools also written in Go. C and C++ are used to share logic between our Mac and Windows apps, it would be great if we could ship a dynamic Go library that could be loaded from ObjC and .Net. We are also probably going to move towards less Ruby and more JS (Angular.JS) for the frontend but that might take a little while due to SEO constraints and stability of the JS client side stack.
+
+**Qs**. How do you see the market for Go Programmers in the work place? What is the future for Go?
+
+_Matt:_ I prefer to stay away from predictions, but what I did notice that most startups and bigger companies I interact with started using Go to do some extent. Go's concurrency model, memory/CPU footprint and simplicity of adoption, pushes companies that want better performance than Ruby and Python but don't want to deal with C/C++ or the JVM (Java, Scala, Clojure, Groovy..). Good programmers will always find a job, and it looks like a bunch of them are switching to Go, while more and more company are looking for skilled engineers.
+
+**Qs**. Do you have any other suggestions for our readers?
+
+_Matt:_ Once you've learned Go and/or made you mind about the language, don't stop learning, don't stop looking at other programming languages. A couple of other languages to keep an eye on: Rust (philosophically very different from Go) and Elixir (Erlang based). Finally, don't forget that programming languages are just tools, the end goal is to build amazing things not to to spend your time admiring or arguing about the tools.
+
+_Thanks Matt for sharing your views with us. I am confident that your insights would help all the would-be Go programmers. In case you have any queries and/or questions, kindly post your questions here (as comments to this blog post) and Matt would be glad to answer._

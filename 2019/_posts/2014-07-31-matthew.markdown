@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Speaker: Matthew Campbell"
+tags: [Matthew Campbell, GopherConIndia, golang]
+---
+
+![Matthew Campbell]({{ site.github_project_name }}/images/speakers/matthew.campbell.png)
+
+[Matthew Campbell](https://twitter.com/kanwisher) has been a hacker since he was teething. He specializes in Go, Ruby and Scala. His most notable projects were porting Bloomberg.com to Ruby on Rails from scratch. Building real-time ad platforms in scala at Tapad. Most recently building the largest financial instant messaging server on the planet from scratch in Go with a small team for Thomson Reuters. In his free time he likes to hack arduinos and scuba dive. He recently spoke and runs the [Go Meetup in Bangkok](http://www.meetup.com/Bangkok-Gophers-Go-programming-Meetup/). Matthew splits his time between New York and Bangkok, leading teams in both locations.
+
+

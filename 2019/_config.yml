@@ -1,0 +1,18 @@
+url: https://gopherconindia.com/
+title: GopherConIndia
+
+
+google_analytics_tracking_id: UA-51493925-1
+google_analytics_tracking_domain: auto
+
+exclude: ["Gemfile", "Gemfile.lock", "bin"]
+
+permalink: /blog/:year/:month/:day/:title/
+
+markdown: kramdown
+
+disqus_shortname: gopherconindia
+
+twitter_username: GopherConIndia
+
+encoding: UTF-8

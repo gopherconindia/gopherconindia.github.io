@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Speaker: Manik Taneja"
+tags: [Manik Taneja, GopherConIndia, golang]
+---
+
+![Manik Taneja]({{ site.github_project_name }}/images/speakers/manik-taneja.jpg)
+
+Manik Taneja is currently working as an Architect at Couchbase, India where his primarily responsibility is to design and implement features for their next generation query language N1QL. He has a strong systems background having worked extensively in areas of distributed systems, network caching and NoSQL databases. His language of choice is C but after having discovered Go, he is pretty much hooked on to it and he's looking forward to seeing it grow and build some really cool stuff with it.
+
+Manik is a speaker at GopherConIndia 2015 and his talk is on - N1QL a query language in Go. It makes "cents".
+
+N1QL (pronounced as "nickel") - is Coucbase's next generation query language. N1QL presents easy and familiar abstractions to quickly develop scalable applications that work with next generation database systems. It allows for joins, filter expressions, aggregate expressions and many other features to build a rich application. N1QL builds on the SQL language and includes many of SQL's features in addition to features associated with document-oriented databases, i.e. it supports schema less JSON documents, nested attributes and domain oriented normalization. N1QL has been built entirely using golang and in this talk we will explore the architecture N1QL and a couple of real world use-cases that will demonstrate the power of N1QL over other existing query languages.
+
+_Please feel free to post here your thoughts/suggestions about his proposed talk._

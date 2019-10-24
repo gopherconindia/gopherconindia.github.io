@@ -1,0 +1,61 @@
+---
+layout: post
+title:  "Interview: Gopher Anthony Starks"
+tags: [Anthony Starks, GopherConIndia, golang]
+---
+
+![Anthony Starks]({{ site.github_project_name }}/images/speakers/anthony-starks.jpg)
+
+Qs. Welcome and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about your-self?
+
+_Anthony:_ I'm an old-school Unix guy who started back in the 80's (I learned Unix from Kernighan and Pike's "The Unix Programming Environment"), I was also involved in promoting and using the web from its early days (remember when "webmasters" were a thing :). Today, I'm doing IT strategy and architecture, but I still code. Where some of my colleagues may use a spreadsheet, I'll dash off some code (usually in Go :) to do some analysis or visualization.
+
+I've used Go since it was first announced in 2009, submitting some (very) minor early contributions, and I've been using the language at work and outside projects every since. Late that same year, I began the development of SVGo, a library for generating SVG, and I've used it in projects then and now anytime I need to generate graphics and visualizations. For example, I have a suite of tools built on SVGo for generating views and visualizations for IT architecture. Recently I developed a web front-end (in Go of course) to some of these tools to make the them accessible to non command line people.
+
+For the past few years my theme has been "programming pictures". Some have called this area creative coding, but I think it goes beyond that, it's using the computer, and in my case Go code, to automate tasks and graphics production instead of laboriously pushing pixels around. I find it much more productive to "let the computer do it". This penchant for graphics led to two more projects: an OpenVG vector graphics library for the Raspberry Pi (thanks to the Go community for making ARM a first-class port, even on small machines like the Raspi), and deck, tool for making presentations. Deck allows me complete control over the layout, style, size and design of my decks, using a common markup language.
+
+Deck also allows other clients to create decks from data (again letting the computer do it for you).
+
+**Qs**. How should one go about learning the Go language? What material (books, eBooks, online tutorials etc.) would you recommend?
+
+_Anthony:_ The usual: the Go tour, the playground, but reading the golang-nuts mailing list is also instructive. I also read golang-dev and check out [build.golang.org](http://build.golang.org/) to get a view of the ongoing development. It's a bit like listening in on Channel 9 while you're on a plane flight.
+
+Recently I've been using the Slack tool to keep up with Go activities and to engage in discussions with the Go community.
+
+One more thing, search the #golang hash tag on twitter. You can learn a lot from just watching that.
+
+**Qs**. What best practices are most important for a new Go programmer to learn and understand?
+
+_Anthony:_ Embrace the "Go way", to get the full benefit of the language. Things like using using `GOPATH` to organize your code, using `go fmt`, `go test`, `go vet`, always checking your error returns, are important practices.
+
+**Qs**. What are the pros and cons of Go that are being discussed in the development community and what is your opinion on that?
+
+_Anthony:_ Most of the usual complaints (lack of generics, etc.) don't really register anymore, and in general I'm pleased with the development of the language, and I'm interested to see how moving the compiler from C to Go will effect performance. I also note lots of work on the garbage collector and runtime.
+
+**Qs**. Most beginners in Go would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
+
+_Anthony:_ First, lurk in the golang-nuts mailing list for a while to get a view of the kinds of questions concerns of the community, and then ask for help and guidance when you need it.
+
+You can also find a project that turns you on or scratches some itch, and dive in. Make sure to follow best practices so that your code is "go gettable" so that others can use an contribute as well. Any code is just an import statement away, right next to standard library.
+
+I also recommend attending local meetups, often you can catch presentation from members of the Go team or other advanced members of the Go community. I'm fortunate to be close to New York, which has an active set of Go enthusiasts.
+
+Finally, listen, absorb, ask questions, code.
+
+**Qs**. What has been your biggest challenge while working with Go?
+
+_Anthony:_ Leveraging the Go concurrency model for things like UIs.
+
+**Qs**. What types of applications are currently being developed in Go and what changes do you foresee over the next year or two?
+
+_Anthony:_ I observe a lot of web, backend and devops works right now, but I'd like to collaborate with the community on rising to the challenge given by Andrew Gerrand at GopherCon: "A GUI toolkit that looks amazing". I'd like to see us not just ape traditional GUI work, but really innovate using some of the ideas from folks like Bret Victor.
+
+**Qs**. How do you see the market for Go Programmers in the work place? What is the future for Go?
+
+_Anthony:_ The future looks bright -- especially in the devops area, but there is lots of potential too in web development, robotics, graphics and visualization.
+
+**Qs**. Do you have any other suggestions for our readers?
+
+_Anthony:_ Dive in, have fun.
+
+_Thanks Anthony for sharing your views with us. I am confident that your insights would help all the would-be Go programmers. In case you have any queries and/or questions, kindly post your questions here (as comments to this blog post) and Anthony would be glad to answer._

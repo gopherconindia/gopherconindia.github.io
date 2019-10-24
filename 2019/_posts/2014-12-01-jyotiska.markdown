@@ -1,0 +1,49 @@
+---
+layout: post
+title:  "Interview: Gopher Jyotiska NK"
+tags: [Jyotiska NK, GopherConIndia, golang]
+---
+
+![Jyotiska NK]({{ site.github_project_name }}/images/speakers/jyotiska.jpg)
+
+**Qs**. Welcome and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about your-self?
+
+_Jyotiska:_ I am a developer based in Bangalore working at [DataWeave](http://dataweave.com/). I like to hack in Python and Go and frequently contribute to open source. All of my codes can be found on [Github](https://github.com/jyotiska).
+
+**Qs**. Why and when did you decide to start working with Go?
+
+_Jyotiska:_ I was introduced to Go back in 2011 during my stint as a researcher at the University of Illinois at Chicago. The [Ethos OS project](http://www.ethos-os.org/background.html) actively uses C and Go for their entire development. I started playing with Go last year and started building small projects.
+
+**Qs**. How should one go about learning the Go language? What material (books, eBooks, online tutorials etc.) would you recommend?
+
+_Jyotiska:_ From my experience, Go is one of the programming language which actually makes you go back to reading books before you can confidently start developing. I refered to [Effective Go](http://golang.org/doc/effective_go.html),  [Introduction to Programming in Go](http://www.golang-book.com/) by Caleb Doxsey, [Building Web Applications with Golang](https://github.com/astaxie/build-web-application-with-golang) and [A Tour of Go](http://tour.golang.org/). Other than that, the Go community is very active and I got many useful tips and help on my projects from the official IRC channel. 
+
+**Qs**. What best practices are most important for a new Go programmer to learn and understand?
+
+_Jyotiska:_ One good way to learn best practices is to read existing source codes and try to reflect them on your projects. I started with reading source codes of `net/http` and "martini" and it helped me a lot with code organization and dividing my codebase into separate modules. Another best practice is to write as many test cases as possible. Go has a very decent testing package and it helps a lot if you are writing code in production.
+
+**Qs**. What are the pros and cons of Go that are being discussed in the development community and what is your opinion on that?
+
+_Jyotiska:_ Some of the often discussed topics are lack of generics in Go (as Rob Pike says - "They're called interfaces!"), proper project management tools. Go being a young language, it will take some time before all these issues get addressed. 
+
+**Qs**. Most beginners in Go would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
+
+_Jyotiska:_ The best way is to start small and keep writing code regularly no matter what your project is. Most newbie Gophers will come from other programming languages. So why don't you take up your favorite packages or libraries and try to write a mini version of it in Go? How about a small wrapper on top of `encoding/json` package? How about some GUI applications using the Qt binding? Or if you are feeling adventurous, how about a ORM library? Start small and keep experimenting.
+
+**Qs**. What has been your biggest challenge while working with Go?
+
+_Jyotiska:_ Since I develop mostly in Python, the strict type systems and syntax conventions in Go was something that annoyed me at the beginning. But it takes some time to get used to the environment and formatting styles. Once I got used to the language, it became quite easy to write quality code. Also, lack of exceptions actually made me write more lines of code but it paid off in the end as I did not have to worry about some missing try blocks for exceptions that I forgot to catch.
+
+**Qs**. What types of applications are currently being developed in Go and what changes do you foresee over the next year or two?
+
+_Jyotiska:_ Go has seen a lot of interest over the past couple of years and many big companies are slowly opting for Go. A couple of popular projects are Docker and Juju which are pure Golang. In next two years, I am confident that I will see more companies accepting Go in their production environment and building great products with it. I believe Go will make its way into high performance key-value stores, web servers handling heavy traffic and embedded programming (shoutout to `embd` and `gobot`).
+
+**Qs**. How do you see the market for Go Programmers in the work place? What is the future for Go?
+
+_Jyotiska:_ India is slowly accepting Go into the tech community. First Gophercon took place early this year and India is hosting first of their own in 2015. As awareness keeps spreading and more people start adopting Go, we will see a lot of interesting use-cases and projects being released in the coming years.
+
+**Qs**. Do you have any other suggestions for our readers?
+
+_Jyotiska:_ The Go community is very young, friendly and vibrant. We always look forward to helping developers in taking up Go. Come for one of our meetups in Bangalore or join us at our first GopherCon India and I am sure you will find plenty of good reasons to enjoy.
+
+_Thanks Jyotiska for sharing your views with us. I am confident that your insights would help all the would-be Go programmers. In case you have any queries and/or questions, kindly post your questions here (as comments to this blog post) and Jyotiska would be glad to answer._

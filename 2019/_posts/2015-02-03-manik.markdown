@@ -1,0 +1,57 @@
+---
+layout: post
+title:  "Interview: Gopher Manik Taneja"
+tags: [Manik Taneja, GopherConIndia, golang]
+---
+
+![Manik Taneja]({{ site.github_project_name }}/images/speakers/manik-taneja.jpg)
+
+**Qs**. Welcome and thanks for taking out time to share your thoughts. For the benefit of the readers, could you tell us something about your-self?
+
+_Manik:_ I am Software Architect at Couchbase India and I am currently working on some infrastructure projects that are aimed at adding traditional database features such as Query and Secondary Indexing to the Couchbase NoSql server. Prior to that I was working at Zynga where I was leading the game storage team. I have about 14 years experience in the software industry where I have worked mostly on server side and infrastructure projects related to network security, caching and storage.
+
+**Qs**. Why and when did you decide to start working with Go?
+
+_Manik:_ A couple of years ago, we were looking at replacing our existing cluster manager framework that was built in Erlang with something that would be easier to build and maintain. That's when we stumbled across GoLang and we thought that it would be a great choice of language for this effort. It was a great alternative to C/C++ because it's a good compromise between a low language like C and a higher level language like Python.
+
+**Qs**. How should one go about learning the Go language? What material (books, eBooks, online tutorials etc.) would you recommend?
+
+_Manik:_ The last time I used a book to learn a language was way back in school when I read Kernighan and Ritchie cover to cover, many times over. Books are good and I use them as a reference every now and then but I think the best way to learn a language is to go through some basic tutorials that are found on the golang website and then pick up a project in Go. Nothing compares to what you can learn by actually working and building something in a new language. Having said that, I do refer to this document a lot [Effective Go](https://golang.org/doc/effective_go.html), particularly when it comes to figuring out what is the idiomatic way of implementing stuff in Go.
+
+**Qs**. What best practices are most important for a new Go programmer to learn and understand?
+
+_Manik:_ Keep functions small, don't go overboard with long variable names and avoid creating garbage.
+
+**Qs**. What are the pros and cons of Go that are being discussed in the development community and what is your opinion on that?
+
+_Manik:_ I don't know much about what's being discussed in the development community but here are some features about Go that I have come to love:
+
+1. gofmt
+2. go profile
+3. Strong type-checking 
+4. go routines 
+5. go test framework
+
+I am not a big fan of GC and I'm super happy to see the object caching pool.Sync APIs that have been released with Go 1.3
+
+**Qs**. Most beginners in Go would like to contribute their time, skills and expertise to a project but invariably are unaware of where and how to do so. Could you suggest some?
+
+_Manik:_ I think Go can pretty much be used anywhere except for UI/Front-end applications. At Couchbase we have been using Go quite a lot for stuff like cluster management protocols, networking applications and even for building database features such N1QL which is a next generation query language for no-SQL databases.
+
+**Qs**. What has been your biggest challenge while working with Go?
+
+_Manik:_ Haven't really faced any big challenges while working with Go that couldn't be overcome by searching on the internet. There is a lot of documentation, example code, HOWTOs available on the internet since Go has caught the attention of many developers around the world so when in doubt, Google to the rescue.
+
+**Qs**. What types of applications are currently being developed in Go and what changes do you foresee over the next year or two?
+
+_Manik:_ As I said earlier we are using Go for a lot of components in our Software stack. Right from client code to middle-ware to language parsers to data processors. Over the next few years I would really like to see it being used to build mobile applications, i.e as a replacement for Java and Cocoa.
+
+**Qs**. How do you see the market for Go Programmers in the work place? What is the future for Go?
+
+_Manik:_ Go is a great tool in the armory for any developer. Furthermore it's very easy to learn and be productive quickly with this language. The fact that it is a complied language gives it a great edge over languages such as Java and Python. In my opinion I see the future being very bright for GoLang and go developers. We are already seeing some companies that are using Go in production and I think the number of companies who do that is going to grow exponentially over the next few years.
+
+**Qs**. Do you have any other suggestions for our readers?
+
+_Manik:_ Yes, get your hands dirty with Go and contribute to open source. Both of these methods are a great way of improving your programming and engineering skills.
+
+_Thanks Manik for sharing your views with us. I am confident that your insights would help all the would-be Go programmers. In case you have any queries and/or questions, kindly post your questions here (as comments to this blog post) and Manik would be glad to answer._
