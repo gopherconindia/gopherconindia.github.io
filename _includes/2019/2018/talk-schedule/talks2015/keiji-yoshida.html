@@ -1,0 +1,41 @@
+<a href="#" data-toggle="modal" data-target="#keijiYoshida">Practical Tips for Creating a Go Package Successfully - Keiji Yoshida</a>
+
+<div class="modal fade bs-example-modal-lg" id="keijiYoshida" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-body">
+		<button type="button" class="close pull-right" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <div class="rows clearfix">
+		<div class="col-sm-8">
+			<h2 class="modal-title" id="myModalLabel">Practical Tips for Creating a Go Package Successfully</h2>
+			<div class="modal-desc">
+				<i class="glyphicon glyphicon-calendar"></i> Friday 20th February, 2015 &nbsp;&nbsp;<i class="glyphicon glyphicon-time"></i> 1:25 pm to 1:50 pm (IST)
+			</div>
+			<p>I'll talk about practical tips for creating a Go package successfully. I have created and maintained some Go packages such as a <a href="https://github.com/yosssi/gcss" target="_blank">CSS preprocessor</a> and an <a href"https://github.com/yosssi/ace" target="_blank">HTML template engine</a>. I have learned and found useful manners to create a Go package by having made a lot of mistakes and fixed them. Especially, I have recreated an HTML template engine from <a href="https://github.com/yosssi/gold" target="_blank">Gold</a> to <a href="https://github.com/yosssi/ace" target="_blank">Ace</a> because the former had a lot of bad things. I have studied a lot of things from this mistake and I want to share them with other Go users by using practical and concrete examples. I'll talk these tips for beginners of Go who will create their own Go package in the future. These are some examples of these tips:</p>
+        <ul>
+			<li>Set a public accessibility to variables and functions which you REALLY want to make public</li>
+			<li>Have a public function get an "Options" struct instead of many configuration parameters for the future extension</li>
+			<li>Divide a struct which has many kinds of types/modes into small structs by making use of an interface and a struct embedment feature of Go</li>
+			<li>Tips for achieving 100% of test coverage</li>
+			<li>Why is 100% of test coverage is important?: Test of Regression &amp; Detection of Race Condition</li>
+			<li>Don't write test codes at the end, write them in parallel with program codes</li>
+			<li>Tools for writing Go source code successfully: goimports, golint</li>
+			<li>Define error constants if we can</li>
+			<li>Be careful to the difference between OSs when check error messages</li>
+			<li>Build CI environments of Windows and Linux</li>
+		</ul>
+		</div>
+		<div class="col-sm-4">
+			<div class="image-box" style="background-image:url({{ site.github_project_name }}/2018/images/speakers/keiji-yoshida.jpg)"></div>
+			<span class="name">Keiji Yoshida</span>
+            <span class="company"><a href="https://twitter.com/_yosssi" target="_blank"><i class="fa fa-twitter fa-fw"></i> @_yosssi</a></span>
+			<hr />
+            <div class="speaker-desc">
+				Keiji Yoshida is a software engineer at an IT service provider in Japan. He has experience in developing financial systems for Japanese banks for many years. He uses Go for his private work. He tries to arrange an environment for building a web application efficiently in Go and he develops and maintains some kinds of Go libraries such as GCSS which is a pure Go CSS preprocessor and Ace which is an HTML template engine for Go.
+			</div>
+	    </div>
+		</div>
+      </div>
+    </div>
+  </div>
+</div>
