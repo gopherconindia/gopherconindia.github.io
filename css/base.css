@@ -105,13 +105,13 @@ body {
 
 a {
 	text-decoration: none;
-	color: var(--color-link);
+	/*color: var(--color-link);*/
 	outline: none;
 }
 
 a:hover,
 a:focus {
-	color: var(--color-link-hover);
+	/*color: var(--color-link-hover);*/
 	outline: none;
 }
 
