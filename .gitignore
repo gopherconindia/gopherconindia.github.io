@@ -1,5 +1,5 @@
 bin/
-.DS-Store
+.DS_Store
 .idea/*
 Thumbs.db
 _site/
