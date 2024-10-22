@@ -34,7 +34,43 @@
   margin: auto;
   width: 40%;
 }
+.speaker-card {
+    background-color: white; /* Card background color */
+    color: #537ABD; /* Text color */
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;    /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    width: 100%; /* Full width to fill column */
+    height: 200px; /* Fixed height */
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 1px solid white; /* White border */
+    text-decoration: none; /* Remove underline for links */
+    transition: transform 0.2s ease-in-out;
+}
 
+.speaker-card:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.speaker-info {
+    text-align: center; /* Center text within the card */
+}
+
+.speaker-name {
+    font-size: 20px; /* Slightly larger font size */
+    font-weight: bold; /* Make the name bold */
+    color: #537ABD; /* Use blue for speaker name */
+    margin-bottom: 5px;
+}
+
+.speaker-bio {
+    font-size: 14px; /* Adjusted font size */
+    color: #8b8b9a; /* Keep bio text white */
+}
     </style>
 </head>
 
@@ -102,24 +138,14 @@
                         <a class="rd-nav-link" href="#speakers">Speakers</a>
                       </li>
             
-
+                        -->
                                         <li class="rd-nav-item">
-                                            <a class="rd-nav-link" href="#schedule">Schedule</a>
+                                            <a class="rd-nav-link" href="#speakers">Speakers</a>
                                         </li>
-                                    -->
                                         <li class="rd-nav-item">
                                             <a class="rd-nav-link" href="#official-sponsors">Sponsors</a>
                                         </li>
 
-                                        <li class="rd-nav-item">
-                         <a
-                          class="rd-nav-link"
-                          href="https://www.papercall.io/gophercon-india-2024"
-                          target="_blank"
-                        >
-                          Submit CFP
-                        </a>
-                      </li> 
                                         <!--
                       <li class="rd-nav-item">
                         <a class="rd-nav-link" target="_blank" href="https://forms.gle/ThHtj79NPPufuDM5A"
@@ -261,6 +287,152 @@
               <br>
         </div>
         </div>
+        </section>
+        <section class="section section-lg bg-default text-center wow fadeIn parallax-container section parallax-disabled">
+            <div class="container">
+              <h6><a id="speakers">Our Speakers</a></h6>
+              <br/>
+              <div class="container">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <a href="https://abhishekvrshny.medium.com/" class="speaker-card" target="_blank">
+                            <div class="speaker-info">
+                                <div class="speaker-name">Abhishek Varshney</div>
+                                <div class="speaker-bio">Architect at CRED</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="https://www.linkedin.com/in/goyalayush57/" class="speaker-card" target="_blank">
+                            <div class="speaker-info">
+                                <div class="speaker-name">Ayush Goyal</div>
+                                <div class="speaker-bio">Sr. Principal Software Engineer at PubMatic</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="https://github.com/damianopetrungaro" class="speaker-card" target="_blank">
+                            <div class="speaker-info">
+                                <div class="speaker-name">Damiano Petrungaro</div>
+                                <div class="speaker-bio">Staff Engineer - Engineering Manager at Odin</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="https://gauravgahlot.in" class="speaker-card" target="_blank">
+                            <div class="speaker-info">
+                                <div class="speaker-name">Gaurav Gahlot</div>
+                                <div class="speaker-bio">Senior Software Engineer at Acquia</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="https://joobisb.com/" class="speaker-card" target="_blank">
+                            <div class="speaker-info">
+                                <div class="speaker-name">Joobi S B</div>
+                                <div class="speaker-bio">Sr. Tech Lead at KeyValue Software Systems</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="https://medium.com/@mkrs2404" class="speaker-card" target="_blank">
+                            <div class="speaker-info">
+                                <div class="speaker-name">Mohit Kumar</div>
+                                <div class="speaker-bio">Software Engineer at One2N</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="https://www.linkedin.com/in/pawansha/" class="speaker-card" target="_blank">
+                            <div class="speaker-info">
+                                <div class="speaker-name">Pawan Kumar Sharma</div>
+                                <div class="speaker-bio">Associate Principal Engineer at Redbus</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="https://www.linkedin.com/in/rohitekbote/" class="speaker-card" target="_blank">
+                            <div class="speaker-info">
+                                <div class="speaker-name">Rohit Ekbote</div>
+                                <div class="speaker-bio">Sr. Principal Engineer at Druva Data Solutions</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="https://sanjayshr.github.io/" class="speaker-card" target="_blank">
+                            <div class="speaker-info">
+                                <div class="speaker-name">Sanjay Shiradwade</div>
+                                <div class="speaker-bio">IBM</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="https://github.com/sudo-suhas/operationalising-golangci-lint" class="speaker-card" target="_blank">
+                            <div class="speaker-info">
+                                <div class="speaker-name">Suhas Karanth</div>
+                                <div class="speaker-bio">Staff Engineer at Netskope</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="https://www.linkedin.com/in/suryanshu-singh/" class="speaker-card" target="_blank">
+                            <div class="speaker-info">
+                                <div class="speaker-name">Suryanshu Singh</div>
+                                <div class="speaker-bio">Lead Software Engineer at MakeMyTrip</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <a href="https://www.linkedin.com/in/tapanavasthi/" class="speaker-card" target="_blank">
+                            <div class="speaker-info">
+                                <div class="speaker-name">Tapan Avasthi</div>
+                                <div class="speaker-bio">Baeldung</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="section section-lg bg-default text-center wow fadeIn parallax-container section parallax-disabled">
+            <div class="container">
+              <h6><a id="panlists">Panelists</a></h6>
+              <br/>
+              <div class="row">
+                <div class="col-md-6 mb-4">
+                    <a href="https://www.linkedin.com/in/prerit-munjal/" class="speaker-card" target="_blank">
+                        <div class="speaker-info">
+                            <div class="speaker-name">Prerit Munjal</div>
+                            <p class="speaker-bio">Co-Founder & CTO of KubeCloud</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <a href="https://www.linkedin.com/in/chinmay185/" class="speaker-card" target="_blank">
+                        <div class="speaker-info">
+                            <div class="speaker-name">Chinmay Naik</div>
+                            <p class="speaker-bio">Founder at One2N</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <a href="https://www.linkedin.com/in/harman-sohanpal-82620544/" class="speaker-card" target="_blank">
+                        <div class="speaker-info">
+                            <div class="speaker-name">Harman Sohanpal</div>
+                            <p class="speaker-bio">Principal Solutions Architect at Tarka Labs</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <a href="https://www.linkedin.com/in/shaileshspatil/" class="speaker-card" target="_blank">
+                        <div class="speaker-info">
+                            <div class="speaker-name">Shailesh Patil</div>
+                            <p class="speaker-bio">Director & CTO at Quickinsure</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            </div>
         </section>
         
                 <!--<div class="tabs-custom tabs-horizontal tabs-corporate" id="tabs-1">
@@ -1513,6 +1685,9 @@
     <script defer src="js/noise.min.js"></script>
     <script defer src="js/util.js"></script>
     <script defer src="js/pipeline.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <!--  <script src="js/demo.js"></script> -->
 </body>
 
