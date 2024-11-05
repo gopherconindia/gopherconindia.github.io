@@ -35,41 +35,73 @@
   width: 40%;
 }
 .speaker-card {
-    background-color: white; /* Card background color */
-    color: #537ABD; /* Text color */
-    border-radius: 10px;
+  background-color: white;
+  color: #537ABD;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  text-decoration: none;
+  align-items: flex-start;
+  gap: 20px;
+  overflow: hidden;
+  min-height: 100%;
+}
+
+.speaker-left {
+    flex: 0 0 40%; /* Fixed 40% width */
     display: flex;
-    flex-direction: column; /* Stack content vertically */
-    align-items: center;    /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
-    width: 100%; /* Full width to fill column */
-    height: 300px; /* Fixed height */
-    padding: 30px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: 1px solid white; /* White border */
-    text-decoration: none; /* Remove underline for links */
-    transition: transform 0.2s ease-in-out;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
 }
 
-.speaker-card:hover {
-    transform: translateY(-5px); /* Subtle lift effect on hover */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+.speaker-photo img {
+    width: 100%; /* Full width of left container */
+    max-width: 150px; /* Optional max width */
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px; /* Square shape with slightly rounded corners */
+    margin-bottom: 10px;
 }
 
-.speaker-info {
-    text-align: center; /* Center text within the card */
-}
-
+/* Name and Bio styling */
 .speaker-name {
-    font-size: 20px; /* Slightly larger font size */
-    font-weight: bold; /* Make the name bold */
-    color: #537ABD; /* Use blue for speaker name */
+    font-size: 18px;
+    font-weight: bold;
+    color: #537ABD;
     margin-bottom: 5px;
 }
 
 .speaker-bio {
-    font-size: 14px; /* Adjusted font size */
-    color: #8b8b9a; /* Keep bio text white */
+    font-size: 12px;
+    color: #8b8b9a;
+    line-height: normal;
+}
+
+/* Right section styling (60% width) */
+.speaker-right {
+    flex: 1 1 60%; /* Take up 60% width */
+    text-align: center;
+}
+
+.speaker-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #405B8A;
+    margin-bottom: 5px;
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.speaker-abstract {
+    font-size: 13px;
+    color: #6c757d;
+    line-height: 1.5;
+    text-align: left;
 }
     </style>
 </head>
@@ -294,151 +326,229 @@
               <br/>
               <div class="container">
                 <div class="row">
+                    <!-- Abhishek Varshney -->
                     <div class="col-lg-6 col-md-6 mb-4">
-                        <a href="https://www.linkedin.com/in/abhishekvrshny/" class="speaker-card d-flex align-items-center" target="_blank">
-                            <div class="speaker-photo me-3">
-                                <img src="images/speakers/AbhishekVarshney.png" alt="Abhishek Varshney" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                        <a href="https://www.linkedin.com/in/abhishekvrshny/" class="speaker-card d-flex" target="_blank">
+                            <div class="speaker-right">
+                                <div class="speaker-title">From Polling to Pushing: Going Realtime with Go, gRPC, and Redis</div>
+                                <div class="speaker-abstract">
+                                    Traditional request-response models suffer from delays and high backend load due to polling. This talk covers building and scaling Propeller at CRED, a real-time, bidirectional communication platform between frontend and backend using Go, bidi gRPC, and Redis PubSub.
+                                </div>
                             </div>
-                            <div class="speaker-info">
+                            <div class="speaker-left">
+                                <img src="images/speakers/AbhishekVarshney.png" alt="Abhishek Varshney" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
                                 <div class="speaker-name">Abhishek Varshney</div>
                                 <div class="speaker-bio">Architect at CRED</div>
                             </div>
                         </a>
                     </div>
+            
+                    <!-- Ayush Goyal -->
                     <div class="col-lg-6 col-md-6 mb-4">
-                        <a href="https://www.linkedin.com/in/goyalayush57/" class="speaker-card d-flex align-items-center" target="_blank">
-                            <div class="speaker-photo me-3">
-                                <img src="images/speakers/AyushGoyal.jpeg" alt="Ayush Goyal" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                        <a href="https://www.linkedin.com/in/goyalayush57/" class="speaker-card d-flex" target="_blank">
+                            <div class="speaker-right">
+                                <div class="speaker-title">Think Pragmatically: Elevating Your Go Development Skills</div>
+                                <div class="speaker-abstract">
+                                    Learn how pragmatic programming enhances software development. This talk covers simplicity, effective tooling, and collaboration for building robust applications. Discover real-world examples and best practices to achieve cleaner code, better team dynamics, and more successful projects.
+                                </div>
                             </div>
-                            <div class="speaker-info">
+                            <div class="speaker-left">
+                                <img src="images/speakers/AyushGoyal.jpeg" alt="Ayush Goyal" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
                                 <div class="speaker-name">Ayush Goyal</div>
                                 <div class="speaker-bio">Sr. Principal Software Engineer at PubMatic</div>
                             </div>
                         </a>
                     </div>
+            
+                    <!-- Damiano Petrungaro -->
                     <div class="col-lg-6 col-md-6 mb-4">
-                        <a href="https://github.com/damianopetrungaro" class="speaker-card d-flex align-items-center" target="_blank">
-                            <div class="speaker-photo me-3">
-                                <img src="images/speakers/DamianoPetrungaro.jpeg" alt="Damiano Petrungaro" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                        <a href="https://github.com/damianopetrungaro" class="speaker-card d-flex" target="_blank">
+                            <div class="speaker-right">
+                                <div class="speaker-title">Beyond the Basics: Elevate Your Go Testing Game</div>
+                                <div class="speaker-abstract">
+                                    A live coding session on advanced testing strategies: database integration with test containers, HTTP/gRPC testing with recorders, and BDD using Gherkin. Elevate your testing practices with these powerful techniques!
+                                </div>
                             </div>
-                            <div class="speaker-info">
+                            <div class="speaker-left">
+                                <div class="speaker-photo">
+                                    <img src="images/speakers/DamianoPetrungaro.jpeg" alt="Damiano Petrungaro" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                                </div>
                                 <div class="speaker-name">Damiano Petrungaro</div>
                                 <div class="speaker-bio">Staff Engineer - Engineering Manager at Odin</div>
                             </div>
                         </a>
                     </div>
+            
+                    <!-- Gaurav Gahlot -->
                     <div class="col-lg-6 col-md-6 mb-4">
-                        <a href="https://gauravgahlot.in" class="speaker-card d-flex align-items-center" target="_blank">
-                            <div class="speaker-photo me-3">
-                                <img src="images/speakers/GauravGehlot.jpeg" alt="Gaurav Gahlot" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                        <a href="https://gauravgahlot.in" class="speaker-card d-flex" target="_blank">
+                            <div class="speaker-right">
+                                <div class="speaker-title">Paradigms of Rust for the Go developer</div>
+                                <div class="speaker-abstract">
+                                    The talk delves into 3 key paradigms: Go's CSP model for concurrency, Rust's data race prevention through ownership and borrowing, and Rust's opt-in shared memory model. With practical examples and comparisons, attendees will learn how these paradigms foster robust, efficient, and safe software.
+                                </div>
                             </div>
-                            <div class="speaker-info">
+                            <div class="speaker-left">
+                                <div class="speaker-photo">
+                                    <img src="images/speakers/GauravGehlot.jpeg" alt="Gaurav Gahlot" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                                </div>
                                 <div class="speaker-name">Gaurav Gahlot</div>
                                 <div class="speaker-bio">Senior Software Engineer at Acquia</div>
                             </div>
                         </a>
                     </div>
+            
+                    <!-- Joobi S B -->
                     <div class="col-lg-6 col-md-6 mb-4">
-                        <a href="https://joobisb.com/" class="speaker-card d-flex align-items-center" target="_blank">
-                            <div class="speaker-photo me-3">
-                                <img src="images/speakers/JoobiS.B.HEIC" alt="Joobi S B" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                        <a href="https://joobisb.com/" class="speaker-card d-flex" target="_blank">
+                            <div class="speaker-right">
+                                <div class="speaker-title">Mastering Concurrency in Go: From Patterns to Production</div>
+                                <div class="speaker-abstract">
+                                    Unlock the full potential of Go concurrency model with advanced patterns like pipelines, fan-out/fan-in, and graceful cancellation. This talk offers practical insights and real-world examples to help developers build scalable, efficient systems while avoiding common concurrency pitfalls.
+                                </div>
                             </div>
-                            <div class="speaker-info">
+                            <div class="speaker-left">
+                                <div class="speaker-photo">
+                                    <img src="images/speakers/JoobiS.B.HEIC" alt="Joobi S B" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                                </div>
                                 <div class="speaker-name">Joobi S B</div>
                                 <div class="speaker-bio">Sr. Tech Lead at KeyValue Software Systems</div>
                             </div>
                         </a>
                     </div>
+            
+                    <!-- Mohit Kumar -->
                     <div class="col-lg-6 col-md-6 mb-4">
-                        <a href="https://medium.com/@mkrs2404" class="speaker-card d-flex align-items-center" target="_blank">
-                            <div class="speaker-photo me-3">
-                                <img src="images/speakers/MohitKumar.jpeg" alt="Mohit Kumar" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                        <a href="https://medium.com/@mkrs2404" class="speaker-card d-flex" target="_blank">
+                            <div class="speaker-right">
+                                <div class="speaker-title">Billion Rows Walk Into a Go Bar</div>
+                                <div class="speaker-abstract">
+                                    1BRC (1 Billion Row Challenge) is about parsing a file with a billion rows to find aggregations as fast as possible. In this talk, I’ll share my analysis of exploring various solutions to this problem and how you can approach writing highly performant Go programs in your day-to-day work.
+                                </div>
                             </div>
-                            <div class="speaker-info">
+                            <div class="speaker-left">
+                                <div class="speaker-photo">
+                                    <img src="images/speakers/MohitKumar.jpeg" alt="Mohit Kumar" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                                </div>
                                 <div class="speaker-name">Mohit Kumar</div>
                                 <div class="speaker-bio">Software Engineer at One2N</div>
                             </div>
                         </a>
                     </div>
+            
+                    <!-- Pawan Kumar Sharma -->
                     <div class="col-lg-6 col-md-6 mb-4">
-                        <a href="https://www.linkedin.com/in/pawansha/" class="speaker-card d-flex align-items-center" target="_blank">
-                            <div class="speaker-photo me-3">
-                                <img src="images/speakers/PawanKumarSharma.jpg" alt="Pawan Kumar Sharma" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                        <a href="https://www.linkedin.com/in/pawansha/" class="speaker-card d-flex" target="_blank">
+                            <div class="speaker-right">
+                                <div class="speaker-title">Building a recommendation engine for Bus search based on Real-time feedback of users</div>
+                                <div class="speaker-abstract">
+                                    Discover how we boosted RedBus conversions by 20% using real-time data and Gradient Boosting Regression Trees (GBRT). Learn how Redis sorted sets enabled ultra-fast, personalised bus rankings. Our model ranks buses using user interactions, enhancing both experience and occupancy rates.
+                                </div>
                             </div>
-                            <div class="speaker-info">
+                            <div class="speaker-left">
+                                <div class="speaker-photo">
+                                    <img src="images/speakers/PawanKumarSharma.jpg" alt="Pawan Kumar Sharma" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                                </div>
                                 <div class="speaker-name">Pawan Kumar Sharma</div>
                                 <div class="speaker-bio">Associate Principal Engineer at Redbus</div>
                             </div>
                         </a>
                     </div>
+            
+                    <!-- Rohit Ekbote -->
                     <div class="col-lg-6 col-md-6 mb-4">
-                        <a href="https://www.linkedin.com/in/rohitekbote/" class="speaker-card d-flex align-items-center" target="_blank">
-                            <div class="speaker-photo me-3">
-                                <img src="images/speakers/RohitEkbote.jpg" alt="Rohit Ekbote" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                        <a href="https://www.linkedin.com/in/rohitekbote/" class="speaker-card d-flex" target="_blank">
+                            <div class="speaker-right">
+                                <div class="speaker-title">Empowering Resilient Scalability: The Power of Choreography in Distributed Systems</div>
+                                <div class="speaker-abstract">
+                                    Choreography in distributed systems: Decentralized interactions, resilient scalability and graceful failure handling. Druva's innovative event framework showcases these principles, facilitating seamless communication and robust application performance. Join us to explore the future of system architecture!
+                                </div>
                             </div>
-                            <div class="speaker-info">
+                            <div class="speaker-left">
+                                <div class="speaker-photo">
+                                    <img src="images/speakers/RohitEkbote.jpg" alt="Rohit Ekbote" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                                </div>
                                 <div class="speaker-name">Rohit Ekbote</div>
-                                <div class="speaker-bio">Sr. Principal Engineer at Druva Data Solutions</div>
+                                <div class="speaker-bio">Lead Engineer at Druva</div>
                             </div>
                         </a>
                     </div>
+
                     <div class="col-lg-6 col-md-6 mb-4">
-                        <a href="https://sanjayshr.github.io/" class="speaker-card d-flex align-items-center" target="_blank">
-                            <div class="speaker-photo me-3">
-                                <img src="images/speakers/SanjayS.jpg" alt="Sanjay Shiradwade" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                        <div class="speaker-card d-flex">
+                        <div class="speaker-right">
+                            <div class="speaker-title">The Loop War: Iterators vs. Traditional Loop | A Generics</div>
+                            <div class="speaker-abstract">
+                                Unlock the future of data traversal with Go 1.23's new iterators! In my talk, I'll reveal how to harness the power of the elegant for range over functions to iterate over custom data structures seamlessly. Elevate your Go code with cleaner patterns and efficient algorithms. Don't miss out!
                             </div>
-                            <div class="speaker-info">
-                                <div class="speaker-name">Sanjay Shiradwade</div>
-                                <div class="speaker-bio">IBM</div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <div class="speaker-left d-flex align-items-center">
+                                <a href="https://sanjayshr.github.io/" target="_blank">
+                                    <div class="speaker-photo">
+                                        <img src="images/speakers/SanjayS.jpg" alt="Sanjay Shiradwade" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                                    </div>
+                                    <div class="speaker-info ms-3">
+                                        <div class="speaker-name">Sanjay Shiradwade</div>
+                                        <div class="speaker-bio">IBM</div>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
+                    
+                            <div class="speaker-left d-flex align-items-center">
+                                <a href="https://www.linkedin.com/in/sidharthsasikumar/" target="_blank">
+                                    <div class="speaker-photo">
+                                        <img src="images/speakers/SidharthSasikumar.jpg" alt="Sidharth Sasikumar" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                                    </div>
+                                    <div class="speaker-info ms-3">
+                                        <div class="speaker-name">Sidharth Sasikumar</div>
+                                        <div class="speaker-bio">Sr. Software Engineer at Synamedia</div>
+                                    </div>
+                                </a>
+                            </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 mb-4">
-                        <a href="https://www.linkedin.com/in/sidharthsasikumar/" class="speaker-card d-flex align-items-center" target="_blank">
-                            <div class="speaker-photo me-3">
-                                <img src="images/speakers/SidharthSasikumar.jpg" alt="Sidharth Sasikumar" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
-                            </div>
-                            <div class="speaker-info">
-                                <div class="speaker-name">Sidharth Sasikumar</div>
-                                <div class="speaker-bio">Sr. Software Engineer at Synamedia</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-6 mb-4">
-                        <a href="https://www.linkedin.com/in/skaranth90/" class="speaker-card d-flex align-items-center" target="_blank">
-                            <div class="speaker-photo me-3">
-                                <img src="images/speakers/SuhasKaranth.jpeg" alt="Suhas Karanth" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
-                            </div>
-                            <div class="speaker-info">
-                                <div class="speaker-name">Suhas Karanth</div>
-                                <div class="speaker-bio">Staff Engineer at Netskope</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-6 mb-4">
-                        <a href="https://www.linkedin.com/in/suryanshu-singh/" class="speaker-card d-flex align-items-center" target="_blank">
-                            <div class="speaker-photo me-3">
-                                <img src="images/speakers/SuryanshuSingh.jpeg" alt="Suryanshu Singh" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
-                            </div>
-                            <div class="speaker-info">
-                                <div class="speaker-name">Suryanshu Singh</div>
-                                <div class="speaker-bio">Lead Software Engineer at MakeMyTrip</div>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="col-lg-6 col-md-6 mb-4">
-                        <a href="https://www.linkedin.com/in/tapanavasthi/" class="speaker-card d-flex align-items-center" target="_blank">
-                            <div class="speaker-photo me-3">
-                                <img src="images/speakers/TapanAvasthi.png" alt="Tapan Avasthi" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
-                            </div>
-                            <div class="speaker-info">
-                                <div class="speaker-name">Tapan Avasthi</div>
-                                <div class="speaker-bio">Cyberhaven Inc.</div>
-                            </div>
-                        </a>
-                    </div>
+
+<!-- Suhas Karanth -->
+<div class="col-lg-6 col-md-6 mb-4">
+    <a href="https://www.linkedin.com/in/skaranth90/" class="speaker-card d-flex" target="_blank">
+        <div class="speaker-right">
+            <div class="speaker-title">Operationalising golangci-lint</div>
+            <div class="speaker-abstract">
+                Talk shows how to leverage golangci-lint in Go projects for catching issues early, ensuring code consistency, and preventing bugs. We'll explore why we should configure golangci-lint and how to integrate it into existing codebases, equipping you to deliver cleaner, more maintainable code.
+            </div>
+        </div>
+        <div class="speaker-left">
+            <div class="speaker-photo">
+                <img src="images/speakers/SuhasKaranth.jpeg" alt="Suhas Karanth" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+            </div>
+            <div class="speaker-name">Suhas Karanth</div>
+            <div class="speaker-bio">Staff Engineer at Netskope</div>
+        </div>
+    </a>
+</div>
+
+<!-- Tapan Avasthi -->
+<div class="col-lg-6 col-md-6 mb-4">
+    <a href="https://www.linkedin.com/in/tapanavasthi/" class="speaker-card d-flex" target="_blank">
+        <div class="speaker-right">
+            <div class="speaker-title">Contextual Logging for Modern Go Applications</div>
+            <div class="speaker-abstract">
+                Contextual logging lets developers add meaningful context to log entries, making them more informative for debugging distributed systems. This talk will show how Go developers can use contextual logging to streamline logs, cut noise, and speed up troubleshooting.
+            </div>
+        </div>
+        <div class="speaker-left">
+            <img src="images/speakers/TapanAvasthi.png" alt="Tapan Avasthi" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+            <div class="speaker-name">Tapan Avasthi</div>
+            <div class="speaker-bio">Cyberhaven Inc.</div>
+        </div>
+    </a>
+</div>
+
                 </div>
             </div>
+            
             
         </div>
         </section>
@@ -450,7 +560,7 @@
                 <div class="col-md-6 mb-4">
                     <a href="https://www.linkedin.com/in/prerit-munjal/" class="speaker-card d-flex align-items-center" target="_blank">
                         <div class="speaker-photo me-3">
-                            <img src="images/speakers/PreritMunjal.png" alt="Prerit Munjal" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                            <img src="images/speakers/PreritMunjal.png" alt="Prerit Munjal" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
                         </div>
                         <div class="speaker-info">
                             <div class="speaker-name">Prerit Munjal</div>
@@ -461,7 +571,7 @@
                 <div class="col-md-6 mb-4">
                     <a href="https://www.linkedin.com/in/chinmay185/" class="speaker-card d-flex align-items-center" target="_blank">
                         <div class="speaker-photo me-3">
-                            <img src="images/speakers/ChinmayNaik.jpg" alt="Chinmay Naik" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                            <img src="images/speakers/ChinmayNaik.jpg" alt="Chinmay Naik" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
                         </div>
                         <div class="speaker-info">
                             <div class="speaker-name">Chinmay Naik</div>
@@ -472,7 +582,7 @@
                 <div class="col-md-6 mb-4">
                     <a href="https://www.linkedin.com/in/harman-sohanpal-82620544/" class="speaker-card d-flex align-items-center" target="_blank">
                         <div class="speaker-photo me-3">
-                            <img src="images/speakers/harman.jpg" alt="Harman Sohanpal" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                            <img src="images/speakers/harman.jpg" alt="Harman Sohanpal" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
                         </div>
                         <div class="speaker-info">
                             <div class="speaker-name">Harman Sohanpal</div>
@@ -483,7 +593,7 @@
                 <div class="col-md-6 mb-4">
                     <a href="https://www.linkedin.com/in/shaileshspatil/" class="speaker-card d-flex align-items-center" target="_blank">
                         <div class="speaker-photo me-3">
-                            <img src="images/speakers/shaileshPatil.jpeg" alt="Shailesh Patil" class="img-fluid rounded-circle" style="width: 150px; height: 150px; object-fit: cover; object-position: top;">
+                            <img src="images/speakers/shaileshPatil.jpeg" alt="Shailesh Patil" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
                         </div>
                         <div class="speaker-info">
                             <div class="speaker-name">Shailesh Patil</div>
