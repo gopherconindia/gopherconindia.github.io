@@ -103,6 +103,16 @@
     line-height: 1.5;
     text-align: left;
 }
+.landmark-image {
+        height: 200px; /* Fixed height */
+        width: 100%;
+        object-fit: cover; /* This ensures images cover the area without distortion */
+    }
+    
+    .image-container {
+        height: 250px; /* Same as image height */
+        overflow: hidden;
+    }
     </style>
 </head>
 
@@ -176,6 +186,11 @@
                                         </li>
                                         <li class="rd-nav-item">
                                             <a class="rd-nav-link" href="#official-sponsors">Sponsors</a>
+                                        </li>
+                                        <li class="rd-nav-item">
+                                            <a class="rd-nav-link" href="#location"
+                                              >Location</a
+                                            >
                                         </li>
 
                                         <!--
@@ -261,6 +276,9 @@
                                         <h5>When</h5>
                                         <p>
                                             <time datetime="2023-09-09">December 01, 2024 - December 02, 2024</time>
+                                        </p>
+                                        <p>
+                                            10:00 AM - 6:00 PM
                                         </p>
                                     </div>
                                 </div>
@@ -1719,6 +1737,178 @@
             </div>
         </section>
 
+
+        <section id="location" class="section section-lg bg-default wow fadeIn parallax-container section parallax-disabled">
+            <div class="container">
+              <!-- Location Heading -->
+              <div class="text-center mb-5">
+                <h6 class="text-uppercase fw-bold">Location</h6>
+                <p>
+                  Join us for <strong>GopherCon India 2024</strong> at
+                  <a href="https://www.hotelclarks.com/amer-jaipur/" target="_blank" class="text-decoration-none text-light">Hotel Clarks Amer, Jaipur</a>. This residential conference includes both event access and accommodation at the venue for a seamless experience.
+                </p>
+              </div>
+          
+              <!-- Location Image -->
+              <div class="location-image mb-5 text-center">
+                <img src="images/venue.jpg" alt="Hotel Clarks Amer, Jaipur" class="img-fluid rounded shadow">
+              </div>
+          
+          
+              <!-- Accommodation Section -->
+              <div class="my-5">
+                <h4 class="text-uppercase fw-bold mb-4">Accommodation</h4>
+                <p>Each ticket includes accommodation at the venue:</p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item border-0"><strong>Check-In: 30th November, 10:00 AM </strong></li>
+                  <li class="list-group-item border-0"><strong>Check-Out: 2nd December, 10:00 AM </strong></li>
+                </ul>
+                <p>To extend your stay, please contact <a href="https://www.hotelclarks.com/amer-jaipur/" target="_blank" class="text-decoration-none text-light">Hotel Clarks Amer</a> directly.</p>
+              </div>
+          
+              <!-- Getting to Jaipur Section -->
+              <div class="my-5">
+                <h4 class="text-uppercase fw-bold mb-4">Getting to Jaipur</h4>
+                <div class="mb-3">
+                  <h6 class="fw-bold">By Air:</h6>
+                  <p>Jaipur International Airport (JAI) is approximately 4 km from the hotel, with taxis and ride-sharing options like <span class="fw-bold">Uber</span> and <span class="fw-bold">Ola</span> readily available. Travel time is around 15-20 minutes.</p>
+                </div>
+                <div class="mb-3">
+                  <h6 class="fw-bold">By Train:</h6>
+                  <p>Jaipur Junction Railway Station, about 10 km from the hotel, connects Jaipur with major cities. Taxis and auto-rickshaws are available, with a 30-minute drive to the hotel.</p>
+                </div>
+                <div class="mb-3">
+                  <h6 class="fw-bold">By Road:</h6>
+                  <p>Jaipur is accessible via <span class="fw-bold">NH8 from Delhi</span> (about 5 hours) and <span class="fw-bold">NH21 from Agra</span> (about 4 hours).</p>
+                </div>
+              </div>
+          
+              <!-- Passports and Visas Section -->
+              <div class="my-5">
+                <h4 class="text-uppercase fw-bold mb-4">Passports and Visas</h4>
+                <p><strong>International Visitors:</strong> Most international attendees require a visa to enter India. Visitors from several countries may be eligible for an e-visa. For details and to apply online, please visit the <a href="https://indianvisaonline.gov.in/evisa/tvoa.html" target="_blank" class="text-decoration-none text-light">Indian e-Visa Portal</a>.</p>
+                <p><strong>Documents Required:</strong> Ensure you carry a valid passport (with at least six months validity) and other identification documents while traveling.</p>
+              </div>
+          
+              <!-- Venue and City Information Section -->
+              <div class="my-5">
+                <h4 class="text-uppercase fw-bold mb-4">Venue and City Information</h4>
+                
+                <div class="mb-4">
+                    <h5 class="fw-bold mb-3">Hotel Clarks Amer</h5>
+                    <p>Hotel Clarks Amer offers luxurious accommodation and conference facilities, including dining options, a rooftop restaurant, WiFi, a fitness center, a spa, and a pool. Attendees staying here can easily access the conference venue without additional travel arrangements.</p>
+                </div>
+                  
+                  <div class="mb-4">
+                      <h5 class="fw-bold mb-3">The City of Jaipur</h5>
+                      <p>Jaipur, also known as the "Pink City," is the capital of Rajasthan. Famous for its vibrant culture and stunning architecture, Jaipur combines ancient charm with modern amenities. Popular landmarks include:</p>
+                      
+                      <div class="row g-4">
+                          <div class="col-md-3">
+                              <div class="position-relative image-container rounded shadow">
+                                  <a href="https://en.wikipedia.org/wiki/Amber_Fort" target="_blank" class="text-decoration-none">
+                                      <img src="images/amberFort.jpg" alt="Amber Fort" class="landmark-image rounded" />
+                                      <div class="position-absolute bottom-0 start-0 w-100 p-2 bg-opacity-75">
+                                          <h6 class="mb-0">Amber Fort</h6>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                          
+                          <div class="col-md-3">
+                              <div class="position-relative image-container rounded shadow">
+                                  <a href="https://en.wikipedia.org/wiki/City_Palace,_Jaipur" target="_blank" class="text-decoration-none">
+                                      <img src="images/cityPalacejaipur.jpg" alt="City Palace" class="landmark-image rounded" />
+                                      <div class="position-absolute bottom-0 start-0 w-100 p-2 bg-dark bg-opacity-75">
+                                          <h6 class="mb-0">City Palace</h6>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                          
+                          <div class="col-md-3">
+                              <div class="position-relative image-container rounded shadow">
+                                  <a href="https://en.wikipedia.org/wiki/Hawa_Mahal" target="_blank" class="text-decoration-none">
+                                      <img src="images/hawaMahalJaipur.jpg" alt="Hawa Mahal" class="landmark-image rounded" />
+                                      <div class="position-absolute bottom-0 start-0 w-100 p-2 bg-dark bg-opacity-75">
+                                          <h6 class="mb-0">Hawa Mahal</h6>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                          
+                          <div class="col-md-3">
+                              <div class="position-relative image-container rounded shadow">
+                                  <a href="https://en.wikipedia.org/wiki/Jantar_Mantar,_Jaipur" target="_blank" class="text-decoration-none">
+                                      <img src="images/JantarMantarJaipur.jpg" alt="Jantar Mantar" class="landmark-image rounded" />
+                                      <div class="position-absolute bottom-0 start-0 w-100 p-2 bg-dark bg-opacity-75">
+                                          <h6 class="mb-0">Jantar Mantar</h6>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <p class="mt-4">Jaipur is also known for its handicrafts, jewelry, and textiles, making it an excellent place for shopping.</p>
+                  </div>
+              </div>      
+          
+              <!-- Safety Tips Section -->
+              <div class="my-5">
+                <h5 class="fw-bold">Safety Tips</h5>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item border-0">Stay alert and secure your belongings in crowded areas.</li>
+                  <li class="list-group-item border-0">Use registered taxis, hotel shuttles, or ride-sharing apps like Uber or Ola for transportation.</li>
+                  <li class="list-group-item border-0">Save emergency contact numbers (112) and embassy details.</li>
+                </ul>
+              </div>
+          
+              <!-- Essential Information Section -->
+              <div class="my-5">
+                <h5 class="fw-bold mb-4">Essential Information</h5>
+                <div class="mb-3">
+                  <h6 class="fw-bold">Money</h6>
+                  <p>The currency in India is the Indian Rupee (₹). Major credit and debit cards are accepted in hotels, restaurants, and shops. ATMs are widely available in Jaipur, and currency exchange can be done at the airport or banks.</p>
+                </div>
+                <div class="mb-3">
+                  <h6 class="fw-bold">Internet Access</h6>
+                  <p>WiFi is available at the hotel and conference venue. Many cafes and restaurants in Jaipur also offer free WiFi. For mobile internet, purchase a prepaid SIM card at the airport or nearby mobile stores. Airtel, Jio, and Vodafone Idea offer affordable prepaid plans with good coverage.</p>
+                </div>
+                <div class="mb-3">
+                  <h6 class="fw-bold">Local Transportation</h6>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item border-0">Auto-rickshaws – Negotiable rates, ideal for short trips.</li>
+                    <li class="list-group-item border-0">Buses – Jaipur City Transport Services operates city buses. Use Google Maps for public transit routes.</li>
+                    <li class="list-group-item border-0">Taxis and Ride-Sharing Apps – Uber and Ola are widely available and convenient.</li>
+                  </ul>
+                </div>
+              </div>
+          
+              <!-- Dining & Local Cuisine Section -->
+              <div class="my-5">
+                <h5 class="fw-bold mb-4">Dining & Local Cuisine</h5>
+                <p>Jaipur is known for its rich culinary heritage. Must-try dishes include dal baati churma, laal maas, and ghevar. Here are a few popular dining spots:</p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item border-0"><strong><a href="https://www.chokhidhani.com/" target="_blank" class="text-decoration-none text-light">Chokhi Dhani</a></strong> – A cultural village resort offering traditional Rajasthani cuisine.</li>
+                  <li class="list-group-item border-0"><strong><a href="https://www.handirestaurantjaipur.com/" target="_blank" class="text-decoration-none text-light">Handi Restaurant</a></strong> – Known for flavorful curries and tandoori dishes.</li>
+                  <li class="list-group-item border-0"><strong><a href="http://www.lmbjaipur.com/" target="_blank" class="text-decoration-none text-light">Laxmi Mishthan Bhandar (LMB)</a></strong> – Famous for sweets and vegetarian Rajasthani food.</li>
+                </ul>
+              </div>
+          
+              <!-- Things to Do in Jaipur Section -->
+              <div class="my-5">
+                <h5 class="fw-bold mb-4">Things to Do in Jaipur</h5>
+                <p>Beyond the conference, Jaipur offers plenty to explore:</p>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item border-0">Visit the Amber Fort – One of the most majestic forts in India.</li>
+                  <li class="list-group-item border-0">Explore the City Palace – A stunning blend of Mughal and Rajput architecture.</li>
+                  <li class="list-group-item border-0">Shop at Johari Bazaar and Bapu Bazaar – Famous for jewelry, textiles, and handicrafts.</li>
+                  <li class="list-group-item border-0">Attend a cultural show – Enjoy Rajasthani dance and music performances.</li>
+                </ul>
+              </div>
+              </div>
+        </section>
+
         <!-- Section Pre Footer-->
         <section class="section section-lg bg-gray-900">
             <div class="container">
@@ -1741,6 +1931,9 @@
                             <p class="event-detail-address big" data-splitting>
                                 Clarks Amer Hotel Jawahar Lal Nehru Marg, Opposite Fortis Escorts Hospital, Jaipur, Rajasthan 302018
                             </p>
+                            <p class="event-detail-time">
+                                <strong>Event Timing:</strong> 10:00 AM - 6:00 PM
+                              </p>
                             <a class="event-detail-link" href="https://maps.app.goo.gl/bXdpC6ibyeS1hsvp6">View map
                                 location</a>
                         </div>
