@@ -113,6 +113,28 @@
         height: 250px; /* Same as image height */
         overflow: hidden;
     }
+    .schedule-classic {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    gap: 15px; /* Add spacing between elements */
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.schedule-classic-time {
+    font-weight: bold;
+    color: #d92d2f;
+}
+
+.schedule-classic-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #405B8A;
+}
+
+.schedule-speaker {
+    color: #6c757d;
+}
     </style>
 </head>
 
@@ -327,17 +349,323 @@
             <div class="container">
               <h6><a id="schedule">GopherCon India 2024</a></h6>
               <br>
-            <div class="card border-0">
-              <div class="middle">
-                <h1>COMING SOON</h1>
-                <hr>
-                <p>Stay Tuned for the Updates</p>
+              <div class="tabs-custom tabs-horizontal tabs-corporate" id="tabs-1">
+                <ul class="nav nav-tabs">
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link nav-link-secondary-darker active show" href="#tabs-1-1" data-toggle="tab" data-triangle=".nav-link-overlay">
+                      <span class="nav-link-overlay" style="border-top-width: 95px; border-left-width: 281.983px;"></span>
+                      <span class="nav-link-title">Nov 30, 2024</span>
+                    </a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link nav-link-secondary-darker" href="#tabs-2-1" data-toggle="tab" data-triangle=".nav-link-overlay">
+                      <span class="nav-link-overlay" style="border-top-width: 95px; border-left-width: 281.983px;"></span>
+                      <span class="nav-link-title">Dec 01, 2024</span>
+                    </a>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a class="nav-link nav-link-secondary-darker" href="#tabs-3-1" data-toggle="tab" data-triangle=".nav-link-overlay">
+                      <span class="nav-link-overlay" style="border-top-width: 95px; border-left-width: 281.983px;"></span>
+                      <span class="nav-link-title">Dec 02, 2024</span>
+                    </a>
+                  </li>
+                </ul>
               </div>
-              <br>
-              <br>
-        </div>
-        </div>
-        </section>
+          
+              <div class="tab-content">
+                <!-- Day 1 Schedule -->
+                <div class="tab-pane fade active show" id="tabs-1-1">
+                  <div class="schedule-day" id="day-1">
+                    <article class="card card-corporate">
+                      <div class="card-header">
+                        <div class="card-title">
+                          <p class="schedule-classic-time">3:00 PM - 6:00 PM</p>
+                          <p class="schedule-classic-title">Pre-Registration</p>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
+                </div>
+          
+                <!-- Day 2 Schedule -->
+                <div class="tab-pane fade" id="tabs-2-1">
+                  <div class="schedule-day" id="day-2">
+                    <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">8:00 AM - 9:45 AM</p>
+                            <p class="schedule-classic-title">Registration</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">9:45 AM - 10:00 AM</p>
+                            <p class="schedule-classic-title">Kickoff</p>
+                            <p class="schedule-speaker">Gautam Rege</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">10:00 AM - 10:30 AM</p>
+                            <p class="schedule-classic-title">Think Pragmatically: Elevating Your Go Development Skills</p>
+                            <p class="schedule-speaker">Ayush Goyal</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">10:30 AM - 11:00 AM</p>
+                            <p class="schedule-classic-title">From Polling to Pushing: Going Realtime with Go, gRPC, and Redis</p>
+                            <p class="schedule-speaker">Abhishek Varshne</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">11:00 AM - 11:30 AM</p>
+                            <p class="schedule-classic-title">Tea Break</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">11:30 AM - 12:00 PM</p>
+                            <p class="schedule-classic-title">Mastering Concurrency in Go: From Patterns to Production</p>
+                            <p class="schedule-speaker">Joobi S B</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">12:00 PM - 12:30 PM</p>
+                            <p class="schedule-classic-title">Building a recommendation engine for Bus search based on Real-time feedback of users</p>
+                            <p class="schedule-speaker">Pawan Kumar Sharma</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">12:30 PM - 2:30 PM</p>
+                            <p class="schedule-classic-title">Lunch</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">2:30 PM - 2:45 PM</p>
+                            <p class="schedule-classic-title">Sponsor Showcase</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">2:45 PM - 3:15 PM</p>
+                            <p class="schedule-classic-title">The Loop War: Iterators vs. Traditional Loop | A Generics</p>
+                            <p class="schedule-speaker">Sidharth Sasikumar & Sanjay Shiradwade</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">3:15 PM - 3:45 PM</p>
+                            <p class="schedule-classic-title">Billion Rows Walk Into a Go Bar</p>
+                            <p class="schedule-speaker">Mohit Kumar</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">3:45 PM - 4:30 PM</p>
+                            <p class="schedule-classic-title">Tea Break</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">4:30 PM - 5:00 PM</p>
+                            <p class="schedule-classic-title">Contextual Logging for Modern Go Applications</p>
+                            <p class="schedule-speaker">Tapan Avasthi</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">5:00 PM - 5:30 PM</p>
+                            <p class="schedule-classic-title">Empowering Resilient Scalability: The Power of Choreography in Distributed Systems</p>
+                            <p class="schedule-speaker">Rohit Ekbote</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">5:30 PM - 6:30 PM</p>
+                            <p class="schedule-classic-title">Flash Talks</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">6:30 PM - 7:00 PM</p>
+                            <p class="schedule-classic-title">Networking</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">7:30 PM onwards</p>
+                            <p class="schedule-classic-title">Party</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                  </div>
+                </div>
+          
+                <!-- Day 3 Schedule -->
+                <div class="tab-pane fade" id="tabs-3-1">
+                  <div class="schedule-day" id="day-3">
+                    <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">9:45 AM - 10:00 AM</p>
+                            <p class="schedule-classic-title">Kickoff</p>
+                            <p class="schedule-speaker">Gautam Rege</p>
+                          </div>
+                        </div>
+                      </article>
+
+                    <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">10:00 AM - 10:30 AM</p>
+                            <p class="schedule-classic-title">Paradigms of Rust for the Go developer</p>
+                            <p class="schedule-speaker">Gaurav Gahlot</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">10:30 AM - 11:00 AM</p>
+                            <p class="schedule-classic-title">Questioning database claims: Design patterns of storage engine</p>
+                            <p class="schedule-speaker">Sarthak Makhija</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">11:00 AM - 11:30 AM</p>
+                            <p class="schedule-classic-title">Tea Break</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">11:30 AM - 12:00 PM</p>
+                            <p class="schedule-classic-title">Workflow library in Go for API development</p>
+                            <p class="schedule-speaker">Suryanshu Singh</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">12:00 PM - 12:30 PM</p>
+                            <p class="schedule-classic-title">Operationalising golangci-lint</p>
+                            <p class="schedule-speaker">Suhas Karanth</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">12:30 PM - 2:00 PM</p>
+                            <p class="schedule-classic-title">Lunch</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">2:00 PM - 3:00 PM</p>
+                            <p class="schedule-classic-title">Panel Discussion</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">3:00 PM - 4:00 PM</p>
+                            <p class="schedule-classic-title">Flash Talks</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">4:00 PM - 4:15 PM</p>
+                            <p class="schedule-classic-title">Vote of Thanks</p>
+                          </div>
+                        </div>
+                      </article>
+                      
+                      <article class="card card-corporate">
+                        <div class="card-header">
+                          <div>
+                            <p class="schedule-classic-time">4:15 PM onwards</p>
+                            <p class="schedule-classic-title">Tea Break</p>
+                          </div>
+                        </div>
+                      </article>                      
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         <section class="section section-lg bg-default text-center wow fadeIn parallax-container section parallax-disabled">
             <div class="container">
               <h6><a id="speakers">Our Speakers</a></h6>
@@ -641,960 +969,6 @@
             
             </div>
         </section>
-        
-                <!--<div class="tabs-custom tabs-horizontal tabs-corporate" id="tabs-1">
-
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link nav-link nav-link-secondary-darker active show" href="#tabs-1-1"
-                                data-toggle="tab" data-triangle=".nav-link-overlay"><span class="nav-link-overlay"
-                                    style="border-top-width: 95px; border-left-width: 281.983px;"></span><span
-                                    class="nav-link-cite"></span><span class="nav-link-title">September 9,
-                                    2023</span></a>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <a class="nav-link nav-link-purple-heart" href="#tabs-1-2" data-toggle="tab"
-                                data-triangle=".nav-link-overlay"><span class="nav-link-overlay"
-                                    style="border-top-width: 95px; border-left-width: 282.017px;"></span><span
-                                    class="nav-link-cite"></span><span class="nav-link-title">September 10,
-                                    2023</span></a>
-                        </li>
-                    </ul>
-
-                    <div class="tab-content wow fadeIn" style="visibility: hidden; animation-name: none;">
-                        <div class="tab-pane fade active show" id="tabs-1-1">
-                            <div class="card-group-custom card-group-corporate" id="accordion1" role="tablist"
-                                aria-multiselectable="false">
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-lgmatwsk"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-jsqkomag"
-                                                aria-controls="accordion1-card-body-jsqkomag" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/searching_go.png" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">8:30 am to 9:30
-                                                                    am</span><span
-                                                                    class="schedule-classic-title heading-4">Registration</span>
-                                                            </span></span></span></a>
-                                        </div>
-                                    </div>
-                                </article>
-
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-lgmatwsk"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-jsqkomag"
-                                                aria-controls="accordion1-card-body-jsqkomag" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/searching_go.png" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">9:30 am to 9:45
-                                                                    am</span><span
-                                                                    class="schedule-classic-title heading-4">Opening
-                                                                    Ceremony</span>
-                                                            </span></span></span></a>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-pcftruhu"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-oakhqim7"
-                                                aria-controls="accordion1-card-body-oakhqim" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/speakers/mahindra.jpeg" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">9:45 am to 10:10
-                                                                    am</span><span
-                                                                    class="schedule-classic-title heading-4"><u>How to Le-Go a Rubik’s cube </u></span>
-                                                                <span class="schedule-classic-author">by
-                                                                    <span class="schedule-classic-author-name">Maninderjit Bindra
-                                                                    </span>
-                                                                    - (@manisbindra) Principal Software Engineer at Microsoft
-                                                                    </span>
-                                                            </span>
-                                                        </span></span></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="accordion1-card-body-oakhqim7"
-                                        aria-labelledby="accordion1-card-head-pcftruhu" data-parent="#accordion1"
-                                        role="tabpanel">
-                                        <div class="card-body">
-                                            <p>
-                                                What can Go, a Rubik’s cube and Lego have in common? In this talk we will take a closer look at how Go can be used to control Lego Mindstorms motors and Sensors, to create your favourite home projects. Through demos we will explore Go concepts like cross compilation, and abstractions.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </article>
-
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-pcftruhu"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-oakhqim"
-                                                aria-controls="accordion1-card-body-oakhqim" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/speakers/ayush.png" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">10:15 am to 10:40
-                                                                    am</span><span
-                                                                    class="schedule-classic-title heading-4"><u>Unit testing : an afterthought or an absolute necessity for Gopher ? 
-
-                                                                    </u></span>
-                                                                <span class="schedule-classic-author">by
-                                                                    <span class="schedule-classic-author-name">Ayush
-                                                                        Goyal</span>
-                                                                    - Principal Software Engineer at PubMatic </span>
-                                                            </span>
-                                                        </span></span></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="accordion1-card-body-oakhqim"
-                                        aria-labelledby="accordion1-card-head-pcftruhu" data-parent="#accordion1"
-                                        role="tabpanel">
-                                        <div class="card-body">
-                                            <p>
-                                                Explore the cost of not investing in unit testing and the importance 
-                                                of writing testable code. Through examples we will see how paying 
-                                                attention to unit testing can save us from sleepless nights of debugging,
-                                                 ultimately leading to faster and more reliable code - one Gopher test at 
-                                                 a time!
-                                            </p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <div class="schedule-classic schedule-classic-simple">
-                                    <div class="schedule-classic-content">
-                                        <div class="schedule-classic-img">
-                                            <svg class="svg-icon-md svg-icon-primary" role="img">
-                                                <use xlink:href="images/svg/sprite.svg#clock"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="schedule-classic-time">10:40 am to 11:00 am</span><span
-                                            class="schedule-classic-title heading-4">Enjoy the coffee break</span>
-                                    </div>
-                                </div>
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-pcftruhu"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-oakhqim1"
-                                                aria-controls="accordion1-card-body-oakhqim" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/speakers/prajwal.jpeg" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">11:00 am to 11:25
-                                                                    am</span><span
-                                                                    class="schedule-classic-title heading-4"><u>Container checkpoints 
-                                                                        with Go and CRIU </u></span>
-                                                                <span class="schedule-classic-author">by
-                                                                    <span class="schedule-classic-author-name">Prajwal S N
-                                                                    </span>
-                                                                    - Google Summer of Code mentee</span>
-                                                            </span>
-                                                        </span></span></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="accordion1-card-body-oakhqim1"
-                                        aria-labelledby="accordion1-card-head-pcftruhu" data-parent="#accordion1"
-                                        role="tabpanel">
-                                        <div class="card-body">
-                                            <p>
-                                                Imagine pausing a container, taking a snapshot of its state, 
-                                                and resuming it, all without a hitch! CRIU is a Linux utility 
-                                                that enables this. In this talk, we’ll understand how container 
-                                                checkpoints work, and how the go-criu library can be used to do 
-                                                cool stuff like forensic analysis of containers.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </article>
-
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-pcftruhu"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-oakhqim2"
-                                                aria-controls="accordion1-card-body-oakhqim" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/speakers/aman.jpeg" alt=""
-                                                                    width="122" height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">11:30 am to 11:55
-                                                                    pm</span><span
-                                                                    class="schedule-classic-title heading-4"><u>Debugging 
-                                                                        Distributed Systems using Delve</u></span>
-                                                                <span class="schedule-classic-author">by
-                                                                    <span class="schedule-classic-author-name">Aman Mangal
-                                                                    </span>
-                                                                    - (@mangalaman93) Software Engineer at Dgraph Labs</span>
-                                                            </span>
-                                                        </span></span></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="accordion1-card-body-oakhqim2"
-                                        aria-labelledby="accordion1-card-head-pcftruhu" data-parent="#accordion1"
-                                        role="tabpanel">
-                                        <div class="card-body">
-                                            <p>
-                                                Debugging is hard, and debugging a distributed system is even harder. 
-                                                This talk is about how we debug Dgraph, a distributed graph database. 
-                                                Learn powerful tricks and techniques to fix complex bugs in a 
-                                                distributed system and elevate your debugging game now!
-                                            </p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-pcftruhu"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-oakhqim3"
-                                                aria-controls="accordion1-card-body-oakhqim" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/speakers/mohit.jpg" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">12:00 pm to 12:25
-                                                                    pm</span><span
-                                                                    class="schedule-classic-title heading-4"><u>Generics in Go: 
-                                                                        A language design perspective</u></span>
-                                                                <span class="schedule-classic-author">by
-                                                                    <span class="schedule-classic-author-name">Mohit Kumar
-                                                                    </span>
-                                                                    - (@Mohit_a7x)</span>
-                                                            </span>
-                                                        </span></span></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="accordion1-card-body-oakhqim3"
-                                        aria-labelledby="accordion1-card-head-pcftruhu" data-parent="#accordion1"
-                                        role="tabpanel">
-                                        <div class="card-body">
-                                            <p>
-                                                This talk is different from other talks on Go generics. 
-                                                In this talk, I’ll cover how generics work internally and what 
-                                                happens at the compiler level. I’ll show code samples to simplify 
-                                                these concepts. This knowledge will be helpful if you’re writing 
-                                                libraries and frameworks in Go.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <div class="schedule-classic schedule-classic-simple">
-                                    <div class="schedule-classic-content">
-                                        <div class="schedule-classic-img">
-                                            <svg class="svg-icon-md svg-icon-primary" role="img">
-                                                <use xlink:href="images/svg/sprite.svg#clock"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="schedule-classic-time">12:25 pm to 1:45 pm</span><span
-                                            class="schedule-classic-title heading-4">Lunch</span>
-                                    </div>
-                                </div>
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-xlwtrluc"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-hfymdjbl"
-                                                aria-controls="accordion1-card-body-hfymdjbl" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/searching_go.png" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">1:45 pm to 2:00
-                                                                    pm</span>
-                                                                <span
-                                                                    class="schedule-classic-title heading-4">Energizer</span>
-                                                            </span></span></span></a>
-                                        </div>
-                                    </div>
-                                </article>
-
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-xlwtrluc"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-hfymdjbl"
-                                                aria-controls="accordion1-card-body-hfymdjbl" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/searching_go.png" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">2:00 pm to 2:40
-                                                                    pm</span>
-                                                                <span
-                                                                    class="schedule-classic-title heading-4"> Panel
-                                                                    Discussion</span>
-                                                            </span></span></span></a>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-pcftruhu"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-oakhqim4"
-                                                aria-controls="accordion1-card-body-oakhqim" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/speakers/raghav.jpeg" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">2:45 pm to 3:10
-                                                                    pm</span><span
-                                                                    class="schedule-classic-title heading-4"><u>Hardening Go Concurrency, 
-                                                                        Using Formal Methods Of Verifying Correctness</u></span>
-                                                                <span class="schedule-classic-author">by
-                                                                    <span class="schedule-classic-author-name">Raghav Roy
-                                                                    </span>
-                                                                    - (@TheOtherRaghav)
-                                                                </span>
-                                                            </span>
-                                                        </span></span></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="accordion1-card-body-oakhqim4"
-                                        aria-labelledby="accordion1-card-head-pcftruhu" data-parent="#accordion1"
-                                        role="tabpanel">
-                                        <div class="card-body">
-                                            <p>
-
-                                                Go is popular for making concurrency easy through great 
-                                                language support for Goroutines and Channels, but getting
-                                                 it right is still up to you. In order to verify your design 
-                                                 is ‘correct’, you need to look above the code and at the intent,
-                                                  but how does one do that? That’s where TLA+ comes in.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion2-card-head-xlwtrluc"
-                                                data-toggle="collapse" data-parent="#accordion2"
-                                                href="#accordion2-card-body-hfymdjbl"
-                                                aria-controls="accordion2-card-body-hfymdjbl" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/searching_go.png" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">3:10 pm to 4:10
-                                                                    pm</span>
-                                                                <span class="schedule-classic-title heading-4">Flash
-                                                                    Talks</span>
-                                                            </span></span></span></a>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <div class="schedule-classic schedule-classic-simple">
-                                    <div class="schedule-classic-content">
-                                        <div class="schedule-classic-img">
-                                            <svg class="svg-icon-md svg-icon-primary" role="img">
-                                                <use xlink:href="images/svg/sprite.svg#clock"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="schedule-classic-time">4:10 pm to 4:30 pm</span><span
-                                            class="schedule-classic-title heading-4">Enjoy the coffee break</span>
-                                    </div>
-                                </div>
-
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-pcftruhu"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-oakhqim599"
-                                                aria-controls="accordion1-card-body-oakhqim99" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/speakers/rajesh.jpeg" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">4:30 pm to 4:55
-                                                                    pm</span><span
-                                                                    class="schedule-classic-title heading-4"><u>Demystifying ERC20 for blockchain with smart contracts in Golang 	</u></span>
-                                                                <span class="schedule-classic-author">by
-                                                                    <span class="schedule-classic-author-name">Rajesh Sahastrabuddhe
-                                                                    </span>
-                                                                    -  Rezoomex
-                                                                </span>
-                                                            </span>
-                                                        </span></span></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="accordion1-card-body-oakhqim599"
-                                        aria-labelledby="accordion1-card-head-pcftruhu" data-parent="#accordion1"
-                                        role="tabpanel">
-                                        <div class="card-body">
-                                            <p>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-pcftruhu"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-oakhqim5"
-                                                aria-controls="accordion1-card-body-oakhqim" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/speakers/suryakant.png" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">4:55 pm to 5:20
-                                                                    pm</span><span
-                                                                    class="schedule-classic-title heading-4"><u>Fortifying Gopher's castle:
-                                                                        Securing Golang's supply chain	</u></span>
-                                                                <span class="schedule-classic-author">by
-                                                                    <span class="schedule-classic-author-name">Suryakant Dhakane
-                                                                    </span>
-                                                                    -  Technical Director of Product Security at Druva
-                                                                </span>
-                                                            </span>
-                                                        </span></span></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="accordion1-card-body-oakhqim5"
-                                        aria-labelledby="accordion1-card-head-pcftruhu" data-parent="#accordion1"
-                                        role="tabpanel">
-                                        <div class="card-body">
-                                            <p>
-                                                Known security incidents like SolarWinds, Kaseya, 3CX etc and ~600% rise 
-                                                of such incidents in 2022 makes protecting software supply chain 
-                                                a priority. By 2025, 45% of organizations may face such attacks. 
-                                                It’s vital for the Golang community to comprehend the implications and take protective measures.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <div class="schedule-classic schedule-classic-simple">
-                                    <div class="schedule-classic-content">
-                                        <div class="schedule-classic-img">
-                                            <svg class="svg-icon-md svg-icon-primary" role="img">
-                                                <use xlink:href="images/svg/sprite.svg#clock"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="schedule-classic-time">5:20 pm onwards</span><span
-                                            class="schedule-classic-title heading-4">Networking</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="tabs-1-2">
-                            <div class="card-group-custom card-group-corporate" id="accordion2" role="tablist"
-                                aria-multiselectable="false">
-
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-lgmatwsk"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-jsqkomag"
-                                                aria-controls="accordion1-card-body-jsqkomag" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/searching_go.png" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">8:30 am to 9:45
-                                                                    am</span><span
-                                                                    class="schedule-classic-title heading-4">Registration</span>
-                                                            </span></span></span></a>
-                                        </div>
-                                    </div>
-                                </article>
-
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-lgmatwsk"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-jsqkomag"
-                                                aria-controls="accordion1-card-body-jsqkomag" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/searching_go.png" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">9:45 am to 10:00
-                                                                    am</span><span
-                                                                    class="schedule-classic-title heading-4">Opening
-                                                                    Ceremony</span>
-                                                            </span></span></span></a>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-pcftruhu"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-oakhqim712"
-                                                aria-controls="accordion1-card-body-oakhqim12" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/speakers/karan.png" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">10:00 am to 10:25
-                                                                    am</span><span
-                                                                    class="schedule-classic-title heading-4"><u>Designing a Disk-Based Key-Value Store in Golang  </u></span>
-                                                                <span class="schedule-classic-author">by
-                                                                    <span class="schedule-classic-author-name">Karan Sharma
-                                                                    </span>
-                                                                    - (@mrkaran_)
-                                                                    </span>
-                                                            </span>
-                                                        </span></span></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="accordion1-card-body-oakhqim712"
-                                        aria-labelledby="accordion1-card-head-pcftruhu" data-parent="#accordion1"
-                                        role="tabpanel">
-                                        <div class="card-body">
-                                            <p>
-                                                Explore the intricacies of designing a disk-based key-value 
-                                                store in Golang, guided by the principles of Bitcask. 
-                                                This talk provides a comprehensive understanding of the architecture, 
-                                                design decisions, and implementation details, making it a valuable 
-                                                learning experience for Go developers.                                            </p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-pcftruhu"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-oakhqim713"
-                                                aria-controls="accordion1-card-body-oakhqim13" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/speakers/akanksha.png" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">10:30 am to 10:55
-                                                                    am</span><span
-                                                                    class="schedule-classic-title heading-4"><u>Dynamic Go: A Journey through Metaprogramming and Reflection   </u></span>
-                                                                <span class="schedule-classic-author">by
-                                                                    <span class="schedule-classic-author-name">Akanksha Kumari
-                                                                    </span>
-                                                                    - (@AkankshaK97)
-                                                                    </span>
-                                                            </span>
-                                                        </span></span></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="accordion1-card-body-oakhqim713"
-                                        aria-labelledby="accordion1-card-head-pcftruhu" data-parent="#accordion1"
-                                        role="tabpanel">
-                                        <div class="card-body">
-                                            <p></p>
-                                                I would explore metaprogramming and its significance 
-                                                in modern software development. I will introduce Go’s 
-                                                built-in reflection package, a concept that comes from 
-                                                the metaprogramming paradigm. I will explore how reflection 
-                                                can be used for dynamic code generation and handle errors 
-                                                more intelligently.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </article>
-
-
-                                <div class="schedule-classic schedule-classic-simple">
-                                    <div class="schedule-classic-content">
-                                        <div class="schedule-classic-img">
-                                            <svg class="svg-icon-md svg-icon-primary" role="img">
-                                                <use xlink:href="images/svg/sprite.svg#clock"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="schedule-classic-time">11:00 am to 11:20 am</span><span
-                                            class="schedule-classic-title heading-4">Enjoy the coffee break</span>
-                                    </div>
-                                </div>
-
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-pcftruhu"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-oakhqim714"
-                                                aria-controls="accordion1-card-body-oakhqim14" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/speakers/sagar.jpeg" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">11:20 am to 11:45
-                                                                    am</span><span
-                                                                    class="schedule-classic-title heading-4"><u>Bugs Light Year Away With Fuzz </u></span>
-                                                                <span class="schedule-classic-author">by
-                                                                    <span class="schedule-classic-author-name">Sagar Sonwane
-                                                                    </span>
-                                                                    - (@sagarsonwane23) Senior Software Engineer @ Josh Software
-                                                                    </span>
-                                                            </span>
-                                                        </span></span></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="accordion1-card-body-oakhqim714"
-                                        aria-labelledby="accordion1-card-head-pcftruhu" data-parent="#accordion1"
-                                        role="tabpanel">
-                                        <div class="card-body">
-                                            <p></p>
-                                            Imagine if you could find bugs in your code before 
-                                            it hits production, imagine not having to worry about your code breaking 
-                                            for unknown reasons. Go with v1.18 has added a built-in feature 
-                                            for fuzz testing. It’s a big step for community, 
-                                            especially for those working on project in the security domain
-                                            </p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-pcftruhu"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-oakhqim71459"
-                                                aria-controls="accordion1-card-body-oakhqim1459" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/speakers/swati.jpeg" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">11:50 am to 12:15
-                                                                    pm</span><span
-                                                                    class="schedule-classic-title heading-4"><u>Golang Concurrency - Locks, 
-                                                                        Lock-free, and Everything in Between </u></span>
-                                                                <span class="schedule-classic-author">by
-                                                                    <span class="schedule-classic-author-name">Swati Modi
-                                                                    </span>
-                                                                    - (@swatimodi)
-                                                                    </span>
-                                                            </span>
-                                                        </span></span></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="accordion1-card-body-oakhqim71459"
-                                        aria-labelledby="accordion1-card-head-pcftruhu" data-parent="#accordion1"
-                                        role="tabpanel">
-                                        <div class="card-body">
-                                            <p></p>Concurrency in Golang is about more than 
-                                            just channels and goroutines. Let’s dive deeper 
-                                            into lock-based and lockless data structures, 
-                                            their need, pitfalls, and where they shine. 
-                                            All this is backed by real-world use cases built 
-                                            for scale powered by Golang.
-                                           </p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-pcftruhu"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-oakhqim7147"
-                                                aria-controls="accordion1-card-body-oakhqim147" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/speakers/sandeep.jpeg" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">12:20 pm to 12:45
-                                                                    pm</span><span
-                                                                    class="schedule-classic-title heading-4"><u>Scheduled Job Executions in Go </u></span>
-                                                                <span class="schedule-classic-author">by
-                                                                    <span class="schedule-classic-author-name">Sandeep Bhat
-                                                                    </span>
-                                                                    - (@sandyydk)
-                                                                    </span>
-                                                            </span>
-                                                        </span></span></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="accordion1-card-body-oakhqim7147"
-                                        aria-labelledby="accordion1-card-head-pcftruhu" data-parent="#accordion1"
-                                        role="tabpanel">
-                                        <div class="card-body">
-                                            <p></p>I intend to talk about scheduling jobs in Go 
-                                            and their uses cases while also explaining the 
-                                            various approaches for the same. This would cover 
-                                            instances where you want to run a job at specific 
-                                            intervals or with delays.Involves components like 
-                                            Dkron, Faktory and GCP Schedulers.
-                                           </p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <div class="schedule-classic schedule-classic-simple">
-                                    <div class="schedule-classic-content">
-                                        <div class="schedule-classic-img">
-                                            <svg class="svg-icon-md svg-icon-primary" role="img">
-                                                <use xlink:href="images/svg/sprite.svg#clock"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="schedule-classic-time">12:45 pm to 2:00 pm</span><span
-                                            class="schedule-classic-title heading-4">Lunch</span>
-                                    </div>
-                                </div>
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-xlwtrluc"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-hfymdjbl"
-                                                aria-controls="accordion1-card-body-hfymdjbl" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/searching_go.png" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">2:00 pm to 2:15
-                                                                    pm</span>
-                                                                <span
-                                                                    class="schedule-classic-title heading-4">Energizer</span>
-                                                            </span></span></span></a>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-pcftruhu"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-oakhqim7141123"
-                                                aria-controls="accordion1-card-body-oakhqim141123" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/speakers/nitesh.jpeg" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">2:15 pm to 2:40
-                                                                    pm</span><span
-                                                                    class="schedule-classic-title heading-4"><u>How we leveraged power of golang to scale </u></span>
-                                                                <span class="schedule-classic-author">by
-                                                                    <span class="schedule-classic-author-name">Nitesh Jain
-                                                                    </span>
-                                                                    - Angel One
-                                                                    </span>
-                                                            </span>
-                                                        </span></span></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="accordion1-card-body-oakhqim7141123"
-                                        aria-labelledby="accordion1-card-head-pcftruhu" data-parent="#accordion1"
-                                        role="tabpanel">
-                                        <div class="card-body">
-                                            <p></p>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-xlwtrluc"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-hfymdjbl"
-                                                aria-controls="accordion1-card-body-hfymdjbl" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/searching_go.png" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">2:45 pm to 3:30
-                                                                    pm</span>
-                                                                <span
-                                                                    class="schedule-classic-title heading-4"> Panel
-                                                                    Discussion</span>
-                                                            </span></span></span></a>
-                                        </div>
-                                    </div>
-                                </article>
-
-
-                                <div class="schedule-classic schedule-classic-simple">
-                                    <div class="schedule-classic-content">
-                                        <div class="schedule-classic-img">
-                                            <svg class="svg-icon-md svg-icon-primary" role="img">
-                                                <use xlink:href="images/svg/sprite.svg#clock"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="schedule-classic-time">3:30 pm to 4:00 pm</span><span
-                                            class="schedule-classic-title heading-4">Enjoy the coffee break</span>
-                                    </div>
-                                </div>
-
-
-                                <article class="card card-custom card-corporate">
-                                    <div class="card-header" role="tab">
-                                        <div class="card-title">
-                                            <a class="collapsed" id="accordion1-card-head-pcftruhu"
-                                                data-toggle="collapse" data-parent="#accordion1"
-                                                href="#accordion1-card-body-oakhqim71411"
-                                                aria-controls="accordion1-card-body-oakhqim1411" aria-expanded="false"
-                                                role="button"><span class="schedule-classic"><span
-                                                        class="unit unit-spacing-md align-items-center d-block d-md-flex"><span
-                                                            class="unit-left"><span class="schedule-classic-img"><img
-                                                                    src="images/speakers/arvind.JPG" alt="" width="122"
-                                                                    height="122" /></span></span><span
-                                                            class="unit-body"><span
-                                                                class="schedule-classic-content"><span
-                                                                    class="schedule-classic-time">4:00 pm to 4:25
-                                                                    pm</span><span
-                                                                    class="schedule-classic-title heading-4"><u>The curious case of your IDE  </u></span>
-                                                                <span class="schedule-classic-author">by
-                                                                    <span class="schedule-classic-author-name">Aravind
-                                                                    </span>
-                                                                    - (@scriptonist)
-                                                                    </span>
-                                                            </span>
-                                                        </span></span></span></a>
-                                        </div>
-                                    </div>
-                                    <div class="collapse" id="accordion1-card-body-oakhqim71411"
-                                        aria-labelledby="accordion1-card-head-pcftruhu" data-parent="#accordion1"
-                                        role="tabpanel">
-                                        <div class="card-body">
-                                            <p></p>
-                                              Did you ever wonder how your code editor intelligently 
-                                              autocompletes for you? How does it work across our 
-                                              favourite editors? How in the world does “Jump to definition” 
-                                              work? Interesting right? We will go into all the nitty-gritty 
-                                              of how this happens under the hood in this Talk.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </article>
-
-                                <div class="schedule-classic schedule-classic-simple">
-                                    <div class="schedule-classic-content">
-                                        <div class="schedule-classic-img">
-                                            <svg class="svg-icon-md svg-icon-primary" role="img">
-                                                <use xlink:href="images/svg/sprite.svg#clock"></use>
-                                            </svg>
-                                        </div>
-                                        <span class="schedule-classic-time">4:30 pm onwards</span><span
-                                            class="schedule-classic-title heading-4">Networking</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    -->
           
 
         <!-- Section Official Sponsors -->
