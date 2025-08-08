@@ -570,7 +570,7 @@
                     </div>
                 </div>
             </section>
-            <section class="section section-lg bg-default text-center wow fadeIn parallax-container section parallax-disabled">
+            <section class="section section-lg bg-default text-center wow fadeIn parallax-container section parallax-disabled d-none">
                 <div class="container">
                     <h6>
                         <a id="speakers">Our Speakers</a>
@@ -578,214 +578,296 @@
                     <br>
                     <div class="container">
                         <div class="row">
-                          <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://www.linkedin.com/in/abhishekvrshny/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">100+ DB Upgrades in 10 Minutes: How Maintenance Mode in Microservices Made It Possible</div>
-                                    <div class="speaker-abstract">Discover how CRED upgraded 100+ databases in under 10 minutes! Learn how maintenance mode in microservices, powered by Java and Go libraries plus a central control tower, enabled low-downtime upgrades, seamless traffic draining, and operational resilience at scale.</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2025/AbhishekVarshney.jpeg" alt="Abhishek Varshney" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                            <!-- Abhishek Varshney -->
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://www.linkedin.com/in/abhishekvrshny/" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">From Polling to Pushing: Going Realtime with Go, gRPC, and Redis</div>
+                                        <div class="speaker-abstract">
+                                            Traditional request-response models suffer from delays and high backend load due to polling. This talk covers building and scaling Propeller at CRED, a real-time, bidirectional communication platform between frontend and backend using Go, bidi gRPC, and Redis PubSub.
+                                        </div>
                                     </div>
-                                    <div class="speaker-name">Abhishek Varshney</div>
-                                    <div class="speaker-bio">Software Architect at CRED</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://alexrios.me/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">United We Compile: Cross-Compiling CGO</div>
-                                    <div class="speaker-abstract">Discover how Zig simplifies CGO cross-compilation — cutting through C/C++ dependency hell, glibc/musl linking issues, and slow builds for faster, cleaner, portable Go binaries</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2025/AlexRios.avif" alt="Alex Rios" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                                    <div class="speaker-left">
+                                        <img
+                                            src="images/speakers/AbhishekVarshney.png"
+                                            alt="Abhishek Varshney"
+                                            class="img-fluid rounded-circle"
+                                            style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                        >
+                                        <div class="speaker-name">Abhishek Varshney</div>
+                                        <div class="speaker-bio">Architect at CRED</div>
                                     </div>
-                                    <div class="speaker-name">Alex Rios</div>
-                                    <div class="speaker-bio">Senior Staff Engineer at Stone</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://syed-hasan-83344.medium.com/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">Go Under the Hood: Runtime Optimizations & Algorithmic Evolution</div>
-                                    <div class="speaker-abstract">Discover Go’s hidden speed boosts! From a rewritten timer system that slashes HTTP latency, to pdqsort-powered sorting, smarter preemption, faster GC, and stronger random number generation — see how runtime and algorithmic upgrades in recent Go releases deliver production-ready performance gains you can use today.</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2025/AliHasanSyed.jpeg" alt="Ali Hasan Syed" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                                </a>
+                            </div>
+                            <!-- Ayush Goyal -->
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://www.linkedin.com/in/goyalayush57/" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">Think Pragmatically: Elevating Your Go Development Skills</div>
+                                        <div class="speaker-abstract">
+                                            Learn how pragmatic programming enhances software development. This talk covers simplicity, effective tooling, and collaboration for building robust applications. Discover real-world examples and best practices to achieve cleaner code, better team dynamics, and more successful projects.
+                                        </div>
                                     </div>
-                                    <div class="speaker-name">Ali Hasan Syed</div>
-                                    <div class="speaker-bio">Senior Software Engineer at Josh</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://www.linkedin.com/in/akshay-khurd-3337a511/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">SQLens: AI-Powered Database Intelligence for Go Applications</div>
-                                    <div class="speaker-abstract">Discover SQLens — AI-powered database intelligence in your IDE. Spot bottlenecks, fix slow queries, and turn database nightmares into lightning-fast performance with MCP-powered insights.</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2025/AkshayKhurd.jpeg" alt="Akshay Khurd" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                                    <div class="speaker-left">
+                                        <img
+                                            src="images/speakers/AyushGoyal.jpeg"
+                                            alt="Ayush Goyal"
+                                            class="img-fluid rounded-circle"
+                                            style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                        >
+                                        <div class="speaker-name">Ayush Goyal</div>
+                                        <div class="speaker-bio">Sr. Principal Software Engineer at PubMatic</div>
                                     </div>
-                                    <div class="speaker-name">Akshay Khurd</div>
-                                    <div class="speaker-bio">Technical Director at Druva</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://dhruvasagar.dev/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">Webassembly in Go: Bridging Web and Backend</div>
-                                    <div class="speaker-abstract">Discover how Go and WebAssembly let you run Go apps natively in the browser for unmatched speed and interactivity — with practical techniques, real-world examples, and workflow-transforming tips.</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2025/DhruvaSagar.jpg" alt="Dhruva Sagar" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                                </a>
+                            </div>
+                            <!-- Gaurav Gahlot -->
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://gauravgahlot.in" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">Paradigms of Rust for the Go developer</div>
+                                        <div class="speaker-abstract">
+                                            The talk delves into 3 key paradigms: Go's CSP model for concurrency, Rust's data race prevention through ownership and borrowing, and Rust's opt-in shared memory model. With practical examples and comparisons, attendees will learn how these paradigms foster robust, efficient, and safe software.
+                                        </div>
                                     </div>
-                                    <div class="speaker-name">Dhruva Sagar</div>
-                                    <div class="speaker-bio">Senior Consultant working at Tarka Labs</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://www.linkedin.com/in/neel-shah-07460218a/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">Telemetry to Intelligence: Streaming Observability Data from Go Apps to AI Models</div>
-                                    <div class="speaker-abstract">Discover how to turn raw telemetry from Go logs, metrics, and traces into actionable intelligence. Build an AI-powered pipeline for anomaly detection, predictive analytics, and smart alerting.</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2025/NeelShah.jpeg" alt="Neel Shah" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                                    <div class="speaker-left">
+                                        <div class="speaker-photo">
+                                            <img
+                                                src="images/speakers/GauravGehlot.jpeg"
+                                                alt="Gaurav Gahlot"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                            >
+                                        </div>
+                                        <div class="speaker-name">Gaurav Gahlot</div>
+                                        <div class="speaker-bio">Senior Software Engineer at Acquia</div>
                                     </div>
-                                    <div class="speaker-name">Neel Shah</div>
-                                    <div class="speaker-bio">Developer Advocate @ Middleware</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://prasunanand.github.io/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">Building High-Performance PyData Tools by Adding Go to the Mix</div>
-                                    <div class="speaker-abstract">Discover the story behind Zasper — how it was built from scratch to reimagine Jupyter notebooks with Go for high performance, concurrency, and seamless compatibility with Python workflows.</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2025/PrasunAnand.jpeg" alt="Prasun Anand" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                                </a>
+                            </div>
+                            <!-- Joobi S B -->
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://joobisb.com/" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">Mastering Concurrency in Go: From Patterns to Production</div>
+                                        <div class="speaker-abstract">
+                                            Unlock the full potential of Go concurrency model with advanced patterns like pipelines, fan-out/fan-in, and graceful cancellation. This talk offers practical insights and real-world examples to help developers build scalable, efficient systems while avoiding common concurrency pitfalls.
+                                        </div>
                                     </div>
-                                    <div class="speaker-name">Prasun Anand</div>
-                                    <div class="speaker-bio">Founder of Zapser</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://www.linkedin.com/in/prerit-munjal/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">Memory Safe, Emotionally Unsafe: Why Rust Needs a Hug</div>
-                                    <div class="speaker-abstract">Discover the hilarious, sometimes painful truth of coding in Rust — from lifetimes and borrow checker heartbreak to Go’s laid-back ‘just return an error’ vibe. A light-hearted roast of two languages that proves memory safety can still hurt your feelings.</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2025/PreritMunjal.jpeg" alt="Prerit Munjal" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                                    <div class="speaker-left">
+                                        <div class="speaker-photo">
+                                            <img
+                                                src="images/speakers/JoobiS.B.HEIC"
+                                                alt="Joobi S B"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                            >
+                                        </div>
+                                        <div class="speaker-name">Joobi S B</div>
+                                        <div class="speaker-bio">Sr. Tech Lead at KeyValue Software Systems</div>
                                     </div>
-                                    <div class="speaker-name">Prerit Munjal</div>
-                                    <div class="speaker-bio">Senior Technical product Manager at Groupon</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://www.linkedin.com/in/rajani103/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">Go-ing Beyond: Crafting a Custom Kubernetes Ingress Controller for Intelligent Traffic Control</div>
-                                    <div class="speaker-abstract">Discover how to build a custom Kubernetes Ingress Controller using Go, designed for intelligent traffic control and advanced routing. This talk dives into real-world scenarios, best practices, and hands-on techniques, empowering you to master traffic management and enhance your cloud-native apps.</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2025/RajaniEkunde.jpeg" alt="Rajani Ekunde" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                                </a>
+                            </div>
+                            <!-- Mohit Kumar -->
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://medium.com/@mkrs2404" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">Billion Rows Walk Into a Go Bar</div>
+                                        <div class="speaker-abstract">
+                                            1BRC (1 Billion Row Challenge) is about parsing a file with a billion rows to find aggregations as fast as possible. In this talk, I’ll share my analysis of exploring various solutions to this problem and how you can approach writing highly performant Go programs in your day-to-day work.
+                                        </div>
                                     </div>
-                                    <div class="speaker-name">Rajani Ekunde</div>
-                                    <div class="speaker-bio">Senior SRE at Okta</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://sagarsonwane230797.medium.com/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">Broken Go: The Unexpected Behaviors</div>
-                                    <div class="speaker-abstract">Discover Go’s hidden quirks — from nil error traps and NaN map keys to JSON merge surprises, panic/recover nuances, and concurrency gotchas. Learn why they happen and how to write more robust, idiomatic Go.</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2025/SagarSonwane.jpeg" alt="Sagar Sonwane" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                                    <div class="speaker-left">
+                                        <div class="speaker-photo">
+                                            <img
+                                                src="images/speakers/MohitKumar.jpeg"
+                                                alt="Mohit Kumar"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                            >
+                                        </div>
+                                        <div class="speaker-name">Mohit Kumar</div>
+                                        <div class="speaker-bio">Software Engineer at One2N</div>
                                     </div>
-                                    <div class="speaker-name">Sagar Sonwane</div>
-                                    <div class="speaker-bio">Senior Software Engineer at Josh</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://www.linkedin.com/in/varunihk/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">Fast Authorization Checks with Dynamic Graph Indexing in Go</div>
-                                    <div class="speaker-abstract">Discover how Dynamic Graph Indexing in Go slashed authorization latency by 57%, doubled throughput, and cut CPU usage — with real benchmarks, architecture, and open-source code.</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2025/VaruniHK.jpeg" alt="Varuni H K" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                                </a>
+                            </div>
+                            <!-- Pawan Kumar Sharma -->
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://www.linkedin.com/in/pawansha/" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">Building a recommendation engine for Bus search based on Real-time feedback of users</div>
+                                        <div class="speaker-abstract">
+                                            Discover how we boosted RedBus conversions by 20% using real-time data and Gradient Boosting Regression Trees (GBRT). Learn how Redis sorted sets enabled ultra-fast, personalised bus rankings. Our model ranks buses using user interactions, enhancing both experience and occupancy rates.
+                                        </div>
                                     </div>
-                                    <div class="speaker-name">Varuni H K</div>
-                                    <div class="speaker-bio">Software Engineer at Couchase</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://www.linkedin.com/in/vignesh-r-911460a3/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">Go Concurrency: How not to burn the house down</div>
-                                    <div class="speaker-abstract">Discover how to master Go’s concurrency without falling into traps like unbounded goroutines, channel misuse, or missed cancellations — and see how databases like CockroachDB, BadgerDB, and Dgraph do it right</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2025/VigneshRavichandran.png" alt="Vignesh Ravichandran" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                                    <div class="speaker-left">
+                                        <div class="speaker-photo">
+                                            <img
+                                                src="images/speakers/PawanKumarSharma.jpg"
+                                                alt="Pawan Kumar Sharma"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                            >
+                                        </div>
+                                        <div class="speaker-name">Pawan Kumar Sharma</div>
+                                        <div class="speaker-bio">Associate Principal Engineer at Redbus</div>
                                     </div>
-                                    <div class="speaker-name">Vignesh Ravichandran</div>
-                                    <div class="speaker-bio">Principal Software Engineer at Tarkalab</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://yashmehrotra.com/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">Writing your own MCP Server: from scratch to production in go</div>
-                                    <div class="speaker-abstract">Discover how to integrate MCP into an existing Go codebase — from design and implementation to building your own MCP server, with best practices, security tips, and a live demo.</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2025/YashMehrotra.jpeg" alt="Yash Mehrotra" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
+                                </a>
+                            </div>
+                            <!-- Rohit Ekbote -->
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://www.linkedin.com/in/rohitekbote/" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">Empowering Resilient Scalability: The Power of Choreography in Distributed Systems</div>
+                                        <div class="speaker-abstract">
+                                            Choreography in distributed systems: Decentralized interactions, resilient scalability and graceful failure handling. Druva's innovative event framework showcases these principles, facilitating seamless communication and robust application performance. Join us to explore the future of system architecture!
+                                        </div>
                                     </div>
-                                    <div class="speaker-name">Yash Mehrotra</div>
-                                    <div class="speaker-bio"> Senior Software Engineer at Flanksource</div>
+                                    <div class="speaker-left">
+                                        <div class="speaker-photo">
+                                            <img
+                                                src="images/speakers/RohitEkbote.jpg"
+                                                alt="Rohit Ekbote"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                            >
+                                        </div>
+                                        <div class="speaker-name">Rohit Ekbote</div>
+                                        <div class="speaker-bio">Lead Engineer at Druva</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://www.linkedin.com/in/sarthak-makhija-7a165a55/" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">Questioning database claims: Design patterns of storage engine</div>
+                                        <div class="speaker-abstract">
+                                            How storage engine design impacts database durability, performance, and consistency. This talk provides practical insights to critically evaluate database claims and ensure they meet your needs.
+                                        </div>
+                                    </div>
+                                    <div class="speaker-left">
+                                        <div class="speaker-photo">
+                                            <img
+                                                src="images/speakers/SarthakM.jpg"
+                                                alt="Sarthak Makhija"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                            >
+                                        </div>
+                                        <div class="speaker-name">Sarthak Makhija</div>
+                                        <div class="speaker-bio">Principal architect, Caizin</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <div class="speaker-card d-flex">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">The Loop War: Iterators vs. Traditional Loop | A Generics</div>
+                                        <div class="speaker-abstract">
+                                            Unlock the future of data traversal with Go 1.23's new iterators! In my talk, I'll reveal how to harness the power of the elegant for range over functions to iterate over custom data structures seamlessly. Elevate your Go code with cleaner patterns and efficient algorithms. Don't miss out!
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-center" style="width: 100%;">
+                                        <div class="speaker-left d-flex align-items-center">
+                                            <a href="https://sanjayshr.github.io/" target="_blank">
+                                                <div class="speaker-photo">
+                                                    <img
+                                                        src="images/speakers/SanjayS.jpg"
+                                                        alt="Sanjay Shiradwade"
+                                                        class="img-fluid rounded-circle"
+                                                        style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                                    >
+                                                </div>
+                                                <div class="speaker-info ms-3">
+                                                    <div class="speaker-name">Sanjay Shiradwade</div>
+                                                    <div class="speaker-bio">IBM</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="speaker-left d-flex align-items-center">
+                                            <a href="https://www.linkedin.com/in/sidharthsasikumar/" target="_blank">
+                                                <div class="speaker-photo">
+                                                    <img
+                                                        src="images/speakers/SidharthSasikumar.jpg"
+                                                        alt="Sidharth Sasikumar"
+                                                        class="img-fluid rounded-circle"
+                                                        style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                                    >
+                                                </div>
+                                                <div class="speaker-info ms-3">
+                                                    <div class="speaker-name">Sidharth Sasikumar</div>
+                                                    <div class="speaker-bio">Sr. Software Engineer at Synamedia</div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </a>
-                        </div>
-
+                            </div>
+                            <!-- Suhas Karanth -->
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://www.linkedin.com/in/skaranth90/" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">Operationalising golangci-lint</div>
+                                        <div class="speaker-abstract">
+                                            Talk shows how to leverage golangci-lint in Go projects for catching issues early, ensuring code consistency, and preventing bugs. We'll explore why we should configure golangci-lint and how to integrate it into existing codebases, equipping you to deliver cleaner, more maintainable code.
+                                        </div>
+                                    </div>
+                                    <div class="speaker-left">
+                                        <div class="speaker-photo">
+                                            <img
+                                                src="images/speakers/SuhasKaranth.jpeg"
+                                                alt="Suhas Karanth"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                            >
+                                        </div>
+                                        <div class="speaker-name">Suhas Karanth</div>
+                                        <div class="speaker-bio">Staff Engineer at Netskope</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Suryanshu Singh -->
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://www.linkedin.com/in/suryanshu-singh//" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">Workflow library in Go for API development</div>
+                                        <div class="speaker-abstract">
+                                            This talk explores how the built-in Go workflow library simplifies API development, optimizes performance, and tackles challenges such as unstructured logic and code duplication. We'll delve into its architecture, use of goroutines and channels, and demonstrate how it streamlines complex APIs.
+                                        </div>
+                                    </div>
+                                    <div class="speaker-left">
+                                        <div class="speaker-photo">
+                                            <img
+                                                src="images/speakers/SuryanshuSingh.jpeg"
+                                                alt="Suryanshu Singh"
+                                                class="img-fluid rounded-circle"
+                                                style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                            >
+                                        </div>
+                                        <div class="speaker-name">Suryanshu Singh</div>
+                                        <div class="speaker-bio">Lead Software Engineer at MakeMyTrip</div>
+                                    </div>
+                                </a>
+                            </div>
+                            <!-- Tapan Avasthi -->
+                            <div class="col-lg-6 col-md-6 mb-4">
+                                <a href="https://www.linkedin.com/in/tapanavasthi/" class="speaker-card d-flex" target="_blank">
+                                    <div class="speaker-right">
+                                        <div class="speaker-title">Contextual Logging for Modern Go Applications</div>
+                                        <div class="speaker-abstract">
+                                            Contextual logging lets developers add meaningful context to log entries, making them more informative for debugging distributed systems. This talk will show how Go developers can use contextual logging to streamline logs, cut noise, and speed up troubleshooting.
+                                        </div>
+                                    </div>
+                                    <div class="speaker-left">
+                                        <img
+                                            src="images/speakers/TapanAvasthi.png"
+                                            alt="Tapan Avasthi"
+                                            class="img-fluid rounded-circle"
+                                            style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
+                                        >
+                                        <div class="speaker-name">Tapan Avasthi</div>
+                                        <div class="speaker-bio">Cyberhaven Inc.</div>
+                                    </div>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
