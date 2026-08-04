@@ -1,7 +1,0 @@
----
-layout: post
-title:  "Interview with Audrey Lim"
-tags: [Audrey Lim, GopherConIndia, golang]
----
-
-We [interviewed Audrey Lim on Medium](https://medium.com/@IndianGuru/interview-with-audrey-lim-developer-evangelist-at-nitrous-io-singapore-37f73e945fd4) for GopeConIndia 2016.
