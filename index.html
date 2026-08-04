@@ -1,1331 +1,580 @@
 <!DOCTYPE html>
-<html class="wide" lang="en">
-    <head>
-        <title>Home</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="Join GopherCon 2026 and immerse yourself in the Go community. Connect with developers, attend insightful talks, and explore the latest in Go programming.">
-        <meta name="keywords" content="GopherCon 2026, Go Conference, GopherCon, Go Programming, Golang, Go Community, Software Development, Programming">
-        <meta name="robots" content="index, follow">
-        <link rel="canonical" href="https://gopherconindia.org/">
-        <link rel="icon" href="images/favicon.png" type="image/x-icon">
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Barlow%7CBarlow+Condensed:300,400,500,600,700,900">
-        <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/fonts.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="css/base.css">
-        <link rel="stylesheet" href="css/demo5.css">
-    </head>
-    <body>
-        <div class="ie-panel">
-            <a href="http://windows.microsoft.com/en-US/internet-explorer/">
-                <img
-                    src="images/warning_bar_0000_us.jpg"
-                    height="42"
-                    width="820"
-                    alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."
-                >
-            </a>
+<html lang="en" class="scroll-smooth">
+<head>
+    <title>GopherCon India 2026 | Go Conference in Hyderabad</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="GopherCon India 2026 is India's Go (Golang) conference on November 22 in Hyderabad at Novotel Hyderabad Airport. Talks, networking, and community for developers and engineering leaders.">
+    <meta name="keywords" content="GopherCon India 2026, Go conference India, Golang conference Hyderabad, GopherCon, Go programming, Golang, Go community">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://gopherconindia.org/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gopherconindia.org/">
+    <meta property="og:title" content="GopherCon India 2026 | Go Conference in Hyderabad">
+    <meta property="og:description" content="GopherCon India 2026 is India's Go (Golang) conference on November 22 in Hyderabad at Novotel Hyderabad Airport. Talks, networking, and community for developers and engineering leaders.">
+    <meta property="og:image" content="https://gopherconindia.org/images/og-share.jpeg">
+    <meta property="og:image:width" content="596">
+    <meta property="og:image:height" content="335">
+    <meta property="og:image:alt" content="GopherCon India conference attendees and community">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="GopherCon India">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GopherCon India 2026 | Go Conference in Hyderabad">
+    <meta name="twitter:description" content="GopherCon India 2026 is India's Go (Golang) conference on November 22 in Hyderabad at Novotel Hyderabad Airport. Talks, networking, and community for developers and engineering leaders.">
+    <meta name="twitter:image" content="https://gopherconindia.org/images/og-share.jpeg">
+    <meta name="twitter:image:alt" content="GopherCon India conference attendees and community">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "GopherCon India 2026",
+      "description": "India's Go (Golang) conference with technical talks, networking, and community for developers and engineering leaders.",
+      "startDate": "2026-11-22",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "url": "https://gopherconindia.org/",
+      "image": [
+        "https://gopherconindia.org/images/og-share.jpeg",
+        "https://gopherconindia.org/images/gophermascot-2.png"
+      ],
+      "location": {
+        "@type": "Place",
+        "name": "Novotel Hyderabad Airport",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Hyderabad",
+          "addressRegion": "Telangana",
+          "addressCountry": "IN"
+        }
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "GopherCon India",
+        "url": "https://gopherconindia.org/"
+      }
+    }
+    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background: #0b1120; color: #e2e8f0; }
+        .gopher-mascot { position: fixed; bottom: 0; left: 0px; width: 240px; z-index: 100; transition: transform 0.4s; }
+        .scrollbar-hide::-webkit-scrollbar { display: none; }
+        @keyframes scroll { from { background-position: 0 0; } to { background-position: -2000px 0; } }
+        .infinite-skyline { background-image: url('images/hyderbad_preview.png'); background-repeat: repeat-x; background-position: 0 bottom; background-size: auto 100%; animation: scroll 60s linear infinite; }
+        @media (max-width: 768px) { .gopher-mascot { width: 100px; left: -20px; } }
+        .typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    border-right: 3px solid #06b6d4; /* The Cursor */
+    white-space: nowrap;
+    letter-spacing: 0.1em;
+    animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing { 
+    from { width: 0 } 
+    to { width: 100% } 
+}
+
+@keyframes blink-caret { 
+    from, to { border-color: transparent } 
+    50% { border-color: #06b6d4 } 
+}
+    </style>
+    <style>
+    @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); } 
+    }
+    .animate-scroll {
+        animation: scroll 30s linear infinite;
+        will-change: transform;
+    }
+    /* Stop the animation when hovering */
+    .group:hover .animate-scroll {
+        animation-play-state: paused;
+    }
+</style>
+<link rel="icon" type="image/x-icon" href="images/favicon-2.png">
+</head>
+<body class="antialiased">
+
+    <img src="images/gophermascot-2.png" alt="" width="518" height="481" decoding="async" fetchpriority="low" class="gopher-mascot" role="presentation">
+
+    <nav class="fixed w-full z-50 bg-white backdrop-blur-xl border-b border-white/5 h-20 flex items-center px-8 justify-between text-[#020617]/80">
+        <div class="font-bold text-xl">GopherCon India 2026</div>
+        <div class="hidden md:flex gap-6 text-sm items-center">
+            <a href="#x-factor" class="hover:text-white transition">X-Factor</a>
+            <a href="#speakers" class="hover:text-white transition">Speakers</a>
+            <a href="#sponsors" class="hover:text-cyan-600 transition">Sponsors</a>
+        
+        <!-- Submit CFP Button (Outline) -->
+        <a href="https://www.papercall.io/gopherconindia2026" target="_blank" rel="noopener noreferrer" class="px-4 py-1.5 rounded-full border border-cyan-500 text-cyan-500 hover:bg-cyan-500 hover:text-white transition">
+            Submit CFP
+        </a>
+        
+        <!-- Sponsor Us Button (Filled) -->
+        <a href="#sponsors" class="px-4 py-1.5 rounded-full bg-cyan-500 text-white hover:bg-cyan-600 transition">
+            Sponsor Us
+        </a>
         </div>
-        <div class="preloader">
-            <div class="preloader-body">
-                <div class="cssload-container">
-                    <div class="cssload-speeding-wheel"></div>
+    </nav>
+
+   <!-- 
+    Hero Section -->
+    <!-- <section class="h-[650px] w-fit bg-[#0b1120] pt-20 flex items-center pl-5"> -->
+        <!-- <div class="max-w-7xl mx-auto w-full grid grid-cols-3 gap-8 px-6 items-center"> -->
+            <!-- Content (2/3) -->
+            <!-- <div class="col-span-2 flex flex-col justify-center space-y-8 pr-12"> -->
+                <!-- <div class="w-fit px-4 py-1.5 rounded-full border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-xs font-bold uppercase"> -->
+                    <!-- <span class="typing-effect">November 22, 2026 • Hyderabad</span> -->
+                <!-- </div> -->
+                <!-- <h1 class="text-7xl font-black tracking-tighter leading-tight">GopherCon'26</h1>
+                <p class="text-xl text-slate-400">Join the premier gathering of Go developers in the heart of India's tech hub. Experience world-class workshops, keynote insights, and unparalleled networking in a city that blends heritage with future-ready innovation.</p>
+                <div class="flex gap-6 py-6">
+                    <div class="text-center"><span class="block text-4xl font-bold">152</span><span class="text-xs text-slate-500">DAYS</span></div>
+                    <div class="text-center"><span class="block text-4xl font-bold">08</span><span class="text-xs text-slate-500">HOURS</span></div>
+                    <div class="text-center"><span class="block text-4xl font-bold">45</span><span class="text-xs text-slate-500">MINS</span></div>
                 </div>
-                <p>Loading...</p>
+                <button class="px-8 py-4 bg-cyan-500 text-white font-bold rounded-2xl hover:bg-cyan-600 transition w-fit">Join the Event</button>
+            </div> -->
+
+            <!-- Video (1/3) with Square Aspect and External Icon Control -->
+            <!-- <div class="col-span-1 flex items-center gap-4">
+                <div class="h-[800px] aspect-square rounded-3xl overflow-hidden border border-white/10 flex-shrink-0">
+                    <video id="hero-video" class="w-full h-full object-cover" autoplay muted loop playsinline>
+                        <source src="mp4/gopher-video.mp4" type="video/mp4">
+                    </video>
+                </div> -->
+                <!-- <button id="toggle-video" class="w-10 h-10 flex items-center justify-center bg-white/10 hover:bg-white/20 text-white rounded-full transition border border-white/20">
+                    <svg id="play-icon" class="w-4 h-4 fill-current hidden" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    <svg id="pause-icon" class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/></svg>
+                </button>
             </div>
         </div>
-        <div class="page">
-            <!-- Section Header Default-->
-            <header class="section page-header">
-                <!--RD Navbar-->
-                <div class="rd-navbar-wrap">
-                    <nav
-                        class="rd-navbar rd-navbar-classic"
-                        data-layout="rd-navbar-fixed"
-                        data-sm-layout="rd-navbar-fixed"
-                        data-md-layout="rd-navbar-fixed"
-                        data-md-device-layout="rd-navbar-fixed"
-                        data-lg-layout="rd-navbar-static"
-                        data-lg-device-layout="rd-navbar-static"
-                        data-xl-layout="rd-navbar-static"
-                        data-xl-device-layout="rd-navbar-static"
-                        data-xxl-layout="rd-navbar-static"
-                        data-xxl-device-layout="rd-navbar-static"
-                        data-lg-stick-up-offset="46px"
-                        data-xl-stick-up-offset="46px"
-                        data-xxl-stick-up-offset="76px"
-                        data-lg-stick-up="true"
-                        data-xl-stick-up="true"
-                        data-xxl-stick-up="true"
-                    >
-                        <div class="rd-navbar-collapse-toggle rd-navbar-fixed-element-1" data-rd-navbar-toggle=".rd-navbar-collapse">
-                            <span></span>
+    </section> 
+   --> 
+
+    <!-- Hero Section -->
+<!-- Hero Section -->
+<!-- Hero Section -->
+<section class="min-h-[700px] w-full bg-[#0b1120] pt-20 flex items-center relative overflow-hidden">
+    <!-- Content (Left side) -->
+    <div class="w-full max-w-[600px] pl-10 z-20">
+        <div class="w-fit max-w-md px-5 py-3 rounded-2xl border border-cyan-500/30 bg-cyan-500/10 text-cyan-400 text-base md:text-lg font-bold uppercase mb-6 leading-snug">
+            <span class="block">November 22, 2026</span>
+            <span class="block mt-1">Novotel Hyderabad Airport, INDIA</span>
+        </div>
+        <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-tighter leading-tight text-white mb-3">
+            <span class="block">GopherCon India 2026</span>
+            <span class="block text-2xl sm:text-3xl md:text-4xl font-bold text-cyan-400 mt-2 tracking-tight">India's Golang conference · Hyderabad</span>
+        </h1>
+        <p class="text-lg text-slate-400 leading-relaxed mb-8">Join the premier gathering of Go developers at Novotel Hyderabad Airport, INDIA - in the heart of India's tech hub.</p>
+        <a href="https://www.papercall.io/gopherconindia2026" target="_blank" rel="noopener noreferrer" class="inline-block px-8 py-4 bg-cyan-500 text-white font-bold rounded-2xl hover:bg-cyan-600 transition">Submit CFP</a>
+    </div>
+
+    <!-- Circle Stack (Locked to Right) -->
+    <div class="absolute -right-40 top-0 h-full flex items-center z-10">
+        <div class="circle-stack">
+            <div class="circle c5"></div>
+            <div class="circle c4"></div>
+            <div class="circle c3"></div>
+            <div class="circle c2"></div>
+            <div class="circle c1 overflow-hidden shadow-2xl">
+                <video id="hero-video" class="w-full h-full object-cover" autoplay muted loop playsinline poster="images/og-share.jpeg">
+                    <source src="mp4/gophercon_highlights.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Scrolling Ribbon Section -->
+<section class="w-full bg-[#002d40] py-4 overflow-hidden border-y border-cyan-500/20">
+    <div class="flex animate-ribbon-scroll whitespace-nowrap">
+        <!-- Text repeated multiple times to ensure smooth infinite loop -->
+        <div class="text-white font-bold text-lg px-8 flex items-center gap-8">
+            <span>GopherCon India 2026 | November 22 2026 | Novotel Hyderabad Airport, INDIA</span>
+            <span>✦</span>
+            <span>GopherCon India 2026 | November 22 2026 | Novotel Hyderabad Airport, INDIA</span>
+            <span>✦</span>
+            <span>GopherCon India 2026 | November 22 2026 | Novotel Hyderabad Airport, INDIA</span>
+            <span>✦</span>
+            <span>GopherCon India 2026 | November 22 2026 | Novotel Hyderabad Airport, INDIA</span>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Ribbon Animation */
+    @keyframes ribbon-scroll {
+        from { transform: translateX(0); }
+        to { transform: translateX(-50%); }
+    }
+    .animate-ribbon-scroll {
+        animation: ribbon-scroll 20s linear infinite;
+    }
+
+    /* Stacked Circles Styling */
+    .circle-stack { position: relative; width: 800px; height: 800px; display: flex; align-items: center; justify-content: center; }
+    .circle { position: absolute; border-radius: 50%; animation: slideInRight 1s cubic-bezier(0.22, 1, 0.36, 1) forwards; opacity: 0; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); }
+    
+    .c5 { width: 800px; height: 800px; animation-delay: 0.1s; background-color: #002d40; z-index: 1; }
+    .c4 { width: 680px; height: 680px; animation-delay: 0.2s; background-color: #005a73; z-index: 2; }
+    .c3 { width: 560px; height: 560px; animation-delay: 0.3s; background-color: #007d9c; z-index: 3; }
+    .c2 { width: 440px; height: 440px; animation-delay: 0.4s; background-color: #00add8; z-index: 4; }
+    .c1 { width: 360px; height: 360px; animation-delay: 0.5s; z-index: 5; background-color: #ffffff; }
+
+    @keyframes slideInRight {
+        from { transform: translateX(200px); opacity: 0; }
+        to { transform: translateX(0); opacity: 1; }
+    }
+</style>
+
+    <!-- X-Factor Section -->
+    <section id="x-factor" class="relative py-24 bg-white text-slate-900 overflow-hidden">
+        <div class="absolute inset-0 opacity-[0.08] infinite-skyline pointer-events-none drop-shadow-sm"></div>
+        <div class="max-w-7xl mx-auto px-8 w-full grid lg:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="space-y-6">
+                <h2 class="text-4xl font-black leading-tight">Hyderabad: <br><span class="text-cyan-600">The X-Factor</span></h2>
+                <p class="text-lg text-slate-600 leading-relaxed">India's tech powerhouse, blending centuries of heritage with future-ready infrastructure.</p>
+            </div>
+            <div class="p-8 md:p-10 bg-slate-900 text-white rounded-2xl shadow-xl">
+                <h3 class="font-bold text-lg md:text-xl mb-1">Why Hyderabad for GopherCon</h3>
+                <p class="text-slate-400 text-sm mb-5">A city where enterprise scale meets a fast-growing builder community.</p>
+                <ul class="space-y-4">
+                    <li class="flex gap-3 text-sm leading-relaxed font-normal text-slate-200"><span class="text-cyan-400 font-bold shrink-0">✦</span><span>Global engineering presence - major R&amp;D and cloud centers from Google, Microsoft, Amazon, and more.</span></li>
+                    <li class="flex gap-3 text-sm leading-relaxed font-normal text-slate-200"><span class="text-cyan-400 font-bold shrink-0">✦</span><span>HITEC City &amp; Gachibowli - one of India’s densest corridors for SaaS, fintech, and cloud-native product teams.</span></li>
+                    <li class="flex gap-3 text-sm leading-relaxed font-normal text-slate-200"><span class="text-cyan-400 font-bold shrink-0">✦</span><span>Built for business travel - international airport, strong connectivity, and venues suited to regional and global attendees.</span></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- 1-Day Conference Section -->
+<section id="workshop" class="py-24 bg-slate-50 text-slate-900 border-y border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+            <div class="max-w-xl">
+                <p class="text-cyan-600 font-bold uppercase tracking-[0.2em] text-xs md:text-sm mb-4">November 22, 2026</p>
+                <h2 class="text-4xl sm:text-5xl lg:text-6xl font-black uppercase text-slate-900 leading-[1.05] tracking-tight">
+                    <span class="block">1-Day</span>
+                    <span class="block text-cyan-600">Conference</span>
+                </h2>
+                <p class="mt-6 text-lg text-slate-600 leading-relaxed">Deep dive into Go with hands-on sessions. A full day of coding, architectural patterns, and cloud-native scaling.</p>
+                <div class="mt-10 flex flex-wrap gap-4">
+                    <a href="https://www.papercall.io/gopherconindia2026" target="_blank" rel="noopener noreferrer" class="px-8 py-4 bg-cyan-500 text-white font-bold uppercase rounded-2xl hover:bg-cyan-600 transition text-center">Submit CFP</a>
+                    <button type="button" class="hidden px-8 py-4 border-2 border-slate-300 text-slate-700 font-bold uppercase rounded-2xl hover:border-cyan-500 hover:text-cyan-600 transition">Register Now</button>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="absolute -inset-4 bg-cyan-500/10 rounded-[2rem] blur-2xl pointer-events-none" aria-hidden="true"></div>
+                <div class="relative overflow-hidden rounded-3xl bg-[#0b1120] text-white shadow-2xl">
+                    <div class="absolute inset-0 opacity-20 bg-[url('images/hyderbad_preview.png')] bg-repeat-x bg-bottom bg-[length:auto_120px] pointer-events-none"></div>
+                    <div class="relative p-8 md:p-10 space-y-8">
+                        <div>
+                            <p class="text-cyan-400 text-xs font-bold uppercase tracking-widest mb-2">Venue</p>
+                            <p class="text-xl md:text-2xl font-bold leading-snug">Novotel Hyderabad Airport, INDIA</p>
                         </div>
-                        <div class="rd-navbar-main-outer">
-                            <div class="rd-navbar-main">
-                                <!--RD Navbar Panel-->
-                                <div class="rd-navbar-panel">
-                                    <!--RD Navbar Toggle-->
-                                    <button class="rd-navbar-toggle" data-rd-navbar-toggle=".rd-navbar-nav-wrap">
-                                        <span></span>
-                                    </button>
-                                    <!--RD Navbar Brand-->
-                                    <div class="rd-navbar-brand">
-                                        <!--Brand-->
-                                        <a class="brand" href="index.html">
-                                            <picture>
-                                                <source srcset="images/gopher-150.webp" type="image/webp">
-                                                <source srcset="images/gopher-150.png" type="image/jpeg">
-                                                <img class="brand-logo-light" alt="" style="max-height: 60px;">
-                                            </picture>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- Rd Navbar Navigation-->
-                                <div class="rd-navbar-main-element">
-                                    <div class="rd-navbar-nav-wrap">
-                                        <ul class="rd-navbar-nav">
-                                            <li class="rd-nav-item active">
-                                                <a class="rd-nav-link" href="#">Home</a>
-                                            </li>
-                                            <!--
-                      <li class="rd-nav-item">
-                        <a class="rd-nav-link" href="#speakers">Speakers</a>
-                      </li>
+                        <p class="text-cyan-400 text-xs font-bold uppercase tracking-widest mb-3">Why attend</p>
+                        <ul class="grid sm:grid-cols-2 gap-4">
+                            <li class="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                                <p class="text-sm leading-relaxed font-normal text-slate-200">Learn production Go from engineers who run it at scale - performance, reliability, and patterns you can apply right away.</p>
+                            </li>
+                            <li class="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                                <p class="text-sm leading-relaxed font-normal text-slate-200">Get clarity on platform and team decisions: cloud-native architecture, scaling practices, and what’s working in the real world.</p>
+                            </li>
+                            <li class="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                                <p class="text-sm leading-relaxed font-normal text-slate-200">Meet the people building India’s Go ecosystem - peers, hiring leaders, and collaborators in one room.</p>
+                            </li>
+                            <li class="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                                <p class="text-sm leading-relaxed font-normal text-slate-200">Invest a focused day in deep technical content - practitioner talks curated by the community, not sales pitches.</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Speakers Section -->
+    <!-- <section id="speakers" class="bg-white py-24 text-slate-900">
+        <div class="max-w-7xl mx-auto px-8">
+            <h2 class="text-4xl font-black mb-16 text-center">Keynote Speakers</h2>
+            <div class="flex overflow-x-auto gap-8 pb-8 justify-center">
+                <div class="w-64 bg-slate-50 rounded-3xl p-8 border border-slate-100"><div class="w-20 h-20 bg-slate-200 rounded-full mb-6 mx-auto"></div><h3 class="font-bold text-lg text-center">Dr. Gopher</h3></div>
+                <div class="w-64 bg-slate-50 rounded-3xl p-8 border border-slate-100"><div class="w-20 h-20 bg-slate-200 rounded-full mb-6 mx-auto"></div><h3 class="font-bold text-lg text-center">Sarah Jenkins</h3></div>
+                <div class="w-64 bg-slate-50 rounded-3xl p-8 border border-slate-100"><div class="w-20 h-20 bg-slate-200 rounded-full mb-6 mx-auto"></div><h3 class="font-bold text-lg text-center">Amit Verma</h3></div>
+                    <div class="w-64 bg-slate-50 rounded-3xl p-8 border border-slate-100"><div class="w-20 h-20 bg-slate-200 rounded-full mb-6 mx-auto"></div><h3 class="font-bold text-lg text-center">Dr. Gopher</h3></div>
+                <div class="w-64 bg-slate-50 rounded-3xl p-8 border border-slate-100"><div class="w-20 h-20 bg-slate-200 rounded-full mb-6 mx-auto"></div><h3 class="font-bold text-lg text-center">Sarah Jenkins</h3></div>
+                <div class="w-64 bg-slate-50 rounded-3xl p-8 border border-slate-100"><div class="w-20 h-20 bg-slate-200 rounded-full mb-6 mx-auto"></div><h3 class="font-bold text-lg text-center">Amit Verma</h3></div>
+            </div>
+        </div>
+    </section> -->
+    <!-- Featured Speakers Section -->
+<section id="speakers" class="py-24 bg-white hidden">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="lg:grid lg:grid-cols-12 lg:gap-8">
             
-                        -->
-                                            <li class="rd-nav-item">
-                                                <a class="rd-nav-link" href="#speakers">Speakers</a>
-                                            </li>
-                                            <li class="rd-nav-item">
-                                                <a class="rd-nav-link" href="#sponsorship">Sponsors</a>
-                                            </li>
-                                            <li class="rd-nav-item">
-                                                <a class="rd-nav-link" href="#location">
-                                                    Location
-                                                </a
-                                            >
-                                            </li>
-                                            <!--
-                      <li class="rd-nav-item">
-                        <a class="rd-nav-link" target="_blank" href="https://forms.gle/ThHtj79NPPufuDM5A"
-                          >Student Scholarship</a
-                        >
-                      </li>
-                      -->
-                                        </ul>
-                                    </div>
-                                </div>
-                                <!-- RD Navbar Collapse-->
-                                <div class="rd-navbar-collapse">
-                                    <a
-                                        class="button button-primary"
-                                        href="https://flic.kr/s/aHBqjCv7Ve"
-                                        target="_blank"
-                                        data-triangle=".button-overlay"
-                                    >
-                                        <span>Photo Gallery</span>
-                                        <span class="button-overlay"></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
+            <!-- Sticky Sidebar -->
+            <div class="lg:col-span-4 mb-16 lg:mb-0 hidden">
+                <div class="lg:sticky lg:top-32">
+                    <h2 class="text-4xl md:text-5xl font-black uppercase text-slate-900">Keynote Speakers</h2>
+                    <p class="mt-6 text-lg text-slate-600">Our lineup includes leading experts, researchers, and open-source contributors from across the Go community.</p>
+                    <a href="#" class="mt-10 inline-block bg-cyan-500 text-white px-8 py-4 font-bold uppercase hover:bg-cyan-600 transition">See all speakers</a>
                 </div>
-            </header>
-            <div class="content content--canvas">
-                <h2 class="content__title">GOPHERCON INDIA</h2>
-                <h5 class="content__subtitle"> 
-                    Novotel Hyderabad Airport, INDIA | Date - Nov 22, 2026
-                    <div class="d-none justify-content-center mt-4">
-                        <a
-                            class="button button-primary"
-                            href="https://www.townscript.com/e/GopherCon-india-2026"
-                            data-triangle=".button-overlay"
-                            target="_blank">
-                            <span>Book Ticket Now</span>
-                            <span class="button-overlay">
-                            </span>
-                        </a>
-                    </div>
-                </h5>
             </div>
-            <!-- Section Biggest 2019 Digital Conference-->
-            <section class="section section-lg bg-default wow fadeIn parallax-container section parallax-disabled">
-                <div class="container">
-                    <div class="row row-30 justify-content-center">
-                        <div class="col-md-10 col-lg-6 col-xl-5">
-                            <h6>What is GopherCon India?</h6>
-                            <h3 class="heading-lg-postfix-15">The Ultimate Go Conference in India</h3>
-                            <p>
-                                GopherCon India is the premier Go programming language conference in India, brought to you by the 
-                            passionate Go Language Community and the Emerging Technology Trust (ETT). As a non-profit organization, 
-                            ETT is committed to fostering technology communities through conferences such as DeccanRubyConf, 
-                            DevOpsDaysIndia, DroidJamIndia, RubyConfIndia, and GopherConIndia.
-                            </p>
-                            <p>
-                                Unlike other multi-track conferences, GopherCon India is designed as a single-track event, 
-                            ensuring that every attendee gets to experience all the inspiring talks and insightful sessions. 
-                            Our curated lineup of speakers guarantees that you won’t want to miss a single moment. 
-                            It’s a space where the community comes together to learn, share, and grow.
-                            </p>
-                            <p>
-                                <strong class="color-black">Note:</strong> The conference will be conducted entirely in English.
-                            </p>
-                            <!-- Event Details -->
-                            <ul class="list-inline list-inline-xl mt-4">
-                                <li>
-                                    <div class="unit d-flex align-items-center">
-                                        <div class="unit-left me-2">
-                                            <svg class="svg-icon-sm svg-icon-primary" role="img">
-                                                <use xlink:href="images/svg/sprite.svg#earth-globe"></use>
-                                            </svg>
-                                        </div>
-                                        <div class="unit-body">
-                                            <h5>Where</h5>
-                                            <p>Novotel Hyderabad Airport, Hyderabad</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="unit d-flex align-items-center">
-                                        <div class="unit-left me-2">
-                                            <svg class="svg-icon-sm svg-icon-primary" role="img">
-                                                <use xlink:href="images/svg/sprite.svg#small-calendar"></use>
-                                            </svg>
-                                        </div>
-                                        <div class="unit-body">
-                                            <h5>When</h5>
-                                            <p>
-                                                <time datetime="2026-11-22">Nov 22, 2026</time>
-                                                <br>
-                                                10:00 AM - 6:00 PM
-                                            </p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <!-- Call to Action -->
-                            <div class="row mt-4 d-none">
-                                <div class="col-md-6">
-                                    <a
-                                        class="button button-primary"
-                                        href="https://www.papercall.io/gophercon-india-2026"
-                                        data-triangle=".button-overlay"
-                                        target="_blank"
-                                    >
-                                        <span>Share Your Passion: Submit Your CFP!</span>
-                                        <span class="button-overlay" style="border-top-width: 60.5px; border-left-width: 335.492px;"></span>
-                                    </a>
-                                </div>
-                                <div class="col-md-6 d-none">
-                                    <a
-                                        class="button button-primary"
-                                        href="https://flic.kr/s/aHBqjBUtWc"
-                                        target="_blank"
-                                        data-triangle=".button-overlay"
-                                    >
-                                        <span>View the Photo Gallery</span>
-                                        <span class="button-overlay" style="border-top-width: 0px; border-left-width: 0px;"></span>
-                                    </a>
-                                </div>
-                            </div>
+
+            <!-- Speaker Grid (Responsive: 1 -> 2 -> 4 columns) -->
+            <div class="lg:col-span-8">
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12">
+                    
+                    <!-- Speaker Card Template (Repeat for all speakers) -->
+                    <!-- 1 -->
+                    <div class="group">
+                        <div class="aspect-square w-full overflow-hidden bg-slate-100 rounded-3xl mb-4 border border-slate-200">
+                            <div class="w-full h-full bg-slate-200 group-hover:scale-105 transition-transform duration-300"></div>
                         </div>
-                        <div class="col-md-10 col-lg-6 col-xl-7 text-md-right">
-                            <!-- Image Box-->
-                            <div class="images-box">
-                                <div class="images-box-item images-box-item-right">
-                                    <div class="wow fadeScale">
-                                        <img
-                                            src="images/home1.png"
-                                            alt=""
-                                            width="470"
-                                            height="590"
-                                        >
-                                    </div>
-                                </div>
-                                <div class="images-box-item images-box-item-left">
-                                    <div class="wow fadeScale">
-                                        <img
-                                            src="images/home2.png"
-                                            alt=""
-                                            width="270"
-                                            height="257"
-                                        >
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <h3 class="font-bold text-lg text-slate-900">Dr. Gopher</h3>
+                        <p class="text-sm font-semibold text-slate-500 mt-1">Keynote Speaker</p>
                     </div>
+                    <!-- 2 -->
+                    <div class="group">
+                        <div class="aspect-square w-full overflow-hidden bg-slate-100 rounded-3xl mb-4 border border-slate-200">
+                            <div class="w-full h-full bg-slate-200 group-hover:scale-105 transition-transform duration-300"></div>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900">Sarah Jenkins</h3>
+                        <p class="text-sm font-semibold text-slate-500 mt-1">Lead Developer</p>
+                    </div>
+                    <!-- 3 -->
+                    <div class="group">
+                        <div class="aspect-square w-full overflow-hidden bg-slate-100 rounded-3xl mb-4 border border-slate-200">
+                            <div class="w-full h-full bg-slate-200 group-hover:scale-105 transition-transform duration-300"></div>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900">Amit Verma</h3>
+                        <p class="text-sm font-semibold text-slate-500 mt-1">Cloud Architect</p>
+                    </div>
+                    <!-- 4 -->
+                    <div class="group">
+                        <div class="aspect-square w-full overflow-hidden bg-slate-100 rounded-3xl mb-4 border border-slate-200">
+                            <div class="w-full h-full bg-slate-200 group-hover:scale-105 transition-transform duration-300"></div>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900">Dr. Gopher</h3>
+                        <p class="text-sm font-semibold text-slate-500 mt-1">Researcher</p>
+                    </div>
+                    <!-- 5 -->
+                    <div class="group">
+                        <div class="aspect-square w-full overflow-hidden bg-slate-100 rounded-3xl mb-4 border border-slate-200">
+                            <div class="w-full h-full bg-slate-200 group-hover:scale-105 transition-transform duration-300"></div>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900">Sarah Jenkins</h3>
+                        <p class="text-sm font-semibold text-slate-500 mt-1">DevOps Expert</p>
+                    </div>
+                    <!-- 6 -->
+                    <div class="group">
+                        <div class="aspect-square w-full overflow-hidden bg-slate-100 rounded-3xl mb-4 border border-slate-200">
+                            <div class="w-full h-full bg-slate-200 group-hover:scale-105 transition-transform duration-300"></div>
+                        </div>
+                        <h3 class="font-bold text-lg text-slate-900">Amit Verma</h3>
+                        <p class="text-sm font-semibold text-slate-500 mt-1">Systems Engineer</p>
+                    </div>
+
                 </div>
-            </section>
-            <!-- Section Conference Schedule-->
-            <section class="d-none section section-lg bg-default text-center wow fadeIn parallax-container section parallax-disabled">
-                <div class="container">
-                    <h6>
-                        <a id="schedule">GopherCon India 2026</a>
-                    </h6>
-                    <br>
-                    <div class="tabs-custom tabs-horizontal tabs-corporate" id="tabs-1">
-                        <ul class="nav nav-tabs">
-                            <li class="nav-item" role="presentation">
-                                <a
-                                    class="nav-link nav-link-secondary-darker active show"
-                                    href="#tabs-1-1"
-                                    data-toggle="tab"
-                                    data-triangle=".nav-link-overlay"
-                                >
-                                    <span class="nav-link-overlay" style="border-top-width: 95px; border-left-width: 281.983px;"></span>
-                                    <span class="nav-link-title">Sep 14, 2026</span>
-                                </a>
-                            </li>
-                            <li class="nav-item" role="presentation">
-                                <a
-                                    class="nav-link nav-link-secondary-darker"
-                                    href="#tabs-2-1"
-                                    data-toggle="tab"
-                                    data-triangle=".nav-link-overlay"
-                                >
-                                    <span class="nav-link-overlay" style="border-top-width: 95px; border-left-width: 281.983px;"></span>
-                                    <span class="nav-link-title">Sep 15, 2026</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="tab-content">
-                        <!-- Day 1 Schedule -->
-                        <div class="tab-pane fade active show" id="tabs-1-1">
-                            <div class="schedule-day" id="day-1">
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">8:00 AM - 9:45 AM</p>
-                                            <p class="schedule-classic-title">Registration</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">9:45 AM - 10:00 AM</p>
-                                            <p class="schedule-classic-title">Kickoff</p>
-                                            <p class="schedule-speaker">Gautam Rege</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">10:00 AM - 10:30 AM</p>
-                                            <p class="schedule-classic-title">United We Compile: Cross-Compiling CGO (with Zig)</p>
-                                            <p class="schedule-speaker">Alex Rios</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">10:30 AM - 11:00 AM</p>
-                                            <p class="schedule-classic-title">Fast Authorization Checks with Dynamic Graph Indexing in Go</p>
-                                            <p class="schedule-speaker">Varuni H K</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">11:00 AM - 11:30 AM</p>
-                                            <p class="schedule-classic-title">Tea Break</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">11:30 AM - 12:00 PM</p>
-                                            <p class="schedule-classic-title">From Cash to Digital: Evolution of Payments Infrastructure</p>
-                                            <p class="schedule-speaker">Kshitij Pratihast</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">12:00 PM - 12:30 PM</p>
-                                            <p class="schedule-classic-title">Writing Your Own MCP Server: From Scratch to Production in Go</p>
-                                            <p class="schedule-speaker">Yash Mehrotra</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">12:30 PM - 2:00 PM</p>
-                                            <p class="schedule-classic-title">Lunch</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">2:00 PM - 2:15 PM</p>
-                                            <p class="schedule-classic-title">Sponsor Showcase</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">2:15 PM - 2:45 PM</p>
-                                            <p class="schedule-classic-title">Broken Go: The Unexpected Behaviors</p>
-                                            <p class="schedule-speaker">Sagar Sonwane</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">2:45 PM - 3:15 PM</p>
-                                            <p class="schedule-classic-title">100+ DB Upgrades in 10 Minutes (Maintenance Mode)</p>
-                                            <p class="schedule-speaker">Abhishek Varshney</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">3:15 PM - 3:45 PM</p>
-                                            <p class="schedule-classic-title">SQLens: AI-Powered Database Intelligence for Go</p>
-                                            <p class="schedule-speaker">Akshay Khurd</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">3:45 PM - 4:30 PM</p>
-                                            <p class="schedule-classic-title">Tea Break</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">4:30 PM - 5:00 PM</p>
-                                            <p class="schedule-classic-title">Go Concurrency: How Not to Burn the House Down</p>
-                                            <p class="schedule-speaker">Vignesh Ravichandran</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">5:00 PM - 5:30 PM</p>
-                                            <p class="schedule-classic-title">High-Performance PyData Tools by Adding Go to the Mix</p>
-                                            <p class="schedule-speaker">Prasun Anand</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">5:30 PM - 6:30 PM</p>
-                                            <p class="schedule-classic-title">Flash Talks</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">6:30 PM - 7:00 PM</p>
-                                            <p class="schedule-classic-title">Networking</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">7:30 PM onwards</p>
-                                            <p class="schedule-classic-title">Party</p>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                        <!-- Day 3 Schedule -->
-                        <div class="tab-pane fade" id="tabs-2-1">
-                            <div class="schedule-day" id="day-2">
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">10:30 AM - 11:00 AM</p>
-                                            <p class="schedule-classic-title">WebAssembly in Go: Bridging Web and Backend</p>
-                                            <p class="schedule-speaker">Dhruv Sagar</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">11:00 AM - 11:30 AM</p>
-                                            <p class="schedule-classic-title">Tea Break</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">11:30 AM - 12:00 PM</p>
-                                            <p class="schedule-classic-title">Go Under the Hood: Runtime Optimizations & Algorithmic Evolution</p>
-                                            <p class="schedule-speaker">Ali Hasan Syed</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">12:00 PM - 12:30 PM</p>
-                                            <p class="schedule-classic-title">Telemetry → Intelligence: Streaming Observability Data to AI Models</p>
-                                            <p class="schedule-speaker">Neel Shah</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">12:30 PM - 2:00 PM</p>
-                                            <p class="schedule-classic-title">Lunch</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">2:00 PM - 3:00 PM</p>
-                                            <p class="schedule-classic-title">Panel Disscussionss</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">3:00 PM - 4:00 PM</p>
-                                            <p class="schedule-classic-title">Flash Talks</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">4:00 PM - 4:15 PM</p>
-                                            <p class="schedule-classic-title">Vote of Thanks</p>
-                                        </div>
-                                    </div>
-                                </article>
-                                <article class="card card-corporate">
-                                    <div class="card-header">
-                                        <div>
-                                            <p class="schedule-classic-time">4:15 PM onwards</p>
-                                            <p class="schedule-classic-title">Tea Break</p>
-                                        </div>
-                                    </div>
-                                </article>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="d-none section section-lg bg-default text-center wow fadeIn parallax-container section parallax-disabled">
-                <div class="container">
-                    <h6>
-                        <a id="speakers">Our Speakers</a>
-                    </h6>
-                    <br>
-                    <div class="container">
-                        <div class="row">
-                          <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://www.linkedin.com/in/abhishekvrshny/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">100+ DB Upgrades in 10 Minutes: How Maintenance Mode in Microservices Made It Possible</div>
-                                    <div class="speaker-abstract">Discover how CRED upgraded 100+ databases in under 10 minutes! Learn how maintenance mode in microservices, powered by Java and Go libraries plus a central control tower, enabled low-downtime upgrades, seamless traffic draining, and operational resilience at scale.</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2026/AbhishekVarshney.jpeg" alt="Abhishek Varshney" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                                    </div>
-                                    <div class="speaker-name">Abhishek Varshney</div>
-                                    <div class="speaker-bio">Software Architect at CRED</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://alexrios.me/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">United We Compile: Cross-Compiling CGO</div>
-                                    <div class="speaker-abstract">Discover how Zig simplifies CGO cross-compilation — cutting through C/C++ dependency hell, glibc/musl linking issues, and slow builds for faster, cleaner, portable Go binaries</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2026/AlexRios.avif" alt="Alex Rios" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                                    </div>
-                                    <div class="speaker-name">Alex Rios</div>
-                                    <div class="speaker-bio">Senior Staff Engineer at Stone</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://syed-hasan-83344.medium.com/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">Go Under the Hood: Runtime Optimizations & Algorithmic Evolution</div>
-                                    <div class="speaker-abstract">Discover Go’s hidden speed boosts! From a rewritten timer system that slashes HTTP latency, to pdqsort-powered sorting, smarter preemption, faster GC, and stronger random number generation — see how runtime and algorithmic upgrades in recent Go releases deliver production-ready performance gains you can use today.</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2026/AliHasanSyed.jpeg" alt="Ali Hasan Syed" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                                    </div>
-                                    <div class="speaker-name">Ali Hasan Syed</div>
-                                    <div class="speaker-bio">Senior Software Engineer at Josh</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://www.linkedin.com/in/akshay-khurd-3337a511/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">SQLens: AI-Powered Database Intelligence for Go Applications</div>
-                                    <div class="speaker-abstract">Discover SQLens — AI-powered database intelligence in your IDE. Spot bottlenecks, fix slow queries, and turn database nightmares into lightning-fast performance with MCP-powered insights.</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2026/AkshayKhurd.jpeg" alt="Akshay Khurd" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                                    </div>
-                                    <div class="speaker-name">Akshay Khurd</div>
-                                    <div class="speaker-bio">Technical Director at Druva</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://dhruvasagar.dev/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">Webassembly in Go: Bridging Web and Backend</div>
-                                    <div class="speaker-abstract">Discover how Go and WebAssembly let you run Go apps natively in the browser for unmatched speed and interactivity — with practical techniques, real-world examples, and workflow-transforming tips.</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2026/DhruvaSagar.jpg" alt="Dhruva Sagar" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                                    </div>
-                                    <div class="speaker-name">Dhruva Sagar</div>
-                                    <div class="speaker-bio">Senior Consultant at Tarka Labs</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://www.linkedin.com/in/neel-shah-07460218a/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">Telemetry to Intelligence: Streaming Observability Data from Go Apps to AI Models</div>
-                                    <div class="speaker-abstract">Discover how to turn raw telemetry from Go logs, metrics, and traces into actionable intelligence. Build an AI-powered pipeline for anomaly detection, predictive analytics, and smart alerting.</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2026/NeelShah.jpeg" alt="Neel Shah" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                                    </div>
-                                    <div class="speaker-name">Neel Shah</div>
-                                    <div class="speaker-bio">Developer Advocate @ Middleware</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://prasunanand.github.io/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">Building High-Performance PyData Tools by Adding Go to the Mix</div>
-                                    <div class="speaker-abstract">Discover the story behind Zasper — how it was built from scratch to reimagine Jupyter notebooks with Go for high performance, concurrency, and seamless compatibility with Python workflows.</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2026/PrasunAnand.jpeg" alt="Prasun Anand" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                                    </div>
-                                    <div class="speaker-name">Prasun Anand</div>
-                                    <div class="speaker-bio">Founder of Zapser</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://sagarsonwane230797.medium.com/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">Broken Go: The Unexpected Behaviors</div>
-                                    <div class="speaker-abstract">Discover Go’s hidden quirks — from nil error traps and NaN map keys to JSON merge surprises, panic/recover nuances, and concurrency gotchas. Learn why they happen and how to write more robust, idiomatic Go.</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2026/SagarSonwane.jpeg" alt="Sagar Sonwane" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                                    </div>
-                                    <div class="speaker-name">Sagar Sonwane</div>
-                                    <div class="speaker-bio">Senior Software Engineer at Josh</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://www.linkedin.com/in/kshitij-pratihast/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">From Cash to Digital: Evolution of Payments Infrastructure</div>
-                                    <div class="speaker-abstract">Explore how payments infrastructure has transformed from legacy batch systems to modern, scalable, real-time platforms. This session dives into the architectural patterns, technical challenges, and innovations that enable seamless digital transactions today.</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2026/KshitijPratihast.jpeg" alt="Kshitij Pratihast" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                                    </div>
-                                    <div class="speaker-name">Kshitij Pratihast</div>
-                                    <div class="speaker-bio">Specialist Blockchain at NPCI</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://www.linkedin.com/in/varunihk/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">Fast Authorization Checks with Dynamic Graph Indexing in Go</div>
-                                    <div class="speaker-abstract">Discover how Dynamic Graph Indexing in Go slashed authorization latency by 57%, doubled throughput, and cut CPU usage — with real benchmarks, architecture, and open-source code.</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2026/VaruniHK.jpeg" alt="Varuni H K" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                                    </div>
-                                    <div class="speaker-name">Varuni H K</div>
-                                    <div class="speaker-bio">Software Engineer at Couchase</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://www.linkedin.com/in/vignesh-r-911460a3/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">Go Concurrency: How not to burn the house down</div>
-                                    <div class="speaker-abstract">Discover how to master Go’s concurrency without falling into traps like unbounded goroutines, channel misuse, or missed cancellations — and see how databases like CockroachDB, BadgerDB, and Dgraph do it right</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2026/VigneshRavichandran.jpg" alt="Vignesh Ravichandran" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                                    </div>
-                                    <div class="speaker-name">Vignesh Ravichandran</div>
-                                    <div class="speaker-bio">Principal Software Engineer at Tarkalab</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <a href="https://yashmehrotra.com/" class="speaker-card d-flex" target="_blank">
-                                <div class="speaker-right">
-                                    <div class="speaker-title">Writing your own MCP Server: from scratch to production in go</div>
-                                    <div class="speaker-abstract">Discover how to integrate MCP into an existing Go codebase — from design and implementation to building your own MCP server, with best practices, security tips, and a live demo.</div>
-                                </div>
-                                <div class="speaker-left">
-                                    <div class="speaker-photo">
-                                        <img src="images/speakers/2026/YashMehrotra.jpeg" alt="Yash Mehrotra" class="img-fluid rounded-circle" style="width: 120px; height: 120px; object-fit: cover; object-position: top;">
-                                    </div>
-                                    <div class="speaker-name">Yash Mehrotra</div>
-                                    <div class="speaker-bio"> Senior Software Engineer at Flanksource</div>
-                                </div>
-                            </a>
-                        </div>
-
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="d-none section section-lg bg-default text-center wow fadeIn parallax-container section parallax-disabled d-none">
-                <div class="container">
-                    <h6>
-                        <a id="panlists">Panelists</a>
-                    </h6>
-                    <br>
-                    <div class="row">
-                        <div class="col-md-6 mb-4">
-                            <a href="https://www.linkedin.com/in/prerit-munjal/" class="speaker-card d-flex align-items-center" target="_blank">
-                                <div class="speaker-photo me-3">
-                                    <img
-                                        src="images/speakers/PreritMunjal.png"
-                                        alt="Prerit Munjal"
-                                        class="img-fluid rounded-circle"
-                                        style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
-                                    >
-                                </div>
-                                <div class="speaker-info">
-                                    <div class="speaker-name">Prerit Munjal</div>
-                                    <p class="speaker-bio">Co-Founder & CTO of KubeCloud</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <a href="https://www.linkedin.com/in/chinmay185/" class="speaker-card d-flex align-items-center" target="_blank">
-                                <div class="speaker-photo me-3">
-                                    <img
-                                        src="images/speakers/ChinmayNaik.jpg"
-                                        alt="Chinmay Naik"
-                                        class="img-fluid rounded-circle"
-                                        style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
-                                    >
-                                </div>
-                                <div class="speaker-info">
-                                    <div class="speaker-name">Chinmay Naik</div>
-                                    <p class="speaker-bio">Founder at One2N</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <a href="https://www.linkedin.com/in/harman-sohanpal-82620544/" class="speaker-card d-flex align-items-center" target="_blank">
-                                <div class="speaker-photo me-3">
-                                    <img
-                                        src="images/speakers/harman.jpg"
-                                        alt="Harman Sohanpal"
-                                        class="img-fluid rounded-circle"
-                                        style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
-                                    >
-                                </div>
-                                <div class="speaker-info">
-                                    <div class="speaker-name">Harman Sohanpal</div>
-                                    <p class="speaker-bio">Principal Solutions Architect at Tarka Labs</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <a href="https://www.linkedin.com/in/shaileshspatil/" class="speaker-card d-flex align-items-center" target="_blank">
-                                <div class="speaker-photo me-3">
-                                    <img
-                                        src="images/speakers/shaileshPatil.jpeg"
-                                        alt="Shailesh Patil"
-                                        class="img-fluid rounded-circle"
-                                        style="width: 120px; height: 120px; object-fit: cover; object-position: top;"
-                                    >
-                                </div>
-                                <div class="speaker-info">
-                                    <div class="speaker-name">Shailesh Patil</div>
-                                    <p class="speaker-bio">Director & CTO at Quickinsure</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="langroast" class="section section-lg bg-default text-center wow fadeIn parallax-container section parallax-disabled animated text-center d-none">
-                <div class="container">
-                    <h2 class="text-3xl font-bold mb-4">Language Roast</h2>
-                    <p class="mt-3">
-                        Welcome to the Language Roast at GopherCon India! Prepare for a fun-filled, spirited debate where programming languages take the spotlight.
-                      Passionate programmers will form camps to roast popular languages, pointing out their quirks, flaws, and unique characteristics with wit and humor.
-                      Whether you're rooting for Go, Python, JavaScript, or any other language, get ready for some lighthearted roasting and lots of laughs!
-                    </p>
-                    <div class="row">
-                        <div class="col-md-3"></div>
-                        <div class="col-md-6">
-                            <div class="col-md-5">
-                                <a
-                                    class="button button-primary roast-cfp-btn"
-                                    href="https://docs.google.com/forms/d/e/1FAIpQLSeGOA-epHa39G0JPXBc9213JEcS1UQsqDQU-7yK6OOlcbFG8w/viewform?usp=sharing&ouid=101737408411805020746"
-                                    data-triangle=".button-overlay"
-                                    target="_blank"
-                                >
-                                    <span>Roast Your Favorite Language: Submit Your CFP!</span>
-                                    <span class="button-overlay" style="border-top-width: 60.5px; border-left-width: 432.227px;"></span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-3"></div>
-                    </div>
-                </div>
-            </section>
-            <!-- Section Official Sponsors -->
-            <section id="sponsorship" class="py-5 bg-light">
-                <div class="container">
-                    <div class="row justify-content-center text-center mb-4">
-                        <div class="col-lg-8">
-                            <h2 class="text-3xl font-bold mb-4 color-white">Be a Part of GopherCon India 2026!</h2>
-                            <p class="color-white">Join us at GopherCon India 2026, where developers, tech enthusiasts, and industry leaders converge to share knowledge and inspiration.</p>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center mb-4">
-                        <div class="col-lg-7">
-                            <h4 class="text-dark mb-3 color-white">Why Sponsor?</h4>
-                            <ul class="text-start">
-                                <li class="color-white">
-                                    <span class="checkmark color-white">✔️</span>
-                                    <strong>Maximize Visibility:</strong>
-                                    Your brand featured on stage, venue, and digital platforms.
-                                </li>
-                                <li class="color-white">
-                                    <span class="checkmark color-white">✔️</span>
-                                    <strong>Direct Engagement:</strong>
-                                    Showcase your products and services to an enthusiastic tech audience.
-                                </li>
-                                <li class="color-white">
-                                    <span class="checkmark color-white">✔️</span>
-                                    <strong>Build Connections:</strong>
-                                    Network with industry leaders, developers, and decision-makers.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="row justify-content-center mt-4">
-                        <div class="col-md-5">
-                            <a
-                                class="button button-primary roast-cfp-btn"
-                                href="./prospect/GCI_Prospectus_2026.pdf"
-                                data-triangle=".button-overlay"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <span>Download Sponsorship Prospectus</span>
-                                <span class="button-overlay" style="border-top-width: 60.5px; border-left-width: 432.227px;"></span>
-                            </a>
-                            <p class="mt-3 color-white">
-                                For inquiries, reach out to:
-                                <a href="mailto:gautam@gopherconindia.org" class="text-decoration-none color-white">gautam@gopherconindia.org</a>
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section class="d-none parallax-container section" data-parallax-img="images/bg-parallax-04-1894x1170.jpg">
-                <a id="official-sponsors"></a>
-                <div class="parallax-content section-lg context-dark text-center">
-                    <div class="container">
-                        <h3>Sponsorship</h3>
-                        <br>
-                        <div class="container">
-                            <h4>Platinum Sponsors</h4>
-                            <br>
-                            <div class="col">
-                                <div class="wow">
-                                    <div>
-                                        <a
-                                            class="sponsor"
-                                            href="https://www.npci.org.in/"
-                                            data-triangle=".sponsor-overlay"
-                                            style="height: 110px;"
-                                            target="_blank"
-                                        >
-                                            <img src="images/company-logos/NPCI_Logo.png">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <h4>Gold Sponsors</h4>
-                            <div class="row row-30 row-lg-50 justify-content-center">
-                                <div class="col-md3" style="margin-right: 30px; margin-left: 30px">
-                                    <div class="wow">
-                                        <div>
-                                            <a
-                                                class="sponsor"
-                                                href="https://www.joshsoftware.com/"
-                                                target="_blank"
-                                                data-triangle=".sponsor-overlay"
-                                                style="height: 95px"
-                                            >
-                                                <div class="sponsor-img">
-                                                    <img src="images/company-logos/JOSH.png">
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container">
-                            <h4>Associate Sponsors</h4>
-                            <br>
-                            <div class="col">
-                                <div class="wow">
-                                    <div>
-                                        <a
-                                            class="sponsor"
-                                            href="https://www.packtpub.com/en-in"
-                                            data-triangle=".sponsor-overlay"
-                                            style="height: 110px;"
-                                            target="_blank"
-                                        >
-                                            <img src="images/company-logos/packt.png">
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <section id="location" class="section section-lg bg-default wow fadeIn parallax-container section parallax-disabled">
-                <div class="container">
-                    <!-- Location Heading -->
-                    <div class="text-center mb-5">
-                        <h6 class="text-uppercase fw-bold">Location</h6>
-                        <p>
-                            Join us for
-                            <strong>GopherCon India 2026</strong>
-                            at
-                            <a href="https://www.hotelclarks.com/amer-jaipur/" target="_blank" class="text-decoration-none text-light">Novotel Hyderabad Airport, Hyderabad</a>.
-                            This conference offers non-residential option. The residential package includes event access and accommodation at the venue for a seamless experience, while the non-residential package provides event access without accommodation.
-                        </p>
-                    </div>
-                    <!-- Location Image -->
-                    <div class="location-image mb-5 text-center">
-                        <img src="images/venue.jpg" alt="Novotel Hyderabad Airport, Hyderabad" class="img-fluid rounded shadow">
-                    </div>
-                    <!-- Accommodation Section -->
-                    <div class="my-5 d-none">
-                        <h4 class="text-uppercase fw-bold mb-4">Accommodation</h4>
-                        <p>Each ticket includes accommodation at the venue:</p>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item border-0">
-                                <strong class="color-black">Check-In:</strong>
-                                13th September, 2:00 PM
-                            </li>
-                            <li class="list-group-item border-0">
-                                <strong class="color-black">Check-Out:</strong>
-                                15th September, 10:00 AM
-                            </li>
-                        </ul>
-                        <p>
-                            To extend your stay, please contact
-                            <a href="https://www.hotelclarks.com/amer-jaipur/" target="_blank" class="text-decoration-none text-light">Novotel Hyderabad Airport</a>
-                            directly.
-                        </p>
-                    </div>
-                    <!-- Getting to Jaipur Section -->
-                    <div class="d-none my-5">
-                        <h4 class="text-uppercase fw-bold mb-4">Getting to Jaipur</h4>
-                        <div class="mb-3">
-                            <h6 class="fw-bold">By Air:</h6>
-                            <p>
-                                Jaipur International Airport (JAI) is approximately 4 km from the hotel, with taxis and ride-sharing options like
-                                <span class="fw-bold">Uber</span>
-                                and
-                                <span class="fw-bold">Ola</span>
-                                readily available. Travel time is around 15-20 minutes.
-                            </p>
-                        </div>
-                        <div class="mb-3">
-                            <h6 class="fw-bold">By Train:</h6>
-                            <p>Jaipur Junction Railway Station, about 10 km from the hotel, connects Jaipur with major cities. Taxis and auto-rickshaws are available, with a 30-minute drive to the hotel.</p>
-                        </div>
-                        <div class="mb-3">
-                            <h6 class="fw-bold">By Road:</h6>
-                            <p>
-                                Jaipur is accessible via
-                                <span class="fw-bold">NH8 from Delhi</span>
-                                (about 5 hours) and
-                                <span class="fw-bold">NH21 from Agra</span>
-                                (about 4 hours).
-                            </p>
-                        </div>
-                    </div>
-                    <!-- Passports and Visas Section -->
-                    <div class="my-5">
-                        <h4 class="text-uppercase fw-bold mb-4">Passports and Visas</h4>
-                        <p>
-                            <strong class="color-black">International Visitors:</strong>
-                            Most international attendees require a visa to enter India. Visitors from several countries may be eligible for an e-visa. For details and to apply online, please visit the
-                            <a href="https://indianvisaonline.gov.in/evisa/tvoa.html" target="_blank" class="text-decoration-none text-light">Indian e-Visa Portal</a>
-                            .
-                        </p>
-                        <p>
-                            <strong class="color-black">Documents Required:</strong>
-                            Ensure you carry a valid passport (with at least six months validity) and other identification documents while traveling.
-                        </p>
-                    </div>
-                    <!-- Venue and City Information Section -->
-                    <div class="d-none my-5">
-                        <h4 class="text-uppercase fw-bold mb-4">Venue and City Information</h4>
-                        <div class="mb-4">
-                            <h5 class="fw-bold mb-3">Hotel Clarks Amer</h5>
-                            <p>Hotel Clarks Amer offers luxurious accommodation and conference facilities, including dining options, a rooftop restaurant, WiFi, a fitness center, a spa, and a pool. Attendees staying here can easily access the conference venue without additional travel arrangements.</p>
-                        </div>
-                        <div class="d-none mb-4">
-                            <h5 class="fw-bold mb-3">The City of Jaipur</h5>
-                            <p>Jaipur, also known as the "Pink City," is the capital of Rajasthan. Famous for its vibrant culture and stunning architecture, Jaipur combines ancient charm with modern amenities. Popular landmarks include:</p>
-                            <div class="row g-4">
-                                <div class="col-md-3">
-                                    <div class="position-relative image-container rounded shadow">
-                                        <a href="https://en.wikipedia.org/wiki/Amber_Fort" target="_blank" class="text-decoration-none">
-                                            <img src="images/amberFort.jpg" alt="Amber Fort" class="landmark-image rounded">
-                                            <div class="position-absolute bottom-0 start-0 w-100 p-2 bg-opacity-75">
-                                                <h6 class="mb-0">Amber Fort</h6>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="position-relative image-container rounded shadow">
-                                        <a href="https://en.wikipedia.org/wiki/City_Palace,_Jaipur" target="_blank" class="text-decoration-none">
-                                            <img src="images/cityPalacejaipur.jpg" alt="City Palace" class="landmark-image rounded">
-                                            <div class="position-absolute bottom-0 start-0 w-100 p-2 bg-dark bg-opacity-75">
-                                                <h6 class="mb-0">City Palace</h6>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="position-relative image-container rounded shadow">
-                                        <a href="https://en.wikipedia.org/wiki/Hawa_Mahal" target="_blank" class="text-decoration-none">
-                                            <img src="images/hawaMahalJaipur.jpg" alt="Hawa Mahal" class="landmark-image rounded">
-                                            <div class="position-absolute bottom-0 start-0 w-100 p-2 bg-dark bg-opacity-75">
-                                                <h6 class="mb-0">Hawa Mahal</h6>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="col-md-3">
-                                    <div class="position-relative image-container rounded shadow">
-                                        <a href="https://en.wikipedia.org/wiki/Jantar_Mantar,_Jaipur" target="_blank" class="text-decoration-none">
-                                            <img src="images/JantarMantarJaipur.jpg" alt="Jantar Mantar" class="landmark-image rounded">
-                                            <div class="position-absolute bottom-0 start-0 w-100 p-2 bg-dark bg-opacity-75">
-                                                <h6 class="mb-0">Jantar Mantar</h6>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <p class="mt-4">Jaipur is also known for its handicrafts, jewelry, and textiles, making it an excellent place for shopping.</p>
-                        </div>
-                    </div>
-                    <!-- Safety Tips Section -->
-                    <div class="my-5">
-                        <h5 class="fw-bold">Safety Tips</h5>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item border-0">Stay alert and secure your belongings in crowded areas.</li>
-                            <li class="list-group-item border-0">Use registered taxis, hotel shuttles, or ride-sharing apps like Uber or Ola for transportation.</li>
-                            <li class="list-group-item border-0">Save emergency contact numbers (112) and embassy details.</li>
-                        </ul>
-                    </div>
-                    <!-- Essential Information Section -->
-                    <div class="d-none my-5">
-                        <h5 class="fw-bold mb-4">Essential Information</h5>
-                        <div class="mb-3">
-                            <h6 class="fw-bold">Money</h6>
-                            <p>The currency in India is the Indian Rupee (₹). Major credit and debit cards are accepted in hotels, restaurants, and shops. ATMs are widely available in Jaipur, and currency exchange can be done at the airport or banks.</p>
-                        </div>
-                        <div class="mb-3">
-                            <h6 class="fw-bold">Internet Access</h6>
-                            <p>WiFi is available at the hotel and conference venue. Many cafes and restaurants in Jaipur also offer free WiFi. For mobile internet, purchase a prepaid SIM card at the airport or nearby mobile stores. Airtel, Jio, and Vodafone Idea offer affordable prepaid plans with good coverage.</p>
-                        </div>
-                        <div class="mb-3">
-                            <h6 class="fw-bold">Local Transportation</h6>
-                            <ul class="list-group list-group-flush transport-list">
-                                <li class="list-group-item border-0 d-flex align-items-center">
-                                    <p>
-                                        🚕
-                                        <span class="ms-2"> Auto-rickshaws – Negotiable rates, ideal for short trips.</span>
-                                    </p>
-                                </li>
-                                <li class="list-group-item border-0 d-flex align-items-center">
-                                    <p>
-                                        🚌
-                                        <span class="ms-2"> Buses – Jaipur City Transport Services operates city buses. Use Google Maps for public transit routes.</span>
-                                    </p>
-                                </li>
-                                <li class="list-group-item border-0 d-flex align-items-center">
-                                    <p>
-                                        🚗
-                                        <span class="ms-2"> Taxis and Ride-Sharing Apps – Uber and Ola are widely available and convenient.</span>
-                                    </p>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- Dining & Local Cuisine Section -->
-                    <div class="d-none my-5">
-                        <h5 class="fw-bold mb-4">Dining & Local Cuisine</h5>
-                        <p>Jaipur is known for its rich culinary heritage. Must-try dishes include dal baati churma, laal maas, and ghevar. Here are a few popular dining spots:</p>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item border-0">
-                                <strong>
-                                    <a href="https://www.chokhidhani.com/" target="_blank" class="text-decoration-none text-light">Chokhi Dhani</a>
-                                </strong>
-                                – A cultural village resort offering traditional Rajasthani cuisine.
-                            </li>
-                            <li class="list-group-item border-0">
-                                <strong>
-                                    <a href="https://www.handirestaurantjaipur.com/" target="_blank" class="text-decoration-none text-light">Handi Restaurant</a>
-                                </strong>
-                                – Known for flavorful curries and tandoori dishes.
-                            </li>
-                            <li class="list-group-item border-0">
-                                <strong>
-                                    <a href="http://www.lmbjaipur.com/" target="_blank" class="text-decoration-none text-light">Laxmi Mishthan Bhandar (LMB)</a>
-                                </strong>
-                                – Famous for sweets and vegetarian Rajasthani food.
-                            </li>
-                        </ul>
-                    </div>
-                    <!-- Things to Do in Jaipur Section -->
-                    <div class="d-none my-5">
-                        <h5 class="fw-bold mb-4">Things to Do in Jaipur</h5>
-                        <p>Beyond the conference, Jaipur offers plenty to explore:</p>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item border-0">
-                                <strong class="color-black">Visit the Amber Fort</strong>
-                                – One of the most majestic forts in India.
-                            </li>
-                            <li class="list-group-item border-0">
-                                <strong class="color-black">Explore the City Palace</strong>
-                                – A stunning blend of Mughal and Rajput architecture.
-                            </li>
-                            <li class="list-group-item border-0">
-                                <strong class="color-black">Shop at Johari Bazaar and Bapu Bazaar</strong>
-                                – Famous for jewelry, textiles, and handicrafts.
-                            </li>
-                            <li class="list-group-item border-0">
-                                <strong class="color-black">Attend a cultural show</strong>
-                                – Enjoy Rajasthani dance and music performances.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-            <!-- Section Pre Footer-->
-            <section class="d-none section section-lg bg-gray-900">
-                <div class="container">
-                    <div class="row row-30">
-                        <div class="col-xs-10 col-lg-4 align-self-center">
-                            <a class="brand" href="index.html">
-                                <picture>
-                                    <source srcset="images/gopher-150.webp" type="image/webp">
-                                    <source srcset="images/gopher-150.png" type="image/jpeg">
-                                    <img class="brand-logo-light" alt="">
-                                </picture>
-                            </a>
-                        </div>
-                        <div class="col-xs-10 col-sm-6 col-lg-4 align-self-center">
-                            <h5>
-                                <span class="big font-weight-sbold">Event detail</span>
-                            </h5>
-                            <div class="event-detail">
-                                <p class="event-detail-time big">
-                                    <time data-splitting datetime="2024-09-14">Septemeber 14, 2026 - Septemeber 15, 2026</time>
-                                </p>
-                                <p class="event-detail-address big" data-splitting>
-                                    Clarks Amer Hotel Jawahar Lal Nehru Marg, Opposite Fortis Escorts Hospital, Jaipur, Rajasthan 302018
-                                </p>
-                                <p class="event-detail-time">
-                                    <strong>Event Timing:</strong>
-                                    10:00 AM - 6:00 PM
-                                </p>
-                                <a class="event-detail-link" href="https://maps.app.goo.gl/bXdpC6ibyeS1hsvp6">
-                                    View map
-                                            location
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-xs-10 col-sm-6 col-lg-4 align-self-center">
-                            <h5>
-                                <span class="big font-weight-sbold">Social Updates</span>
-                            </h5>
-                            <div class="event-detail">
-                                <p class="big">
-                                    You may wonder: why this event so popular? If you do,
-                                    <br class="d-none d-xl-block">
-                                    find more info about it here.
-                                </p>
-                                <ul class="list-inline list-inline-xs">
-                                    <li data-wow-delay=".2s">
-                                        <a
-                                            class="icon icon-rect icon-xs icon-white fa-linkedin"
-                                            href="https://www.linkedin.com/company/gopherconindia/"
-                                            data-triangle=".icon-rect-overlay"
-                                            target="_blank"
-                                        >
-                                            <div class="icon-rect-overlay">
-                                            </div
-                                >
-                                        </a>
-                                    </li>
-                                    <li data-wow-delay=".35s">
-                                        <a
-                                            class="icon icon-rect icon-xs icon-white fa-twitter"
-                                            href="https://twitter.com/GopherConIndia"
-                                            data-triangle=".icon-rect-overlay"
-                                            target="_blank"
-                                        >
-                                            <div class="icon-rect-overlay"></div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Divider-->
-            <div class="divider divider-gray-900 text-center"></div>
-            <!-- Footer Classic-->
-            <footer class="section footer-classic context-dark">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">
-                            <p class="contact-details">
-                                <h4>Contact</h4>
-                                Send us email at
-                                <a href="mailto:gautam@gopherconindia.org" target="_blank">gautam@gopherconindia.org</a>
-                                or contact
-                                <a href="https://twitter.com/GopherConIndia" target="_blank">@GopherConIndia</a>
-                                over twitter
-                            </p>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <span>Copyright&nbsp;</span>
-                            <span>&copy;&nbsp;</span>
-                            <span class="copyright-year"></span>
-                            <span>,&nbsp;</span>
-                            <a href="https://gopherconindia.com/">gopherconindia.com</a>
-                            &nbsp;- All Rights Reserved.
-                            <p>
-                                *The Gopher character is based on the Go mascot designed by Renée French and copyrighted
-                                        under the Creative Commons Attribution 3.0 license.
-                            </p>
-                        </div>
-                        <div class="col-md-6">
-                            <span class="copyright text-muted small">Conference Organized by</span>
-                            <img src="images/emerging-logo.png" alt="Emerging Technology Trust">
-                        </div>
-                    </div>
-                </div>
-            </footer>
+            </div>
         </div>
-        <div class="snackbars" id="form-output-global"></div>
-        <div class="block-with-svg-gradients">
-            <svg xmlns="http://www.w3.org/2000/svg">
-                <defs>
-                    <lineargradient
-                        id="svg-gradient-primary"
-                        x1="0%"
-                        y1="100%"
-                        x2="100%"
-                        y2="0%"
-                    >
-                        <stop offset="0%" style="stop-color:rgb(130,46,168);stop-opacity:1"></stop>
-                        <stop offset="100%" style="stop-color:rgb(217,14,144);stop-opacity:1"></stop>
-                    </lineargradient>
-                </defs>
-            </svg>
+    </div>
+</section>
+
+<!-- Past Conferences Section -->
+<!-- Past Conferences Section -->
+<section id="past-conferences" class="py-24 bg-white text-slate-900">
+    <div class="max-w-7xl mx-auto px-8">
+        <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+            
+            <!-- Sticky Sidebar -->
+            <div class="lg:col-span-4 mb-16 lg:mb-0">
+                <div class="lg:sticky lg:top-32">
+                    <h2 class="text-4xl md:text-5xl font-black uppercase text-slate-900">Conference Archive</h2>
+                    <p class="mt-6 text-lg text-slate-600 leading-relaxed">Relive the journey of GopherCon India. Scroll to explore our history of past events.</p>
+                </div>
+            </div>
+
+            <!-- Archive grid -->
+            <div class="lg:col-span-8 min-w-0">
+                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-4 w-full">
+                    
+                    <!-- 2025 -->
+                    <div class="flex items-center p-4 border border-slate-200 rounded-2xl hover:border-cyan-500 transition-all duration-300 w-full min-w-0">
+                        <div class="flex-1 min-w-0 pr-4"><span class="text-cyan-600 font-bold text-[10px] uppercase tracking-widest">2025</span><h3 class="text-lg font-bold mt-1">Jaipur</h3><div class="mt-2"><a href="https://www.flickr.com/photos/199189224@N06/albums" target="_blank" rel="noopener noreferrer" class="block text-[11px] text-slate-500 hover:text-cyan-600 underline">Photo Gallery</a>
+                            <!-- <a href="https://gopherconindia.org/prospect/GCI_Prospectus_2025_.pdf" class="block text-[11px] text-cyan-600 font-bold hover:text-cyan-700 underline">Prospectus</a> -->
+                        </div></div>
+                        <div class="w-20 h-20 shrink-0 overflow-hidden rounded-xl bg-slate-100"><img src="images/2024-4.jpeg" alt="GopherCon India 2025 conference in Jaipur" width="80" height="80" loading="lazy" decoding="async" class="w-full h-full object-cover"></div>
+                    </div>
+
+                     <div class="flex items-center p-4 border border-slate-200 rounded-2xl hover:border-cyan-500 transition-all duration-300 w-full min-w-0">
+                        <div class="flex-1 min-w-0 pr-4"><span class="text-cyan-600 font-bold text-[10px] uppercase tracking-widest">2024</span><h3 class="text-lg font-bold mt-1">Jaipur</h3><div class="mt-2"><a href="https://www.flickr.com/photos/199189224@N06/albums" target="_blank" rel="noopener noreferrer" class="block text-[11px] text-slate-500 hover:text-cyan-600 underline">Photo Gallery</a>
+                            <!-- <a href="https://gopherconindia.org/prospect/GCI_Prospectus_2025_.pdf" class="block text-[11px] text-cyan-600 font-bold hover:text-cyan-700 underline">Prospectus</a> -->
+                        </div></div>
+                        <div class="w-20 h-20 shrink-0 overflow-hidden rounded-xl bg-slate-100"><img src="images/2024-4.jpeg" alt="GopherCon India 2024 conference in Jaipur" width="80" height="80" loading="lazy" decoding="async" class="w-full h-full object-cover"></div>
+                    </div>
+
+                    <!-- 2023 -->
+                    <div class="flex items-center p-4 border border-slate-200 rounded-2xl hover:border-cyan-500 transition-all duration-300 w-full min-w-0">
+                        <div class="flex-1 min-w-0 pr-4"><span class="text-cyan-600 font-bold text-[10px] uppercase tracking-widest">2023</span><h3 class="text-lg font-bold mt-1">Pune</h3><div class="mt-2"><a href="https://gopherconindia.org/gci2023.pdf" class="block text-[11px] text-slate-500 hover:text-cyan-600 underline">Timeline</a><a href="https://www.flickr.com/photos/199189224@N06/albums" target="_blank" rel="noopener noreferrer" class="block text-[11px] text-slate-500 hover:text-cyan-600 underline">Photo Gallery</a></div></div>
+                        <div class="w-20 h-20 shrink-0 overflow-hidden rounded-xl bg-slate-100"><img src="images/2023.png" alt="GopherCon India 2023 conference in Pune" width="80" height="80" loading="lazy" decoding="async" class="w-full h-full object-cover"></div>
+                    </div>
+                    <!-- 2022 -->
+                    <div class="flex items-center p-4 border border-slate-200 rounded-2xl hover:border-cyan-500 transition-all duration-300 w-full min-w-0">
+                        <div class="flex-1 min-w-0 pr-4"><span class="text-cyan-600 font-bold text-[10px] uppercase tracking-widest">2022</span><h3 class="text-lg font-bold mt-1">Pune</h3></div>
+                        <div class="w-20 h-20 shrink-0 overflow-hidden rounded-xl bg-slate-100"><img src="images/2023-1.jpeg" alt="GopherCon India 2022 conference in Pune" width="80" height="80" loading="lazy" decoding="async" class="w-full h-full object-cover"></div>
+                    </div>
+
+                     <!-- 2019 -->
+                    <div class="flex items-center p-4 border border-slate-200 rounded-2xl hover:border-cyan-500 transition-all duration-300 w-full min-w-0">
+                        <div class="flex-1 min-w-0 pr-4"><span class="text-cyan-600 font-bold text-[10px] uppercase tracking-widest">2019</span><h3 class="text-lg font-bold mt-1">Goa</h3></div>
+                        <div class="w-20 h-20 shrink-0 overflow-hidden rounded-xl bg-slate-100"><img src="images/2019.jpeg" alt="GopherCon India 2019 conference in Goa" width="80" height="80" loading="lazy" decoding="async" class="w-full h-full object-cover"></div>
+                    </div>
+
+                    <!-- 2018 -->
+                    <div class="flex items-center p-4 border border-slate-200 rounded-2xl hover:border-cyan-500 transition-all duration-300 w-full min-w-0">
+                        <div class="flex-1 min-w-0 pr-4"><span class="text-cyan-600 font-bold text-[10px] uppercase tracking-widest">2018</span><h3 class="text-lg font-bold mt-1">Pune</h3></div>
+                        <div class="w-20 h-20 shrink-0 overflow-hidden rounded-xl bg-slate-100"><img src="images/2018.jpeg" alt="GopherCon India 2018 conference in Pune" width="80" height="80" loading="lazy" decoding="async" class="w-full h-full object-cover"></div>
+                    </div>
+
+                    <!-- 2017 -->
+                    <div class="flex items-center p-4 border border-slate-200 rounded-2xl hover:border-cyan-500 transition-all duration-300 w-full min-w-0">
+                        <div class="flex-1 min-w-0 pr-4"><span class="text-cyan-600 font-bold text-[10px] uppercase tracking-widest">2017</span><h3 class="text-lg font-bold mt-1">Pune</h3></div>
+                        <div class="w-20 h-20 shrink-0 overflow-hidden rounded-xl bg-slate-100"><img src="images/2017.jpeg" alt="GopherCon India 2017 conference in Pune" width="80" height="80" loading="lazy" decoding="async" class="w-full h-full object-cover"></div>
+                    </div>
+
+                    <!-- 2016 -->
+                    <div class="flex items-center p-4 border border-slate-200 rounded-2xl hover:border-cyan-500 transition-all duration-300 w-full min-w-0">
+                        <div class="flex-1 min-w-0 pr-4"><span class="text-cyan-600 font-bold text-[10px] uppercase tracking-widest">2016</span><h3 class="text-lg font-bold mt-1">Bangalore</h3></div>
+                        <div class="w-20 h-20 shrink-0 overflow-hidden rounded-xl bg-slate-100"><img src="images/2016.jpeg" alt="GopherCon India 2016 conference in Bangalore" width="80" height="80" loading="lazy" decoding="async" class="w-full h-full object-cover"></div>
+                    </div>
+
+                    <!-- 2015 -->
+                    <div class="flex items-center p-4 border border-slate-200 rounded-2xl hover:border-cyan-500 transition-all duration-300 w-full min-w-0">
+                        <div class="flex-1 min-w-0 pr-4"><span class="text-cyan-600 font-bold text-[10px] uppercase tracking-widest">2015</span><h3 class="text-lg font-bold mt-1">Bangalore</h3></div>
+                        <div class="w-20 h-20 shrink-0 overflow-hidden rounded-xl bg-slate-100"><img src="images/2015.jpeg" alt="GopherCon India 2015 conference in Bangalore" width="80" height="80" loading="lazy" decoding="async" class="w-full h-full object-cover"></div>
+                    </div>
+
+                </div>
+            </div>
         </div>
-        <script defer src="js/core.min.js"></script>
-        <script defer src="js/script.js"></script>
-        <script defer src="js/noise.min.js"></script>
-        <script defer src="js/util.js"></script>
-        <script defer src="js/pipeline.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-        <!--  <script src="js/demo.js"></script> -->
-    </body>
+    </div>
+</section>
+
+    <!-- Sponsorship Section -->
+    <section id="sponsors" class="py-24 bg-slate-50 text-slate-900">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-12 items-start">
+                <div class="lg:col-span-5 mb-12 lg:mb-0">
+                    <h2 class="text-4xl md:text-5xl font-black uppercase leading-tight text-slate-900">Be a Part of GopherCon India 2026!</h2>
+                    <p class="mt-6 text-lg text-slate-600 leading-relaxed">Join us at GopherCon India 2026, where developers, tech enthusiasts, and industry leaders converge to share knowledge and inspiration.</p>
+                    <a href="prospect/GCI_Prospectus_2026.pdf" download class="mt-10 inline-flex items-center gap-2 bg-cyan-500 text-white px-8 py-4 font-bold uppercase rounded-2xl hover:bg-cyan-600 transition">
+                        Download Prospect
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4"/></svg>
+                    </a>
+                </div>
+                <div class="lg:col-span-7 space-y-8">
+                    <div class="p-8 bg-white rounded-3xl border border-slate-200 shadow-sm">
+                        <h3 class="text-2xl font-black text-slate-900 mb-4">Why Sponsor?</h3>
+                        <ul class="space-y-3">
+                            <li class="flex gap-3 text-sm leading-relaxed font-normal text-slate-600"><span class="text-cyan-600 font-bold shrink-0">✦</span><span>Connect with India’s growing Go community and hiring pipeline.</span></li>
+                            <li class="flex gap-3 text-sm leading-relaxed font-normal text-slate-600"><span class="text-cyan-600 font-bold shrink-0">✦</span><span>Showcase your brand to developers, founders, and engineering leaders.</span></li>
+                            <li class="flex gap-3 text-sm leading-relaxed font-normal text-slate-600"><span class="text-cyan-600 font-bold shrink-0">✦</span><span>Support open collaboration, learning, and the future of cloud-native software.</span></li>
+                        </ul>
+                    </div>
+                    <div class="p-8 bg-slate-900 text-white rounded-3xl shadow-xl">
+                        <p class="text-sm uppercase tracking-widest text-cyan-400 font-bold mb-2">Get in touch</p>
+                        <p class="text-slate-300">For inquiries, reach out to:</p>
+                        <a href="mailto:gautam@gopherconindia.org" class="mt-2 inline-block text-xl font-semibold text-cyan-400 hover:text-cyan-300 transition">gautam@gopherconindia.org</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-12 overflow-hidden bg-white">
+    <div class="max-w-7xl mx-auto px-8 mb-8">
+        <h3 class="text-xl font-bold text-slate-900">Event Highlights</h3>
+    </div>
+
+    <div class="flex overflow-hidden group">
+        <!-- The JS will inject children into this div -->
+        <div id="image-ribbon" class="flex animate-scroll gap-6"></div>
+    </div>
+</section>
+
+    <footer class="bg-[#020617] py-12 text-center text-sm text-slate-500 border-t border-white/5">&copy; 2026 GopherCon India. All rights reserved.</footer>
+
+    <script>
+        const video = document.getElementById('hero-video');
+        const btn = document.getElementById('toggle-video');
+        const playIcon = document.getElementById('play-icon');
+        const pauseIcon = document.getElementById('pause-icon');
+
+        if (btn && video && playIcon && pauseIcon) {
+            btn.addEventListener('click', () => {
+                if (video.paused) {
+                    video.play();
+                    playIcon.classList.add('hidden');
+                    pauseIcon.classList.remove('hidden');
+                } else {
+                    video.pause();
+                    playIcon.classList.remove('hidden');
+                    pauseIcon.classList.add('hidden');
+                }
+            });
+        }
+    </script>
+    <script>
+    // 1. List all your image paths here
+    const galleryPhotos = [
+        { src: "2024-4.jpeg", alt: "GopherCon India 2024 conference in Jaipur" },
+        { src: "2015-1.jpeg", alt: "GopherCon India 2015 conference in Bangalore" },
+        { src: "2015-2.jpeg", alt: "GopherCon India 2015 community photo" },
+        { src: "2015.jpeg", alt: "GopherCon India 2015 conference in Bangalore" },
+        { src: "2016-1.jpeg", alt: "GopherCon India 2016 conference in Bangalore" },
+        { src: "2016.jpeg", alt: "GopherCon India 2016 conference in Bangalore" },
+        { src: "2017-1.jpeg", alt: "GopherCon India 2017 conference in Pune" },
+        { src: "2017.jpeg", alt: "GopherCon India 2017 conference in Pune" },
+        { src: "2018.jpeg", alt: "GopherCon India 2018 conference in Pune" },
+        { src: "2019.jpeg", alt: "GopherCon India 2019 conference in Goa" },
+        { src: "2023.png", alt: "GopherCon India 2023 conference in Pune" },
+        { src: "2023-1.jpeg", alt: "GopherCon India 2023 conference in Pune" }
+    ];
+
+    function renderRibbon() {
+        const ribbon = document.getElementById('image-ribbon');
+        
+        const shuffled = [...galleryPhotos].sort(() => Math.random() - 0.5);
+        const displayList = [...shuffled, ...shuffled];
+
+        ribbon.innerHTML = ''; 
+        displayList.forEach(({ src, alt }) => {
+            const div = document.createElement('div');
+            div.className = "w-48 h-32 shrink-0 rounded-2xl overflow-hidden border border-slate-200 shadow-sm";
+            const img = document.createElement('img');
+            img.src = `images/${src}`;
+            img.alt = alt;
+            img.loading = 'lazy';
+            img.decoding = 'async';
+            img.className = 'w-full h-full object-cover';
+            div.appendChild(img);
+            ribbon.appendChild(div);
+        });
+    }
+
+    // Run on load
+    renderRibbon();
+</script>
+</body>
 </html>
