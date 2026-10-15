@@ -323,73 +323,105 @@
         </div>
     </section> -->
     <!-- Featured Speakers Section -->
-<section id="speakers" class="py-24 bg-white hidden">
+<section id="speakers" class="py-24 bg-white text-slate-900">
     <div class="max-w-7xl mx-auto px-8">
         <div class="lg:grid lg:grid-cols-12 lg:gap-8">
-            
+
             <!-- Sticky Sidebar -->
-            <div class="lg:col-span-4 mb-16 lg:mb-0 hidden">
+            <div class="lg:col-span-4 mb-16 lg:mb-0">
                 <div class="lg:sticky lg:top-32">
-                    <h2 class="text-4xl md:text-5xl font-black uppercase text-slate-900">Keynote Speakers</h2>
-                    <p class="mt-6 text-lg text-slate-600">Our lineup includes leading experts, researchers, and open-source contributors from across the Go community.</p>
-                    <a href="#" class="mt-10 inline-block bg-cyan-500 text-white px-8 py-4 font-bold uppercase hover:bg-cyan-600 transition">See all speakers</a>
+                    <h2 class="text-4xl md:text-5xl font-black uppercase text-slate-900">Speakers</h2>
+                    <p class="mt-6 text-lg text-slate-600 leading-relaxed">Practitioner talks from engineers building with Go in production.</p>
                 </div>
             </div>
 
-            <!-- Speaker Grid (Responsive: 1 -> 2 -> 4 columns) -->
-            <div class="lg:col-span-8">
-                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-12">
-                    
-                    <!-- Speaker Card Template (Repeat for all speakers) -->
+            <!-- Talk grid -->
+            <div class="lg:col-span-8 min-w-0">
+                <div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
                     <!-- 1 -->
-                    <div class="group">
-                        <div class="aspect-square w-full overflow-hidden bg-slate-100 rounded-3xl mb-4 border border-slate-200">
-                            <div class="w-full h-full bg-slate-200 group-hover:scale-105 transition-transform duration-300"></div>
+                    <div class="group flex flex-col border border-slate-200 rounded-3xl overflow-hidden hover:border-cyan-500 transition-all duration-300">
+                        <div class="aspect-square w-full overflow-hidden bg-slate-100">
+                            <img src="images/speakers/Ajitem%20Sahasrabuddhe.jpeg" alt="Ajitem Sahasrabuddhe" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         </div>
-                        <h3 class="font-bold text-lg text-slate-900">Dr. Gopher</h3>
-                        <p class="text-sm font-semibold text-slate-500 mt-1">Keynote Speaker</p>
+                        <div class="flex flex-col flex-1 p-6">
+                            <h3 class="font-bold text-xl text-slate-900"><a href="https://ajitem.com" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-600 transition">Ajitem Sahasrabuddhe</a></h3>
+                            <p class="text-sm text-slate-500 mt-1">Staff DevOps Engineer</p>
+                            <p class="text-sm font-bold text-slate-900">Automattic</p>
+                            <p class="mt-4 pt-4 border-t border-slate-200 text-cyan-700 font-semibold leading-snug">Build Your Own Container Runtime in Go</p>
+                        </div>
                     </div>
                     <!-- 2 -->
-                    <div class="group">
-                        <div class="aspect-square w-full overflow-hidden bg-slate-100 rounded-3xl mb-4 border border-slate-200">
-                            <div class="w-full h-full bg-slate-200 group-hover:scale-105 transition-transform duration-300"></div>
+                    <div class="group flex flex-col border border-slate-200 rounded-3xl overflow-hidden hover:border-cyan-500 transition-all duration-300">
+                        <div class="aspect-square w-full overflow-hidden bg-slate-100">
+                            <img src="images/speakers/Aryan%20Mehrotra.jpg" alt="Aryan Mehrotra" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         </div>
-                        <h3 class="font-bold text-lg text-slate-900">Sarah Jenkins</h3>
-                        <p class="text-sm font-semibold text-slate-500 mt-1">Lead Developer</p>
+                        <div class="flex flex-col flex-1 p-6">
+                            <h3 class="font-bold text-xl text-slate-900"><a href="https://www.linkedin.com/in/aryanmehrotra/" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-600 transition">Aryan Mehrotra</a></h3>
+                            <p class="text-sm text-slate-500 mt-1">Senior Software Engineer</p>
+                            <p class="text-sm font-bold text-slate-900">ZopDev Technology Private Limited</p>
+                            <p class="mt-4 pt-4 border-t border-slate-200 text-cyan-700 font-semibold leading-snug">Real-Time Production Debugging</p>
+                        </div>
                     </div>
                     <!-- 3 -->
-                    <div class="group">
-                        <div class="aspect-square w-full overflow-hidden bg-slate-100 rounded-3xl mb-4 border border-slate-200">
-                            <div class="w-full h-full bg-slate-200 group-hover:scale-105 transition-transform duration-300"></div>
+                    <div class="group flex flex-col border border-slate-200 rounded-3xl overflow-hidden hover:border-cyan-500 transition-all duration-300">
+                        <div class="aspect-square w-full overflow-hidden bg-slate-100">
+                            <img src="images/speakers/Ayush%20Goyal.JPG" alt="Ayush Goyal" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         </div>
-                        <h3 class="font-bold text-lg text-slate-900">Amit Verma</h3>
-                        <p class="text-sm font-semibold text-slate-500 mt-1">Cloud Architect</p>
+                        <div class="flex flex-col flex-1 p-6">
+                            <h3 class="font-bold text-xl text-slate-900"><a href="https://www.linkedin.com/in/goyalayush57/" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-600 transition">Ayush Goyal</a></h3>
+                            <p class="text-sm text-slate-500 mt-1">Senior Software Engineer</p>
+                            <p class="text-sm font-bold text-slate-900">NVIDIA</p>
+                            <p class="mt-4 pt-4 border-t border-slate-200 text-cyan-700 font-semibold leading-snug">From Keystroke to Frame: Inside a WebRTC Game Stream</p>
+                        </div>
                     </div>
                     <!-- 4 -->
-                    <div class="group">
-                        <div class="aspect-square w-full overflow-hidden bg-slate-100 rounded-3xl mb-4 border border-slate-200">
-                            <div class="w-full h-full bg-slate-200 group-hover:scale-105 transition-transform duration-300"></div>
+                    <div class="group flex flex-col border border-slate-200 rounded-3xl overflow-hidden hover:border-cyan-500 transition-all duration-300">
+                        <div class="aspect-square w-full overflow-hidden bg-slate-100">
+                            <img src="images/speakers/Deepak%20Punjabi.png" alt="Deepak Punjabi" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         </div>
-                        <h3 class="font-bold text-lg text-slate-900">Dr. Gopher</h3>
-                        <p class="text-sm font-semibold text-slate-500 mt-1">Researcher</p>
+                        <div class="flex flex-col flex-1 p-6">
+                            <h3 class="font-bold text-xl text-slate-900"><a href="https://www.linkedin.com/in/deepak-punjabi" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-600 transition">Deepak Punjabi</a></h3>
+                            <p class="text-sm text-slate-500 mt-1">SDE4</p>
+                            <p class="text-sm font-bold text-slate-900">Flipkart</p>
+                            <p class="mt-4 pt-4 border-t border-slate-200 text-cyan-700 font-semibold leading-snug">Why, What, and How of the Valkey Kubernetes Operator in Go</p>
+                        </div>
                     </div>
                     <!-- 5 -->
-                    <div class="group">
-                        <div class="aspect-square w-full overflow-hidden bg-slate-100 rounded-3xl mb-4 border border-slate-200">
-                            <div class="w-full h-full bg-slate-200 group-hover:scale-105 transition-transform duration-300"></div>
+                    <div class="group flex flex-col border border-slate-200 rounded-3xl overflow-hidden hover:border-cyan-500 transition-all duration-300">
+                        <div class="aspect-square w-full overflow-hidden bg-slate-100">
+                            <img src="images/speakers/Gagan%20H%20R.jpg" alt="Gagan H R" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
                         </div>
-                        <h3 class="font-bold text-lg text-slate-900">Sarah Jenkins</h3>
-                        <p class="text-sm font-semibold text-slate-500 mt-1">DevOps Expert</p>
+                        <div class="flex flex-col flex-1 p-6">
+                            <h3 class="font-bold text-xl text-slate-900"><a href="https://www.linkedin.com/in/gaganhr" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-600 transition">Gagan H R</a></h3>
+                            <p class="text-sm text-slate-500 mt-1">Software Engineer</p>
+                            <p class="text-sm font-bold text-slate-900">Guidewire Software</p>
+                            <p class="mt-4 pt-4 border-t border-slate-200 text-cyan-700 font-semibold leading-snug">Your Goroutines Don't Know Who They Work For — And It Costs You</p>
+                        </div>
                     </div>
                     <!-- 6 -->
-                    <div class="group">
-                        <div class="aspect-square w-full overflow-hidden bg-slate-100 rounded-3xl mb-4 border border-slate-200">
-                            <div class="w-full h-full bg-slate-200 group-hover:scale-105 transition-transform duration-300"></div>
+                    <div class="group flex flex-col border border-slate-200 rounded-3xl overflow-hidden hover:border-cyan-500 transition-all duration-300">
+                        <div class="aspect-square w-full overflow-hidden bg-slate-100">
+                            <div class="w-full h-full bg-slate-200 text-slate-500 text-5xl font-black flex items-center justify-center" aria-hidden="true">NS</div>
                         </div>
-                        <h3 class="font-bold text-lg text-slate-900">Amit Verma</h3>
-                        <p class="text-sm font-semibold text-slate-500 mt-1">Systems Engineer</p>
+                        <div class="flex flex-col flex-1 p-6">
+                            <h3 class="font-bold text-xl text-slate-900"><a href="https://www.linkedin.com/in/sree-n-9625b8258/" target="_blank" rel="noopener noreferrer" class="hover:text-cyan-600 transition">Nidasanametla Sree Sitamahalakshmi</a></h3>
+                            <p class="text-sm text-slate-500 mt-1">Engineer</p>
+                            <p class="text-sm font-bold text-slate-900">Google UK Limited</p>
+                            <p class="mt-4 pt-4 border-t border-slate-200 text-cyan-700 font-semibold leading-snug">Architecting High-Throughput AI Pipelines in Go: Concurrency Patterns for Production-Scale Vector Embeddings</p>
+                        </div>
                     </div>
-
+                    <!-- 7 -->
+                    <div class="group flex flex-col border border-slate-200 rounded-3xl overflow-hidden hover:border-cyan-500 transition-all duration-300">
+                        <div class="aspect-square w-full overflow-hidden bg-slate-100">
+                            <img src="images/speakers/Rajani%20Ekunde.jpg" alt="Rajani Ekunde" loading="lazy" decoding="async" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="flex flex-col flex-1 p-6">
+                            <h3 class="font-bold text-xl text-slate-900">Rajani Ekunde</h3>
+                            <p class="text-sm text-slate-500 mt-1">Senior Site Reliability Engineer</p>
+                            <p class="text-sm font-bold text-slate-900">Okta</p>
+                            <p class="mt-4 pt-4 border-t border-slate-200 text-cyan-700 font-semibold leading-snug">The 5-Second Mystery: When Go Service's DNS Races the Kernel</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
